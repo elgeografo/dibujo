@@ -1,0 +1,73 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "¿Qué título le ponemos a esto?",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  },
+  {
+    "objectID": "01-part1.html",
+    "href": "01-part1.html",
+    "title": "Parte 1",
+    "section": "",
+    "text": "Parte 1",
+    "crumbs": [
+      "Parte 1"
+    ]
+  },
+  {
+    "objectID": "01-01-Titulo1.html",
+    "href": "01-01-Titulo1.html",
+    "title": "1  Capitulo 1",
+    "section": "",
+    "text": "Capitulo 1 de la parte 1",
+    "crumbs": [
+      "Parte 1",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Capitulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "01-00-part1.html",
+    "href": "01-00-part1.html",
+    "title": "Parte 1",
+    "section": "",
+    "text": "Parte 1",
+    "crumbs": [
+      "Parte 1"
+    ]
+  }
+]
