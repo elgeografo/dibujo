@@ -6,7 +6,7 @@ book:
   author: "Norah Jones"
   date: "6/18/2024"
   chapters:
-    - part: 01-00-part1.qmd
+    - part: 00-00-conocimientos-previos.qmd
       chapters: 
         - 01-01-Titulo1.qmd
     - index.qmd
