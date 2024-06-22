@@ -1,0 +1,21 @@
+---
+title: "Capítulo 0"
+---
+
+# Conocimientos Previos {.unnumbered}
+
+```{r}
+#| label: image-hypatia 
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Hypatia de Alenadría.
+#| fig-alt: |
+#|   A diagram displaying the data science cycle: Import -> Tidy ->
+#|   Understand  (which has the phases Transform -> Visualize -> Model in a
+#|   cycle) -> Communicate. Surrounding all of these is Program 
+#|   Import, Tidy, Transform, and Visualize is highlighted.
+
+knitr::include_graphics("images/00-00-A-hypatia.jpeg", dpi = 270)
+```
+

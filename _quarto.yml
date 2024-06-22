@@ -6,9 +6,15 @@ book:
   author: "Norah Jones"
   date: "6/18/2024"
   chapters:
-    - part: 00-00-conocimientos-previos.qmd
+    - part: "Conocimientos previos"
       chapters: 
-        - 01-01-Titulo1.qmd
+        - 00-01-conocimientos-previos.qmd
+    - part: "Introducción"
+      chapters:
+        - 01-01-instrumentos.qmd
+        - 01-02-lenguaje.qmd
+        - 01-03-normalizacion.qmd
+        - 01-04-proyecciones.qmd
     - index.qmd
     - intro.qmd
     - summary.qmd
@@ -18,9 +24,16 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
-  pdf:
-    documentclass: scrreprt
+    theme:
+      - cosmo
+      - r4ds.scss
+    code-link: true
+    number-sections: false
 
+    author-meta: "Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund"
+    #include-in-header: "plausible.html"
+    callout-appearance: simple
+
+editor: visual
 
 

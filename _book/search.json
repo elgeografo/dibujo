@@ -10,23 +10,89 @@
     ]
   },
   {
+    "objectID": "00-01-conocimientos-previos.html",
+    "href": "00-01-conocimientos-previos.html",
+    "title": "Conocimientos Previos",
+    "section": "",
+    "text": "Hypatia de Alenadría.",
+    "crumbs": [
+      "Conocimientos previos",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Capítulo 0</span>"
+    ]
+  },
+  {
+    "objectID": "01-01-instrumentos.html",
+    "href": "01-01-instrumentos.html",
+    "title": "Capítulo 1",
+    "section": "",
+    "text": "Instrumentos de dibujo técnico",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Capítulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "01-02-lenguaje.html",
+    "href": "01-02-lenguaje.html",
+    "title": "Capítulo 2",
+    "section": "",
+    "text": "La expresión gráfica como lenguaje de la técnica",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Capítulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "01-03-normalizacion.html",
+    "href": "01-03-normalizacion.html",
+    "title": "Capítulo 3",
+    "section": "",
+    "text": "Normalización: Formatos de papel, rotulación, tipos de línea, escalas y acotación",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Capítulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "01-03-normalizacion.html#escalas",
+    "href": "01-03-normalizacion.html#escalas",
+    "title": "Capítulo 3",
+    "section": "Escalas",
+    "text": "Escalas\nLa norma ISO que define las escalas es la ISO 5455:1979. El presente capítulo es un resumen de dicha norma con ejemplos aclaratorios. Los texto en cursiva están tomados literalmente de la norma.\n\nObjeto y campo de aplicación\nEsta Norma Internacional especifica las escalas recomendadas, así como su designación para su utilización en los dibujos técnicos en todos los campos de la técnica.\n\n\nDefiniciones\n\nEscala: Relación entre la medida lineal de la representación de un elemento de un objeto sobre un dibujo original y la medida lineal real del mismo elemento del objeto real.\nEscala a “tamaño natural”: Escala que corresponde a la relación 1:1\nEscala de ampliación: Escalas que corresponden a una relación superior a 1:1. Se dice que es mayor a medida que la relación correspondiente aumenta. Por ejemplo en una escala 2:1 la relación es de 2. Es decir, el objeto representado se amplía al doble.\nEscalas de reducción: Escalas que corresponden a una relación inferior a 1:1. Se dice que es menor a medida que la relación correspondiente disminuye. Por ejemplo en una escala 1:2 la relación es de 0.5. Es decir, el objeto representado se reduce a la mitad.\n\n\n\n\n\n\nEscala natural, de reducción y de ampliación.\n\n\n\n\n\n\nDesignación e inscripción\nLa designación completa de una escala debe comprender la palabra “ESCALA” (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación:\n\nESCALA 1:1, para el tamaño natural.\nESCALA x:1, para las escalas de ampliación.\nESCALA 1:x, para las escalas de reducción.\n\n\n\n\n\n\n\nNota\n\n\n\nLa notación de escala 1:1 significa que una unidad de medida en el dibujo equivale a una unidad de medida en el objeto real.\nEl primer término representará la unidad de medida en el papel. El segundo término representará del objeto real.\n\nPAPEL:REAL\n\n\n\nSi no hay posibilidad de confusión, se puede omitir la palabra “ESCALA”.\nRespecto a la inscripción la norma dice “La designación de la escala utilizada en el dibujo debe inscribirse en el cuadro de rotulación del dibujo.\nSi hay que utilizar varias escalas en un dibujo, sólo debe inscribirse la escala principal del dibujo en el cuadro de rotulación, inscribiéndose las otras escalas al lado del número de referencia de la parte considerada o al lado de la referencia de una vista (o corte) de detalle.”\n\n\nEscalas normalizadas\n\n\n\n\n\n\n\n\n\nCategoría\nEscalas recomendadas\n\n\n\n\n\n\nEscalas de ampliación\n50:1\n20:1\n10:1\n\n\n\n5:1\n2:1\n\n\n\n\n\n\n\n\n\nTamaño natural\n1:1\n\n\n\n\n\n\n\n\n\n\nEscalas de reducción\n1:2\n1:5\n1:10\n\n\n\n1:20\n1:50\n1:100\n\n\n\n1:200\n1:500\n1:1 000\n\n\n\n1:2 000\n1:5 000\n1:10 000",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Capítulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "01-04-proyecciones.html",
+    "href": "01-04-proyecciones.html",
+    "title": "Capítulo 4",
+    "section": "",
+    "text": "Proyecciones y métodos de representación recomendados para los dibujos técnicos",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Capítulo 4</span>"
+    ]
+  },
+  {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "2  Introduction",
+    "title": "Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "3  Summary",
+    "title": "Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -40,34 +106,36 @@
     ]
   },
   {
-    "objectID": "01-part1.html",
-    "href": "01-part1.html",
-    "title": "Parte 1",
-    "section": "",
-    "text": "Parte 1",
+    "objectID": "01-03-normalizacion.html#escalas-2",
+    "href": "01-03-normalizacion.html#escalas-2",
+    "title": "Capítulo 3",
+    "section": "escalas 2",
+    "text": "escalas 2\n\nObjeto y campo de aplicación\nEsta Norma Internacional especifica las escalas recomendadas, así como su designación para su utilización en los dibujos técnicos en todos los campos de la técnica.\n\n\nDefiniciones\n\nEscala: Relación entre la medida lineal de la representación de un elemento de un objeto sobre un dibujo original y la medida lineal real del mismo elemento del objeto real.\nEscala a “tamaño natural”: Escala que corresponde a la relación 1:1\nEscala de ampliación: Escalas que corresponden a una relación superior a 1:1. Se dice que es mayor a medida que la relación correspondiente aumenta. Por ejemplo en una escala 2:1 la relación es de 2. Es decir, el objeto representado se amplía al doble.\nEscalas de reducción: Escalas que corresponden a una relación inferior a 1:1. Se dice que es menor a medida que la relación correspondiente disminuye. Por ejemplo en una escala 1:2 la relación es de 0.5. Es decir, el objeto representado se reduce a la mitad.\n\n\n\n\n\n\nEscala natural, de reducción y de ampliación.\n\n\n\n\n\n\nDesignación e inscripción\nLa designación completa de una escala debe comprender la palabra “ESCALA” (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación:\n\nESCALA 1:1, para el tamaño natural.\nESCALA x:1, para las escalas de ampliación.\nESCALA 1:x, para las escalas de reducción.\n\n\n\n\n\n\n\nNota\n\n\n\nLa notación de escala 1:1 significa que una unidad de medida en el dibujo equivale a una unidad de medida en el objeto real.\nEl primer término representará la unidad de medida en el papel. El segundo término representará del objeto real.\n\nPAPEL:REAL\n\n\n\nSi no hay posibilidad de confusión, se puede omitir la palabra “ESCALA”.\nRespecto a la inscripción la norma dice “La designación de la escala utilizada en el dibujo debe inscribirse en el cuadro de rotulación del dibujo.\nSi hay que utilizar varias escalas en un dibujo, sólo debe inscribirse la escala principal del dibujo en el cuadro de rotulación, inscribiéndose las otras escalas al lado del número de referencia de la parte considerada o al lado de la referencia de una vista (o corte) de detalle.”\n\n\nEscalas normalizadas\n\n\n\n\n\n\n\n\n\nCategoría\nEscalas recomendadas\n\n\n\n\n\n\nEscalas de ampliación\n50:1\n20:1\n10:1\n\n\n\n5:1\n2:1\n\n\n\n\n\n\n\n\n\nTamaño natural\n1:1\n\n\n\n\n\n\n\n\n\n\nEscalas de reducción\n1:2\n1:5\n1:10\n\n\n\n1:20\n1:50\n1:100\n\n\n\n1:200\n1:500\n1:1 000\n\n\n\n1:2 000\n1:5 000\n1:10 000\n\n\n\n\n\nFormatos de papel de escritura\nLa norma ISO que define las escalas es la ISO 216:2007. El presente capítulo es un resumen de dicha norma con ejemplos aclaratorios. Los texto en cursiva están tomados literalmente de la norma.\n\n\nSerie principal de formatos acabados Serie ISO-A\nLos formatos acabados de la serie A se emplean para todas las categorías de artículos de papelería y de impresos, como se especifica en el capítulo 1. Estos formatos son los siguientes:\n\n\nTabla 1 – Serie principal de formatos finales (serie ISO-A)\n\n\n\nDesignación\nMedidas mm\n\n\n\n\nA0\n841 × 1189\n\n\nA1\n594 × 841\n\n\nA2\n420 × 594\n\n\nA3\n297 × 420\n\n\nA4\n210 × 297\n\n\nA5\n148 × 210\n\n\nA6\n105 × 148\n\n\nA7\n74 × 105\n\n\nA8\n52 × 74\n\n\nA9\n37 × 52\n\n\nA10\n26 × 37",
     "crumbs": [
-      "Parte 1"
+      "Introducción",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Capítulo 3</span>"
     ]
   },
   {
-    "objectID": "01-01-Titulo1.html",
-    "href": "01-01-Titulo1.html",
-    "title": "1  Capitulo 1",
-    "section": "",
-    "text": "Capitulo 1 de la parte 1",
+    "objectID": "01-03-normalizacion.html#formatos-de-papel-de-escritura",
+    "href": "01-03-normalizacion.html#formatos-de-papel-de-escritura",
+    "title": "Capítulo 3",
+    "section": "Formatos de papel de escritura",
+    "text": "Formatos de papel de escritura\nLa norma ISO que define las escalas es la ISO 216:2007. El presente capítulo es un resumen de dicha norma con ejemplos aclaratorios. Los texto en cursiva están tomados literalmente de la norma.\n\nSerie principal de formatos acabados Serie ISO-A\nLos formatos acabados de la serie A se emplean para todas las categorías de artículos de papelería y de impresos, como se especifica en el capítulo 1. Estos formatos son los siguientes:\n\n\nTabla 1 – Serie principal de formatos finales (serie ISO-A)\n\n\n\nDesignación\nMedidas mm\n\n\n\n\nA0\n841 × 1189\n\n\nA1\n594 × 841\n\n\nA2\n420 × 594\n\n\nA3\n297 × 420\n\n\nA4\n210 × 297\n\n\nA5\n148 × 210\n\n\nA6\n105 × 148\n\n\nA7\n74 × 105\n\n\nA8\n52 × 74\n\n\nA9\n37 × 52\n\n\nA10\n26 × 37\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nVer los principios generales (similitud y proporcionalidad) en la norma.",
     "crumbs": [
-      "Parte 1",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Capitulo 1</span>"
+      "Introducción",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Capítulo 3</span>"
     ]
   },
   {
-    "objectID": "01-00-part1.html",
-    "href": "01-00-part1.html",
-    "title": "Parte 1",
-    "section": "",
-    "text": "Parte 1",
+    "objectID": "01-03-normalizacion.html#formatos-hojas-dibujo",
+    "href": "01-03-normalizacion.html#formatos-hojas-dibujo",
+    "title": "Capítulo 3",
+    "section": "Formatos hojas dibujo",
+    "text": "Formatos hojas dibujo\nLa norma ISO que define las escalas es la ISO 5457:1999. El presente capítulo es un resumen de dicha norma con ejemplos aclaratorios. Los texto en cursiva están tomados literalmente de la norma.\n\nObjeto y campo de aplicación\nEn esta norma internacional se especifican los formatos y la presentación de las hojas de dibujo preimpresas que se han de utilizar para todo tipo de dibujo técnico en todos los ámbitos de la Ingeniería y la Arquitectura, incluidos los dibujos técnicos asistidos por ordenador. Esta norma internacional es igualmente aplicable a otros documentos técnicos.\n\n\nPosición de la carátula\nEn los formatos que van desde el A0 hasta el A3 (siempre en horizontal) la carátula se pondrá en la esquina inferior derecha.(//TODO: revisar porque para el formato A4 cuenta un rollo que no me entero bien. Hay que explicar que el A4 siempre va en vertical, pero que yo sepa, la carátula tambien se pone en la esquina inferior derecha).\nDe acuerdo con las norma ISO:7200 el tamaño de la carátula siempre será de la 180 mm de ancho siendo el alto variable (//TODO: revisar. Esto lo he puesto de memoria pero creo que es así.)\n\n\nMárgenes y marco\nPara los formatos que van desde A0 hasta A4 se deben dejar 10mm en el margen inferior, superior y derecho. En el margen izquierdo, por motivos de encuadernación se dejarán 20 mm, tal y como se expone en el siguiente gráfico:\n//TODO: meter una página acotando los márgenes (en A3)\n\n\nMarcas de centrado\n\n\nSistema de coordenadas\n\n\nIndicador de corte\n\n\nDesignación (//TODO:¿Esto es relevante?)",
     "crumbs": [
-      "Parte 1"
+      "Introducción",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Capítulo 3</span>"
     ]
   }
 ]

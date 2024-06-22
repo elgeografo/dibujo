@@ -1,0 +1,5 @@
+---
+title: "Capítulo 4"
+---
+
+## Proyecciones y métodos de representación recomendados para los dibujos técnicos
