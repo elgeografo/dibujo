@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.45">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Maria Jesús García García , Jose Luis Perez Benedito, and Luis Izquierdo Mesa">
+
+<title>1&nbsp; Normalización – Guía EGI-GIF</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./01-04-proyecciones.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-normalizacion.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Normalización</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Guía EGI-GIF</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-normalizacion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Normalización</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-04-proyecciones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Proyecciones y sistemas de representación</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-geometria-constructiva.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Contenido de Geometría Constructiva</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#escalas" id="toc-escalas" class="nav-link active" data-scroll-target="#escalas"><span class="header-section-number">1.1</span> Escalas</a>
+  <ul class="collapse">
+  <li><a href="#contenido" id="toc-contenido" class="nav-link" data-scroll-target="#contenido"><span class="header-section-number">1.1.1</span> Contenido</a></li>
+  <li><a href="#apuntes" id="toc-apuntes" class="nav-link" data-scroll-target="#apuntes"><span class="header-section-number">1.1.2</span> Apuntes</a></li>
+  <li><a href="#material-complementario" id="toc-material-complementario" class="nav-link" data-scroll-target="#material-complementario"><span class="header-section-number">1.1.3</span> Material complementario</a></li>
+  </ul></li>
+  <li><a href="#tipos-de-linea" id="toc-tipos-de-linea" class="nav-link" data-scroll-target="#tipos-de-linea"><span class="header-section-number">1.2</span> Tipos de linea</a>
+  <ul class="collapse">
+  <li><a href="#contenido-1" id="toc-contenido-1" class="nav-link" data-scroll-target="#contenido-1"><span class="header-section-number">1.2.1</span> Contenido</a></li>
+  <li><a href="#apuntes-1" id="toc-apuntes-1" class="nav-link" data-scroll-target="#apuntes-1"><span class="header-section-number">1.2.2</span> Apuntes</a></li>
+  <li><a href="#material-complementario-1" id="toc-material-complementario-1" class="nav-link" data-scroll-target="#material-complementario-1"><span class="header-section-number">1.2.3</span> Material complementario</a></li>
+  </ul></li>
+  <li><a href="#formatos-de-papel" id="toc-formatos-de-papel" class="nav-link" data-scroll-target="#formatos-de-papel"><span class="header-section-number">1.3</span> Formatos de papel</a>
+  <ul class="collapse">
+  <li><a href="#contenido-2" id="toc-contenido-2" class="nav-link" data-scroll-target="#contenido-2"><span class="header-section-number">1.3.1</span> Contenido</a></li>
+  <li><a href="#apuntes-2" id="toc-apuntes-2" class="nav-link" data-scroll-target="#apuntes-2"><span class="header-section-number">1.3.2</span> Apuntes</a></li>
+  <li><a href="#material-complementario-2" id="toc-material-complementario-2" class="nav-link" data-scroll-target="#material-complementario-2"><span class="header-section-number">1.3.3</span> Material complementario</a></li>
+  </ul></li>
+  <li><a href="#carátula-sello-bloque-de-títulos-o-cajetín" id="toc-carátula-sello-bloque-de-títulos-o-cajetín" class="nav-link" data-scroll-target="#carátula-sello-bloque-de-títulos-o-cajetín"><span class="header-section-number">1.4</span> Carátula, sello, bloque de títulos o cajetín</a>
+  <ul class="collapse">
+  <li><a href="#contenido-3" id="toc-contenido-3" class="nav-link" data-scroll-target="#contenido-3"><span class="header-section-number">1.4.1</span> Contenido</a></li>
+  <li><a href="#apuntes-3" id="toc-apuntes-3" class="nav-link" data-scroll-target="#apuntes-3"><span class="header-section-number">1.4.2</span> Apuntes</a></li>
+  <li><a href="#material-complementario-3" id="toc-material-complementario-3" class="nav-link" data-scroll-target="#material-complementario-3"><span class="header-section-number">1.4.3</span> Material complementario</a></li>
+  </ul></li>
+  <li><a href="#rotulación" id="toc-rotulación" class="nav-link" data-scroll-target="#rotulación"><span class="header-section-number">1.5</span> Rotulación</a>
+  <ul class="collapse">
+  <li><a href="#contenido-4" id="toc-contenido-4" class="nav-link" data-scroll-target="#contenido-4"><span class="header-section-number">1.5.1</span> Contenido</a></li>
+  <li><a href="#apuntes-4" id="toc-apuntes-4" class="nav-link" data-scroll-target="#apuntes-4"><span class="header-section-number">1.5.2</span> Apuntes</a></li>
+  <li><a href="#material-complementario-4" id="toc-material-complementario-4" class="nav-link" data-scroll-target="#material-complementario-4"><span class="header-section-number">1.5.3</span> Material complementario</a></li>
+  </ul></li>
+  <li><a href="#acotación" id="toc-acotación" class="nav-link" data-scroll-target="#acotación"><span class="header-section-number">1.6</span> Acotación</a>
+  <ul class="collapse">
+  <li><a href="#contenido-5" id="toc-contenido-5" class="nav-link" data-scroll-target="#contenido-5"><span class="header-section-number">1.6.1</span> Contenido</a></li>
+  <li><a href="#apuntes-5" id="toc-apuntes-5" class="nav-link" data-scroll-target="#apuntes-5"><span class="header-section-number">1.6.2</span> Apuntes</a></li>
+  <li><a href="#material-complementario-5" id="toc-material-complementario-5" class="nav-link" data-scroll-target="#material-complementario-5"><span class="header-section-number">1.6.3</span> Material complementario</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Normalización</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div style="font-size: 2em; font-weight: bold;  margin-bottom: 1em;background-color: white;">
+<p>Normalización: Formatos de papel, rotulación, tipos de línea, escalas y acotación</p>
+</div>
+<!-- 
+Busqueda para aenor
+https://plataforma.aenormas.aenor.com/?searchMode=my&title=3098&onlyNews=false 
+-->
+<section id="escalas" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="escalas"><span class="header-section-number">1.1</span> Escalas</h2>
+<section id="contenido" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="contenido"><span class="header-section-number">1.1.1</span> Contenido</h3>
+<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
+<p style="font-size: 1.2em; color: #333;">
+La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0013534" target="_blank">ISO 5455:1979</a>. Su contenido es el siguiente.
+</p>
+<p style="font-size: 1em; color: #333;">
+</p><ol>
+<li>
+Objeto y campo de aplicación
+</li>
+<li>
+Definiciones
+</li>
+<li>
+Designación
+</li>
+<li>
+Inscripción
+</li>
+<li>
+Escalas
+</li>
+<li>
+Dibujos a gran escala
+</li>
+</ol>
+<p></p>
+</div>
+</section>
+<section id="apuntes" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="apuntes"><span class="header-section-number">1.1.2</span> Apuntes</h3>
+<section id="objeto-y-campo-de-aplicación" class="level4" data-number="1.1.2.1">
+<h4 data-number="1.1.2.1" class="anchored" data-anchor-id="objeto-y-campo-de-aplicación"><span class="header-section-number">1.1.2.1</span> Objeto y campo de aplicación</h4>
+<p><em>Esta Norma Internacional especifica las escalas recomendadas, así como su designación para su utilización en los dibujos técnicos en todos los campos de la técnica.</em></p>
+</section>
+<section id="definiciones" class="level4" data-number="1.1.2.2">
+<h4 data-number="1.1.2.2" class="anchored" data-anchor-id="definiciones"><span class="header-section-number">1.1.2.2</span> Definiciones</h4>
+<ul>
+<li><p><strong>Escala</strong>: <em>Relación entre la medida lineal de la representación de un elemento de un objeto sobre un dibujo original y la medida lineal real del mismo elemento del objeto real.</em></p></li>
+<li><p><strong>Escala a <em>“tamaño natural”</em></strong>: <em>Escala que corresponde a la relación 1:1</em></p></li>
+<li><p><strong>Escala de ampliación</strong>: <em>Escalas que corresponden a una relación superior a 1:1. Se dice que es mayor a medida que la relación correspondiente aumenta.</em> Por ejemplo en una escala 2:1 la relación es de 2. Es decir, el objeto representado se amplía al doble.</p></li>
+<li><p><strong>Escalas de reducción</strong>: <em>Escalas que corresponden a una relación inferior a 1:1. Se dice que es menor a medida que la relación correspondiente disminuye.</em> Por ejemplo en una escala 1:2 la relación es de 0.5. Es decir, el objeto representado se reduce a la mitad.</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-03-A-escalasV2.png" class="img-fluid figure-img" alt="Figura que explica los distintos tipos de escalas."></p>
+<figcaption>Escala natural, de reducción y de ampliación.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="designación-e-inscripción" class="level4" data-number="1.1.2.3">
+<h4 data-number="1.1.2.3" class="anchored" data-anchor-id="designación-e-inscripción"><span class="header-section-number">1.1.2.3</span> Designación e inscripción</h4>
+<p>La <strong>designación</strong> completa de una escala <em>debe comprender la palabra “ESCALA” (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación</em>:</p>
+<ul>
+<li>ESCALA 1:1, para el tamaño natural.</li>
+<li>ESCALA x:1, para las escalas de ampliación.</li>
+<li>ESCALA 1:x, para las escalas de reducción.</li>
+</ul>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La notación de escala 1:1 significa que una unidad de medida en el dibujo equivale a una unidad de medida en el objeto real.</p>
+<p>El primer término representará la magnitud de la representación del objeto en el papel. El segundo término representará la magnitud objeto real.</p>
+<div style="text-align: center; font-weight: bold;">
+<p>PAPEL:REAL</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Como la escala es una relación adimensional, ambas magnitudes deben expresarse enlas mismas unidades</p>
+</div>
+</div>
+<p>Si no hay posibilidad de confusión, se puede omitir la palabra “ESCALA”.</p>
+<p>Respecto a la <strong>inscripción</strong> la norma dice <em>“La designación de la escala utilizada en el dibujo debe inscribirse en el cuadro de rotulación del dibujo.</em></p>
+<p><em>Si hay que utilizar varias escalas en un dibujo, sólo debe inscribirse la escala principal del dibujo en el cuadro de rotulación, inscribiéndose las otras escalas al lado del número de referencia de la parte considerada o al lado de la referencia de una vista (o corte) de detalle.”</em></p>
+</section>
+<section id="escalas-normalizadas" class="level4" data-number="1.1.2.4">
+<h4 data-number="1.1.2.4" class="anchored" data-anchor-id="escalas-normalizadas"><span class="header-section-number">1.1.2.4</span> Escalas normalizadas</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 41%">
+<col style="width: 14%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Categoría</th>
+<th>Escalas recomendadas</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Escalas de ampliación</td>
+<td>50:1</td>
+<td>20:1</td>
+<td>10:1</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>5:1</td>
+<td>2:1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tamaño natural</td>
+<td>1:1</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Escalas de reducción</td>
+<td>1:2</td>
+<td>1:5</td>
+<td>1:10</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>1:20</td>
+<td>1:50</td>
+<td>1:100</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>1:200</td>
+<td>1:500</td>
+<td>1:1 000</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>1:2 000</td>
+<td>1:5 000</td>
+<td>1:10 000</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="material-complementario" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="material-complementario"><span class="header-section-number">1.1.3</span> Material complementario</h3>
+<a href="https://www.deustoformacion.com/blog/diseno-arquitectonico/que-son-escalas-dibujo-tecnico  " target="_blank">Web Deusto generalidades escala </a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+En esta escueta web se explica (1) definición escala (2) tipos de escala (3) como aplicar e interpretar la escala
+</p>
+</section>
+</section>
+<section id="tipos-de-linea" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="tipos-de-linea"><span class="header-section-number">1.2</span> Tipos de linea</h2>
+<section id="contenido-1" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="contenido-1"><span class="header-section-number">1.2.1</span> Contenido</h3>
+<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
+<p style="font-size: 1.2em; color: #333;">
+La norma ISO que define los principios generales de representación. Parte 2: convenciones básicas para lineas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0070490" target="_blank">UNE-en ISO 128-2:2022</a>. Su contenido es el siguiente (en inglés).
+</p>
+<p style="font-size: 1em; color: #333;">
+</p><ol>
+<li>
+Scope
+</li>
+<li>
+Normative references
+</li>
+<li>
+Terms and definitions
+</li>
+<li>
+Types of lines
+</li>
+<li>
+Line dimensions
+</li>
+<li>
+Draughting of lines
+</li>
+<li>
+Colours
+</li>
+<li>
+Designation
+</li>
+<li>
+Basic conventions and applications for leader lines and reference lines
+</li>
+</ol>
+<p></p>
+</div>
+</section>
+<section id="apuntes-1" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="apuntes-1"><span class="header-section-number">1.2.2</span> Apuntes</h3>
+<p>Los planos deben contener dibujos claros que eviten la confusión. Las líneas normalizadas ayudan a que las zonas importantes del dibujo estén resaltadas (líneas gruesas) y otras más finas que sirvan para otros datos o referencias</p>
+<p>En este <a href="https://ibiguridt.wordpress.com/wp-content/uploads/2017/03/tipos-de-lc3adneas-normalizadas2.pdf" target="_blank">poster</a> se resumen los tipos de línea más comunes en los planos y su uso.</p>
+</section>
+<section id="material-complementario-1" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="material-complementario-1"><span class="header-section-number">1.2.3</span> Material complementario</h3>
+<a href="https://ibiguridt.wordpress.com/temas/vistas/lineas-normalizadas/" target="_blank">Web del Profesor Iñaki Biguri sobre líneas normalizadas </a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Web corta, completa y con explicaciones claras y ejemplos sobre los usos de las líneas normalizadas
+</p>
+</section>
+</section>
+<section id="formatos-de-papel" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="formatos-de-papel"><span class="header-section-number">1.3</span> Formatos de papel</h2>
+<section id="contenido-2" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="contenido-2"><span class="header-section-number">1.3.1</span> Contenido</h3>
+<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
+<p style="font-size: 1.2em; color: #333;">
+La norma ISO que define los formatos de papel es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0040991" target="_blank">UNE-EN ISO 216:2008</a>. Su contenido es el siguiente.
+</p>
+<p style="font-size: 1em; color: #333;">
+</p><ol>
+<li>
+Objeto y campo de aplicación
+</li>
+<li>
+Normas para consulta
+</li>
+<li>
+Términos y definiciones
+</li>
+<li>
+Principios generales
+</li>
+<li>
+Designación de los formatos acabados y del sentido máquina
+</li>
+<li>
+Formatos acabados
+</li>
+<li>
+Tolerancias
+</li>
+</ol>
+<p></p>
+</div>
+</section>
+<section id="apuntes-2" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="apuntes-2"><span class="header-section-number">1.3.2</span> Apuntes</h3>
+<section id="denominación-correcta-de-los-pliegos-de-papel" class="level4" data-number="1.3.2.1">
+<h4 data-number="1.3.2.1" class="anchored" data-anchor-id="denominación-correcta-de-los-pliegos-de-papel"><span class="header-section-number">1.3.2.1</span> Denominación correcta de los pliegos de papel</h4>
+<p><strong>El formato más común </strong> y que usamos todos habitualmente es el <strong>DIN A4 </strong> (201X297mm). En España se le sigue denominando “Folio” que era el anterior formato, cuyas dimensiones son 215×315 mm. De forma semejante, la clásica “cuartilla” equivaldría en los formatos normalizados al A5.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-10-formatosPapel.png" class="img-fluid figure-img" alt="Comparación del formato DIN A5 con la cuartilla."></p>
+<figcaption>Comparación del formato DIN A5 con la cuartilla.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>No hay que confundir denominaciones y hay que usar siempre que sea posible los formatos normalizados.</p>
+</section>
+<section id="obtención-de-los-diferentes-formatos-de-la-serie-a" class="level4" data-number="1.3.2.2">
+<h4 data-number="1.3.2.2" class="anchored" data-anchor-id="obtención-de-los-diferentes-formatos-de-la-serie-a"><span class="header-section-number">1.3.2.2</span> Obtención de los diferentes formatos de la serie A</h4>
+<p>Recordar las dimensiones de la serie A es muy sencillo, ya que para obtener un formato del inmediatamente más pequeño se “duplica su lado corto”.</p>
+<p>Por ejemplo, en la imagen se observa como duplicando el lado corto del A4 (que mide 210mm) se obtiene el lado largo del A3.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-11-ObtencionTamanios.png" class="img-fluid figure-img" alt="Obtención de los diferentes formatos de la serie A."></p>
+<figcaption>Obtención de los diferentes formatos de la serie A.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="posiciones-de-los-diferentes-formatos-para-planos." class="level4" data-number="1.3.2.3">
+<h4 data-number="1.3.2.3" class="anchored" data-anchor-id="posiciones-de-los-diferentes-formatos-para-planos."><span class="header-section-number">1.3.2.3</span> Posiciones de los diferentes formatos para planos.</h4>
+<p>En general, todos los formatos se utilizan en posición apaisada, es decir, si hubiese superpuesto un sistema de ejes cartesianos, la dimensión larga del formato estaría situada siempre paralela al eje x.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-12-formatos apaisados.png" class="img-fluid figure-img" alt="Posiciones de los diferentes formatos para planos."></p>
+<figcaption>Posiciones de los diferentes formatos para planos.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>El formato A4 es la excepción</strong>. En este caso, NUNCA se usa apaisado, SIEMPRE se usa en posición vertical.</p>
+<p>Esta regla no impide el máximo aprovechamiento del pliego en los casos que sea necesario, es decir, se puede girar el dibujo para que quepa dentro del formato, pero el cajetín siempre quedará en la esquina inferior derecha del lado largo y por tanto la posición del plano será apaisada, tal y como se muestra en la siguiente figura.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-13-a3_girado.png" class="img-fluid figure-img" alt="Formato A3 en posición apaisada con dibujo girado."></p>
+<figcaption>Formato A3 en posición apaisada con dibujo girado.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="material-complementario-2" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="material-complementario-2"><span class="header-section-number">1.3.3</span> Material complementario</h3>
+</section>
+</section>
+<section id="carátula-sello-bloque-de-títulos-o-cajetín" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="carátula-sello-bloque-de-títulos-o-cajetín"><span class="header-section-number">1.4</span> Carátula, sello, bloque de títulos o cajetín</h2>
+<section id="contenido-3" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="contenido-3"><span class="header-section-number">1.4.1</span> Contenido</h3>
+<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
+<p style="font-size: 1.2em; color: #333;">
+La norma ISO que define los campos de datos en bloques de títulos y en cabeceras de documentos es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0031532" target="_blank">UNE-EN ISO 7200:2004</a>. Su contenido es el siguiente.
+</p>
+<p style="font-size: 1em; color: #333;">
+</p><ol>
+<li>
+Objeto y campo de aplicación
+</li>
+<li>
+Normas para consulta
+</li>
+<li>
+Términos y definiciones
+</li>
+<li>
+Generalidades
+</li>
+<li>
+Campos de datos en el bloque de títulos
+</li>
+<li>
+Disposiciones del bloque de títulos
+</li>
+</ol>
+<p></p>
+</div>
+</section>
+<section id="apuntes-3" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="apuntes-3"><span class="header-section-number">1.4.2</span> Apuntes</h3>
+<section id="posición-del-cajetín-en-el-plano" class="level4" data-number="1.4.2.1">
+<h4 data-number="1.4.2.1" class="anchored" data-anchor-id="posición-del-cajetín-en-el-plano"><span class="header-section-number">1.4.2.1</span> Posición del cajetín en el plano</h4>
+<p>En todos los formatos, el cajetín se sitúa alineado con los márgenes en la esquina inferior derecha, tal como se muestra en la siguiente figura. En el A4, y debido precisamente a las dimensiones de su anchura el cajetín ocupa todo el espacio entre los dos márgenes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-14-posicion-cajetines.png" class="img-fluid figure-img" alt="Posición del cajetín en el plano."></p>
+<figcaption>Posición del cajetín en el plano.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="dimensión-del-cajetín" class="level4" data-number="1.4.2.2">
+<h4 data-number="1.4.2.2" class="anchored" data-anchor-id="dimensión-del-cajetín"><span class="header-section-number">1.4.2.2</span> Dimensión del cajetín</h4>
+<p>En altura es libre, en anchura, viene condicionada por lo siguiente:</p>
+<ol>
+<li>
+La información contenida en el cajetín debe estar siempre a la vista, es decir, este no se puede doblar
+</li>
+<li>
+Todos los planos de la serie se archivan doblados en formato A4
+</li>
+<li>
+Los márgenes normalizados del A4 son 20 mm+ 10mm, por tanto, la anchura del cajetín debe ser de 180 mm. (210 - 30)
+</li>
+</ol>
+</section>
+<section id="ejemplo-de-cajetín" class="level4" data-number="1.4.2.3">
+<h4 data-number="1.4.2.3" class="anchored" data-anchor-id="ejemplo-de-cajetín"><span class="header-section-number">1.4.2.3</span> Ejemplo de cajetín</h4>
+<p>No es imprescindible recordar todos los campos incluidos en la norma, ésta siempre se puede consultar. Sin embargo, es muy importante <strong>comprender bien los conceptos </strong> cuyo contenido se refleja en las casillas del cajetín <strong>y cómo se aplican</strong> según el caso concreto de un proyecto dado.</p>
+<p>El cajetín de un plano es su documento de identidad.</p>
+<p>El cajetín es único para cada proyecto y debe ser idéntico en todos los planos del mismo proyecto. <strong>No todos los campos son imprescindibles en todos los proyectos</strong>. En la siguiente figura se aclaran algunos de los campos más importantes.</p>
+<p><i><strong>Caso:</strong> se trata de un proyecto para construir una explanación del terreno en la que situar un observatorio de estrellas. El Ayuntamiento de la Raposa quiere realizar el proyecto y encarga la redacción del mismo a la empresa consultora Soluciones Territoriales S.L. En el plano se han dibujado los movimientos de tierra necesarios para construir la explanación y un perfil del terreno para visualizarlo.</i></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-15-cajetin1.png" class="img-fluid figure-img" alt="Elementos fundamentales de un cajetín."></p>
+<figcaption>Elementos fundamentales de un cajetín.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La norma no obliga a que aparezcan en el cajetín la <string>escala</string> ni las <string>unidades de cota</string>, sin embargo, ES IMPRESCINDIBLE que la escala esté presente en el plano, hasta el punto de que un dibujo que no tiene escala no puede ser un plano. También si hay dibujos acotados en el plano, es necesario que aparezca la unidad en la que están dichas cotas.</p>
+<p>Por eso, para <string>no olvidar</string> estos dos conceptos tan importantes, recomendamos se incluyan en el cajetín.</p>
+</section>
+<section id="otros-ejemplos-de-cajetín" class="level4" data-number="1.4.2.4">
+<h4 data-number="1.4.2.4" class="anchored" data-anchor-id="otros-ejemplos-de-cajetín"><span class="header-section-number">1.4.2.4</span> Otros ejemplos de cajetín</h4>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-16-cajetin2.png" class="img-fluid figure-img" alt="Ejemplo académico de cajetín para un carro portacables."></p>
+<figcaption>Ejemplo académico de cajetín para un carro portacables.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-17-cajetin3.png" class="img-fluid figure-img" alt="Ejemplo de cajetín en un proyecto fin de carrera. Ingeniero de Montes."></p>
+<figcaption>Ejemplo de cajetín en un proyecto fin de carrera. Ingeniero de Montes.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="material-complementario-3" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="material-complementario-3"><span class="header-section-number">1.4.3</span> Material complementario</h3>
+</section>
+</section>
+<section id="rotulación" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="rotulación"><span class="header-section-number">1.5</span> Rotulación</h2>
+<section id="contenido-4" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="contenido-4"><span class="header-section-number">1.5.1</span> Contenido</h3>
+<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
+<p style="font-size: 1.2em; color: #333;">
+La norma ISO que define los aspectos generales de la rotulación es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0054594" target="_blank">ISO 3098-1</a>. Su contenido es el siguiente (en Inglés).
+</p>
+<p style="font-size: 1em; color: #333;">
+</p><ol>
+<li>
+Scope
+</li>
+<li>
+Normative references
+</li>
+<li>
+Terms and definitions
+</li>
+<li>
+General requirements
+</li>
+<li>
+Dimensions
+</li>
+<li>
+Designation
+</li>
+</ol>
+<p></p>
+</div>
+</section>
+<section id="apuntes-4" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="apuntes-4"><span class="header-section-number">1.5.2</span> Apuntes</h3>
+<p>Lo más importante de la rotulación es que produzca letras legibles y claras que ayuden a la correcta interpretación del plano.</p>
+<p>Es muy importante que el tamaño de la letra no sea demasiado pequeño (inferior a 2,3 mm. no se lee) ni demasiado grande (superior a 5 mm. ocupa mucho). En los planos raramente se usan tamaños superiores a 7 mm.</p>
+<p>Parece demostrado que los tipos de letra con “ serif” (con rabillos) ayudan a la lectura rápida de textos largos, ya que el lector solo se fija en la parte superior de la línea, esto se debe a los <a href="https://es.wikipedia.org/wiki/Psicolog%C3%ADa_de_la_Gestalt#La_escuela_de_la_Gestalt" target="_blank">principios de la Gestalt</a> que permiten al cerebro “completar” la forma. Precisamente este aspecto se ha usado por investigadores del Australia’s Royal Melbourne Institute of Technology para dificultar la lectura y hacer que el lector recuerde más información del texto leído.</p>
+<p>Sin embargo, en el caso de los planos interesan letras sencillas, sin adornos para aumentar la claridad y legibilidad, en general “sans serif”.</p>
+<p>Por otra parte, si las letras están un poco separadas aumenta la legibilidad, pero hay que llegar a un compromiso, ya que esos textos “ocupan mucho espacio” para una altura dada, y en ocasiones eso no interesa en un plano, como p.e. en los <strong>textos de acotación</strong>, que es mejor que sean estilizados.</p>
+</section>
+<section id="material-complementario-4" class="level3" data-number="1.5.3">
+<h3 data-number="1.5.3" class="anchored" data-anchor-id="material-complementario-4"><span class="header-section-number">1.5.3</span> Material complementario</h3>
+<a href="https://magentag.wordpress.com/wp-content/uploads/2018/09/rotulacion.pdf " target="_blank">Resumen rotulación IES Gómez Pereira </a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Se trata de un pdf de una sola página con los contenidos más relevantes de la rotulación.
+</p>
+<a href=" " target="_blank">Con la tipografía ‘Sans Forgetica’ es más fácil que recuerdes lo que lees </a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Artículo divulgativo que ilustra aspectos de la claridad y legibilidad de una tipografía y describe un experimento científico asociado con ello.
+</p>
+<a href="https://www.vistaprint.es/hub/analisis-de-diseno-12-fuentes-mas-faciles-de-leer  " target="_blank">Análisis de diseño: Las 12 fuentes más fáciles de leer </a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Web corta que analiza porque unas tipografías son más claras o legibles que otras.
+</p>
+</section>
+</section>
+<section id="acotación" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="acotación"><span class="header-section-number">1.6</span> Acotación</h2>
+<section id="contenido-5" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="contenido-5"><span class="header-section-number">1.6.1</span> Contenido</h3>
+<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
+<p style="font-size: 1.2em; color: #333;">
+La norma ISO que define los principios generales de la acotación es es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0000034" target="_blank">ISO 1039:1994</a>. Su contenido es el siguiente (Revisar. Pone que está anulada por una del 2019 pero no la encuentro).
+</p>
+<p style="font-size: 1em; color: #333;">
+</p><ol>
+<li>
+Objeto y campo de aplicación
+</li>
+<li>
+Normas para consulta
+</li>
+<li>
+Principios generales
+</li>
+<li>
+Método de acotación
+</li>
+<li>
+Disposiciones e inscripción de las cotas
+</li>
+<li>
+Indicaciones especiales
+</li>
+<li>
+Indicación de niveles
+</li>
+<li>
+Correspondencia con otras normas
+</li>
+</ol>
+<p></p>
+</div>
+</section>
+<section id="apuntes-5" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="apuntes-5"><span class="header-section-number">1.6.2</span> Apuntes</h3>
+<p><strong>Toda figura</strong>, objeto o pieza, <strong>queda definida</strong> por aquellos elementos que definen su funcionamiento o que, simplemente, determinan su forma geométrica.</p>
+<p>Las cotas se pueden clasificar <strong>en función de su importancia</strong>: (1) Funcionales (2) No funcionales y (3) Auxiliares</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-18-acotacion1.png" class="img-fluid figure-img" alt="Clasificación de las cotas en función de su importancia."></p>
+<figcaption>Clasificación de las cotas en función de su importancia.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Otra clasificación es en <strong>función de su cometido en el plano</strong>: (1) Cotas de dimensión y (2) cotas de situación o posición.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/01-19-acotacion2.png" class="img-fluid figure-img" alt="Clasificación de las cotas en función de su contenido."></p>
+<figcaption>Clasificación de las cotas en función de su contenido.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Las <strong>cotas de situación (S)</strong> determinan la posición de los elementos de la pieza, las <strong>cotas de dimensión (D)</strong> definen el tamaño de cada parte de la pieza</p>
+<p>Comprender estos tipos de cotas y cómo se aplican ayuda a definir adecuadamente los objetos con la acotación.</p>
+</section>
+<section id="material-complementario-5" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3" class="anchored" data-anchor-id="material-complementario-5"><span class="header-section-number">1.6.3</span> Material complementario</h3>
+<p><strong> Video de referencia. Normas de acotación básicas (5 minutos) <span>★</span><span>★</span><span>★</span></strong></p>
+<div class="cell">
+<iframe width="750" height="422" src="https://www.youtube.com/embed/YCssCLAe-80" frameborder="0" allowfullscreen="">
+</iframe>
+</div>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+</p><ol>
+<li>
+0:10 Normas generales de acotación
+</li>
+<li>
+0:25 Elementos de acotación
+</li>
+<li>
+1:00 Acotación de arístas
+</li>
+<li>
+3:30 Acotación de diámetros
+</li>
+<li>
+4:25 Acotación de radios
+</li>
+</ol>
+<p></p>
+<p><strong> Vídeo “Arturo Geometría” Acotación (20’17’’) <span>★</span><span>★</span><span>★</span> </strong></p>
+<div class="cell">
+<iframe width="750" height="422" src="https://www.youtube.com/embed/v1vjHB60c8Q?si=5sLVz52jU5zO1Y5A" frameborder="0" allowfullscreen="">
+</iframe>
+</div>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Vídeo completo con explicaciones verbales sobre las normas básicas de acotación
+</p>
+<a href="https://www.youtube.com/playlist?list=PLgZEwwjOo0OpdEYD2QsYiaEVQe7c7S0Dw" target="_blank">Web de youtube con 8 vídeos sobre diversos aspectos y casos de acotación </a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Tratan de casos algo más complejos, pero muy útiles para ampliar conocimientos sobre acotación.
+</p>
+<a href="https://ibiguridt.wordpress.com/temas/acotacion/" target="_blank">Web sobre acotación del profesor Iñaki Biguri (recomendada) <span>★</span><span>★</span><span>★</span></a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Se trata de una web completa y bien ordenada para estudiar diversos aspectos de la acotación normalizada.
+</p>
+<a href="https://edea.juntadeandalucia.es/bancorecursos/items/05714c84-d536-4abd-8d25-56e702bd0aa1/1/viewscorm.jsp?.vi=file  " target="_blank">Web sobre acotación (nivel 1º Bachillerato) Junta Andalucía </a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Se trata de una web para el nivel básico de dibujo de 1º de Bachillerato.
+</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Prefacio">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Prefacio</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./01-04-proyecciones.html" class="pagination-link" aria-label="Proyecciones y sistemas de representación">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Proyecciones y sistemas de representación</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
