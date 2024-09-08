@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isometric Axes with D3.js</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <svg id="isometricAxes" width="600" height="400"></svg>
+
+    <script>
+        const svg = d3.select("#isometricAxes");
+        const width = +svg.attr("width");
+        const height = +svg.attr("height");
+
+        // Centro del gráfico
+        const centerX = width / 2;
+        const centerY = height / 2;
+
+        // Escalas para los ejes
+        const axisLength = 100;
+
+        // Proyección isométrica (ángulos de 30 y 150 grados)
+        const isoX = d3.scaleLinear()
+            .domain([0, 1])
+            .range([0, Math.cos(Math.PI / 6) * axisLength]);
+
+        const isoY = d3.scaleLinear()
+            .domain([0, 1])
+            .range([0, -Math.sin(Math.PI / 6) * axisLength]);
+
+        const isoZ = d3.scaleLinear()
+            .domain([0, 1])
+            .range([0, -axisLength]);
+
+        // Crear los ejes en isométrico
+        svg.append("line")
+            .attr("x1", centerX)
+            .attr("y1", centerY)
+            .attr("x2", centerX + isoX(1))
+            .attr("y2", centerY + isoY(1))
+            .attr("stroke", "red")
+            .attr("stroke-width", 2);
+
+        svg.append("line")
+            .attr("x1", centerX)
+            .attr("y1", centerY)
+            .attr("x2", centerX - isoX(1))
+            .attr("y2", centerY + isoY(1))
+            .attr("stroke", "green")
+            .attr("stroke-width", 2);
+
+        svg.append("line")
+            .attr("x1", centerX)
+            .attr("y1", centerY)
+            .attr("x2", centerX)
+            .attr("y2", centerY + isoZ(1))
+            .attr("stroke", "blue")
+            .attr("stroke-width", 2);
+
+        // Añadir etiquetas de los ejes
+        svg.append("text")
+            .attr("x", centerX + isoX(1) + 5)
+            .attr("y", centerY + isoY(1))
+            .text("X")
+            .attr("fill", "red");
+
+        svg.append("text")
+            .attr("x", centerX - isoX(1) - 15)
+            .attr("y", centerY + isoY(1))
+            .text("Y")
+            .attr("fill", "green");
+
+        svg.append("text")
+            .attr("x", centerX + 5)
+            .attr("y", centerY + isoZ(1) - 5)
+            .text("Z")
+            .attr("fill", "blue");
+    </script>
+</body>
+</html>

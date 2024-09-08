@@ -2,23 +2,31 @@ project:
   type: book
 
 book:
-  title: "¿Qué título le ponemos a esto?"
-  author: "Norah Jones"
-  date: "6/18/2024"
+  title: "Guía EGI-GIF"
+  author: "María Jesús García García <br>mariajesus.garcia.garcia@upm.es <br><br> Jose Luis Perez Benedito <br>joseluis.perez@upm.es <br> <br> Carolina Echavarría Caballero <br>carolina.echavarria@upm.es> <br><br> Luis Izquierdo Mesa <br>luis.izquierdo@upm.es <br><br> Dpto de Ingeniería y Gestión Forestal y Ambiental <br>E.T.S.I. Montes, Forestal y del Medio Natural<br>Universidad Politécnica de Madrid"
+  date: "9/8/2024"
   chapters:
-    - part: "Conocimientos previos"
-      chapters: 
-        - 00-01-conocimientos-previos.qmd
-    - part: "Introducción"
-      chapters:
-        - 01-01-instrumentos.qmd
-        - 01-02-lenguaje.qmd
-        - 01-03-normalizacion.qmd
-        - 01-04-proyecciones.qmd
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+    - 01-normalizacion.qmd
+    #- 02-proyecciones.qmd
+    - 01-04-proyecciones.qmd
+    - 03-geometria-constructiva.qmd
+    # - part: "Conocimientos previos"
+    #   chapters: 
+    #     - 00-01-conocimientos-previos.qmd
+    # - part: "Introducción"
+    #   chapters:
+    #     - 01-01-instrumentos.qmd
+    #     - 01-02-lenguaje.qmd
+    #     - 01-03-normalizacion.qmd
+    #     - 01-04-proyecciones.qmd
+    #     #- tricks/010-cuadradoFacil.qmd
+    # #- part: "Sistema Diédrico"
+    
+    
+    #- intro.qmd
+    #- summary.qmd
+    #- references.qmd
 
 bibliography: references.bib
 
@@ -28,12 +36,14 @@ format:
       - cosmo
       - r4ds.scss
     code-link: true
-    number-sections: false
+    number-sections: true
 
-    author-meta: "Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund"
+    author-meta: "Maria Jesús García García , Jose Luis Perez Benedito, and Luis Izquierdo Mesa"
     #include-in-header: "plausible.html"
     callout-appearance: simple
 
+    # include-in-header: bootstrap-includes.html
 editor: visual
+
 
 

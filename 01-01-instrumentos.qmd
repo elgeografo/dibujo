@@ -1,5 +1,5 @@
 ---
-title: "Capítulo 1"
+title: "Instrumentos del dibujo técnico"
 ---
 <div style="font-size: 2em; font-weight: bold;  margin-bottom: 1em;background-color: white;">
     Instrumentos de dibujo técnico

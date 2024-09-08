@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isometric Axes with Babylon.js</title>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <style>
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        #angleDisplay {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="renderCanvas" style="width: 100%; height: 100vh;"></canvas>
+
+    <div id="controls">
+        <label for="alphaInput">Alpha (Horizontal): </label>
+        <input type="number" id="alphaInput" step="0.1" value="45">°
+        <br>
+        <label for="betaInput">Beta (Vertical): </label>
+        <input type="number" id="betaInput" step="0.1" value="35.26">°
+        <br><br>
+        <button id="applyAngles">Apply Angles</button>
+    </div>
+
+    <div id="angleDisplay">
+        <p id="angleXY">Angle between X and Y: 0°</p>
+        <p id="angleXZ">Angle between X and Z: 0°</p>
+        <p id="angleYZ">Angle between Y and Z: 0°</p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById("renderCanvas");
+        const engine = new BABYLON.Engine(canvas, true);
+        const scene = new BABYLON.Scene(engine);
+
+        const camera = new BABYLON.ArcRotateCamera("camera1", BABYLON.Tools.ToRadians(45), BABYLON.Tools.ToRadians(35.26), 10, BABYLON.Vector3.Zero(), scene);
+        camera.attachControl(canvas, true);
+        camera.mode = BABYLON.Camera.ORTHOGRAPHIC_CAMERA;
+
+        let aspectRatio = engine.getAspectRatio(camera);
+        let size = 5;
+        camera.orthoLeft = -size * aspectRatio;
+        camera.orthoRight = size * aspectRatio;
+        camera.orthoTop = size;
+        camera.orthoBottom = -size;
+
+        const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0), scene);
+        light.intensity = 0.7;
+
+        const createAxis = (name, start, end, color) => {
+            const axis = BABYLON.MeshBuilder.CreateLines(name, {
+                points: [start, end],
+            }, scene);
+            axis.color = color;
+        };
+
+        createAxis("axisX", new BABYLON.Vector3(0, 0, 0), new BABYLON.Vector3(5, 0, 0), BABYLON.Color3.Red());
+        createAxis("axisY", new BABYLON.Vector3(0, 0, 0), new BABYLON.Vector3(0, 5, 0), BABYLON.Color3.Green());
+        createAxis("axisZ", new BABYLON.Vector3(0, 0, 0), new BABYLON.Vector3(0, 0, 5), BABYLON.Color3.Blue());
+
+        const createLabel = (text, position) => {
+            const plane = BABYLON.MeshBuilder.CreatePlane("label", {size: 0.5}, scene);
+            plane.position = position;
+
+            const dynamicTexture = new BABYLON.DynamicTexture("dynamicTexture", {width: 100, height: 50}, scene);
+            dynamicTexture.drawText(text, 10, 40, "bold 36px Arial", "white", "transparent", true);
+
+            const labelMaterial = new BABYLON.StandardMaterial("labelMat", scene);
+            labelMaterial.diffuseTexture = dynamicTexture;
+            labelMaterial.emissiveColor = new BABYLON.Color3(1, 1, 1);
+            plane.material = labelMaterial;
+
+            plane.billboardMode = BABYLON.Mesh.BILLBOARDMODE_ALL;
+        };
+
+        createLabel("X", new BABYLON.Vector3(5.5, 0, 0));
+        createLabel("Y", new BABYLON.Vector3(0, 5.5, 0));
+        createLabel("Z", new BABYLON.Vector3(0, 0, 5.5));
+
+        const calculateProjectedAngles = () => {
+            const project = (vector) => {
+                const result = BABYLON.Vector3.Project(
+                    vector,
+                    BABYLON.Matrix.Identity(),
+                    scene.getTransformMatrix(),
+                    camera.viewport.toGlobal(engine.getRenderWidth(), engine.getRenderHeight())
+                );
+                return new BABYLON.Vector2(result.x, result.y);
+            };
+
+            const origin = project(new BABYLON.Vector3(0, 0, 0));
+            const projectedX = project(new BABYLON.Vector3(5, 0, 0)).subtract(origin);
+            const projectedY = project(new BABYLON.Vector3(0, 5, 0)).subtract(origin);
+            const projectedZ = project(new BABYLON.Vector3(0, 0, 5)).subtract(origin);
+
+            const angleBetween = (v1, v2) => {
+                const dotProduct = v1.x * v2.x + v1.y * v2.y;
+                const magnitudeV1 = Math.sqrt(v1.x * v1.x + v1.y * v1.y);
+                const magnitudeV2 = Math.sqrt(v2.x * v2.x + v2.y * v2.y);
+                return Math.acos(dotProduct / (magnitudeV1 * magnitudeV2)) * (180 / Math.PI);
+            };
+
+            const angleXY = 180 - angleBetween(projectedX, projectedY);
+            const angleXZ = 180 - angleBetween(projectedX, projectedZ);
+            const angleYZ = 180 - angleBetween(projectedY, projectedZ);
+
+            document.getElementById("angleXY").textContent = `Angle between X and Y: ${angleXY.toFixed(2)}°`;
+            document.getElementById("angleXZ").textContent = `Angle between X and Z: ${angleXZ.toFixed(2)}°`;
+            document.getElementById("angleYZ").textContent = `Angle between Y and Z: ${angleYZ.toFixed(2)}°`;
+        };
+
+        const applyAngles = () => {
+            const alpha = parseFloat(document.getElementById("alphaInput").value) || 45;
+            const beta = parseFloat(document.getElementById("betaInput").value) || 35.26;
+
+            camera.alpha = BABYLON.Tools.ToRadians(alpha);
+            camera.beta = BABYLON.Tools.ToRadians(beta);
+
+            calculateProjectedAngles();
+        };
+
+        document.getElementById("alphaInput").addEventListener("input", applyAngles);
+        document.getElementById("betaInput").addEventListener("input", applyAngles);
+
+        scene.registerBeforeRender(() => {
+            calculateProjectedAngles();
+        });
+
+        engine.runRenderLoop(() => {
+            scene.render();
+        });
+
+        window.addEventListener("resize", function () {
+            engine.resize();
+        });
+    </script>
+</body>
+</html>

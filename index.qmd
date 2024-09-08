@@ -1,5 +1,8 @@
-# Preface {.unnumbered}
+# Prefacio {.unnumbered}
 
-This is a Quarto book.
+GUÍA EGI-GIF<br>
+Expresión Gráfica de la Ingeniería. Grado en la Ingeniería Forestal
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+> Esta guía tiene referencias constantes  a la norma UNE. Para su consulta es imprescindible que el alumno esté conectado a la vpn de la UPM
+
+> Esta guía está en permanente actualización y por tanto sujeta a cambios. Se ruega revisar la fecha de actualización.

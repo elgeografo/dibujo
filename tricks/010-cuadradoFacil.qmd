@@ -1,0 +1,42 @@
+<div class="card" style="border: 1px solid #ccc; border-radius: 8px; padding: 16px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 20px auto;">
+
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto"><div class="fw-bold">Activamos el Modo ortho</div>Activamos el modo
+    ortho para dibujar con ángulos rectos. ORTHOMODE = 1 (con cero se desactiva) 
+    </div>
+    <span class="badge bg-primary rounded-pill">orthomode</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto"><div class="fw-bold">Dibujamos cuadrado</div>Dibujamos cuadrado
+    a distancias fijas</div>
+    <span class="badge bg-primary rounded-pill">polyline</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto"><div class="fw-bold">Extruimos el cuadrado</div>Extruimos el cuadrado para convertilo en cubo</div>
+    <span class="badge bg-primary rounded-pill">extrude</span>
+  </li>
+</ol>
+
+<div>
+  <button class="btn btn-primary" onclick="showVideo()">Mostrar Video</button>
+  <button class="btn btn-danger" onclick="hideVideo()">Ocultar Video</button>
+</div>
+<img id="image1" src="../images/imovie/010-easyCube.webp" style="display:none; width:100%;" alt="Imagen 1">
+
+<script>
+  function showVideo() {
+     const img = document.getElementById('image1');
+    img.style.display = 'none';  // Ocultamos la imagen
+    img.src = '';  // Reseteamos la src temporalmente
+    setTimeout(() => {
+        img.src = '../images/imovie/010-easyCube.webp';  // Volvemos a asignar la src
+        img.style.display = 'block';  // Mostramos la imagen nuevamente
+    }, 50);  // Esperamos un breve momento antes de mostrarla
+  }
+
+  function hideVideo() {
+    document.getElementById('image1').style.display = 'none';
+  }
+</script>
+</div>

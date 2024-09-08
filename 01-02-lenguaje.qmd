@@ -1,5 +1,5 @@
 ---
-title: "Capítulo 2"
+title: "La expresión gráfica como lenguaje"
 ---
 
 # La expresión gráfica como lenguaje de la técnica

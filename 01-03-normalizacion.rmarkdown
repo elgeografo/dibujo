@@ -1,0 +1,444 @@
+---
+title: "Normalización"
+---
+
+
+
+
+
+<div style="font-size: 2em; font-weight: bold;  margin-bottom: 1em;background-color: white;">
+   Normalización: Formatos de papel, rotulación, tipos de línea, escalas y acotación
+</div>
+
+## Escalas
+La norma ISO que define las escalas es la [ISO 5455:1979](https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/11381255/mod_folder/content/0/Escalas%20ISO%205455-1979.pdf?forcedownload=1). El presente capítulo es un resumen de dicha norma con ejemplos aclaratorios. Los texto en cursiva están tomados literalmente de la norma. 
+
+### Objeto y campo de aplicación
+_Esta Norma Internacional especifica las escalas recomendadas, así como su designación para su utilización en los dibujos técnicos en todos los campos de la técnica._
+
+### Definiciones
+
+* **Escala**: _Relación entre la medida lineal de la representación de un elemento de un objeto sobre un dibujo original y la medida lineal real del mismo elemento del objeto real._
+
+* **Escala a _"tamaño natural"_**: _Escala que corresponde a la relación 1:1_
+
+* **Escala de ampliación**: _Escalas que corresponden a una relación superior a 1:1. Se dice que es mayor a medida que la relación correspondiente aumenta._ Por ejemplo en una escala 2:1 la relación es de 2. Es decir, el objeto representado se amplía al doble.
+
+* **Escalas de reducción**: _Escalas que corresponden a una relación inferior a 1:1. Se dice que es menor a medida que la relación correspondiente disminuye._ Por ejemplo en una escala 1:2 la relación es de 0.5. Es decir, el objeto representado se reduce a la mitad.
+
+
+
+
+
+```{r}
+#| label: image-escalas 
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Escala natural, de reducción y de ampliación.
+#| fig-alt: |
+#|   Figura que explica los distintos tipos de escalas.
+
+knitr::include_graphics("images/01-03-A-escalas.png", dpi = 270)
+```
+
+
+
+
+
+
+### Designación e inscripción
+La **designación** completa de una escala _debe comprender la palabra "ESCALA" (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación_:
+
+* ESCALA 1:1, para el tamaño natural.
+* ESCALA x:1, para las escalas de ampliación.
+* ESCALA 1:x, para las escalas de reducción.
+
+::: {.callout-note}
+## Nota
+La notación de escala 1:1 significa que una unidad de medida en el dibujo equivale a una unidad de medida en el objeto real.
+
+El primer término representará la magnitud de la representación del objeto en el papel. El segundo término representará la magnitud objeto real.
+
+<div style="text-align: center; font-weight: bold;">
+  PAPEL:REAL
+</div>
+
+:::
+
+::: {.callout-note}
+## Nota
+Como la escala es una relación adimensional, ambas magnitudes deben expresarse enlas mismas unidades
+
+:::
+
+Si no hay posibilidad de confusión, se puede omitir la palabra "ESCALA".
+
+Respecto a la **inscripción** la norma dice _"La designación de la escala utilizada en el dibujo debe inscribirse en el cuadro de rotulación del dibujo._
+
+_Si hay que utilizar varias escalas en un dibujo, sólo debe inscribirse la escala principal del dibujo en el cuadro de rotulación, inscribiéndose las otras escalas al lado del número de referencia de la parte considerada o al lado de la referencia de una vista (o corte) de detalle."_
+
+### Escalas normalizadas
+
+| Categoría                | Escalas recomendadas            |            |          |
+|--------------------------|----------------------------------|------------|----------|
+| Escalas de ampliación    | 50:1                             | 20:1       | 10:1     |
+|                          | 5:1                              | 2:1        |          |
+| <hr>                     | <hr>                             | <hr>       | <hr>     |
+| Tamaño natural           | 1:1                              |            |          |
+| <hr>                     | <hr>                             | <hr>       | <hr>     |
+| Escalas de reducción     | 1:2                              | 1:5        | 1:10     |
+|                          | 1:20                             | 1:50       | 1:100    |
+|                          | 1:200                            | 1:500      | 1:1 000  |
+|                          | 1:2 000                          | 1:5 000    | 1:10 000 |
+
+
+## Tipos de linea
+
+Encontramos información sobre lineas en la Norma Española [UNE 1-032-82](https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/11381254/mod_folder/content/0/Nueva%20carpeta/Principios_generales_UNE_1032_1982.pdf?forcedownload=1) (Diciembre 1982. Principios generales de Representación. Capítulo 3. Lineas). Posteriormente se redacta la Norma [UNE-EN ISO 128-20](https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/11381254/mod_folder/content/0/Nueva%20carpeta/Lineas%20Principios_generales_UNE-EN_ISO_128-20_2002.pdf?forcedownload=1) (Junio 2002. Convenciones generales para lineas). Esta última norma anula cualquier otra norma técnnicamente divergente publicada con anterioridad a la misma. Será esta última la que tomaremos como referencia.
+
+A continuación se expone un índice resumido de la Norma. Se aconseja se revise consultando el link arriba expuesto:
+
+1. Objeto y campo de aplicación.
+2. Definciones: qué es una linea, un elemento de linea y un segmento de linea.
+3. Tipos de líneas:
+    * Tipos Básicos (continua, discontinua, linea de puntos, etc). Ver tabla en la Norma
+    * Variaciones de los tipos básicos (por ejemplo, linea ondulada uniforme continua)
+    * Combinación de lineas de la misma logitud.
+      * Disposición de dos o más lineas paralelas entre si
+      * Disposición de dos lineas de tipos diferentes
+      * Disposición de dos lineas continuas paralelas entre sí con elementos de unión que se repitena intervalos regulares
+      * Trazado de elementos gráficos geométricos que se repiten a intervalos regulares asociados a líneas continuas
+4. Dimensiones de las lineas
+    * Ancho de línea: definiendo unas medidas concretas y justificando la razón común que define la serie con esas medidas concretas
+    * Desviaciones en el ancho de la línea: la norma permite desviaciones con tal de que sea posible diferenciar entre dos líneas adyacentes el ancho. Define cómo hacerlo
+    * Configuración de la líneas: define el ancho de puntos, huecos, rayas y espacios para los dibujos a mano
+5. Dibujo de lineas
+    * Espaciado: por lo general el espaciado entre lineas paralelas no será inferior a 0.7 mm
+    * Uniones:
+      * Tipos: define como deben de ser la uniones para lineas rayadas y de puntos
+      * Representación: //TODO no entiendo lo que quiere decir la norma
+    * Ubicación de una segunda linea
+6. Colores: en general la norma aconseja negro o blanco, dependiendo del fondo, aunque tambien se pueden utilizar otros colores normalizados
+
+## Formatos de papel
+La norma ISO que define las escalas es la [ISO 216:2007](https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/11381255/mod_folder/content/0/Formatos%20de%20papel%20escritura%20ISO%20216_ES.pdf?forcedownload=1). El presente capítulo es un resumen de dicha norma con ejemplos aclaratorios. Los texto en cursiva están tomados literalmente de la norma.
+
+### Serie principal de formatos acabados Serie ISO-A
+
+_Los formatos acabados de la serie A se emplean para todas las categorías de artículos de papelería y de impresos, como se especifica en el capítulo 1. Estos formatos son los siguientes:_
+
+### Tabla 1 – Serie principal de formatos finales (serie ISO-A)
+
+| Designación | Medidas mm   |
+|-------------|--------------|
+| A0          | 841 × 1189   |
+| A1          | 594 × 841    |
+| A2          | 420 × 594    |
+| **A3**          | **297 × 420**    |
+| **A4**          | **210 × 297**    |
+| A5          | 148 × 210    |
+| A6          | 105 × 148    |
+| A7          | 74 × 105     |
+| A8          | 52 × 74      |
+| A9          | 37 × 52      |
+| A10         | 26 × 37      |
+
+::: {.callout-note}
+## Nota
+Ver los principios generales (similitud y proporcionalidad) en la norma.
+
+:::
+
+## Hojas de dibujo
+
+La norma ISO que define las escalas es la [ISO 5457:1999](https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/11381255/mod_folder/content/0/Formatos%20Hojas%20de%20Dibujo%20ISO%205457_ES.pdf?forcedownload=1). El presente capítulo es un resumen de dicha norma con ejemplos aclaratorios. Los texto en cursiva están tomados literalmente de la norma.
+
+### Objeto y campo de aplicación
+
+_En esta norma internacional se especifican los formatos y la presentación de las hojas de dibujo preimpresas que se han de utilizar para todo tipo de dibujo técnico en todos los ámbitos de la Ingeniería y la Arquitectura, incluidos los dibujos técnicos asistidos por ordenador. Esta norma internacional es igualmente aplicable a otros documentos técnicos._
+
+
+### Posición de la carátula
+
+En los formatos que van desde el A0 hasta el A3 (siempre en horizontal) la carátula se pondrá en la esquina inferior derecha.(//TODO: revisar porque para el formato A4 cuenta un rollo que no me entero bien. Hay que explicar que el A4 siempre va en vertical, pero que yo sepa, la carátula tambien se pone en la esquina inferior derecha).
+
+De acuerdo con las norma ISO:7200 el tamaño de la carátula siempre será de la 180 mm de ancho siendo el alto variable (//TODO: revisar. Esto lo he puesto de memoria pero creo que es así.)
+
+### Márgenes y marco
+
+Para los formatos que van desde A0 hasta A4 se deben dejar 10mm en el margen inferior, superior y derecho. En el margen izquierdo, por motivos de encuadernación se dejarán 20 mm, tal y como se expone en el siguiente gráfico:
+
+//TODO: meter una página acotando los márgenes (en A3)
+
+### Marcas de centrado
+
+### Sistema de coordenadas
+
+### Indicador de corte
+
+### Designación (//TODO:¿Esto es relevante?)
+
+## Cajetín
+
+//TODO: no encuentro una referencia exacta con cajetines. Consultar no MJ
+
+## Rotulación
+
+En la realización de dibujos técnicos se debe cuidar la escritura de todo tipo de datos e indicaciones, de manera que éstas sean claras y legibles, para evitar cualquier posible confusión.
+La norma [UNE-EN ISO 3098-Parte 0](https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/11381254/mod_folder/content/0/Nueva%20carpeta/Escritura%20Requisitos_Generales_UNE-EN_ISO_3098-0_1998.pdf?forcedownload=1), especifica los requisitos generales de escritura que deben aplicarse en el campo de la documentación técnica de productos y, en particular, a los dibujos técnicos. 
+Comprende los principios convencionales básicos, así como las reglas relativas a la escritura al utilizar las siguientes técnicas: escritura a mano alzada, plantillas de rotular, calcomanías y trazadores.
+
+A continuación se expone un índice resumido de la Norma. Se aconseja se revise consultando el link arriba expuesto:
+
+1. Objeto y campo de aplicación: arriba expuesto
+2. Normas para la consulta
+3. Definiciones:  Define linea central, juego de caracteres gráficos y el concepto de escritura
+4. Requisitos generales
+5. Dimensiones: define y describe:
+    * Dimensión nominal
+    * Situación de las lineas centrales
+    * Gama de dimensiones nominales
+    * Los tipos de escritura
+    * Textos subrayados o sobreayudados
+6. Designación: designación de las escrituras tipos A y B //TODO. No entiendo.
+
+## Acotación
+
+La norma UNE que define la acotación es la [UNE 1-039-94](https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/11381254/mod_folder/content/0/Nueva%20carpeta/acotacion_UNE_1039_1994.pdf?forcedownload=1). A continuación se expone un índice resumido de la Norma. Se aconseja se revise consultando el link arriba expuesto:
+
+1. Objeto y campo de aplicación
+2. Normas para consulta. Remite a [UNE 1-032](https://moodle.upm.es/titulaciones/oficiales/pluginfile.php/11381254/mod_folder/content/0/Nueva%20carpeta/Principios_generales_UNE_1032_1982.pdf?forcedownload=1) a la que hará referencia varias veces.
+3. Principios generales: define cota, cota funcional, cota no funcional y cota auxiliar, además de sus campos de aplicación
+4. Método de acotación: Define los elementos de acotación que son la línea auxiliar de cota, la linea de cota, las líneas de referencia, los extremos de la línea de cota, la indicación de origen y la cifra de cota. Explica, con ejemplos, como utilizarlo.
+5. Disposiciones  e inscripción de las cotas.
+    * Acotaciones en serie
+    * Acotaciones a partir de un elemento en común
+    * Acotación por coordenadas
+    * Acotación combinada
+6. Indicaciones epeciales
+    * Como acotar cuerdas, arcos, ángulos y radios
+    * Como acotar elementos equidistantes
+    * Como acotar elementos repetitivos
+    * Como acotar chaflanes y avellanados
+    * Otras: cajón de sastre donde se comentan varios casos de ejemplo
+7. Indicación de niveles //TODO. No se lo que es exactamente un nivel ... en este sentido
+    * Niveles sobre vistas y cortes verticales
+    * Niveles sobre vistas en planta y cortes horizontales
+    * Niveles en planos de situación
+8. Correspondencia con otras normas (hace referencia a la ISO 129)
+
+A contunuación se revisan los aspectos fundamentales de la acotación
+
+### Normas generales de acotación
+
+* Aparecerán las cotas necesarias para que la pieza quede lo suficientemente definida
+* Se colocarán las mínimas cotas necesarias. Éstas no deben repetirse
+* Las cotas se colocarán en la vista que mejor defina la magnitud acotada
+* Todas las cotas se expresan en la misma magnitud
+* Las cotas se leeran desde abajo (horizontales) y desde la derecha (verticales)
+* Las cifras de cota se siturán encima de la linea de cota y en su misma dirección
+
+### Elementos de la acotación
+
+* Lineas auxiliares de cota
+
+
+
+
+
+```{r}
+#| label: FIG-01-20-lineasAuxiliares
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Elementos de la acotación. Lineas auxiliares.
+#| fig-alt: |
+#|   Elementos de la acotación. Lineas auxiliares.
+
+knitr::include_graphics("images/01-20-lineasAuxiliares.png", dpi = 270)
+```
+
+
+
+
+
+* Linea de cota
+
+
+
+
+
+```{r}
+#| label: FIG-01-21-lineaDeCota
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Elementos de la acotación. Linea de cota.
+#| fig-alt: |
+#|   Elementos de la acotación. Linea de cota.
+
+knitr::include_graphics("images/01-21-lineaDeCota.png", dpi = 270)
+```
+
+
+
+
+
+* Flecha
+
+
+
+
+
+```{r}
+#| label: FIG-01-22-flecha
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Elementos de la acotación. Flecha.
+#| fig-alt: |
+#|   Elementos de la acotación. Flecha.
+
+knitr::include_graphics("images/01-22-fechas.png", dpi = 270)
+```
+
+
+
+
+
+* Cota
+
+
+
+
+
+```{r}
+#| label: FIG-01-23-cota
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Elementos de la acotación. Cota.
+#| fig-alt: |
+#|   Elementos de la acotación. Cota.
+
+knitr::include_graphics("images/01-23-cota.png", dpi = 270)
+```
+
+
+
+
+
+* Separaciones de línea de cota y líneas auxiliares
+
+    * La linea de cota estará separada como mínimo de la arista 7 mm
+    * Las lineas auxiliares sobresaldrán de la línea de cota 2 mm
+
+
+
+
+```{r}
+#| label: FIG-01-24-separaciones
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Elementos de la acotación. Separaciones cota y lineas auxiliares.
+#| fig-alt: |
+#|   Elementos de la acotación. Separaciones cota y lineas auxiliares.
+
+knitr::include_graphics("images/01-24-separaciones.png", dpi = 270)
+```
+
+
+
+
+ 
+### Acotación de aristas
+
+* Las lineas de cota no pueden coincidir con las aristas
+<!-- 
+
+#| label: FIG-01-25
+#| echo: false
+#| fig-cap: "Figura 1: Acotación de aristas MAL. Figura 2: AcotacióOn de aristas BIEN."
+#| fig-alt: "Figura 1: Aco0tación de aristas MAL. | Figura 2: Acotación de aristas BIEN."
+#| layout-ncol: 2
+#| out.width: "99%"
+
+knitr::include_graphics(c("images/01-25-aristasMal.png", "images/01-26-aristasBien.png"), dpi = 270)
+```  -->
+
+
+
+| ![Figura 1: Acotación de aristas MAL.](images/01-25-aristasMal.png){width=99%} | ![Figura 2: Acotación de aristas BIEN.](images/01-26-aristasBien.png){width=99%} |
+|:---------------------------------------------:|:---------------------------------------------:|
+| Figura 1: Acotación de aristas MAL. | Figura 2: Acotación de aristas BIEN. |
+
+<br>
+
+* Las lineas de cota no pueden ser continuación de las aristas
+
+| ![Figura 1: Acotación de aristas MAL.](images/01-27-aristasBMal.png){width=99%} | ![Figura 2: Acotación de aristas BIEN.](images/01-28-aristasBBien.png){width=99%} |
+|:---------------------------------------------:|:---------------------------------------------:|
+| Figura 1: Acotación de aristas MAL. | Figura 2: Acotación de aristas BIEN. |
+
+<br>
+
+* Las lineas de cota no pueden coincidir con los ejes
+
+| ![Figura 1: Acotación de aristas MAL.](images/01-29aristasCMal.png){width=99%} | ![Figura 2: Acotación de aristas BIEN.](images/01-30aristasCBien.png){width=99%} |
+|:---------------------------------------------:|:---------------------------------------------:|
+| Figura 1: Acotación de aristas MAL. | Figura 2: Acotación de aristas BIEN. |
+
+<br>
+
+* Las lineas de cota ni se cruzan entre si ni con ninguna otra linea
+
+| ![Figura 1: Acotación de aristas MAL.](images/01-31aristasDMal.png){width=99%} | ![Figura 2: Acotación de aristas BIEN.](images/01-32aristasDBien.png){width=99%} |
+|:---------------------------------------------:|:---------------------------------------------:|
+| Figura 1: Acotación de aristas MAL. | Figura 2: Acotación de aristas BIEN. |
+
+
+| ![Figura 1: Acotación de aristas MAL.](images/01-35aristasFMal.png){width=99%} | ![Figura 2: Acotación de aristas BIEN.](images/01-36aristasFBien.png){width=99%} |
+|:---------------------------------------------:|:---------------------------------------------:|
+| Figura 1: Acotación de aristas MAL. | Figura 2: Acotación de aristas BIEN. |
+
+> Para evitarlo en la acotación en paralelo colocaremos las cotas mayores más alejadas y las menores más cerca de la figura.
+
+<br>
+
+* Las lineas de cota en serie se colocan alineadas
+
+| ![Figura 1: Acotación de aristas MAL.](images/01-33aristasEMal.png){width=99%} | ![Figura 2: Acotación de aristas BIEN.](images/01-34aristasEBien.png){width=99%} |
+|:---------------------------------------------:|:---------------------------------------------:|
+| Figura 1: Acotación de aristas MAL. | Figura 2: Acotación de aristas BIEN. |
+
+<br>
+
+* Si las flechas de la linea de cota quedan muy juntas se sacan fuera de ls lineas auxiliares
+
+| ![Figura 1: Acotación de aristas MAL.](images/01-37aristasGMal.png){width=35%} | ![Figura 2: Acotación de aristas BIEN.](images/01-38aristasGBienA.png){width=99%} | ![Figura 3: Otra acotación.](images/01-39arsitasGBienB.png){width=99%} |
+|:---------------------------------------------:|:---------------------------------------------:|:---------------------------------------------:|
+| **Figura 1: Acotación de aristas MAL.** | **Figura 2: Acotación de aristas BIEN.** | **Figura 3: Otra acotación.** |
+
+
+
+
+
+### Video de referencia
+
+La información básica sobre las cotas ha sido obtenia de este video. Se recomienda su visionado.
+
+::: {.cell}
+<iframe width="750" height="422" src="https://www.youtube.com/embed/YCssCLAe-80" frameborder="0" allowfullscreen></iframe>
+:::
+
+
+
+
+<!-- Revisar este link que manda maría jesús
+https://ibiguridt.wordpress.com/temas/principios-de-representacion/croquizacion/
+
+Link para convertir a video web 
+https://ezgif.com/video-to-webp/
+-->
