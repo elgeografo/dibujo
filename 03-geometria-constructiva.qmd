@@ -1,7 +1,7 @@
 ---
-title: "Contenido de Geometría Constructiva"
+title: "Herramientas de modelado: Geometría Constructiva"
 ---
 
-<div style="font-size: 2em; font-weight: bold;  margin-bottom: 1em;background-color: white;">
-   Contenido de la geometría constructiva
-</div>
+::: {style="font-size: 2em; font-weight: bold;  margin-bottom: 1em;background-color: white;"}
+Contenido de la geometría constructiva
+:::

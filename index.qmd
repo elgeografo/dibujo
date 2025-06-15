@@ -1,8 +1,9 @@
-# Prefacio {.unnumbered}
+# Presentación {.unnumbered}
 
-GUÍA EGI-GIF<br>
-Expresión Gráfica de la Ingeniería. Grado en la Ingeniería Forestal
+<img src="images/portada.png" width="700px"/>
 
-> Esta guía tiene referencias constantes  a la norma UNE. Para su consulta es imprescindible que el alumno esté conectado a la vpn de la UPM
+<!-- Apunte guía Expresión Gráfica de la Ingeniería. <br> Grupo investigación [GEOSO2](https://www.geoso2.es/)
 
-> Esta guía está en permanente actualización y por tanto sujeta a cambios. Se ruega revisar la fecha de actualización.
+> Esta guía tiene referencias constantes a la norma UNE. Para su consulta es imprescindible que el alumno esté conectado a la vpn de la UPM
+
+> Esta guía está en permanente actualización y por tanto sujeta a cambios. Se ruega revisar la fecha de actualización. -->

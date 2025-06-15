@@ -1,3 +1,4 @@
+```{=html}
 <!-- 
 Algunos apuntes importantes
 Para convertir el mp4 a webp
@@ -7,7 +8,9 @@ convert 020-conica.webp\[0\] 020-conica.png
 Basado en este video
 https://drive.google.com/file/d/1ithjgvxykw4gse1Q-PZrbc08mp0dV016/view
  -->
+```
 
+```{=html}
 <script>
   function changeSrc(src, imageId, butomToHide, butomToShow) {
      const img = document.getElementById(imageId);
@@ -19,10 +22,14 @@ https://drive.google.com/file/d/1ithjgvxykw4gse1Q-PZrbc08mp0dV016/view
     }, 50); 
   }
 </script>
+```
+
+```{=html}
 <style>.imageContainer figcaption {text-align: center;}</style>
+```
 
 ---
-title: "Proyecciones y sistemas de representación"
+title: "Sistemas de representación"
 ---
 
 ## Tipos de proyecciones
@@ -31,28 +38,29 @@ title: "Proyecciones y sistemas de representación"
 
 La proyección Cónica (también llamada proyección central o perspectiva) es el sistema de representación gráfico donde un haz de rectas confluyen en un punto denominado centro de proyección. Este haz de rectas proyectan el cuerpo sobre un plano auxiliar que se intersecta con dichas rectas.
 
+::: {#startBtn style="text-align: center;"}
+<button class="btn btn-primary"  onclick="changeSrc('./images/imovie/020-conica.webp','image1','startBtn','stopBtn')" >Mostrar Animación</button>
+:::
 
-<div id="startBtn"  style="text-align: center;">
-  <button class="btn btn-primary"  onclick="changeSrc('./images/imovie/020-conica.webp','image1','startBtn','stopBtn')" >Mostrar Animación</button>
-</div>
-<div id="stopBtn"  style="display:none;text-align: center;">
-  <button class="btn btn-danger"  onclick="changeSrc('./images/imovie/020-conica.png','image1','stopBtn','startBtn')">Parar Animación</button>
-</div>
+::: {#stopBtn style="display:none;text-align: center;"}
+<button class="btn btn-danger"  onclick="changeSrc('./images/imovie/020-conica.png','image1','stopBtn','startBtn')">Parar Animación</button>
+:::
 
 <figure id="image-container" class="imageContainer">
-  <img id="image1" src="./images/imovie/020-conica.png" style="width:100%;" alt="Imagen 1">
-  <figcaption>Proyección Cónica</figcaption>
+
+<img src="./images/imovie/020-conica.png" alt="Imagen 1" id="image1" style="width:100%;"/>
+
+<figcaption>Proyección Cónica</figcaption>
+
 </figure>
-
-
-
 
 ### Proyección Cilíndrica
 
-La proyección Cilíndrica (también llamada proyección paralela) es el sistema de representación gráfico donde el centro de proyección es un punto impropio (está en el infinito). 
+La proyección Cilíndrica (también llamada proyección paralela) es el sistema de representación gráfico donde el centro de proyección es un punto impropio (está en el infinito).
 
 La proyección cilindrica será oblicua cuando los rayos proyectantes sean oblicuos al plano de proyección.
 
+```{=html}
 <!-- <div id="image-container" class="imageContainer">
   <figure>
     <img id="image1" src="./images/imovie/022-cilindrica-oblicua.webp" style="width:100%;" alt="Proyección Cilíndrica Oblicua">
@@ -60,21 +68,27 @@ La proyección cilindrica será oblicua cuando los rayos proyectantes sean oblic
   </figure>
 </div>
 <style>.imageContainer figcaption {text-align: center;}</style> -->
+```
 
-<div id="startBtn2"  style="text-align: center;">
-  <button class="btn btn-primary"  onclick="changeSrc('./images/imovie/022-cilindrica-oblicua.webp','image2','startBtn2','stopBtn2')" >Mostrar Animación</button>
-</div>
-<div id="stopBtn2"  style="display:none;text-align: center;">
-  <button class="btn btn-danger"  onclick="changeSrc('./images/imovie/022-cilindrica-oblicua.png','image2','stopBtn2','startBtn2')">Parar Animación</button>
-</div>
+::: {#startBtn2 style="text-align: center;"}
+<button class="btn btn-primary"  onclick="changeSrc('./images/imovie/022-cilindrica-oblicua.webp','image2','startBtn2','stopBtn2')" >Mostrar Animación</button>
+:::
+
+::: {#stopBtn2 style="display:none;text-align: center;"}
+<button class="btn btn-danger"  onclick="changeSrc('./images/imovie/022-cilindrica-oblicua.png','image2','stopBtn2','startBtn2')">Parar Animación</button>
+:::
 
 <figure id="image-container" class="imageContainer">
-  <img id="image2" src="./images/imovie/022-cilindrica-oblicua.png" style="width:100%;" alt="Imagen 1">
-  <figcaption>Proyección Cilíndrica oblicua</figcaption>
+
+<img src="./images/imovie/022-cilindrica-oblicua.png" alt="Imagen 1" id="image2" style="width:100%;"/>
+
+<figcaption>Proyección Cilíndrica oblicua</figcaption>
+
 </figure>
 
 La proyección cilíndrica será orotgonal cuando los rayos proyectantes sean perpendiculares al plano de proyección.
 
+```{=html}
 <!-- <div id="image-container">
   <figure>
     <img id="image1" src="./images/imovie/021-cilindrica-ortogonal.webp" style="width:100%;" alt="Proyección Cilíndrica Ortogonal">
@@ -86,27 +100,29 @@ La proyección cilíndrica será orotgonal cuando los rayos proyectantes sean pe
     text-align: center;
   }
 </style> -->
-<div id="startBtn3"  style="text-align: center;">
-  <button class="btn btn-primary"  onclick="changeSrc('./images/imovie/021-cilindrica-ortogonal.webp','image3','startBtn3','stopBtn3')" >Mostrar Animación</button>
-</div>
-<div id="stopBtn3"  style="display:none;text-align: center;">
-  <button class="btn btn-danger"  onclick="changeSrc('./images/imovie/021-cilindrica-ortogonal.png','image3','stopBtn3','startBtn3')">Parar Animación</button>
-</div>
+```
+
+::: {#startBtn3 style="text-align: center;"}
+<button class="btn btn-primary"  onclick="changeSrc('./images/imovie/021-cilindrica-ortogonal.webp','image3','startBtn3','stopBtn3')" >Mostrar Animación</button>
+:::
+
+::: {#stopBtn3 style="display:none;text-align: center;"}
+<button class="btn btn-danger"  onclick="changeSrc('./images/imovie/021-cilindrica-ortogonal.png','image3','stopBtn3','startBtn3')">Parar Animación</button>
+:::
 
 <figure id="image-container" class="imageContainer">
-  <img id="image3" src="./images/imovie/021-cilindrica-ortogonal.png" style="width:100%;" alt="Imagen 1">
-  <figcaption>Proyección Cilíndrica oblicua</figcaption>
+
+<img src="./images/imovie/021-cilindrica-ortogonal.png" alt="Imagen 1" id="image3" style="width:100%;"/>
+
+<figcaption>Proyección Cilíndrica oblicua</figcaption>
+
 </figure>
 
 ## Objeto de la Geometría Descrptiva. Sistema de Representación.
 
 La Geometría Descriptivaes una rama de la geometría que se ocupa de la representación de objetos tridimensionales en dos dimensiones, utilizando un conjunto de métodos matemáticos y gráficos. Su objetivo principal es representar formas tridimensionales en un plano bidimensional de manera que se mantengan todas las relaciones espaciales entre los elementos del objeto, permitiendo que dichas formas puedan ser reconstruidas o visualizadas tridimensionalmente a partir de sus proyecciones bidimensionales.
 
-Los sistemas de representación de la geometría descriptiva son:
-* Sistema diédrico
-* Sistema acotado
-* sistema axonométrico
-* Sistema cónico o central
+Los sistemas de representación de la geometría descriptiva son: \* Sistema diédrico \* Sistema acotado \* sistema axonométrico \* Sistema cónico o central
 
 Los tres primeros utilizan una proyección plana o colíndrina, mientras que el cuarto usa una proyección cónica. A continuación damos una breve explicación de cada uno.
 
@@ -114,71 +130,64 @@ Los tres primeros utilizan una proyección plana o colíndrina, mientras que el 
 
 El sistema diédrico, también conocido como proyección diédrica, es un método de la geometría descriptiva que se utiliza para representar objetos tridimensionales en dos dimensiones, mediante la proyección ortogonal de sus puntos sobre dos planos perpendiculares entre sí: el plano horizontal y el plano vertical.
 
-<div id="startBtn4"  style="text-align: center;">
-  <button class="btn btn-primary"  onclick="changeSrc('./images/imovie/025-diedrica.webp','image4','startBtn4','stopBtn4')" >Mostrar Animación</button>
-</div>
-<div id="stopBtn4"  style="display:none;text-align: center;">
-  <button class="btn btn-danger"  onclick="changeSrc('./images/imovie/025-diedrica.png','image4','stopBtn4','startBtn4')">Parar Animación</button>
-</div>
+::: {#startBtn4 style="text-align: center;"}
+<button class="btn btn-primary"  onclick="changeSrc('./images/imovie/025-diedrica.webp','image4','startBtn4','stopBtn4')" >Mostrar Animación</button>
+:::
+
+::: {#stopBtn4 style="display:none;text-align: center;"}
+<button class="btn btn-danger"  onclick="changeSrc('./images/imovie/025-diedrica.png','image4','stopBtn4','startBtn4')">Parar Animación</button>
+:::
 
 <figure id="image-container" class="imageContainer">
-  <img id="image4" src="./images/imovie/025-diedrica.png" style="width:100%;" alt="Imagen 1">
-  <figcaption>Sistema diédrico</figcaption>
-</figure>
 
+<img src="./images/imovie/025-diedrica.png" alt="Imagen 1" id="image4" style="width:100%;"/>
+
+<figcaption>Sistema diédrico</figcaption>
+
+</figure>
 
 Conceptos Básicos del Sistema Diédrico
 
 ### Planos de Proyección
 
-* Plano Horizontal (PH): Es el plano sobre el cual se proyecta la vista superior del objeto.
-* Plano Vertical (PV): Es el plano sobre el cual se proyecta la vista frontal del objeto.
+-   Plano Horizontal (PH): Es el plano sobre el cual se proyecta la vista superior del objeto.
+-   Plano Vertical (PV): Es el plano sobre el cual se proyecta la vista frontal del objeto.
 
 Ambos planos son perpendiculares entre sí y se intersecan en una línea llamada línea de tierra.
 
 ### Proyecciones Ortogonales
 
-En el sistema diédrico, los objetos se proyectan ortogonalmente (es decir, con líneas de proyección perpendiculares a los planos) sobre ambos planos de proyección.
-Estas proyecciones producen dos vistas principales:
-  * Vista Horizontal (planta): La proyección del objeto sobre el plano horizontal.
-  * Vista Frontal (alzado): La proyección del objeto sobre el plano vertical.
-A veces, también se puede incluir una vista lateral (perfil), que es la proyección del objeto sobre un tercer plano perpendicular a los dos anteriores, llamado plano de perfil.
+En el sistema diédrico, los objetos se proyectan ortogonalmente (es decir, con líneas de proyección perpendiculares a los planos) sobre ambos planos de proyección. Estas proyecciones producen dos vistas principales: \* Vista Horizontal (planta): La proyección del objeto sobre el plano horizontal. \* Vista Frontal (alzado): La proyección del objeto sobre el plano vertical. A veces, también se puede incluir una vista lateral (perfil), que es la proyección del objeto sobre un tercer plano perpendicular a los dos anteriores, llamado plano de perfil.
 
 ### Línea de Tierra
 
-Es la línea de intersección entre el plano horizontal y el plano vertical.
-Sirve como referencia para alinear y relacionar las proyecciones de los puntos en ambos planos.
+Es la línea de intersección entre el plano horizontal y el plano vertical. Sirve como referencia para alinear y relacionar las proyecciones de los puntos en ambos planos.
 
 ### Posiciones de los Puntos y sus Proyecciones
 
-Un punto en el espacio se representa mediante dos proyecciones: una en el plano horizontal y otra en el plano vertical.
-La distancia de un punto al plano horizontal se refleja en la proyección vertical, y la distancia al plano vertical se refleja en la proyección horizontal.
+Un punto en el espacio se representa mediante dos proyecciones: una en el plano horizontal y otra en el plano vertical. La distancia de un punto al plano horizontal se refleja en la proyección vertical, y la distancia al plano vertical se refleja en la proyección horizontal.
 
 ### Proyecciones de Rectas y Planos
 
-Las rectas y planos en el espacio también se proyectan en los dos planos de proyección, permitiendo entender su orientación y posición en el espacio tridimensional.
-Las proyecciones de una recta pueden ser paralelas o inclinadas respecto a los planos, y su verdadera longitud se visualiza dependiendo de su inclinación respecto a los planos de proyección.
+Las rectas y planos en el espacio también se proyectan en los dos planos de proyección, permitiendo entender su orientación y posición en el espacio tridimensional. Las proyecciones de una recta pueden ser paralelas o inclinadas respecto a los planos, y su verdadera longitud se visualiza dependiendo de su inclinación respecto a los planos de proyección.
 
 ## Sistema Acotado
 
 El sistema acotado es un método de representación gráfica utilizado en geometría descriptiva que se centra en la proyección de puntos, líneas, y superficies en un solo plano de proyección, con la adición de cotas o alturas para describir la tercera dimensión.Este sistema es ampliamente utilizado para representar el relieve de un terreno, donde las cotas indican las elevaciones del terreno respecto a un plano base
 
-Conceptos  básicos  del Sistema Acotado:
+Conceptos básicos del Sistema Acotado:
 
 ### Plano de Proyección
 
-Se utiliza un solo plano de proyección, que generalmente se toma como el plano horizontal.
-Los objetos se proyectan ortogonalmente sobre este plano, y las alturas (cotas) de los puntos, líneas o superficies se indican mediante valores numéricos.
+Se utiliza un solo plano de proyección, que generalmente se toma como el plano horizontal. Los objetos se proyectan ortogonalmente sobre este plano, y las alturas (cotas) de los puntos, líneas o superficies se indican mediante valores numéricos.
 
 ### Cotas (Alturas)
 
-Las cotas son valores numéricos que indican la altura de cada punto sobre el plano de proyección.
-Estos valores permiten reconstruir la forma tridimensional del objeto a partir de su proyección en el plano.
+Las cotas son valores numéricos que indican la altura de cada punto sobre el plano de proyección. Estos valores permiten reconstruir la forma tridimensional del objeto a partir de su proyección en el plano.
 
 ### Proyección de Puntos
 
-Cada punto en el espacio se proyecta como un punto en el plano de proyección, acompañado de su cota.
-Por ejemplo, si un punto tiene una cota de 3 unidades, esto indica que el punto está 3 unidades por encima del plano de proyección.
+Cada punto en el espacio se proyecta como un punto en el plano de proyección, acompañado de su cota. Por ejemplo, si un punto tiene una cota de 3 unidades, esto indica que el punto está 3 unidades por encima del plano de proyección.
 
 ### Superficies y Volúmenes (curvas de nivel o isolineas)
 
@@ -186,52 +195,55 @@ Las superficies planas o curvadas se representan por su contorno proyectado en e
 
 ### Ventajas del Sistema Acotado
 
-* Simplicidad: Permite representar la complejidad tridimensional en un solo plano, facilitando el análisis y la interpretación.
-* Eficiencia: Al utilizar un solo plano de proyección, se simplifica la representación gráfica de objetos y estructuras.
+-   Simplicidad: Permite representar la complejidad tridimensional en un solo plano, facilitando el análisis y la interpretación.
+-   Eficiencia: Al utilizar un solo plano de proyección, se simplifica la representación gráfica de objetos y estructuras.
 
 ## Sistema Axonométrico
 
 El sistema axonométrico es un método de proyección gráfica utilizado en geometría descriptiva para representar objetos tridimensionales en un plano bidimensional. A diferencia de otros sistemas de proyección, el sistema axonométrico permite que los tres ejes coordenados (X, Y, Z) sean representados simultáneamente, manteniendo las relaciones proporcionales entre ellos, lo que facilita la visualización espacial de los objetos.
 
-Conceptos  básicos  del Sistema Axonométrico
+Conceptos básicos del Sistema Axonométrico
 
 ### Proyección Ortogonal Oblicua
 
-En el sistema axonométrico, el objeto tridimensional se proyecta sobre un plano en una dirección que no es perpendicular a ninguno de los ejes, lo que permite que los tres ejes (X, Y, Z) sean visibles en la representación.
-Esto crea una vista en la que se pueden observar las tres dimensiones de un objeto simultáneamente.
+En el sistema axonométrico, el objeto tridimensional se proyecta sobre un plano en una dirección que no es perpendicular a ninguno de los ejes, lo que permite que los tres ejes (X, Y, Z) sean visibles en la representación. Esto crea una vista en la que se pueden observar las tres dimensiones de un objeto simultáneamente.
 
 ### Tipos de Proyecciones Axonométricas
 
-* Isométrica: Los tres ejes están inclinados en el mismo ángulo respecto al plano de proyección, generalmente 120° entre ellos, y las dimensiones a lo largo de cada eje son igualmente escaladas.
-* Dimétrica: Dos de los ejes tienen la misma escala, y el tercero tiene una escala diferente. Los ángulos entre los ejes no son iguales.
-* Trimétrica: Cada uno de los tres ejes tiene una escala diferente, y los ángulos entre ellos también son diferentes.
+-   Isométrica: Los tres ejes están inclinados en el mismo ángulo respecto al plano de proyección, generalmente 120° entre ellos, y las dimensiones a lo largo de cada eje son igualmente escaladas.
+-   Dimétrica: Dos de los ejes tienen la misma escala, y el tercero tiene una escala diferente. Los ángulos entre los ejes no son iguales.
+-   Trimétrica: Cada uno de los tres ejes tiene una escala diferente, y los ángulos entre ellos también son diferentes.
 
 ### Escalas y Distorsión
 
-En el sistema axonométrico, la distorsión ocurre porque las escalas a lo largo de los ejes pueden variar dependiendo del tipo de proyección (isométrica, dimétrica, trimétrica).
-A pesar de la distorsión, las relaciones proporcionales se mantienen dentro de cada eje, lo que permite una representación coherente del objeto.
+En el sistema axonométrico, la distorsión ocurre porque las escalas a lo largo de los ejes pueden variar dependiendo del tipo de proyección (isométrica, dimétrica, trimétrica). A pesar de la distorsión, las relaciones proporcionales se mantienen dentro de cada eje, lo que permite una representación coherente del objeto.
 
 ### Ventajas del Sistema Axonométrico
 
-* Visualización Completa: Permite observar las tres dimensiones de un objeto en una sola vista, lo que es útil para entender la forma y estructura general del objeto.
-* Proporcionalidad: Mantiene las proporciones entre las dimensiones del objeto, aunque las escalas puedan variar.
+-   Visualización Completa: Permite observar las tres dimensiones de un objeto en una sola vista, lo que es útil para entender la forma y estructura general del objeto.
+-   Proporcionalidad: Mantiene las proporciones entre las dimensiones del objeto, aunque las escalas puedan variar.
 
 ### Proyección Isométrica
+
 //TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos
 
 ### Proyección Dimétrica
+
 //TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos
 
 ### Perspectiva caballera como caso especial de la Proyección Dimétrica
+
 //TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos
 
 ### Proyección Trimétrica
+
 //TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos
 
-
 ## Sistema cónico o central
+
 // TODO: terminar esta parte
 
+```{=html}
 <!-- <div>
   <button onclick="showImage('image1')">Mostrar Imagen 1</button>
   <button onclick="showImage('image2')">Mostrar Imagen 2</button>
@@ -249,5 +261,4 @@ A pesar de la distorsión, las relaciones proporcionales se mantienen dentro de 
     document.getElementById(imageId).style.display = 'block';
   }
 </script> -->
-
-
+```

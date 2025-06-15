@@ -2,9 +2,11 @@ project:
   type: book
 
 book:
-  title: "Guía EGI-GIF"
-  author: "María Jesús García García <br>mariajesus.garcia.garcia@upm.es <br><br> Jose Luis Perez Benedito <br>joseluis.perez@upm.es <br> <br> Carolina Echavarría Caballero <br>carolina.echavarria@upm.es> <br><br> Luis Izquierdo Mesa <br>luis.izquierdo@upm.es <br><br> Dpto de Ingeniería y Gestión Forestal y Ambiental <br>E.T.S.I. Montes, Forestal y del Medio Natural<br>Universidad Politécnica de Madrid"
-  date: "9/8/2024"
+  #title: "Apuntes guía Expresión Gráfica <br>  Grupo investigación <a href='https://www.geoso2.es'>GEOSO2</a> "
+  title: "Apuntes guía Expresión Gráfica <br>"
+  #author: "<img src='images/00-00-A-hypatia.jpeg' width='700px'><br>María Jesús García García mariajesus.garcia.garcia@upm.es <br><br> Jose Luis Perez Benedito <br>joseluis.perez@upm.es <br> <br> Carolina Echavarría Caballero <br>carolina.echavarria@upm.es> <br><br> Luis Izquierdo Mesa <br>luis.izquierdo@upm.es <br><br> Dpto de Ingeniería y Gestión Forestal y Ambiental <br>E.T.S.I. Montes, Forestal y del Medio Natural<br>Universidad Politécnica de Madrid"
+  author: "<a href='https://www.geoso2.es' target='_blank'><img src='images/authors2.png' width='500px'></a>"
+  #date: "9/8/2024"
   chapters:
     - index.qmd
     - 01-normalizacion.qmd

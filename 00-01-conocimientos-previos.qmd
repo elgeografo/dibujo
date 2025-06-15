@@ -18,4 +18,3 @@ title: "Conocimientos previos"
 
 knitr::include_graphics("images/00-00-A-hypatia.jpeg", dpi = 270)
 ```
-

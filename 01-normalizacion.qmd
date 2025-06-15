@@ -1,50 +1,65 @@
 ---
-title: "Normalización"
+title: "Representación normalizada"
 ---
 
-<div style="font-size: 2em; font-weight: bold;  margin-bottom: 1em;background-color: white;">
-   Normalización: Formatos de papel, rotulación, tipos de línea, escalas y acotación
-</div>
+::: {style="font-size: 2em; font-weight: bold;  margin-bottom: 1em;background-color: white;"}
+Normalización: Formatos de papel, rotulación, tipos de línea, escalas y acotación
+:::
 
+```{=html}
 <!-- 
 Busqueda para aenor
 https://plataforma.aenormas.aenor.com/?searchMode=my&title=3098&onlyNews=false 
 -->
+```
 
 ## Escalas
 
 ### Contenido
 
-<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
-   <p style="font-size: 1.2em; color: #333;">
-   La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0013534"  target="_blank">ISO 5455:1979</a>. Su contenido es el siguiente.
-   </p>
-   <p style="font-size: 1em; color: #333;">
-   <ol>
-      <li>Objeto y campo de aplicación</li>
-      <li>Definiciones</li>
-      <li>Designación</li>
-      <li>Inscripción</li>
-      <li>Escalas</li>
-      <li>Dibujos a gran escala</li>
-   </ol>
-   </p>
-</div>
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0013534"  target="_blank">ISO 5455:1979</a>. Su contenido es el siguiente.
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Objeto y campo de aplicación</li>
+
+<li>Definiciones</li>
+
+<li>Designación</li>
+
+<li>Inscripción</li>
+
+<li>Escalas</li>
+
+<li>Dibujos a gran escala</li>
+
+</ol>
+
+</p>
+:::
 
 ### Apuntes
 
 #### Objeto y campo de aplicación
-_Esta Norma Internacional especifica las escalas recomendadas, así como su designación para su utilización en los dibujos técnicos en todos los campos de la técnica._
+
+*Esta Norma Internacional especifica las escalas recomendadas, así como su designación para su utilización en los dibujos técnicos en todos los campos de la técnica.*
 
 #### Definiciones
 
-* **Escala**: _Relación entre la medida lineal de la representación de un elemento de un objeto sobre un dibujo original y la medida lineal real del mismo elemento del objeto real._
+-   **Escala**: *Relación entre la medida lineal de la representación de un elemento de un objeto sobre un dibujo original y la medida lineal real del mismo elemento del objeto real.*
 
-* **Escala a _"tamaño natural"_**: _Escala que corresponde a la relación 1:1_
+-   **Escala a *"tamaño natural"***: *Escala que corresponde a la relación 1:1*
 
-* **Escala de ampliación**: _Escalas que corresponden a una relación superior a 1:1. Se dice que es mayor a medida que la relación correspondiente aumenta._ Por ejemplo en una escala 2:1 la relación es de 2. Es decir, el objeto representado se amplía al doble.
+-   **Escala de ampliación**: *Escalas que corresponden a una relación superior a 1:1. Se dice que es mayor a medida que la relación correspondiente aumenta.* Por ejemplo en una escala 2:1 la relación es de 2. Es decir, el objeto representado se amplía al doble.
 
-* **Escalas de reducción**: _Escalas que corresponden a una relación inferior a 1:1. Se dice que es menor a medida que la relación correspondiente disminuye._ Por ejemplo en una escala 1:2 la relación es de 0.5. Es decir, el objeto representado se reduce a la mitad.
+-   **Escalas de reducción**: *Escalas que corresponden a una relación inferior a 1:1. Se dice que es menor a medida que la relación correspondiente disminuye.* Por ejemplo en una escala 1:2 la relación es de 0.5. Es decir, el objeto representado se reduce a la mitad.
 
 ```{r}
 #| label: image-escalas 
@@ -58,122 +73,155 @@ _Esta Norma Internacional especifica las escalas recomendadas, así como su desi
 knitr::include_graphics("images/01-03-A-escalasV2.png", dpi = 270)
 ```
 
-
 #### Designación e inscripción
-La **designación** completa de una escala _debe comprender la palabra "ESCALA" (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación_:
 
-* ESCALA 1:1, para el tamaño natural.
-* ESCALA x:1, para las escalas de ampliación.
-* ESCALA 1:x, para las escalas de reducción.
+La **designación** completa de una escala *debe comprender la palabra "ESCALA" (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación*:
 
-::: {.callout-note}
+-   ESCALA 1:1, para el tamaño natural.
+-   ESCALA x:1, para las escalas de ampliación.
+-   ESCALA 1:x, para las escalas de reducción.
+
+:::: callout-note
 ## Nota
+
 La notación de escala 1:1 significa que una unidad de medida en el dibujo equivale a una unidad de medida en el objeto real.
 
 El primer término representará la magnitud de la representación del objeto en el papel. El segundo término representará la magnitud objeto real.
 
-<div style="text-align: center; font-weight: bold;">
-  PAPEL:REAL
-</div>
-
+::: {style="text-align: center; font-weight: bold;"}
+PAPEL:REAL
 :::
+::::
 
-::: {.callout-note}
+::: callout-note
 ## Nota
-Como la escala es una relación adimensional, ambas magnitudes deben expresarse enlas mismas unidades
 
+Como la escala es una relación adimensional, ambas magnitudes deben expresarse enlas mismas unidades
 :::
 
 Si no hay posibilidad de confusión, se puede omitir la palabra "ESCALA".
 
-Respecto a la **inscripción** la norma dice _"La designación de la escala utilizada en el dibujo debe inscribirse en el cuadro de rotulación del dibujo._
+Respecto a la **inscripción** la norma dice *"La designación de la escala utilizada en el dibujo debe inscribirse en el cuadro de rotulación del dibujo.*
 
-_Si hay que utilizar varias escalas en un dibujo, sólo debe inscribirse la escala principal del dibujo en el cuadro de rotulación, inscribiéndose las otras escalas al lado del número de referencia de la parte considerada o al lado de la referencia de una vista (o corte) de detalle."_
+*Si hay que utilizar varias escalas en un dibujo, sólo debe inscribirse la escala principal del dibujo en el cuadro de rotulación, inscribiéndose las otras escalas al lado del número de referencia de la parte considerada o al lado de la referencia de una vista (o corte) de detalle."*
 
 #### Escalas normalizadas
 
-| Categoría                | Escalas recomendadas            |            |          |
-|--------------------------|----------------------------------|------------|----------|
-| Escalas de ampliación    | 50:1                             | 20:1       | 10:1     |
-|                          | 5:1                              | 2:1        |          |
-| <hr>                     | <hr>                             | <hr>       | <hr>     |
-| Tamaño natural           | 1:1                              |            |          |
-| <hr>                     | <hr>                             | <hr>       | <hr>     |
-| Escalas de reducción     | 1:2                              | 1:5        | 1:10     |
-|                          | 1:20                             | 1:50       | 1:100    |
-|                          | 1:200                            | 1:500      | 1:1 000  |
-|                          | 1:2 000                          | 1:5 000    | 1:10 000 |
-
+| Categoría             | Escalas recomendadas |         |          |
+|-----------------------|----------------------|---------|----------|
+| Escalas de ampliación | 50:1                 | 20:1    | 10:1     |
+|                       | 5:1                  | 2:1     |          |
+|                       |                      |         |          |
+| Tamaño natural        | 1:1                  |         |          |
+|                       |                      |         |          |
+| Escalas de reducción  | 1:2                  | 1:5     | 1:10     |
+|                       | 1:20                 | 1:50    | 1:100    |
+|                       | 1:200                | 1:500   | 1:1 000  |
+|                       | 1:2 000              | 1:5 000 | 1:10 000 |
 
 ### Material complementario
 
 <a href="https://www.deustoformacion.com/blog/diseno-arquitectonico/que-son-escalas-dibujo-tecnico  " target="_blank">Web Deusto generalidades escala </a>
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-  En esta escueta web se explica (1) definición escala (2) tipos de escala (3) como aplicar e interpretar la escala 
+
+En esta escueta web se explica (1) definición escala (2) tipos de escala (3) como aplicar e interpretar la escala
+
 </p>
 
 ## Tipos de linea
 
 ### Contenido
 
-<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
-   <p style="font-size: 1.2em; color: #333;">
-   La norma ISO que define los principios generales de representación. Parte 2: convenciones básicas para lineas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0070490" target="_blank">UNE-en ISO 128-2:2022</a>. Su contenido es el siguiente (en inglés).
-   </p>
-   <p style="font-size: 1em; color: #333;">
-   <ol>
-      <li>Scope</li>
-      <li>Normative references</li>
-      <li>Terms and definitions</li>
-      <li>Types of lines</li>
-      <li>Line dimensions</li>
-      <li>Draughting of lines</li>
-      <li>Colours</li>
-      <li>Designation</li>
-      <li>Basic conventions and applications for leader lines and reference lines</li>
-   </ol>
-   </p>
-</div>
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+La norma ISO que define los principios generales de representación. Parte 2: convenciones básicas para lineas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0070490" target="_blank">UNE-en ISO 128-2:2022</a>. Su contenido es el siguiente (en inglés).
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Scope</li>
+
+<li>Normative references</li>
+
+<li>Terms and definitions</li>
+
+<li>Types of lines</li>
+
+<li>Line dimensions</li>
+
+<li>Draughting of lines</li>
+
+<li>Colours</li>
+
+<li>Designation</li>
+
+<li>Basic conventions and applications for leader lines and reference lines</li>
+
+</ol>
+
+</p>
+:::
 
 ### Apuntes
 
-Los planos deben contener dibujos claros que eviten la confusión. Las líneas normalizadas ayudan a que las zonas importantes del dibujo estén resaltadas (líneas gruesas) y otras más finas que sirvan para otros datos o referencias 
+Los planos deben contener dibujos claros que eviten la confusión. Las líneas normalizadas ayudan a que las zonas importantes del dibujo estén resaltadas (líneas gruesas) y otras más finas que sirvan para otros datos o referencias
 
 En este <a href="https://ibiguridt.wordpress.com/wp-content/uploads/2017/03/tipos-de-lc3adneas-normalizadas2.pdf" target="_blank">poster</a> se resumen los tipos de línea más comunes en los planos y su uso.
 
 ### Material complementario
 
-<a href="https://ibiguridt.wordpress.com/temas/vistas/lineas-normalizadas/" target="_blank">Web del Profesor Iñaki Biguri sobre líneas normalizadas  </a>
+<a href="https://ibiguridt.wordpress.com/temas/vistas/lineas-normalizadas/" target="_blank">Web del Profesor Iñaki Biguri sobre líneas normalizadas </a>
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-  Web corta, completa y con explicaciones claras y ejemplos sobre los usos de las líneas normalizadas 
+
+Web corta, completa y con explicaciones claras y ejemplos sobre los usos de las líneas normalizadas
+
 </p>
 
 ## Formatos de papel
 
 ### Contenido
 
-<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
-   <p style="font-size: 1.2em; color: #333;">
-   La norma ISO que define los formatos de papel es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0040991"  target="_blank">UNE-EN ISO 216:2008</a>. Su contenido es el siguiente.
-   </p>
-   <p style="font-size: 1em; color: #333;">
-   <ol>
-      <li>Objeto y campo de aplicación</li>
-      <li>Normas para consulta</li>
-      <li>Términos y definiciones</li>
-      <li>Principios generales</li>
-      <li>Designación de los formatos acabados y del sentido máquina</li>
-      <li>Formatos acabados</li>
-      <li>Tolerancias</li>
-   </ol>
-   </p>
-</div>
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+La norma ISO que define los formatos de papel es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0040991"  target="_blank">UNE-EN ISO 216:2008</a>. Su contenido es el siguiente.
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Objeto y campo de aplicación</li>
+
+<li>Normas para consulta</li>
+
+<li>Términos y definiciones</li>
+
+<li>Principios generales</li>
+
+<li>Designación de los formatos acabados y del sentido máquina</li>
+
+<li>Formatos acabados</li>
+
+<li>Tolerancias</li>
+
+</ol>
+
+</p>
+:::
 
 ### Apuntes
 
 #### Denominación correcta de los pliegos de papel
 
-<strong>El formato más común </strong> y que usamos todos habitualmente es el <strong>DIN A4 </strong> (201X297mm). En España se le sigue denominando “Folio” que era el anterior formato, cuyas dimensiones son 215×315 mm.  De forma semejante, la clásica “cuartilla” equivaldría en los formatos normalizados al A5. 
+<strong>El formato más común </strong> y que usamos todos habitualmente es el <strong>DIN A4 </strong> (201X297mm). En España se le sigue denominando “Folio” que era el anterior formato, cuyas dimensiones son 215×315 mm. De forma semejante, la clásica “cuartilla” equivaldría en los formatos normalizados al A5.
 
 ```{r}
 #| label: image_dina5_cuartilla
@@ -187,11 +235,11 @@ En este <a href="https://ibiguridt.wordpress.com/wp-content/uploads/2017/03/tipo
 knitr::include_graphics("images/01-10-formatosPapel.png", dpi = 270)
 ```
 
-No hay que confundir denominaciones y hay que usar siempre que sea posible los formatos normalizados. 
+No hay que confundir denominaciones y hay que usar siempre que sea posible los formatos normalizados.
 
-#### Obtención de los diferentes formatos de la serie A 
+#### Obtención de los diferentes formatos de la serie A
 
-Recordar las dimensiones de la serie A es muy sencillo, ya que para obtener un formato del inmediatamente más pequeño se “duplica su lado corto”. 
+Recordar las dimensiones de la serie A es muy sencillo, ya que para obtener un formato del inmediatamente más pequeño se “duplica su lado corto”.
 
 Por ejemplo, en la imagen se observa como duplicando el lado corto del A4 (que mide 210mm) se obtiene el lado largo del A3.
 
@@ -207,9 +255,9 @@ Por ejemplo, en la imagen se observa como duplicando el lado corto del A4 (que m
 knitr::include_graphics("images/01-11-ObtencionTamanios.png", dpi = 270)
 ```
 
-#### Posiciones de los diferentes formatos para planos. 
+#### Posiciones de los diferentes formatos para planos.
 
-En general, todos los formatos se utilizan en posición apaisada, es decir, si hubiese superpuesto un sistema de ejes cartesianos, la dimensión larga del formato estaría situada siempre paralela al eje x. 
+En general, todos los formatos se utilizan en posición apaisada, es decir, si hubiese superpuesto un sistema de ejes cartesianos, la dimensión larga del formato estaría situada siempre paralela al eje x.
 
 ```{r}
 #| label: image_formatos_apaisados
@@ -223,9 +271,9 @@ En general, todos los formatos se utilizan en posición apaisada, es decir, si h
 knitr::include_graphics("images/01-12-formatos apaisados.png", dpi = 270)
 ```
 
-<strong>El formato A4 es la excepción</strong>. En este caso, NUNCA se usa apaisado, SIEMPRE se usa en posición vertical. 
+<strong>El formato A4 es la excepción</strong>. En este caso, NUNCA se usa apaisado, SIEMPRE se usa en posición vertical.
 
-Esta regla no impide el máximo aprovechamiento del pliego en los casos que sea necesario, es decir, se puede girar el dibujo para que quepa dentro del formato, pero el cajetín siempre quedará en la esquina inferior derecha del lado largo y por tanto la posición del plano será apaisada, tal y como se muestra en la siguiente figura. 
+Esta regla no impide el máximo aprovechamiento del pliego en los casos que sea necesario, es decir, se puede girar el dibujo para que quepa dentro del formato, pero el cajetín siempre quedará en la esquina inferior derecha del lado largo y por tanto la posición del plano será apaisada, tal y como se muestra en la siguiente figura.
 
 ```{r}
 #| label: image_a3_girado
@@ -241,32 +289,43 @@ knitr::include_graphics("images/01-13-a3_girado.png", dpi = 270)
 
 ### Material complementario
 
-
 ## Carátula, sello, bloque de títulos o cajetín
 
 ### Contenido
 
-<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
-   <p style="font-size: 1.2em; color: #333;">
-   La norma ISO que define los campos de datos en bloques de títulos y en cabeceras de documentos es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0031532"  target="_blank">UNE-EN ISO 7200:2004</a>. Su contenido es el siguiente.
-   </p>
-   <p style="font-size: 1em; color: #333;">
-   <ol>
-      <li>Objeto y campo de aplicación</li>
-      <li>Normas para consulta</li>
-      <li>Términos y definiciones</li>
-      <li>Generalidades</li>
-      <li>Campos de datos en el bloque de títulos</li>
-      <li>Disposiciones del bloque de títulos</li>
-   </ol>
-   </p>
-</div>
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+La norma ISO que define los campos de datos en bloques de títulos y en cabeceras de documentos es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0031532"  target="_blank">UNE-EN ISO 7200:2004</a>. Su contenido es el siguiente.
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Objeto y campo de aplicación</li>
+
+<li>Normas para consulta</li>
+
+<li>Términos y definiciones</li>
+
+<li>Generalidades</li>
+
+<li>Campos de datos en el bloque de títulos</li>
+
+<li>Disposiciones del bloque de títulos</li>
+
+</ol>
+
+</p>
+:::
 
 ### Apuntes
 
 #### Posición del cajetín en el plano
 
-En todos los formatos, el cajetín se sitúa alineado con los márgenes en la esquina inferior derecha, tal como se muestra en la siguiente figura. En el A4, y debido precisamente a las dimensiones de su anchura el cajetín ocupa todo el espacio entre los dos márgenes. 
+En todos los formatos, el cajetín se sitúa alineado con los márgenes en la esquina inferior derecha, tal como se muestra en la siguiente figura. En el A4, y debido precisamente a las dimensiones de su anchura el cajetín ocupa todo el espacio entre los dos márgenes.
 
 ```{r}
 #| label: image_posicion_cajetin
@@ -285,18 +344,22 @@ knitr::include_graphics("images/01-14-posicion-cajetines.png", dpi = 270)
 En altura es libre, en anchura, viene condicionada por lo siguiente:
 
 <ol>
-      <li>La información contenida en el cajetín debe estar siempre a la vista, es decir, este no se puede doblar</li>
-      <li>Todos los planos de la serie se archivan doblados en formato A4</li>
-      <li>Los márgenes normalizados del A4 son 20 mm+ 10mm, por tanto, la anchura del cajetín debe ser de 180 mm. (210 - 30)</li>
+
+<li>La información contenida en el cajetín debe estar siempre a la vista, es decir, este no se puede doblar</li>
+
+<li>Todos los planos de la serie se archivan doblados en formato A4</li>
+
+<li>Los márgenes normalizados del A4 son 20 mm+ 10mm, por tanto, la anchura del cajetín debe ser de 180 mm. (210 - 30)</li>
+
 </ol>
 
 #### Ejemplo de cajetín
 
-No es imprescindible recordar todos los campos incluidos en la norma, ésta siempre se puede consultar. Sin embargo, es muy importante <strong>comprender bien los conceptos </strong> cuyo contenido se refleja en las casillas del cajetín <strong>y cómo se aplican</strong> según el caso concreto de un proyecto dado. 
+No es imprescindible recordar todos los campos incluidos en la norma, ésta siempre se puede consultar. Sin embargo, es muy importante <strong>comprender bien los conceptos </strong> cuyo contenido se refleja en las casillas del cajetín <strong>y cómo se aplican</strong> según el caso concreto de un proyecto dado.
 
-El cajetín de un plano es su documento de identidad. 
+El cajetín de un plano es su documento de identidad.
 
-El cajetín es único para cada proyecto y debe ser idéntico en todos los planos del mismo proyecto. <strong>No todos los campos son imprescindibles en todos los proyectos</strong>. En la siguiente figura se aclaran algunos de los campos más importantes. 
+El cajetín es único para cada proyecto y debe ser idéntico en todos los planos del mismo proyecto. <strong>No todos los campos son imprescindibles en todos los proyectos</strong>. En la siguiente figura se aclaran algunos de los campos más importantes.
 
 <i><strong>Caso:</strong> se trata de un proyecto para construir una explanación del terreno en la que situar un observatorio de estrellas. El Ayuntamiento de la Raposa quiere realizar el proyecto y encarga la redacción del mismo a la empresa consultora Soluciones Territoriales S.L. En el plano se han dibujado los movimientos de tierra necesarios para construir la explanación y un perfil del terreno para visualizarlo.</i>
 
@@ -312,7 +375,7 @@ El cajetín es único para cada proyecto y debe ser idéntico en todos los plano
 knitr::include_graphics("images/01-15-cajetin1.png", dpi = 270)
 ```
 
-La norma no obliga a que aparezcan en el cajetín la <string>escala</string> ni las <string>unidades de cota</string>, sin embargo, ES IMPRESCINDIBLE que la escala esté presente en el plano, hasta el punto de que un dibujo que no tiene escala no puede ser un plano. También si hay dibujos acotados en el plano, es necesario que aparezca la unidad en la que están dichas cotas. 
+La norma no obliga a que aparezcan en el cajetín la <string>escala</string> ni las <string>unidades de cota</string>, sin embargo, ES IMPRESCINDIBLE que la escala esté presente en el plano, hasta el punto de que un dibujo que no tiene escala no puede ser un plano. También si hay dibujos acotados en el plano, es necesario que aparezca la unidad en la que están dichas cotas.
 
 Por eso, para <string>no olvidar</string> estos dos conceptos tan importantes, recomendamos se incluyan en el cajetín.
 
@@ -342,86 +405,119 @@ knitr::include_graphics("images/01-16-cajetin2.png", dpi = 270)
 knitr::include_graphics("images/01-17-cajetin3.png", dpi = 270)
 ```
 
-
 ### Material complementario
-
-
-
 
 ## Rotulación
+
 ### Contenido
-<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
-   <p style="font-size: 1.2em; color: #333;">
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
 La norma ISO que define los aspectos generales de la rotulación es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0054594"  target="_blank">ISO 3098-1</a>. Su contenido es el siguiente (en Inglés).
-   </p>
-   <p style="font-size: 1em; color: #333;">
-   <ol>
-      <li>Scope</li>
-      <li>Normative references</li>
-      <li>Terms and definitions</li>
-      <li>General requirements</li>
-      <li>Dimensions</li>
-      <li>Designation</li>
-   </ol>
-   </p>
-</div>
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Scope</li>
+
+<li>Normative references</li>
+
+<li>Terms and definitions</li>
+
+<li>General requirements</li>
+
+<li>Dimensions</li>
+
+<li>Designation</li>
+
+</ol>
+
+</p>
+:::
 
 ### Apuntes
 
-Lo más importante de la rotulación es que produzca letras legibles y claras que ayuden a la correcta interpretación del plano. 
+Lo más importante de la rotulación es que produzca letras legibles y claras que ayuden a la correcta interpretación del plano.
 
-Es muy importante que el tamaño de la letra no sea demasiado pequeño (inferior a 2,3 mm. no se lee) ni demasiado grande (superior a 5 mm. ocupa mucho). En los planos raramente se usan tamaños superiores a 7 mm. 
+Es muy importante que el tamaño de la letra no sea demasiado pequeño (inferior a 2,3 mm. no se lee) ni demasiado grande (superior a 5 mm. ocupa mucho). En los planos raramente se usan tamaños superiores a 7 mm.
 
-Parece demostrado que los tipos de letra con “ serif” (con rabillos) ayudan a la lectura rápida de textos largos, ya que el lector solo se fija en la parte superior de la línea, esto se debe a los <a href="https://es.wikipedia.org/wiki/Psicolog%C3%ADa_de_la_Gestalt#La_escuela_de_la_Gestalt"  target="_blank">principios de la Gestalt</a> que permiten al cerebro “completar” la forma. Precisamente este aspecto se ha usado por investigadores del Australia's Royal Melbourne Institute of Technology para dificultar la lectura y hacer que el lector recuerde más información del texto leído. 
+Parece demostrado que los tipos de letra con “ serif” (con rabillos) ayudan a la lectura rápida de textos largos, ya que el lector solo se fija en la parte superior de la línea, esto se debe a los <a href="https://es.wikipedia.org/wiki/Psicolog%C3%ADa_de_la_Gestalt#La_escuela_de_la_Gestalt"  target="_blank">principios de la Gestalt</a> que permiten al cerebro “completar” la forma. Precisamente este aspecto se ha usado por investigadores del Australia's Royal Melbourne Institute of Technology para dificultar la lectura y hacer que el lector recuerde más información del texto leído.
 
-Sin embargo, en el caso de los planos interesan letras sencillas, sin adornos para aumentar la claridad y legibilidad, en general “sans serif”. 
+Sin embargo, en el caso de los planos interesan letras sencillas, sin adornos para aumentar la claridad y legibilidad, en general “sans serif”.
 
-Por otra parte, si las letras están un poco separadas aumenta la legibilidad, pero hay que llegar a un compromiso, ya que esos textos “ocupan mucho espacio” para una altura dada, y en ocasiones eso no interesa en un plano, como p.e. en los <strong>textos de acotación</strong>, que es mejor que sean estilizados. 
-
+Por otra parte, si las letras están un poco separadas aumenta la legibilidad, pero hay que llegar a un compromiso, ya que esos textos “ocupan mucho espacio” para una altura dada, y en ocasiones eso no interesa en un plano, como p.e. en los <strong>textos de acotación</strong>, que es mejor que sean estilizados.
 
 ### Material complementario
 
-<a href="https://magentag.wordpress.com/wp-content/uploads/2018/09/rotulacion.pdf " target="_blank">Resumen rotulación IES Gómez Pereira  </a>
+<a href="https://magentag.wordpress.com/wp-content/uploads/2018/09/rotulacion.pdf " target="_blank">Resumen rotulación IES Gómez Pereira </a>
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-  Se trata de un pdf de una sola página con los contenidos más relevantes de la rotulación. 
+
+Se trata de un pdf de una sola página con los contenidos más relevantes de la rotulación.
+
 </p>
 
-<a href=" " target="_blank">Con la tipografía 'Sans Forgetica' es más fácil que recuerdes lo que lees   </a>
+<a href=" " target="_blank">Con la tipografía 'Sans Forgetica' es más fácil que recuerdes lo que lees </a>
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-  Artículo divulgativo que ilustra aspectos de la claridad y legibilidad de una tipografía y describe un experimento científico asociado con ello. 
+
+Artículo divulgativo que ilustra aspectos de la claridad y legibilidad de una tipografía y describe un experimento científico asociado con ello.
+
 </p>
 
-<a href="https://www.vistaprint.es/hub/analisis-de-diseno-12-fuentes-mas-faciles-de-leer  " target="_blank">Análisis de diseño: Las 12 fuentes más fáciles de leer    </a>
-<p style="font-size: 0.8em; color: #333; font-style: italic;">
-  Web corta que analiza porque unas tipografías son más claras o legibles que otras. 
-</p>
+<a href="https://www.vistaprint.es/hub/analisis-de-diseno-12-fuentes-mas-faciles-de-leer  " target="_blank">Análisis de diseño: Las 12 fuentes más fáciles de leer </a>
 
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Web corta que analiza porque unas tipografías son más claras o legibles que otras.
+
+</p>
 
 ## Acotación
+
 ### Contenido
-<div style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;">
-   <p style="font-size: 1.2em; color: #333;">
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
 La norma ISO que define los principios generales de la acotación es es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0000034"  target="_blank">ISO 1039:1994</a>. Su contenido es el siguiente (Revisar. Pone que está anulada por una del 2019 pero no la encuentro).
-   </p>
-   <p style="font-size: 1em; color: #333;">
-   <ol>
-      <li>Objeto y campo de aplicación</li>
-      <li>Normas para consulta</li>
-      <li>Principios generales</li>
-      <li>Método de acotación</li>
-      <li>Disposiciones e inscripción de las cotas</li>
-      <li>Indicaciones especiales</li>
-      <li>Indicación de niveles</li>
-      <li>Correspondencia con otras normas</li>
-   </ol>
-   </p>
-</div>
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Objeto y campo de aplicación</li>
+
+<li>Normas para consulta</li>
+
+<li>Principios generales</li>
+
+<li>Método de acotación</li>
+
+<li>Disposiciones e inscripción de las cotas</li>
+
+<li>Indicaciones especiales</li>
+
+<li>Indicación de niveles</li>
+
+<li>Correspondencia con otras normas</li>
+
+</ol>
+
+</p>
+:::
 
 ### Apuntes
 
-<strong>Toda figura</strong>, objeto o pieza, <strong>queda definida</strong> por aquellos elementos que definen su funcionamiento o que, simplemente, determinan su forma geométrica. 
+<strong>Toda figura</strong>, objeto o pieza, <strong>queda definida</strong> por aquellos elementos que definen su funcionamiento o que, simplemente, determinan su forma geométrica.
 
-Las cotas se pueden clasificar <strong>en función de su importancia</strong>: (1) Funcionales (2) No funcionales y (3) Auxiliares 
+Las cotas se pueden clasificar <strong>en función de su importancia</strong>: (1) Funcionales (2) No funcionales y (3) Auxiliares
 
 ```{r}
 #| label: image_clasificacion_cotas
@@ -435,7 +531,7 @@ Las cotas se pueden clasificar <strong>en función de su importancia</strong>: (
 knitr::include_graphics("images/01-18-acotacion1.png", dpi = 270)
 ```
 
-Otra clasificación es en <strong>función de su cometido en el plano</strong>: (1) Cotas de dimensión y (2) cotas de situación o posición. 
+Otra clasificación es en <strong>función de su cometido en el plano</strong>: (1) Cotas de dimensión y (2) cotas de situación o posición.
 
 ```{r}
 #| label: image_clasificacion_cotas2
@@ -449,53 +545,72 @@ Otra clasificación es en <strong>función de su cometido en el plano</strong>: 
 knitr::include_graphics("images/01-19-acotacion2.png", dpi = 270)
 ```
 
-Las <strong>cotas de situación (S)</strong> determinan la posición de los elementos de la pieza, las <strong>cotas de dimensión (D)</strong> definen el tamaño de cada parte de la pieza 
+Las <strong>cotas de situación (S)</strong> determinan la posición de los elementos de la pieza, las <strong>cotas de dimensión (D)</strong> definen el tamaño de cada parte de la pieza
 
-Comprender estos tipos de cotas y cómo se aplican ayuda a definir adecuadamente los objetos con la acotación. 
+Comprender estos tipos de cotas y cómo se aplican ayuda a definir adecuadamente los objetos con la acotación.
 
 ### Material complementario
 
-<strong> Video de referencia. Normas de acotación básicas (5 minutos) <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></strong>
+<strong> Video de referencia. Normas de acotación básicas (5 minutos) ★★★</strong>
 
-::: {.cell}
-<iframe width="750" height="422" src="https://www.youtube.com/embed/YCssCLAe-80" frameborder="0" allowfullscreen></iframe>
+::: cell
+<iframe width="750" height="422" src="https://www.youtube.com/embed/YCssCLAe-80" frameborder="0" allowfullscreen>
+
+</iframe>
 :::
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
+
 <ol>
-      <li>0:10 Normas generales de acotación</li>
-      <li>0:25 Elementos de acotación</li>
-      <li>1:00 Acotación de arístas</li>
-      <li>3:30 Acotación de diámetros</li>
-      <li>4:25 Acotación de radios</li>
-   </ol>
+
+<li>0:10 Normas generales de acotación</li>
+
+<li>0:25 Elementos de acotación</li>
+
+<li>1:00 Acotación de arístas</li>
+
+<li>3:30 Acotación de diámetros</li>
+
+<li>4:25 Acotación de radios</li>
+
+</ol>
+
 </p>
 
+<strong> Vídeo “Arturo Geometría” Acotación (20’17’’) ★★★ </strong>
 
+::: cell
+<iframe width="750" height="422" src="https://www.youtube.com/embed/v1vjHB60c8Q?si=5sLVz52jU5zO1Y5A" frameborder="0" allowfullscreen>
 
-<strong> Vídeo “Arturo Geometría” Acotación (20’17’’) <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span> </strong>
-
-::: {.cell}
-<iframe width="750" height="422" src="https://www.youtube.com/embed/v1vjHB60c8Q?si=5sLVz52jU5zO1Y5A" frameborder="0" allowfullscreen></iframe>
+</iframe>
 :::
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-Vídeo completo con explicaciones verbales sobre las normas básicas de acotación 
+
+Vídeo completo con explicaciones verbales sobre las normas básicas de acotación
+
 </p>
-
-
 
 <a href="https://www.youtube.com/playlist?list=PLgZEwwjOo0OpdEYD2QsYiaEVQe7c7S0Dw" target="_blank">Web de youtube con 8 vídeos sobre diversos aspectos y casos de acotación </a>
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-  Tratan de casos algo más complejos, pero muy útiles para ampliar conocimientos sobre acotación.
+
+Tratan de casos algo más complejos, pero muy útiles para ampliar conocimientos sobre acotación.
+
 </p>
 
+<a href="https://ibiguridt.wordpress.com/temas/acotacion/" target="_blank">Web sobre acotación del profesor Iñaki Biguri (recomendada) ★★★</a>
 
-
-<a href="https://ibiguridt.wordpress.com/temas/acotacion/" target="_blank">Web sobre acotación del profesor Iñaki Biguri (recomendada) <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></a>
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-  Se trata de una web completa y bien ordenada para estudiar diversos aspectos de la acotación normalizada.
+
+Se trata de una web completa y bien ordenada para estudiar diversos aspectos de la acotación normalizada.
+
 </p>
 
 <a href="https://edea.juntadeandalucia.es/bancorecursos/items/05714c84-d536-4abd-8d25-56e702bd0aa1/1/viewscorm.jsp?.vi=file  " target="_blank">Web sobre acotación (nivel 1º Bachillerato) Junta Andalucía </a>
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-  Se trata de una web para el nivel básico de dibujo de 1º de Bachillerato.
+
+Se trata de una web para el nivel básico de dibujo de 1º de Bachillerato.
+
 </p>

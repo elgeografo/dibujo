@@ -2,161 +2,161 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Guía EGI-GIF",
+    "title": "Apuntes guía Expresión Gráfica ",
     "section": "",
-    "text": "Prefacio\nGUÍA EGI-GIF Expresión Gráfica de la Ingeniería. Grado en la Ingeniería Forestal\n\nEsta guía tiene referencias constantes a la norma UNE. Para su consulta es imprescindible que el alumno esté conectado a la vpn de la UPM\n\n\nEsta guía está en permanente actualización y por tanto sujeta a cambios. Se ruega revisar la fecha de actualización.",
+    "text": "Presentación",
     "crumbs": [
-      "Prefacio"
+      "Presentación"
     ]
   },
   {
     "objectID": "01-normalizacion.html",
     "href": "01-normalizacion.html",
-    "title": "1  Normalización",
+    "title": "1  Representación normalizada",
     "section": "",
     "text": "1.1 Escalas",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Normalización</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Representación normalizada</span>"
     ]
   },
   {
     "objectID": "01-normalizacion.html#escalas",
     "href": "01-normalizacion.html#escalas",
-    "title": "1  Normalización",
+    "title": "1  Representación normalizada",
     "section": "",
-    "text": "1.1.1 Contenido\n\n\nLa norma ISO que define las escalas es la ISO 5455:1979. Su contenido es el siguiente.\n\n\n\n\nObjeto y campo de aplicación\n\n\nDefiniciones\n\n\nDesignación\n\n\nInscripción\n\n\nEscalas\n\n\nDibujos a gran escala\n\n\n\n\n\n\n1.1.2 Apuntes\n\n1.1.2.1 Objeto y campo de aplicación\nEsta Norma Internacional especifica las escalas recomendadas, así como su designación para su utilización en los dibujos técnicos en todos los campos de la técnica.\n\n\n1.1.2.2 Definiciones\n\nEscala: Relación entre la medida lineal de la representación de un elemento de un objeto sobre un dibujo original y la medida lineal real del mismo elemento del objeto real.\nEscala a “tamaño natural”: Escala que corresponde a la relación 1:1\nEscala de ampliación: Escalas que corresponden a una relación superior a 1:1. Se dice que es mayor a medida que la relación correspondiente aumenta. Por ejemplo en una escala 2:1 la relación es de 2. Es decir, el objeto representado se amplía al doble.\nEscalas de reducción: Escalas que corresponden a una relación inferior a 1:1. Se dice que es menor a medida que la relación correspondiente disminuye. Por ejemplo en una escala 1:2 la relación es de 0.5. Es decir, el objeto representado se reduce a la mitad.\n\n\n\n\n\n\nEscala natural, de reducción y de ampliación.\n\n\n\n\n\n\n1.1.2.3 Designación e inscripción\nLa designación completa de una escala debe comprender la palabra “ESCALA” (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación:\n\nESCALA 1:1, para el tamaño natural.\nESCALA x:1, para las escalas de ampliación.\nESCALA 1:x, para las escalas de reducción.\n\n\n\n\n\n\n\nNota\n\n\n\nLa notación de escala 1:1 significa que una unidad de medida en el dibujo equivale a una unidad de medida en el objeto real.\nEl primer término representará la magnitud de la representación del objeto en el papel. El segundo término representará la magnitud objeto real.\n\nPAPEL:REAL\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nComo la escala es una relación adimensional, ambas magnitudes deben expresarse enlas mismas unidades\n\n\nSi no hay posibilidad de confusión, se puede omitir la palabra “ESCALA”.\nRespecto a la inscripción la norma dice “La designación de la escala utilizada en el dibujo debe inscribirse en el cuadro de rotulación del dibujo.\nSi hay que utilizar varias escalas en un dibujo, sólo debe inscribirse la escala principal del dibujo en el cuadro de rotulación, inscribiéndose las otras escalas al lado del número de referencia de la parte considerada o al lado de la referencia de una vista (o corte) de detalle.”\n\n\n1.1.2.4 Escalas normalizadas\n\n\n\n\n\n\n\n\n\nCategoría\nEscalas recomendadas\n\n\n\n\n\n\nEscalas de ampliación\n50:1\n20:1\n10:1\n\n\n\n5:1\n2:1\n\n\n\n\n\n\n\n\n\nTamaño natural\n1:1\n\n\n\n\n\n\n\n\n\n\nEscalas de reducción\n1:2\n1:5\n1:10\n\n\n\n1:20\n1:50\n1:100\n\n\n\n1:200\n1:500\n1:1 000\n\n\n\n1:2 000\n1:5 000\n1:10 000\n\n\n\n\n\n\n1.1.3 Material complementario\nWeb Deusto generalidades escala \n\nEn esta escueta web se explica (1) definición escala (2) tipos de escala (3) como aplicar e interpretar la escala",
+    "text": "1.1.1 Contenido\n\n\nLa norma ISO que define las escalas es la ISO 5455:1979. Su contenido es el siguiente.\n\n\n\n\nObjeto y campo de aplicación\n\n\nDefiniciones\n\n\nDesignación\n\n\nInscripción\n\n\nEscalas\n\n\nDibujos a gran escala\n\n\n\n\n\n\n1.1.2 Apuntes\n\n1.1.2.1 Objeto y campo de aplicación\nEsta Norma Internacional especifica las escalas recomendadas, así como su designación para su utilización en los dibujos técnicos en todos los campos de la técnica.\n\n\n1.1.2.2 Definiciones\n\nEscala: Relación entre la medida lineal de la representación de un elemento de un objeto sobre un dibujo original y la medida lineal real del mismo elemento del objeto real.\nEscala a “tamaño natural”: Escala que corresponde a la relación 1:1\nEscala de ampliación: Escalas que corresponden a una relación superior a 1:1. Se dice que es mayor a medida que la relación correspondiente aumenta. Por ejemplo en una escala 2:1 la relación es de 2. Es decir, el objeto representado se amplía al doble.\nEscalas de reducción: Escalas que corresponden a una relación inferior a 1:1. Se dice que es menor a medida que la relación correspondiente disminuye. Por ejemplo en una escala 1:2 la relación es de 0.5. Es decir, el objeto representado se reduce a la mitad.\n\n\n\n\n\n\nEscala natural, de reducción y de ampliación.\n\n\n\n\n\n\n1.1.2.3 Designación e inscripción\nLa designación completa de una escala debe comprender la palabra “ESCALA” (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación:\n\nESCALA 1:1, para el tamaño natural.\nESCALA x:1, para las escalas de ampliación.\nESCALA 1:x, para las escalas de reducción.\n\n\n\n\n\n\n\nNota\n\n\n\nLa notación de escala 1:1 significa que una unidad de medida en el dibujo equivale a una unidad de medida en el objeto real.\nEl primer término representará la magnitud de la representación del objeto en el papel. El segundo término representará la magnitud objeto real.\n\nPAPEL:REAL\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nComo la escala es una relación adimensional, ambas magnitudes deben expresarse enlas mismas unidades\n\n\nSi no hay posibilidad de confusión, se puede omitir la palabra “ESCALA”.\nRespecto a la inscripción la norma dice “La designación de la escala utilizada en el dibujo debe inscribirse en el cuadro de rotulación del dibujo.\nSi hay que utilizar varias escalas en un dibujo, sólo debe inscribirse la escala principal del dibujo en el cuadro de rotulación, inscribiéndose las otras escalas al lado del número de referencia de la parte considerada o al lado de la referencia de una vista (o corte) de detalle.”\n\n\n1.1.2.4 Escalas normalizadas\n\n\n\nCategoría\nEscalas recomendadas\n\n\n\n\n\n\nEscalas de ampliación\n50:1\n20:1\n10:1\n\n\n\n5:1\n2:1\n\n\n\n\n\n\n\n\n\nTamaño natural\n1:1\n\n\n\n\n\n\n\n\n\n\nEscalas de reducción\n1:2\n1:5\n1:10\n\n\n\n1:20\n1:50\n1:100\n\n\n\n1:200\n1:500\n1:1 000\n\n\n\n1:2 000\n1:5 000\n1:10 000\n\n\n\n\n\n\n1.1.3 Material complementario\nWeb Deusto generalidades escala \n\nEn esta escueta web se explica (1) definición escala (2) tipos de escala (3) como aplicar e interpretar la escala",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Normalización</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Representación normalizada</span>"
     ]
   },
   {
     "objectID": "01-normalizacion.html#tipos-de-linea",
     "href": "01-normalizacion.html#tipos-de-linea",
-    "title": "1  Normalización",
+    "title": "1  Representación normalizada",
     "section": "1.2 Tipos de linea",
     "text": "1.2 Tipos de linea\n\n1.2.1 Contenido\n\n\nLa norma ISO que define los principios generales de representación. Parte 2: convenciones básicas para lineas es la UNE-en ISO 128-2:2022. Su contenido es el siguiente (en inglés).\n\n\n\n\nScope\n\n\nNormative references\n\n\nTerms and definitions\n\n\nTypes of lines\n\n\nLine dimensions\n\n\nDraughting of lines\n\n\nColours\n\n\nDesignation\n\n\nBasic conventions and applications for leader lines and reference lines\n\n\n\n\n\n\n1.2.2 Apuntes\nLos planos deben contener dibujos claros que eviten la confusión. Las líneas normalizadas ayudan a que las zonas importantes del dibujo estén resaltadas (líneas gruesas) y otras más finas que sirvan para otros datos o referencias\nEn este poster se resumen los tipos de línea más comunes en los planos y su uso.\n\n\n1.2.3 Material complementario\nWeb del Profesor Iñaki Biguri sobre líneas normalizadas \n\nWeb corta, completa y con explicaciones claras y ejemplos sobre los usos de las líneas normalizadas",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Normalización</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Representación normalizada</span>"
     ]
   },
   {
     "objectID": "01-normalizacion.html#formatos-de-papel",
     "href": "01-normalizacion.html#formatos-de-papel",
-    "title": "1  Normalización",
+    "title": "1  Representación normalizada",
     "section": "1.3 Formatos de papel",
     "text": "1.3 Formatos de papel\n\n1.3.1 Contenido\n\n\nLa norma ISO que define los formatos de papel es la UNE-EN ISO 216:2008. Su contenido es el siguiente.\n\n\n\n\nObjeto y campo de aplicación\n\n\nNormas para consulta\n\n\nTérminos y definiciones\n\n\nPrincipios generales\n\n\nDesignación de los formatos acabados y del sentido máquina\n\n\nFormatos acabados\n\n\nTolerancias\n\n\n\n\n\n\n1.3.2 Apuntes\n\n1.3.2.1 Denominación correcta de los pliegos de papel\nEl formato más común  y que usamos todos habitualmente es el DIN A4  (201X297mm). En España se le sigue denominando “Folio” que era el anterior formato, cuyas dimensiones son 215×315 mm. De forma semejante, la clásica “cuartilla” equivaldría en los formatos normalizados al A5.\n\n\n\n\n\nComparación del formato DIN A5 con la cuartilla.\n\n\n\n\nNo hay que confundir denominaciones y hay que usar siempre que sea posible los formatos normalizados.\n\n\n1.3.2.2 Obtención de los diferentes formatos de la serie A\nRecordar las dimensiones de la serie A es muy sencillo, ya que para obtener un formato del inmediatamente más pequeño se “duplica su lado corto”.\nPor ejemplo, en la imagen se observa como duplicando el lado corto del A4 (que mide 210mm) se obtiene el lado largo del A3.\n\n\n\n\n\nObtención de los diferentes formatos de la serie A.\n\n\n\n\n\n\n1.3.2.3 Posiciones de los diferentes formatos para planos.\nEn general, todos los formatos se utilizan en posición apaisada, es decir, si hubiese superpuesto un sistema de ejes cartesianos, la dimensión larga del formato estaría situada siempre paralela al eje x.\n\n\n\n\n\nPosiciones de los diferentes formatos para planos.\n\n\n\n\nEl formato A4 es la excepción. En este caso, NUNCA se usa apaisado, SIEMPRE se usa en posición vertical.\nEsta regla no impide el máximo aprovechamiento del pliego en los casos que sea necesario, es decir, se puede girar el dibujo para que quepa dentro del formato, pero el cajetín siempre quedará en la esquina inferior derecha del lado largo y por tanto la posición del plano será apaisada, tal y como se muestra en la siguiente figura.\n\n\n\n\n\nFormato A3 en posición apaisada con dibujo girado.\n\n\n\n\n\n\n\n1.3.3 Material complementario",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Normalización</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Representación normalizada</span>"
     ]
   },
   {
     "objectID": "01-normalizacion.html#carátula-sello-bloque-de-títulos-o-cajetín",
     "href": "01-normalizacion.html#carátula-sello-bloque-de-títulos-o-cajetín",
-    "title": "1  Normalización",
+    "title": "1  Representación normalizada",
     "section": "1.4 Carátula, sello, bloque de títulos o cajetín",
     "text": "1.4 Carátula, sello, bloque de títulos o cajetín\n\n1.4.1 Contenido\n\n\nLa norma ISO que define los campos de datos en bloques de títulos y en cabeceras de documentos es la UNE-EN ISO 7200:2004. Su contenido es el siguiente.\n\n\n\n\nObjeto y campo de aplicación\n\n\nNormas para consulta\n\n\nTérminos y definiciones\n\n\nGeneralidades\n\n\nCampos de datos en el bloque de títulos\n\n\nDisposiciones del bloque de títulos\n\n\n\n\n\n\n1.4.2 Apuntes\n\n1.4.2.1 Posición del cajetín en el plano\nEn todos los formatos, el cajetín se sitúa alineado con los márgenes en la esquina inferior derecha, tal como se muestra en la siguiente figura. En el A4, y debido precisamente a las dimensiones de su anchura el cajetín ocupa todo el espacio entre los dos márgenes.\n\n\n\n\n\nPosición del cajetín en el plano.\n\n\n\n\n\n\n1.4.2.2 Dimensión del cajetín\nEn altura es libre, en anchura, viene condicionada por lo siguiente:\n\n\nLa información contenida en el cajetín debe estar siempre a la vista, es decir, este no se puede doblar\n\n\nTodos los planos de la serie se archivan doblados en formato A4\n\n\nLos márgenes normalizados del A4 son 20 mm+ 10mm, por tanto, la anchura del cajetín debe ser de 180 mm. (210 - 30)\n\n\n\n\n1.4.2.3 Ejemplo de cajetín\nNo es imprescindible recordar todos los campos incluidos en la norma, ésta siempre se puede consultar. Sin embargo, es muy importante comprender bien los conceptos  cuyo contenido se refleja en las casillas del cajetín y cómo se aplican según el caso concreto de un proyecto dado.\nEl cajetín de un plano es su documento de identidad.\nEl cajetín es único para cada proyecto y debe ser idéntico en todos los planos del mismo proyecto. No todos los campos son imprescindibles en todos los proyectos. En la siguiente figura se aclaran algunos de los campos más importantes.\nCaso: se trata de un proyecto para construir una explanación del terreno en la que situar un observatorio de estrellas. El Ayuntamiento de la Raposa quiere realizar el proyecto y encarga la redacción del mismo a la empresa consultora Soluciones Territoriales S.L. En el plano se han dibujado los movimientos de tierra necesarios para construir la explanación y un perfil del terreno para visualizarlo.\n\n\n\n\n\nElementos fundamentales de un cajetín.\n\n\n\n\nLa norma no obliga a que aparezcan en el cajetín la escala ni las unidades de cota, sin embargo, ES IMPRESCINDIBLE que la escala esté presente en el plano, hasta el punto de que un dibujo que no tiene escala no puede ser un plano. También si hay dibujos acotados en el plano, es necesario que aparezca la unidad en la que están dichas cotas.\nPor eso, para no olvidar estos dos conceptos tan importantes, recomendamos se incluyan en el cajetín.\n\n\n1.4.2.4 Otros ejemplos de cajetín\n\n\n\n\n\nEjemplo académico de cajetín para un carro portacables.\n\n\n\n\n\n\n\n\n\nEjemplo de cajetín en un proyecto fin de carrera. Ingeniero de Montes.\n\n\n\n\n\n\n\n1.4.3 Material complementario",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Normalización</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Representación normalizada</span>"
     ]
   },
   {
     "objectID": "01-normalizacion.html#rotulación",
     "href": "01-normalizacion.html#rotulación",
-    "title": "1  Normalización",
+    "title": "1  Representación normalizada",
     "section": "1.5 Rotulación",
     "text": "1.5 Rotulación\n\n1.5.1 Contenido\n\n\nLa norma ISO que define los aspectos generales de la rotulación es la ISO 3098-1. Su contenido es el siguiente (en Inglés).\n\n\n\n\nScope\n\n\nNormative references\n\n\nTerms and definitions\n\n\nGeneral requirements\n\n\nDimensions\n\n\nDesignation\n\n\n\n\n\n\n1.5.2 Apuntes\nLo más importante de la rotulación es que produzca letras legibles y claras que ayuden a la correcta interpretación del plano.\nEs muy importante que el tamaño de la letra no sea demasiado pequeño (inferior a 2,3 mm. no se lee) ni demasiado grande (superior a 5 mm. ocupa mucho). En los planos raramente se usan tamaños superiores a 7 mm.\nParece demostrado que los tipos de letra con “ serif” (con rabillos) ayudan a la lectura rápida de textos largos, ya que el lector solo se fija en la parte superior de la línea, esto se debe a los principios de la Gestalt que permiten al cerebro “completar” la forma. Precisamente este aspecto se ha usado por investigadores del Australia’s Royal Melbourne Institute of Technology para dificultar la lectura y hacer que el lector recuerde más información del texto leído.\nSin embargo, en el caso de los planos interesan letras sencillas, sin adornos para aumentar la claridad y legibilidad, en general “sans serif”.\nPor otra parte, si las letras están un poco separadas aumenta la legibilidad, pero hay que llegar a un compromiso, ya que esos textos “ocupan mucho espacio” para una altura dada, y en ocasiones eso no interesa en un plano, como p.e. en los textos de acotación, que es mejor que sean estilizados.\n\n\n1.5.3 Material complementario\nResumen rotulación IES Gómez Pereira \n\nSe trata de un pdf de una sola página con los contenidos más relevantes de la rotulación.\n\nCon la tipografía ‘Sans Forgetica’ es más fácil que recuerdes lo que lees \n\nArtículo divulgativo que ilustra aspectos de la claridad y legibilidad de una tipografía y describe un experimento científico asociado con ello.\n\nAnálisis de diseño: Las 12 fuentes más fáciles de leer \n\nWeb corta que analiza porque unas tipografías son más claras o legibles que otras.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Normalización</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Representación normalizada</span>"
     ]
   },
   {
     "objectID": "01-normalizacion.html#acotación",
     "href": "01-normalizacion.html#acotación",
-    "title": "1  Normalización",
+    "title": "1  Representación normalizada",
     "section": "1.6 Acotación",
     "text": "1.6 Acotación\n\n1.6.1 Contenido\n\n\nLa norma ISO que define los principios generales de la acotación es es la ISO 1039:1994. Su contenido es el siguiente (Revisar. Pone que está anulada por una del 2019 pero no la encuentro).\n\n\n\n\nObjeto y campo de aplicación\n\n\nNormas para consulta\n\n\nPrincipios generales\n\n\nMétodo de acotación\n\n\nDisposiciones e inscripción de las cotas\n\n\nIndicaciones especiales\n\n\nIndicación de niveles\n\n\nCorrespondencia con otras normas\n\n\n\n\n\n\n1.6.2 Apuntes\nToda figura, objeto o pieza, queda definida por aquellos elementos que definen su funcionamiento o que, simplemente, determinan su forma geométrica.\nLas cotas se pueden clasificar en función de su importancia: (1) Funcionales (2) No funcionales y (3) Auxiliares\n\n\n\n\n\nClasificación de las cotas en función de su importancia.\n\n\n\n\nOtra clasificación es en función de su cometido en el plano: (1) Cotas de dimensión y (2) cotas de situación o posición.\n\n\n\n\n\nClasificación de las cotas en función de su contenido.\n\n\n\n\nLas cotas de situación (S) determinan la posición de los elementos de la pieza, las cotas de dimensión (D) definen el tamaño de cada parte de la pieza\nComprender estos tipos de cotas y cómo se aplican ayuda a definir adecuadamente los objetos con la acotación.\n\n\n1.6.3 Material complementario\n Video de referencia. Normas de acotación básicas (5 minutos) ★★★\n\n\n\n\n\n\n\n0:10 Normas generales de acotación\n\n\n0:25 Elementos de acotación\n\n\n1:00 Acotación de arístas\n\n\n3:30 Acotación de diámetros\n\n\n4:25 Acotación de radios\n\n\n\n Vídeo “Arturo Geometría” Acotación (20’17’’) ★★★ \n\n\n\n\n\nVídeo completo con explicaciones verbales sobre las normas básicas de acotación\n\nWeb de youtube con 8 vídeos sobre diversos aspectos y casos de acotación \n\nTratan de casos algo más complejos, pero muy útiles para ampliar conocimientos sobre acotación.\n\nWeb sobre acotación del profesor Iñaki Biguri (recomendada) ★★★\n\nSe trata de una web completa y bien ordenada para estudiar diversos aspectos de la acotación normalizada.\n\nWeb sobre acotación (nivel 1º Bachillerato) Junta Andalucía \n\nSe trata de una web para el nivel básico de dibujo de 1º de Bachillerato.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Normalización</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Representación normalizada</span>"
     ]
   },
   {
     "objectID": "01-04-proyecciones.html",
     "href": "01-04-proyecciones.html",
-    "title": "2  title: “Proyecciones y sistemas de representación”",
+    "title": "2  title: “Sistemas de representación”",
     "section": "",
     "text": "2.1 Tipos de proyecciones",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Proyecciones y sistemas de representación</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sistemas de representación</span>"
     ]
   },
   {
     "objectID": "01-04-proyecciones.html#tipos-de-proyecciones",
     "href": "01-04-proyecciones.html#tipos-de-proyecciones",
-    "title": "2  title: “Proyecciones y sistemas de representación”",
+    "title": "2  title: “Sistemas de representación”",
     "section": "",
-    "text": "2.1.1 Proyección cónica\nLa proyección Cónica (también llamada proyección central o perspectiva) es el sistema de representación gráfico donde un haz de rectas confluyen en un punto denominado centro de proyección. Este haz de rectas proyectan el cuerpo sobre un plano auxiliar que se intersecta con dichas rectas.\n\nMostrar Animación\n\n\nParar Animación\n\n\n\n\nProyección Cónica\n\n\n\n\n2.1.2 Proyección Cilíndrica\nLa proyección Cilíndrica (también llamada proyección paralela) es el sistema de representación gráfico donde el centro de proyección es un punto impropio (está en el infinito).\nLa proyección cilindrica será oblicua cuando los rayos proyectantes sean oblicuos al plano de proyección.\n\n\nMostrar Animación\n\n\nParar Animación\n\n\n\n\nProyección Cilíndrica oblicua\n\n\nLa proyección cilíndrica será orotgonal cuando los rayos proyectantes sean perpendiculares al plano de proyección.\n\n\nMostrar Animación\n\n\nParar Animación\n\n\n\n\nProyección Cilíndrica oblicua",
+    "text": "2.1.1 Proyección cónica\nLa proyección Cónica (también llamada proyección central o perspectiva) es el sistema de representación gráfico donde un haz de rectas confluyen en un punto denominado centro de proyección. Este haz de rectas proyectan el cuerpo sobre un plano auxiliar que se intersecta con dichas rectas.\n\n\nMostrar Animación\n\n\n\n\nParar Animación\n\n\n\n\n\nProyección Cónica\n\n\n\n\n2.1.2 Proyección Cilíndrica\nLa proyección Cilíndrica (también llamada proyección paralela) es el sistema de representación gráfico donde el centro de proyección es un punto impropio (está en el infinito).\nLa proyección cilindrica será oblicua cuando los rayos proyectantes sean oblicuos al plano de proyección.\n\n\n\nMostrar Animación\n\n\n\n\nParar Animación\n\n\n\n\n\nProyección Cilíndrica oblicua\n\n\nLa proyección cilíndrica será orotgonal cuando los rayos proyectantes sean perpendiculares al plano de proyección.\n\n\n\nMostrar Animación\n\n\n\n\nParar Animación\n\n\n\n\n\nProyección Cilíndrica oblicua",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Proyecciones y sistemas de representación</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sistemas de representación</span>"
     ]
   },
   {
     "objectID": "01-04-proyecciones.html#objeto-de-la-geometría-descrptiva.-sistema-de-representación.",
     "href": "01-04-proyecciones.html#objeto-de-la-geometría-descrptiva.-sistema-de-representación.",
-    "title": "2  title: “Proyecciones y sistemas de representación”",
+    "title": "2  title: “Sistemas de representación”",
     "section": "2.2 Objeto de la Geometría Descrptiva. Sistema de Representación.",
     "text": "2.2 Objeto de la Geometría Descrptiva. Sistema de Representación.\nLa Geometría Descriptivaes una rama de la geometría que se ocupa de la representación de objetos tridimensionales en dos dimensiones, utilizando un conjunto de métodos matemáticos y gráficos. Su objetivo principal es representar formas tridimensionales en un plano bidimensional de manera que se mantengan todas las relaciones espaciales entre los elementos del objeto, permitiendo que dichas formas puedan ser reconstruidas o visualizadas tridimensionalmente a partir de sus proyecciones bidimensionales.\nLos sistemas de representación de la geometría descriptiva son: * Sistema diédrico * Sistema acotado * sistema axonométrico * Sistema cónico o central\nLos tres primeros utilizan una proyección plana o colíndrina, mientras que el cuarto usa una proyección cónica. A continuación damos una breve explicación de cada uno.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Proyecciones y sistemas de representación</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sistemas de representación</span>"
     ]
   },
   {
     "objectID": "01-04-proyecciones.html#sistema-diédrico",
     "href": "01-04-proyecciones.html#sistema-diédrico",
-    "title": "2  title: “Proyecciones y sistemas de representación”",
+    "title": "2  title: “Sistemas de representación”",
     "section": "2.3 Sistema Diédrico",
-    "text": "2.3 Sistema Diédrico\nEl sistema diédrico, también conocido como proyección diédrica, es un método de la geometría descriptiva que se utiliza para representar objetos tridimensionales en dos dimensiones, mediante la proyección ortogonal de sus puntos sobre dos planos perpendiculares entre sí: el plano horizontal y el plano vertical.\n\nMostrar Animación\n\n\nParar Animación\n\n\n\n\nSistema diédrico\n\n\nConceptos Básicos del Sistema Diédrico\n\n2.3.1 Planos de Proyección\n\nPlano Horizontal (PH): Es el plano sobre el cual se proyecta la vista superior del objeto.\nPlano Vertical (PV): Es el plano sobre el cual se proyecta la vista frontal del objeto.\n\nAmbos planos son perpendiculares entre sí y se intersecan en una línea llamada línea de tierra.\n\n\n2.3.2 Proyecciones Ortogonales\nEn el sistema diédrico, los objetos se proyectan ortogonalmente (es decir, con líneas de proyección perpendiculares a los planos) sobre ambos planos de proyección. Estas proyecciones producen dos vistas principales: * Vista Horizontal (planta): La proyección del objeto sobre el plano horizontal. * Vista Frontal (alzado): La proyección del objeto sobre el plano vertical. A veces, también se puede incluir una vista lateral (perfil), que es la proyección del objeto sobre un tercer plano perpendicular a los dos anteriores, llamado plano de perfil.\n\n\n2.3.3 Línea de Tierra\nEs la línea de intersección entre el plano horizontal y el plano vertical. Sirve como referencia para alinear y relacionar las proyecciones de los puntos en ambos planos.\n\n\n2.3.4 Posiciones de los Puntos y sus Proyecciones\nUn punto en el espacio se representa mediante dos proyecciones: una en el plano horizontal y otra en el plano vertical. La distancia de un punto al plano horizontal se refleja en la proyección vertical, y la distancia al plano vertical se refleja en la proyección horizontal.\n\n\n2.3.5 Proyecciones de Rectas y Planos\nLas rectas y planos en el espacio también se proyectan en los dos planos de proyección, permitiendo entender su orientación y posición en el espacio tridimensional. Las proyecciones de una recta pueden ser paralelas o inclinadas respecto a los planos, y su verdadera longitud se visualiza dependiendo de su inclinación respecto a los planos de proyección.",
+    "text": "2.3 Sistema Diédrico\nEl sistema diédrico, también conocido como proyección diédrica, es un método de la geometría descriptiva que se utiliza para representar objetos tridimensionales en dos dimensiones, mediante la proyección ortogonal de sus puntos sobre dos planos perpendiculares entre sí: el plano horizontal y el plano vertical.\n\n\nMostrar Animación\n\n\n\n\nParar Animación\n\n\n\n\n\nSistema diédrico\n\n\nConceptos Básicos del Sistema Diédrico\n\n2.3.1 Planos de Proyección\n\nPlano Horizontal (PH): Es el plano sobre el cual se proyecta la vista superior del objeto.\nPlano Vertical (PV): Es el plano sobre el cual se proyecta la vista frontal del objeto.\n\nAmbos planos son perpendiculares entre sí y se intersecan en una línea llamada línea de tierra.\n\n\n2.3.2 Proyecciones Ortogonales\nEn el sistema diédrico, los objetos se proyectan ortogonalmente (es decir, con líneas de proyección perpendiculares a los planos) sobre ambos planos de proyección. Estas proyecciones producen dos vistas principales: * Vista Horizontal (planta): La proyección del objeto sobre el plano horizontal. * Vista Frontal (alzado): La proyección del objeto sobre el plano vertical. A veces, también se puede incluir una vista lateral (perfil), que es la proyección del objeto sobre un tercer plano perpendicular a los dos anteriores, llamado plano de perfil.\n\n\n2.3.3 Línea de Tierra\nEs la línea de intersección entre el plano horizontal y el plano vertical. Sirve como referencia para alinear y relacionar las proyecciones de los puntos en ambos planos.\n\n\n2.3.4 Posiciones de los Puntos y sus Proyecciones\nUn punto en el espacio se representa mediante dos proyecciones: una en el plano horizontal y otra en el plano vertical. La distancia de un punto al plano horizontal se refleja en la proyección vertical, y la distancia al plano vertical se refleja en la proyección horizontal.\n\n\n2.3.5 Proyecciones de Rectas y Planos\nLas rectas y planos en el espacio también se proyectan en los dos planos de proyección, permitiendo entender su orientación y posición en el espacio tridimensional. Las proyecciones de una recta pueden ser paralelas o inclinadas respecto a los planos, y su verdadera longitud se visualiza dependiendo de su inclinación respecto a los planos de proyección.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Proyecciones y sistemas de representación</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sistemas de representación</span>"
     ]
   },
   {
     "objectID": "01-04-proyecciones.html#sistema-acotado",
     "href": "01-04-proyecciones.html#sistema-acotado",
-    "title": "2  title: “Proyecciones y sistemas de representación”",
+    "title": "2  title: “Sistemas de representación”",
     "section": "2.4 Sistema Acotado",
     "text": "2.4 Sistema Acotado\nEl sistema acotado es un método de representación gráfica utilizado en geometría descriptiva que se centra en la proyección de puntos, líneas, y superficies en un solo plano de proyección, con la adición de cotas o alturas para describir la tercera dimensión.Este sistema es ampliamente utilizado para representar el relieve de un terreno, donde las cotas indican las elevaciones del terreno respecto a un plano base\nConceptos básicos del Sistema Acotado:\n\n2.4.1 Plano de Proyección\nSe utiliza un solo plano de proyección, que generalmente se toma como el plano horizontal. Los objetos se proyectan ortogonalmente sobre este plano, y las alturas (cotas) de los puntos, líneas o superficies se indican mediante valores numéricos.\n\n\n2.4.2 Cotas (Alturas)\nLas cotas son valores numéricos que indican la altura de cada punto sobre el plano de proyección. Estos valores permiten reconstruir la forma tridimensional del objeto a partir de su proyección en el plano.\n\n\n2.4.3 Proyección de Puntos\nCada punto en el espacio se proyecta como un punto en el plano de proyección, acompañado de su cota. Por ejemplo, si un punto tiene una cota de 3 unidades, esto indica que el punto está 3 unidades por encima del plano de proyección.\n\n\n2.4.4 Superficies y Volúmenes (curvas de nivel o isolineas)\nLas superficies planas o curvadas se representan por su contorno proyectado en el plano de proyección, acompañado de cotas que indican las alturas de diferentes puntos clave en la superficie.\n\n\n2.4.5 Ventajas del Sistema Acotado\n\nSimplicidad: Permite representar la complejidad tridimensional en un solo plano, facilitando el análisis y la interpretación.\nEficiencia: Al utilizar un solo plano de proyección, se simplifica la representación gráfica de objetos y estructuras.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Proyecciones y sistemas de representación</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sistemas de representación</span>"
     ]
   },
   {
     "objectID": "01-04-proyecciones.html#sistema-axonométrico",
     "href": "01-04-proyecciones.html#sistema-axonométrico",
-    "title": "2  title: “Proyecciones y sistemas de representación”",
+    "title": "2  title: “Sistemas de representación”",
     "section": "2.5 Sistema Axonométrico",
     "text": "2.5 Sistema Axonométrico\nEl sistema axonométrico es un método de proyección gráfica utilizado en geometría descriptiva para representar objetos tridimensionales en un plano bidimensional. A diferencia de otros sistemas de proyección, el sistema axonométrico permite que los tres ejes coordenados (X, Y, Z) sean representados simultáneamente, manteniendo las relaciones proporcionales entre ellos, lo que facilita la visualización espacial de los objetos.\nConceptos básicos del Sistema Axonométrico\n\n2.5.1 Proyección Ortogonal Oblicua\nEn el sistema axonométrico, el objeto tridimensional se proyecta sobre un plano en una dirección que no es perpendicular a ninguno de los ejes, lo que permite que los tres ejes (X, Y, Z) sean visibles en la representación. Esto crea una vista en la que se pueden observar las tres dimensiones de un objeto simultáneamente.\n\n\n2.5.2 Tipos de Proyecciones Axonométricas\n\nIsométrica: Los tres ejes están inclinados en el mismo ángulo respecto al plano de proyección, generalmente 120° entre ellos, y las dimensiones a lo largo de cada eje son igualmente escaladas.\nDimétrica: Dos de los ejes tienen la misma escala, y el tercero tiene una escala diferente. Los ángulos entre los ejes no son iguales.\nTrimétrica: Cada uno de los tres ejes tiene una escala diferente, y los ángulos entre ellos también son diferentes.\n\n\n\n2.5.3 Escalas y Distorsión\nEn el sistema axonométrico, la distorsión ocurre porque las escalas a lo largo de los ejes pueden variar dependiendo del tipo de proyección (isométrica, dimétrica, trimétrica). A pesar de la distorsión, las relaciones proporcionales se mantienen dentro de cada eje, lo que permite una representación coherente del objeto.\n\n\n2.5.4 Ventajas del Sistema Axonométrico\n\nVisualización Completa: Permite observar las tres dimensiones de un objeto en una sola vista, lo que es útil para entender la forma y estructura general del objeto.\nProporcionalidad: Mantiene las proporciones entre las dimensiones del objeto, aunque las escalas puedan variar.\n\n\n\n2.5.5 Proyección Isométrica\n//TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos\n\n\n2.5.6 Proyección Dimétrica\n//TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos\n\n\n2.5.7 Perspectiva caballera como caso especial de la Proyección Dimétrica\n//TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos\n\n\n2.5.8 Proyección Trimétrica\n//TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Proyecciones y sistemas de representación</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sistemas de representación</span>"
     ]
   },
   {
     "objectID": "01-04-proyecciones.html#sistema-cónico-o-central",
     "href": "01-04-proyecciones.html#sistema-cónico-o-central",
-    "title": "2  title: “Proyecciones y sistemas de representación”",
+    "title": "2  title: “Sistemas de representación”",
     "section": "2.6 Sistema cónico o central",
     "text": "2.6 Sistema cónico o central\n// TODO: terminar esta parte",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Proyecciones y sistemas de representación</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Sistemas de representación</span>"
     ]
   },
   {
     "objectID": "03-geometria-constructiva.html",
     "href": "03-geometria-constructiva.html",
-    "title": "3  Contenido de Geometría Constructiva",
+    "title": "3  Herramientas de modelado: Geometría Constructiva",
     "section": "",
     "text": "Contenido de la geometría constructiva",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Contenido de Geometría Constructiva</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Herramientas de modelado: Geometría Constructiva</span>"
     ]
   }
 ]
