@@ -21,36 +21,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # Necesario para comparar cambios con HEAD~1
+          fetch-depth: 0
 
-      # --- Diagnóstico previo ---
       - name: Mostrar estructura inicial
         run: |
           pwd
           ls -la
           echo "Git SHA: $GITHUB_SHA"
           echo "Rama: $GITHUB_REF_NAME"
-          echo "Ultimo commit:"
           git --no-pager log -1 --pretty=oneline
 
       - name: Verificar _quarto.yml
         run: |
           if [ -f "_quarto.yml" ]; then
             echo "_quarto.yml encontrado en la raíz."
-            echo "---- CONTENIDO _quarto.yml ----"
             sed -n '1,200p' _quarto.yml
-            echo "--------------------------------"
           else
-            echo "❌ _quarto.yml NO está en la raíz. ¿Está en una subcarpeta?"
+            echo "❌ _quarto.yml NO está en la raíz."
             exit 1
           fi
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.5.57" # o "latest"
 
       - name: Versión de Quarto
         run: |
-          quarto check --quiet || true
           quarto --version
 
       # R solo si lo usas
@@ -63,21 +60,18 @@ jobs:
         run: |
           Rscript -e 'install.packages(c("knitr","rmarkdown","ggplot2","dplyr","readr"))'
 
-      # --- Limpieza para evitar subir salidas antiguas ---
+      # Limpiar salidas/cachés antiguas (esto sustituye al 'quarto clean')
       - name: Clean previous outputs
         run: |
           rm -rf _book _site _freeze .quarto *_cache
 
-      - name: Quarto clean
-        run: quarto clean .
-
-      # --- Render con log detallado ---
+      # Render con log detallado
       - name: Render (verbose)
         run: |
           set -o pipefail
           quarto render . --verbose | tee render-log.txt
 
-      # --- QMDs cambiados y ver si aparecen en el log ---
+      # QMDs cambiados en el último commit
       - name: QMDs cambiados en el último commit
         run: |
           echo "Archivos .qmd cambiados en HEAD~1..HEAD:"
@@ -99,35 +93,26 @@ jobs:
             echo "No hubo cambios .qmd en el último commit."
           fi
 
-      # --- Validaciones e inspecciones ---
+      # Validaciones e inspecciones
       - name: Validar salida del libro
         run: |
           if [ ! -f "_book/index.html" ]; then
             echo "❌ No se generó _book/index.html. Revisa render-log.txt"
             exit 1
-          else
-            echo "✅ _book/index.html encontrado."
           fi
+          echo "✅ _book/index.html encontrado."
 
       - name: Stamp build (marca este run)
         run: |
           printf "build_sha=%s\ndate=%s\n" "$GITHUB_SHA" "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > _book/.build-stamp.txt
-          echo "✅ Stamp escrito en _book/.build-stamp.txt"
 
       - name: Listar contenido post-render
         run: |
-          echo "---- Árbol de directorios (nivel 2) ----"
-          find . -maxdepth 2 -type d | sort
-          echo "---- Contenido de _book/ ----"
           ls -la _book
-          echo "---- Tamaño de _book ----"
           du -sh _book || true
-          echo "---- Primeros archivos en _book ----"
-          find _book -maxdepth 2 -type f | sort | head -n 50
-          echo "---- Build stamp ----"
-          cat _book/.build-stamp.txt
+          head -n 5 _book/.build-stamp.txt || true
 
-      # --- Subir logs y _book como artifacts ---
+      # Subir logs y _book como artifacts
       - name: Upload render log
         uses: actions/upload-artifact@v4
         with:
@@ -137,7 +122,7 @@ jobs:
       - name: Upload _book artifact (para Pages)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _book   # usa _site si tu proyecto fuera website
+          path: _book
 
   deploy:
     needs: build
