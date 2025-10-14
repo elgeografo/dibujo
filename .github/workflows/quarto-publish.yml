@@ -33,6 +33,8 @@ jobs:
       # Render (para libros Quarto el output es _book; para websites es _site)
       - name: Render
         run: quarto render .
+      - name: Listar contenido post-render
+        run: ls -R
 
       # Sube el sitio generado como artifact para Pages
       - name: Upload artifact
