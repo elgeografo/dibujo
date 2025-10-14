@@ -6,4 +6,4 @@
 
 > Esta guía tiene referencias constantes a la norma UNE. Para su consulta es imprescindible que el alumno esté conectado a la vpn de la UPM
 
-> Esta guía está en permanente actualización y por tanto sujeta a cambios. Se ruega revisar la fecha de actualización.  V0.0.1-->
+> Esta guía está en permanente actualización y por tanto sujeta a cambios. Se ruega revisar la fecha de actualización.  V0.0.2-->
