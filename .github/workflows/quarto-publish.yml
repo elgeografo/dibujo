@@ -1,5 +1,5 @@
 
-name: Build & Publish Quarto Book to GitHub Pages
+name: Build & Publish Quarto (Pages via Actions)
 
 on:
   push:
@@ -7,61 +7,47 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Setup Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      # 1) Instalar R
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
+      # R solo si lo usas
+      - uses: r-lib/actions/setup-r@v2
         with:
-          use-public-rspm: true  # repos rápidos y reproducibles
-
-      # 2) Instalar paquetes de R necesarios para tus .qmd
-      #    Edita la lista según lo que uses (añade/quita).
+          use-public-rspm: true
       - name: Install R packages
         run: |
-          Rscript -e 'install.packages(c(
-            "knitr",
-            "rmarkdown",
-            "ggplot2",
-            "dplyr",
-            "readr"
-          ))'
+          Rscript -e 'install.packages(c("knitr","rmarkdown","ggplot2","dplyr","readr"))'
 
-      # (Opcional) Si generas PDF/LaTeX desde Quarto, instala TinyTeX:
-      # - name: Install TinyTeX
-      #   run: |
-      #     Rscript -e 'install.packages("tinytex")'
-      #     Rscript -e 'tinytex::install_tinytex(force = TRUE)'
+      # Render (para libros Quarto el output es _book; para websites es _site)
+      - name: Render
+        run: quarto render .
 
-      # (Opcional) Si usas Python en algunos chunks, añade:
-      # - name: Setup Python
-      #   uses: actions/setup-python@v5
-      #   with:
-      #     python-version: '3.11'
-      # - name: Install Python deps
-      #   run: pip install -r requirements.txt
-
-      - name: Render Book
-        uses: quarto-dev/quarto-actions/render@v2
+      # Sube el sitio generado como artifact para Pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _book   # usa _site si tu proyecto es website
 
-      - name: Publish to GitHub Pages (gh-pages)
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
