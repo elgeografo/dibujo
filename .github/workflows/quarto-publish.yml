@@ -1,3 +1,4 @@
+
 name: Build & Publish Quarto Book to GitHub Pages
 
 on:
@@ -13,6 +14,7 @@ permissions:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -20,11 +22,37 @@ jobs:
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      # Si renderizas código de Python/R, instala dependencias aquí (opcional).
-      # - uses: actions/setup-python@v5
-      #   with: { python-version: '3.11' }
-      # - run: pip install -r requirements.txt
-      # - uses: r-lib/actions/setup-r@v2
+      # 1) Instalar R
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true  # repos rápidos y reproducibles
+
+      # 2) Instalar paquetes de R necesarios para tus .qmd
+      #    Edita la lista según lo que uses (añade/quita).
+      - name: Install R packages
+        run: |
+          Rscript -e 'install.packages(c(
+            "knitr",
+            "rmarkdown",
+            "ggplot2",
+            "dplyr",
+            "readr"
+          ))'
+
+      # (Opcional) Si generas PDF/LaTeX desde Quarto, instala TinyTeX:
+      # - name: Install TinyTeX
+      #   run: |
+      #     Rscript -e 'install.packages("tinytex")'
+      #     Rscript -e 'tinytex::install_tinytex(force = TRUE)'
+
+      # (Opcional) Si usas Python en algunos chunks, añade:
+      # - name: Setup Python
+      #   uses: actions/setup-python@v5
+      #   with:
+      #     python-version: '3.11'
+      # - name: Install Python deps
+      #   run: pip install -r requirements.txt
 
       - name: Render Book
         uses: quarto-dev/quarto-actions/render@v2
