@@ -38,7 +38,7 @@ knitr::include_graphics("images/01-03-A-escalas.png", dpi = 270)
 
 ### Designación e inscripción
 
-Laa **designación** completa de una escala *debe comprender la palabra "ESCALA" (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación*:
+Laaa **designación** completa de una escala *debe comprender la palabra "ESCALA" (o su equivalente en la lengua utilizada en el dibujo), seguida de la indicación de la relación correspondiente, como se indica a continuación*:
 
 -   ESCALA 1:1, para el tamaño natural.
 -   ESCALA x:1, para las escalas de ampliación.
