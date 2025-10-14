@@ -1,5 +1,4 @@
-
-name: Build & Publish Quarto (Pages via Actions)
+name: Build & Publish Quarto (Pages via Actions) [debug]
 
 on:
   push:
@@ -19,28 +18,90 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # --- Diagnóstico previo ---
+      - name: Mostrar estructura inicial
+        run: |
+          pwd
+          ls -la
+          echo "Git SHA: $GITHUB_SHA"
+          echo "Rama: $GITHUB_REF_NAME"
+
+      - name: Verificar _quarto.yml
+        run: |
+          if [ -f "_quarto.yml" ]; then
+            echo "_quarto.yml encontrado en la raíz."
+            echo "---- CONTENIDO _quarto.yml ----"
+            sed -n '1,200p' _quarto.yml
+            echo "--------------------------------"
+          else
+            echo "❌ _quarto.yml NO está en la raíz. ¿Está en una subcarpeta?"
+            exit 1
+          fi
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Versión de Quarto
+        run: |
+          quarto check --quiet || true
+          quarto --version
 
       # R solo si lo usas
-      - uses: r-lib/actions/setup-r@v2
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
-      - name: Install R packages
+
+      - name: Instalar paquetes R mínimos
         run: |
           Rscript -e 'install.packages(c("knitr","rmarkdown","ggplot2","dplyr","readr"))'
 
-      # Render (para libros Quarto el output es _book; para websites es _site)
-      - name: Render
-        run: quarto render .
-      - name: Listar contenido post-render
-        run: ls -R
+      # --- Render con log detallado ---
+      - name: Render (verbose)
+        run: |
+          set -o pipefail
+          quarto render . --verbose | tee render-log.txt
 
-      # Sube el sitio generado como artifact para Pages
-      - name: Upload artifact
+      # --- Post-render: inspecciones ---
+      - name: Listar contenido post-render
+        run: |
+          echo "---- Árbol de directorios (nivel 2) ----"
+          find . -maxdepth 2 -type d | sort
+          echo "---- Contenido de _book/ (si existe) ----"
+          if [ -d "_book" ]; then
+            ls -la _book
+            echo "---- Tamaño de _book ----"
+            du -sh _book || true
+            echo "---- Archivos clave en _book ----"
+            find _book -maxdepth 2 -type f | sort | head -n 50
+          else
+            echo "⚠️ _book no existe tras el render."
+          fi
+
+      # --- Falla explícita si no hay salida del libro ---
+      - name: Validar salida del libro
+        run: |
+          if [ ! -f "_book/index.html" ]; then
+            echo "❌ No se generó _book/index.html. Revisa el log de render."
+            exit 1
+          else
+            echo "✅ _book/index.html encontrado."
+          fi
+
+      # --- Subir logs y _book como artifacts para inspección ---
+      - name: Upload render log
+        uses: actions/upload-artifact@v4
+        with:
+          name: render-log
+          path: render-log.txt
+
+      - name: Upload _book artifact (para Pages)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _book   # usa _site si tu proyecto es website
+          path: _book   # usa _site si tu proyecto fuera website
 
   deploy:
     needs: build
@@ -52,4 +113,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
