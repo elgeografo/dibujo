@@ -1,0 +1,39 @@
+name: Build & Publish Quarto Book to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # Si renderizas código de Python/R, instala dependencias aquí (opcional).
+      # - uses: actions/setup-python@v5
+      #   with: { python-version: '3.11' }
+      # - run: pip install -r requirements.txt
+      # - uses: r-lib/actions/setup-r@v2
+
+      - name: Render Book
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          path: .
+
+      - name: Publish to GitHub Pages (gh-pages)
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
