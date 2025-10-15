@@ -9,7 +9,7 @@ book:
   #date: "9/8/2024"
   chapters:
     - index.qmd
-    - 01-normalizacion.qmd
+    - 01-03-normalizacion.qmd
     #- 02-proyecciones.qmd
     - 01-04-proyecciones.qmd
     - 03-geometria-constructiva.qmd
