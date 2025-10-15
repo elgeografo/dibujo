@@ -20,7 +20,7 @@ https://plataforma.aenormas.aenor.com/?searchMode=my&title=3098&onlyNews=false
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <p style="font-size: 1.2em; color: #333;">
 
-La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0013534"  target="_blank">ISO 5455:1979</a>. Su contenido es el siguiente.
+La2 norma ISO que define las escalas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0013534"  target="_blank">ISO 5455:1979</a>. Su contenido es el siguiente.
 
 </p>
 
