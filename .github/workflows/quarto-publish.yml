@@ -1,0 +1,136 @@
+name: Build & Publish Quarto (Pages via Actions) [debug]
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Mostrar estructura inicial
+        run: |
+          pwd
+          ls -la
+          echo "Git SHA: $GITHUB_SHA"
+          echo "Rama: $GITHUB_REF_NAME"
+          git --no-pager log -1 --pretty=oneline
+
+      - name: Verificar _quarto.yml
+        run: |
+          if [ -f "_quarto.yml" ]; then
+            echo "_quarto.yml encontrado en la raíz."
+            sed -n '1,200p' _quarto.yml
+          else
+            echo "❌ _quarto.yml NO está en la raíz."
+            exit 1
+          fi
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.5.57" # o "latest"
+
+      - name: Versión de Quarto
+        run: |
+          quarto --version
+
+      # R solo si lo usas
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Instalar paquetes R mínimos
+        run: |
+          Rscript -e 'install.packages(c("knitr","rmarkdown","ggplot2","dplyr","readr"))'
+
+      # Limpiar salidas/cachés antiguas (esto sustituye al 'quarto clean')
+      - name: Clean previous outputs
+        run: |
+          rm -rf _book _site _freeze .quarto *_cache
+
+      # Render con log detallado
+      - name: Render (verbose)
+        run: |
+          set -o pipefail
+          quarto render . --verbose | tee render-log.txt
+
+      # QMDs cambiados en el último commit
+      - name: QMDs cambiados en el último commit
+        run: |
+          echo "Archivos .qmd cambiados en HEAD~1..HEAD:"
+          git diff --name-only HEAD~1 HEAD | grep -E '\.qmd$' || echo "(ninguno)"
+
+      - name: Confirmar que los QMDs cambiados se renderizaron
+        run: |
+          CHANGED=$(git diff --name-only HEAD~1 HEAD | grep -E '\.qmd$' || true)
+          if [ -n "$CHANGED" ]; then
+            echo "$CHANGED" | while read f; do
+              base=$(basename "$f")
+              if grep -qi "$base" render-log.txt; then
+                echo "✅ Render detectado para: $base"
+              else
+                echo "⚠️ NO se ve en el log: $base (¿está en book.chapters?)"
+              fi
+            done
+          else
+            echo "No hubo cambios .qmd en el último commit."
+          fi
+
+      # Validaciones e inspecciones
+      - name: Validar salida del libro
+        run: |
+          if [ ! -f "_book/index.html" ]; then
+            echo "❌ No se generó _book/index.html. Revisa render-log.txt"
+            exit 1
+          fi
+          echo "✅ _book/index.html encontrado."
+
+      - name: Stamp build (marca este run)
+        run: |
+          printf "build_sha=%s\ndate=%s\n" "$GITHUB_SHA" "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > _book/.build-stamp.txt
+
+      - name: Listar contenido post-render
+        run: |
+          ls -la _book
+          du -sh _book || true
+          head -n 5 _book/.build-stamp.txt || true
+
+      # Subir logs y _book como artifacts
+      - name: Upload render log
+        uses: actions/upload-artifact@v4
+        with:
+          name: render-log
+          path: render-log.txt
+
+      - name: Upload _book artifact (para Pages)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _book
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

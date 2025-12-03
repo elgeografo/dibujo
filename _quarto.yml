@@ -10,8 +10,7 @@ book:
   chapters:
     - index.qmd
     - 01-normalizacion.qmd
-    #- 02-proyecciones.qmd
-    - 01-04-proyecciones.qmd
+    - 02-proyecciones.qmd
     - 03-geometria-constructiva.qmd
 
     - part: "Sistemas de Representación"
