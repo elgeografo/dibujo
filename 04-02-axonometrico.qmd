@@ -1,4 +1,4 @@
-# Axonométrico {#sec-axonometrico}
+# &nbsp; 4.2 Axonométrico {#sec-axonometrico .unnumbered}
 
 El sistema axonométrico es un método de representación que permite visualizar objetos tridimensionales en una sola proyección.
 

@@ -1,4 +1,4 @@
-# Planos Acotados {#sec-planos-acotados}
+# &nbsp; 4.3 Planos Acotados {#sec-planos-acotados .unnumbered}
 
 El sistema de planos acotados es especialmente útil para la representación de terrenos y superficies topográficas.
 

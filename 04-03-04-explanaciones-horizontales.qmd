@@ -1,4 +1,4 @@
-# Explanaciones horizontales {#sec-explanaciones-horizontales}
+# &nbsp;&nbsp; 4.3.4 Explanaciones horizontales {#sec-explanaciones-horizontales .unnumbered}
 
 Las explanaciones horizontales son superficies planas que se construyen sobre terrenos naturales con pendiente.
 

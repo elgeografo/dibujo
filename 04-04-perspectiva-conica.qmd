@@ -1,4 +1,4 @@
-# Perspectiva Cónica {#sec-perspectiva-conica}
+# &nbsp; 4.4 Perspectiva Cónica {#sec-perspectiva-conica .unnumbered}
 
 La perspectiva cónica es el sistema de representación que más se aproxima a la visión humana del espacio tridimensional.
 

@@ -80,8 +80,8 @@
     ]
   },
   {
-    "objectID": "01-04-proyecciones.html",
-    "href": "01-04-proyecciones.html",
+    "objectID": "02-proyecciones.html",
+    "href": "02-proyecciones.html",
     "title": "2  title: “Sistemas de representación”",
     "section": "",
     "text": "2.1 Tipos de proyecciones",
@@ -90,8 +90,8 @@
     ]
   },
   {
-    "objectID": "01-04-proyecciones.html#tipos-de-proyecciones",
-    "href": "01-04-proyecciones.html#tipos-de-proyecciones",
+    "objectID": "02-proyecciones.html#tipos-de-proyecciones",
+    "href": "02-proyecciones.html#tipos-de-proyecciones",
     "title": "2  title: “Sistemas de representación”",
     "section": "",
     "text": "2.1.1 Proyección cónica\nLa proyección Cónica (también llamada proyección central o perspectiva) es el sistema de representación gráfico donde un haz de rectas confluyen en un punto denominado centro de proyección. Este haz de rectas proyectan el cuerpo sobre un plano auxiliar que se intersecta con dichas rectas.\n\n\nMostrar Animación\n\n\n\n\nParar Animación\n\n\n\n\n\nProyección Cónica\n\n\n\n\n2.1.2 Proyección Cilíndrica\nLa proyección Cilíndrica (también llamada proyección paralela) es el sistema de representación gráfico donde el centro de proyección es un punto impropio (está en el infinito).\nLa proyección cilindrica será oblicua cuando los rayos proyectantes sean oblicuos al plano de proyección.\n\n\n\nMostrar Animación\n\n\n\n\nParar Animación\n\n\n\n\n\nProyección Cilíndrica oblicua\n\n\nLa proyección cilíndrica será orotgonal cuando los rayos proyectantes sean perpendiculares al plano de proyección.\n\n\n\nMostrar Animación\n\n\n\n\nParar Animación\n\n\n\n\n\nProyección Cilíndrica oblicua",
@@ -100,8 +100,8 @@
     ]
   },
   {
-    "objectID": "01-04-proyecciones.html#objeto-de-la-geometría-descrptiva.-sistema-de-representación.",
-    "href": "01-04-proyecciones.html#objeto-de-la-geometría-descrptiva.-sistema-de-representación.",
+    "objectID": "02-proyecciones.html#objeto-de-la-geometría-descrptiva.-sistema-de-representación.",
+    "href": "02-proyecciones.html#objeto-de-la-geometría-descrptiva.-sistema-de-representación.",
     "title": "2  title: “Sistemas de representación”",
     "section": "2.2 Objeto de la Geometría Descrptiva. Sistema de Representación.",
     "text": "2.2 Objeto de la Geometría Descrptiva. Sistema de Representación.\nLa Geometría Descriptivaes una rama de la geometría que se ocupa de la representación de objetos tridimensionales en dos dimensiones, utilizando un conjunto de métodos matemáticos y gráficos. Su objetivo principal es representar formas tridimensionales en un plano bidimensional de manera que se mantengan todas las relaciones espaciales entre los elementos del objeto, permitiendo que dichas formas puedan ser reconstruidas o visualizadas tridimensionalmente a partir de sus proyecciones bidimensionales.\nLos sistemas de representación de la geometría descriptiva son: * Sistema diédrico * Sistema acotado * sistema axonométrico * Sistema cónico o central\nLos tres primeros utilizan una proyección plana o colíndrina, mientras que el cuarto usa una proyección cónica. A continuación damos una breve explicación de cada uno.",
@@ -110,8 +110,8 @@
     ]
   },
   {
-    "objectID": "01-04-proyecciones.html#sistema-diédrico",
-    "href": "01-04-proyecciones.html#sistema-diédrico",
+    "objectID": "02-proyecciones.html#sistema-diédrico",
+    "href": "02-proyecciones.html#sistema-diédrico",
     "title": "2  title: “Sistemas de representación”",
     "section": "2.3 Sistema Diédrico",
     "text": "2.3 Sistema Diédrico\nEl sistema diédrico, también conocido como proyección diédrica, es un método de la geometría descriptiva que se utiliza para representar objetos tridimensionales en dos dimensiones, mediante la proyección ortogonal de sus puntos sobre dos planos perpendiculares entre sí: el plano horizontal y el plano vertical.\n\n\nMostrar Animación\n\n\n\n\nParar Animación\n\n\n\n\n\nSistema diédrico\n\n\nConceptos Básicos del Sistema Diédrico\n\n2.3.1 Planos de Proyección\n\nPlano Horizontal (PH): Es el plano sobre el cual se proyecta la vista superior del objeto.\nPlano Vertical (PV): Es el plano sobre el cual se proyecta la vista frontal del objeto.\n\nAmbos planos son perpendiculares entre sí y se intersecan en una línea llamada línea de tierra.\n\n\n2.3.2 Proyecciones Ortogonales\nEn el sistema diédrico, los objetos se proyectan ortogonalmente (es decir, con líneas de proyección perpendiculares a los planos) sobre ambos planos de proyección. Estas proyecciones producen dos vistas principales: * Vista Horizontal (planta): La proyección del objeto sobre el plano horizontal. * Vista Frontal (alzado): La proyección del objeto sobre el plano vertical. A veces, también se puede incluir una vista lateral (perfil), que es la proyección del objeto sobre un tercer plano perpendicular a los dos anteriores, llamado plano de perfil.\n\n\n2.3.3 Línea de Tierra\nEs la línea de intersección entre el plano horizontal y el plano vertical. Sirve como referencia para alinear y relacionar las proyecciones de los puntos en ambos planos.\n\n\n2.3.4 Posiciones de los Puntos y sus Proyecciones\nUn punto en el espacio se representa mediante dos proyecciones: una en el plano horizontal y otra en el plano vertical. La distancia de un punto al plano horizontal se refleja en la proyección vertical, y la distancia al plano vertical se refleja en la proyección horizontal.\n\n\n2.3.5 Proyecciones de Rectas y Planos\nLas rectas y planos en el espacio también se proyectan en los dos planos de proyección, permitiendo entender su orientación y posición en el espacio tridimensional. Las proyecciones de una recta pueden ser paralelas o inclinadas respecto a los planos, y su verdadera longitud se visualiza dependiendo de su inclinación respecto a los planos de proyección.",
@@ -120,8 +120,8 @@
     ]
   },
   {
-    "objectID": "01-04-proyecciones.html#sistema-acotado",
-    "href": "01-04-proyecciones.html#sistema-acotado",
+    "objectID": "02-proyecciones.html#sistema-acotado",
+    "href": "02-proyecciones.html#sistema-acotado",
     "title": "2  title: “Sistemas de representación”",
     "section": "2.4 Sistema Acotado",
     "text": "2.4 Sistema Acotado\nEl sistema acotado es un método de representación gráfica utilizado en geometría descriptiva que se centra en la proyección de puntos, líneas, y superficies en un solo plano de proyección, con la adición de cotas o alturas para describir la tercera dimensión.Este sistema es ampliamente utilizado para representar el relieve de un terreno, donde las cotas indican las elevaciones del terreno respecto a un plano base\nConceptos básicos del Sistema Acotado:\n\n2.4.1 Plano de Proyección\nSe utiliza un solo plano de proyección, que generalmente se toma como el plano horizontal. Los objetos se proyectan ortogonalmente sobre este plano, y las alturas (cotas) de los puntos, líneas o superficies se indican mediante valores numéricos.\n\n\n2.4.2 Cotas (Alturas)\nLas cotas son valores numéricos que indican la altura de cada punto sobre el plano de proyección. Estos valores permiten reconstruir la forma tridimensional del objeto a partir de su proyección en el plano.\n\n\n2.4.3 Proyección de Puntos\nCada punto en el espacio se proyecta como un punto en el plano de proyección, acompañado de su cota. Por ejemplo, si un punto tiene una cota de 3 unidades, esto indica que el punto está 3 unidades por encima del plano de proyección.\n\n\n2.4.4 Superficies y Volúmenes (curvas de nivel o isolineas)\nLas superficies planas o curvadas se representan por su contorno proyectado en el plano de proyección, acompañado de cotas que indican las alturas de diferentes puntos clave en la superficie.\n\n\n2.4.5 Ventajas del Sistema Acotado\n\nSimplicidad: Permite representar la complejidad tridimensional en un solo plano, facilitando el análisis y la interpretación.\nEficiencia: Al utilizar un solo plano de proyección, se simplifica la representación gráfica de objetos y estructuras.",
@@ -130,8 +130,8 @@
     ]
   },
   {
-    "objectID": "01-04-proyecciones.html#sistema-axonométrico",
-    "href": "01-04-proyecciones.html#sistema-axonométrico",
+    "objectID": "02-proyecciones.html#sistema-axonométrico",
+    "href": "02-proyecciones.html#sistema-axonométrico",
     "title": "2  title: “Sistemas de representación”",
     "section": "2.5 Sistema Axonométrico",
     "text": "2.5 Sistema Axonométrico\nEl sistema axonométrico es un método de proyección gráfica utilizado en geometría descriptiva para representar objetos tridimensionales en un plano bidimensional. A diferencia de otros sistemas de proyección, el sistema axonométrico permite que los tres ejes coordenados (X, Y, Z) sean representados simultáneamente, manteniendo las relaciones proporcionales entre ellos, lo que facilita la visualización espacial de los objetos.\nConceptos básicos del Sistema Axonométrico\n\n2.5.1 Proyección Ortogonal Oblicua\nEn el sistema axonométrico, el objeto tridimensional se proyecta sobre un plano en una dirección que no es perpendicular a ninguno de los ejes, lo que permite que los tres ejes (X, Y, Z) sean visibles en la representación. Esto crea una vista en la que se pueden observar las tres dimensiones de un objeto simultáneamente.\n\n\n2.5.2 Tipos de Proyecciones Axonométricas\n\nIsométrica: Los tres ejes están inclinados en el mismo ángulo respecto al plano de proyección, generalmente 120° entre ellos, y las dimensiones a lo largo de cada eje son igualmente escaladas.\nDimétrica: Dos de los ejes tienen la misma escala, y el tercero tiene una escala diferente. Los ángulos entre los ejes no son iguales.\nTrimétrica: Cada uno de los tres ejes tiene una escala diferente, y los ángulos entre ellos también son diferentes.\n\n\n\n2.5.3 Escalas y Distorsión\nEn el sistema axonométrico, la distorsión ocurre porque las escalas a lo largo de los ejes pueden variar dependiendo del tipo de proyección (isométrica, dimétrica, trimétrica). A pesar de la distorsión, las relaciones proporcionales se mantienen dentro de cada eje, lo que permite una representación coherente del objeto.\n\n\n2.5.4 Ventajas del Sistema Axonométrico\n\nVisualización Completa: Permite observar las tres dimensiones de un objeto en una sola vista, lo que es útil para entender la forma y estructura general del objeto.\nProporcionalidad: Mantiene las proporciones entre las dimensiones del objeto, aunque las escalas puedan variar.\n\n\n\n2.5.5 Proyección Isométrica\n//TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos\n\n\n2.5.6 Proyección Dimétrica\n//TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos\n\n\n2.5.7 Perspectiva caballera como caso especial de la Proyección Dimétrica\n//TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos\n\n\n2.5.8 Proyección Trimétrica\n//TODO: Explicar coeficiente de reducción, poner un par de ejemplos y gráficos",
@@ -140,8 +140,8 @@
     ]
   },
   {
-    "objectID": "01-04-proyecciones.html#sistema-cónico-o-central",
-    "href": "01-04-proyecciones.html#sistema-cónico-o-central",
+    "objectID": "02-proyecciones.html#sistema-cónico-o-central",
+    "href": "02-proyecciones.html#sistema-cónico-o-central",
     "title": "2  title: “Sistemas de representación”",
     "section": "2.6 Sistema cónico o central",
     "text": "2.6 Sistema cónico o central\n// TODO: terminar esta parte",
@@ -157,6 +157,336 @@
     "text": "Contenido de la geometría constructiva",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Herramientas de modelado: Geometría Constructiva</span>"
+    ]
+  },
+  {
+    "objectID": "04-sistemas-representacion.html",
+    "href": "04-sistemas-representacion.html",
+    "title": "Sistemas de Representación",
+    "section": "",
+    "text": "Introducción\nLos sistemas de representación son métodos gráficos que permiten representar objetos tridimensionales sobre un soporte bidimensional (papel o pantalla).\nEn el dibujo técnico existen diversos sistemas de representación, cada uno con sus características y aplicaciones específicas. Los principales sistemas son:",
+    "crumbs": [
+      "Sistemas de Representación"
+    ]
+  },
+  {
+    "objectID": "04-sistemas-representacion.html#introducción",
+    "href": "04-sistemas-representacion.html#introducción",
+    "title": "Sistemas de Representación",
+    "section": "",
+    "text": "Sistema Diédrico: Utiliza proyecciones ortogonales sobre planos perpendiculares\nSistema Axonométrico: Representa objetos en una sola proyección tridimensional\nSistema de Planos Acotados: Especialmente útil para topografía y terrenos\nPerspectiva Cónica: Reproduce la visión humana del espacio",
+    "crumbs": [
+      "Sistemas de Representación"
+    ]
+  },
+  {
+    "objectID": "04-sistemas-representacion.html#clasificación-de-los-sistemas",
+    "href": "04-sistemas-representacion.html#clasificación-de-los-sistemas",
+    "title": "Sistemas de Representación",
+    "section": "Clasificación de los sistemas",
+    "text": "Clasificación de los sistemas\nLos sistemas de representación se pueden clasificar según el tipo de proyección que utilizan:\n\nSistemas de proyección cilíndrica ortogonal\n\nSistema Diédrico\nSistema Axonométrico\n\n\n\nSistemas de proyección cilíndrica oblicua\n\nPerspectiva Caballera\nPerspectiva Militar\n\n\n\nSistemas de proyección cónica\n\nPerspectiva Cónica\n\n\n\nSistemas de proyección acotada\n\nSistema de Planos Acotados\n\nEn los siguientes apartados se desarrollan en detalle los principales sistemas de representación utilizados en ingeniería y arquitectura.",
+    "crumbs": [
+      "Sistemas de Representación"
+    ]
+  },
+  {
+    "objectID": "04-01-diedrico.html",
+    "href": "04-01-diedrico.html",
+    "title": "  4.1 Diédrico",
+    "section": "",
+    "text": "Introducción\nEl sistema diédrico es un método de representación gráfica que utiliza proyecciones ortogonales sobre dos planos perpendiculares entre sí.\n[Contenido del capítulo sobre el sistema diédrico…]",
+    "crumbs": [
+      "&nbsp; 4.1 Diédrico"
+    ]
+  },
+  {
+    "objectID": "04-01-diedrico.html#fundamentos",
+    "href": "04-01-diedrico.html#fundamentos",
+    "title": "  4.1 Diédrico",
+    "section": "Fundamentos",
+    "text": "Fundamentos\n[Desarrolla los conceptos fundamentales…]",
+    "crumbs": [
+      "&nbsp; 4.1 Diédrico"
+    ]
+  },
+  {
+    "objectID": "04-01-diedrico.html#aplicaciones",
+    "href": "04-01-diedrico.html#aplicaciones",
+    "title": "  4.1 Diédrico",
+    "section": "Aplicaciones",
+    "text": "Aplicaciones\n[Ejemplos y aplicaciones prácticas…]",
+    "crumbs": [
+      "&nbsp; 4.1 Diédrico"
+    ]
+  },
+  {
+    "objectID": "04-02-axonometrico.html",
+    "href": "04-02-axonometrico.html",
+    "title": "4.2 Axonométrico",
+    "section": "",
+    "text": "Introducción\nEl sistema axonométrico es un método de representación que permite visualizar objetos tridimensionales en una sola proyección.\n[Contenido del capítulo sobre el sistema axonométrico…]",
+    "crumbs": [
+      "&nbsp; 4.2 Axonométrico"
+    ]
+  },
+  {
+    "objectID": "04-02-axonometrico.html#tipos-de-proyección-axonométrica",
+    "href": "04-02-axonometrico.html#tipos-de-proyección-axonométrica",
+    "title": "4.2 Axonométrico",
+    "section": "Tipos de proyección axonométrica",
+    "text": "Tipos de proyección axonométrica\n[Desarrolla isométrica, dimétrica, trimétrica…]",
+    "crumbs": [
+      "&nbsp; 4.2 Axonométrico"
+    ]
+  },
+  {
+    "objectID": "04-02-axonometrico.html#aplicaciones",
+    "href": "04-02-axonometrico.html#aplicaciones",
+    "title": "4.2 Axonométrico",
+    "section": "Aplicaciones",
+    "text": "Aplicaciones\n[Ejemplos y aplicaciones prácticas…]",
+    "crumbs": [
+      "&nbsp; 4.2 Axonométrico"
+    ]
+  },
+  {
+    "objectID": "04-03-planos-acotados.html",
+    "href": "04-03-planos-acotados.html",
+    "title": "4.3 Planos Acotados",
+    "section": "",
+    "text": "Introducción\nEl sistema de planos acotados es especialmente útil para la representación de terrenos y superficies topográficas.\nLos planos acotados permiten representar superficies mediante líneas de nivel o curvas de nivel, indicando la altura mediante cotas numéricas.",
+    "crumbs": [
+      "&nbsp; 4.3 Planos Acotados"
+    ]
+  },
+  {
+    "objectID": "04-03-planos-acotados.html#fundamentos-del-sistema",
+    "href": "04-03-planos-acotados.html#fundamentos-del-sistema",
+    "title": "4.3 Planos Acotados",
+    "section": "Fundamentos del sistema",
+    "text": "Fundamentos del sistema\n[Desarrolla los conceptos básicos del sistema de planos acotados…]",
+    "crumbs": [
+      "&nbsp; 4.3 Planos Acotados"
+    ]
+  },
+  {
+    "objectID": "04-03-planos-acotados.html#aplicaciones-en-topografía",
+    "href": "04-03-planos-acotados.html#aplicaciones-en-topografía",
+    "title": "4.3 Planos Acotados",
+    "section": "Aplicaciones en topografía",
+    "text": "Aplicaciones en topografía\nEste sistema es fundamental para el trabajo con terrenos, tal como se desarrolla en los siguientes apartados.",
+    "crumbs": [
+      "&nbsp; 4.3 Planos Acotados"
+    ]
+  },
+  {
+    "objectID": "04-03-01-curvado-planos.html",
+    "href": "04-03-01-curvado-planos.html",
+    "title": "4.3.1 Curvado de planos",
+    "section": "",
+    "text": "Introducción\nEl curvado de planos es una técnica fundamental en el sistema de planos acotados para representar superficies curvas.\n[Contenido sobre el curvado de planos…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.1 Curvado de planos"
+    ]
+  },
+  {
+    "objectID": "04-03-01-curvado-planos.html#metodología",
+    "href": "04-03-01-curvado-planos.html#metodología",
+    "title": "4.3.1 Curvado de planos",
+    "section": "Metodología",
+    "text": "Metodología\n[Desarrolla los procedimientos y técnicas…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.1 Curvado de planos"
+    ]
+  },
+  {
+    "objectID": "04-03-01-curvado-planos.html#ejemplos-prácticos",
+    "href": "04-03-01-curvado-planos.html#ejemplos-prácticos",
+    "title": "4.3.1 Curvado de planos",
+    "section": "Ejemplos prácticos",
+    "text": "Ejemplos prácticos\n[Casos de aplicación…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.1 Curvado de planos"
+    ]
+  },
+  {
+    "objectID": "04-03-02-vaguadas-divisorias.html",
+    "href": "04-03-02-vaguadas-divisorias.html",
+    "title": "4.3.2 Vaguadas y divisorias",
+    "section": "",
+    "text": "Vaguadas\nLas vaguadas y divisorias son elementos fundamentales en el análisis topográfico del terreno.\nLas vaguadas son las líneas que recogen el agua de escorrentía en un terreno.\n[Desarrolla el concepto de vaguadas…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.2 Vaguadas y divisorias"
+    ]
+  },
+  {
+    "objectID": "04-03-02-vaguadas-divisorias.html#divisorias",
+    "href": "04-03-02-vaguadas-divisorias.html#divisorias",
+    "title": "4.3.2 Vaguadas y divisorias",
+    "section": "Divisorias",
+    "text": "Divisorias\nLas divisorias son las líneas que separan diferentes cuencas hidrográficas.\n[Desarrolla el concepto de divisorias…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.2 Vaguadas y divisorias"
+    ]
+  },
+  {
+    "objectID": "04-03-02-vaguadas-divisorias.html#determinación-en-planos-acotados",
+    "href": "04-03-02-vaguadas-divisorias.html#determinación-en-planos-acotados",
+    "title": "4.3.2 Vaguadas y divisorias",
+    "section": "Determinación en planos acotados",
+    "text": "Determinación en planos acotados\n[Métodos para identificar y trazar vaguadas y divisorias…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.2 Vaguadas y divisorias"
+    ]
+  },
+  {
+    "objectID": "04-03-03-perfiles-longitudinales.html",
+    "href": "04-03-03-perfiles-longitudinales.html",
+    "title": "4.3.3 Perfiles longitudinales",
+    "section": "",
+    "text": "Introducción\nLos perfiles longitudinales permiten visualizar la sección vertical del terreno a lo largo de un recorrido determinado.\n[Contenido sobre perfiles longitudinales…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.3 Perfiles longitudinales"
+    ]
+  },
+  {
+    "objectID": "04-03-03-perfiles-longitudinales.html#construcción-de-perfiles",
+    "href": "04-03-03-perfiles-longitudinales.html#construcción-de-perfiles",
+    "title": "4.3.3 Perfiles longitudinales",
+    "section": "Construcción de perfiles",
+    "text": "Construcción de perfiles\n[Metodología para elaborar perfiles longitudinales…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.3 Perfiles longitudinales"
+    ]
+  },
+  {
+    "objectID": "04-03-03-perfiles-longitudinales.html#aplicaciones-en-ingeniería",
+    "href": "04-03-03-perfiles-longitudinales.html#aplicaciones-en-ingeniería",
+    "title": "4.3.3 Perfiles longitudinales",
+    "section": "Aplicaciones en ingeniería",
+    "text": "Aplicaciones en ingeniería\n[Uso de perfiles en proyectos de carreteras, canales, etc…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.3 Perfiles longitudinales"
+    ]
+  },
+  {
+    "objectID": "04-03-04-explanaciones-horizontales.html",
+    "href": "04-03-04-explanaciones-horizontales.html",
+    "title": "4.3.4 Explanaciones horizontales",
+    "section": "",
+    "text": "Introducción\nLas explanaciones horizontales son superficies planas que se construyen sobre terrenos naturales con pendiente.\n[Contenido sobre explanaciones horizontales…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.4 Explanaciones horizontales"
+    ]
+  },
+  {
+    "objectID": "04-03-04-explanaciones-horizontales.html#cálculo-de-taludes",
+    "href": "04-03-04-explanaciones-horizontales.html#cálculo-de-taludes",
+    "title": "4.3.4 Explanaciones horizontales",
+    "section": "Cálculo de taludes",
+    "text": "Cálculo de taludes\n[Metodología para determinar los taludes de desmonte y terraplén…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.4 Explanaciones horizontales"
+    ]
+  },
+  {
+    "objectID": "04-03-04-explanaciones-horizontales.html#trazado-en-planos-acotados",
+    "href": "04-03-04-explanaciones-horizontales.html#trazado-en-planos-acotados",
+    "title": "4.3.4 Explanaciones horizontales",
+    "section": "Trazado en planos acotados",
+    "text": "Trazado en planos acotados\n[Procedimientos gráficos para representar explanaciones…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.4 Explanaciones horizontales"
+    ]
+  },
+  {
+    "objectID": "04-03-04-explanaciones-horizontales.html#aplicaciones-prácticas",
+    "href": "04-03-04-explanaciones-horizontales.html#aplicaciones-prácticas",
+    "title": "4.3.4 Explanaciones horizontales",
+    "section": "Aplicaciones prácticas",
+    "text": "Aplicaciones prácticas\n[Ejemplos de plataformas, aparcamientos, etc…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.4 Explanaciones horizontales"
+    ]
+  },
+  {
+    "objectID": "04-03-05-explanaciones-pendiente.html",
+    "href": "04-03-05-explanaciones-pendiente.html",
+    "title": "4.3.5 Explanaciones con pendiente",
+    "section": "",
+    "text": "Introducción\nLas explanaciones con pendiente son superficies planas inclinadas que se adaptan mejor a terrenos con pendiente.\n[Contenido sobre explanaciones con pendiente…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.5 Explanaciones con pendiente"
+    ]
+  },
+  {
+    "objectID": "04-03-05-explanaciones-pendiente.html#diferencias-con-explanaciones-horizontales",
+    "href": "04-03-05-explanaciones-pendiente.html#diferencias-con-explanaciones-horizontales",
+    "title": "4.3.5 Explanaciones con pendiente",
+    "section": "Diferencias con explanaciones horizontales",
+    "text": "Diferencias con explanaciones horizontales\n[Comparativa y ventajas de cada tipo…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.5 Explanaciones con pendiente"
+    ]
+  },
+  {
+    "objectID": "04-03-05-explanaciones-pendiente.html#trazado-y-cálculo",
+    "href": "04-03-05-explanaciones-pendiente.html#trazado-y-cálculo",
+    "title": "4.3.5 Explanaciones con pendiente",
+    "section": "Trazado y cálculo",
+    "text": "Trazado y cálculo\n[Metodología para diseñar y trazar explanaciones inclinadas…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.5 Explanaciones con pendiente"
+    ]
+  },
+  {
+    "objectID": "04-03-05-explanaciones-pendiente.html#aplicaciones-en-vías-forestales",
+    "href": "04-03-05-explanaciones-pendiente.html#aplicaciones-en-vías-forestales",
+    "title": "4.3.5 Explanaciones con pendiente",
+    "section": "Aplicaciones en vías forestales",
+    "text": "Aplicaciones en vías forestales\n[Ejemplos específicos de caminos y pistas con pendiente…]",
+    "crumbs": [
+      "&nbsp;&nbsp; 4.3.5 Explanaciones con pendiente"
+    ]
+  },
+  {
+    "objectID": "04-04-perspectiva-conica.html",
+    "href": "04-04-perspectiva-conica.html",
+    "title": "4.4 Perspectiva Cónica",
+    "section": "",
+    "text": "Introducción\nLa perspectiva cónica es el sistema de representación que más se aproxima a la visión humana del espacio tridimensional.\n[Contenido sobre perspectiva cónica…]",
+    "crumbs": [
+      "&nbsp; 4.4 Perspectiva Cónica"
+    ]
+  },
+  {
+    "objectID": "04-04-perspectiva-conica.html#elementos-de-la-perspectiva",
+    "href": "04-04-perspectiva-conica.html#elementos-de-la-perspectiva",
+    "title": "4.4 Perspectiva Cónica",
+    "section": "Elementos de la perspectiva",
+    "text": "Elementos de la perspectiva\n[Punto de vista, plano del cuadro, línea de horizonte, puntos de fuga…]",
+    "crumbs": [
+      "&nbsp; 4.4 Perspectiva Cónica"
+    ]
+  },
+  {
+    "objectID": "04-04-perspectiva-conica.html#tipos-de-perspectiva-cónica",
+    "href": "04-04-perspectiva-conica.html#tipos-de-perspectiva-cónica",
+    "title": "4.4 Perspectiva Cónica",
+    "section": "Tipos de perspectiva cónica",
+    "text": "Tipos de perspectiva cónica\n\nPerspectiva frontal (un punto de fuga)\n[Desarrolla la perspectiva con un punto de fuga…]\n\n\nPerspectiva oblicua (dos puntos de fuga)\n[Desarrolla la perspectiva con dos puntos de fuga…]\n\n\nPerspectiva aérea (tres puntos de fuga)\n[Desarrolla la perspectiva con tres puntos de fuga…]",
+    "crumbs": [
+      "&nbsp; 4.4 Perspectiva Cónica"
+    ]
+  },
+  {
+    "objectID": "04-04-perspectiva-conica.html#aplicaciones",
+    "href": "04-04-perspectiva-conica.html#aplicaciones",
+    "title": "4.4 Perspectiva Cónica",
+    "section": "Aplicaciones",
+    "text": "Aplicaciones\n[Ejemplos de uso en arquitectura, diseño, arte…]",
+    "crumbs": [
+      "&nbsp; 4.4 Perspectiva Cónica"
     ]
   }
 ]

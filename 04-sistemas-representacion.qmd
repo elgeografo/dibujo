@@ -1,0 +1,32 @@
+# Sistemas de Representación {#sec-sistemas-representacion}
+
+Los sistemas de representación son métodos gráficos que permiten representar objetos tridimensionales sobre un soporte bidimensional (papel o pantalla).
+
+## Introducción
+
+En el dibujo técnico existen diversos sistemas de representación, cada uno con sus características y aplicaciones específicas. Los principales sistemas son:
+
+- **Sistema Diédrico**: Utiliza proyecciones ortogonales sobre planos perpendiculares
+- **Sistema Axonométrico**: Representa objetos en una sola proyección tridimensional
+- **Sistema de Planos Acotados**: Especialmente útil para topografía y terrenos
+- **Perspectiva Cónica**: Reproduce la visión humana del espacio
+
+## Clasificación de los sistemas
+
+Los sistemas de representación se pueden clasificar según el tipo de proyección que utilizan:
+
+### Sistemas de proyección cilíndrica ortogonal
+- Sistema Diédrico
+- Sistema Axonométrico
+
+### Sistemas de proyección cilíndrica oblicua
+- Perspectiva Caballera
+- Perspectiva Militar
+
+### Sistemas de proyección cónica
+- Perspectiva Cónica
+
+### Sistemas de proyección acotada
+- Sistema de Planos Acotados
+
+En los siguientes apartados se desarrollan en detalle los principales sistemas de representación utilizados en ingeniería y arquitectura.
