@@ -1,0 +1,19 @@
+# Explanaciones horizontales {#sec-explanaciones-horizontales}
+
+Las explanaciones horizontales son superficies planas que se construyen sobre terrenos naturales con pendiente.
+
+## Introducción
+
+[Contenido sobre explanaciones horizontales...]
+
+## Cálculo de taludes
+
+[Metodología para determinar los taludes de desmonte y terraplén...]
+
+## Trazado en planos acotados
+
+[Procedimientos gráficos para representar explanaciones...]
+
+## Aplicaciones prácticas
+
+[Ejemplos de plataformas, aparcamientos, etc...]

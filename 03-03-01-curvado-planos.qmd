@@ -1,0 +1,15 @@
+# Curvado de planos {#sec-curvado-planos}
+
+El curvado de planos es una técnica fundamental en el sistema de planos acotados para representar superficies curvas.
+
+## Introducción
+
+[Contenido sobre el curvado de planos...]
+
+## Metodología
+
+[Desarrolla los procedimientos y técnicas...]
+
+## Ejemplos prácticos
+
+[Casos de aplicación...]

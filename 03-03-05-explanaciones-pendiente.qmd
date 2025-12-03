@@ -1,0 +1,19 @@
+# Explanaciones con pendiente {#sec-explanaciones-pendiente}
+
+Las explanaciones con pendiente son superficies planas inclinadas que se adaptan mejor a terrenos con pendiente.
+
+## Introducción
+
+[Contenido sobre explanaciones con pendiente...]
+
+## Diferencias con explanaciones horizontales
+
+[Comparativa y ventajas de cada tipo...]
+
+## Trazado y cálculo
+
+[Metodología para diseñar y trazar explanaciones inclinadas...]
+
+## Aplicaciones en vías forestales
+
+[Ejemplos específicos de caminos y pistas con pendiente...]

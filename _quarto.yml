@@ -13,8 +13,21 @@ book:
     #- 02-proyecciones.qmd
     - 01-04-proyecciones.qmd
     - 03-geometria-constructiva.qmd
+
+    - part: "Sistemas de Representación"
+      chapters:
+        - 03-01-diedrico.qmd
+        - 03-02-axonometrico.qmd
+        - 03-03-planos-acotados.qmd
+        - 03-03-01-curvado-planos.qmd
+        - 03-03-02-vaguadas-divisorias.qmd
+        - 03-03-03-perfiles-longitudinales.qmd
+        - 03-03-04-explanaciones-horizontales.qmd
+        - 03-03-05-explanaciones-pendiente.qmd
+        - 03-04-perspectiva-conica.qmd
+
     # - part: "Conocimientos previos"
-    #   chapters: 
+    #   chapters:
     #     - 00-01-conocimientos-previos.qmd
     # - part: "Introducción"
     #   chapters:
@@ -24,8 +37,8 @@ book:
     #     - 01-04-proyecciones.qmd
     #     #- tricks/010-cuadradoFacil.qmd
     # #- part: "Sistema Diédrico"
-    
-    
+
+
     #- intro.qmd
     #- summary.qmd
     #- references.qmd
@@ -39,6 +52,9 @@ format:
       - r4ds.scss
     code-link: true
     number-sections: true
+    toc: true
+    toc-depth: 3
+    toc-expand: true
 
     author-meta: "Maria Jesús García García , Jose Luis Perez Benedito, and Luis Izquierdo Mesa"
     #include-in-header: "plausible.html"

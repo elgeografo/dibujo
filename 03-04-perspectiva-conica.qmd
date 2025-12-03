@@ -1,0 +1,29 @@
+# Perspectiva Cónica {#sec-perspectiva-conica}
+
+La perspectiva cónica es el sistema de representación que más se aproxima a la visión humana del espacio tridimensional.
+
+## Introducción
+
+[Contenido sobre perspectiva cónica...]
+
+## Elementos de la perspectiva
+
+[Punto de vista, plano del cuadro, línea de horizonte, puntos de fuga...]
+
+## Tipos de perspectiva cónica
+
+### Perspectiva frontal (un punto de fuga)
+
+[Desarrolla la perspectiva con un punto de fuga...]
+
+### Perspectiva oblicua (dos puntos de fuga)
+
+[Desarrolla la perspectiva con dos puntos de fuga...]
+
+### Perspectiva aérea (tres puntos de fuga)
+
+[Desarrolla la perspectiva con tres puntos de fuga...]
+
+## Aplicaciones
+
+[Ejemplos de uso en arquitectura, diseño, arte...]

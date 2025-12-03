@@ -1,0 +1,15 @@
+# Perfiles longitudinales {#sec-perfiles-longitudinales}
+
+Los perfiles longitudinales permiten visualizar la sección vertical del terreno a lo largo de un recorrido determinado.
+
+## Introducción
+
+[Contenido sobre perfiles longitudinales...]
+
+## Construcción de perfiles
+
+[Metodología para elaborar perfiles longitudinales...]
+
+## Aplicaciones en ingeniería
+
+[Uso de perfiles en proyectos de carreteras, canales, etc...]

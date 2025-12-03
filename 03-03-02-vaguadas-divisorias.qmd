@@ -1,0 +1,19 @@
+# Vaguadas y divisorias {#sec-vaguadas-divisorias}
+
+Las vaguadas y divisorias son elementos fundamentales en el análisis topográfico del terreno.
+
+## Vaguadas
+
+Las vaguadas son las líneas que recogen el agua de escorrentía en un terreno.
+
+[Desarrolla el concepto de vaguadas...]
+
+## Divisorias
+
+Las divisorias son las líneas que separan diferentes cuencas hidrográficas.
+
+[Desarrolla el concepto de divisorias...]
+
+## Determinación en planos acotados
+
+[Métodos para identificar y trazar vaguadas y divisorias...]

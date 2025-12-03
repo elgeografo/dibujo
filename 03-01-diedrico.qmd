@@ -1,0 +1,15 @@
+# Diédrico {#sec-diedrico}
+
+El sistema diédrico es un método de representación gráfica que utiliza proyecciones ortogonales sobre dos planos perpendiculares entre sí.
+
+## Introducción
+
+[Contenido del capítulo sobre el sistema diédrico...]
+
+## Fundamentos
+
+[Desarrolla los conceptos fundamentales...]
+
+## Aplicaciones
+
+[Ejemplos y aplicaciones prácticas...]
