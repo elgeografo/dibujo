@@ -28,4 +28,3 @@ El curvado de planos es una técnica fundamental en el sistema de planos acotado
 [Explanación horizontal con terreno]
 
 [Ver ejemplo en vivo](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/01-explanacion-horizontal)
-Puedes copiar esto y reemplazar los [Tu descripción aquí...] con las descripciones que quieras para cada ejemplo.
