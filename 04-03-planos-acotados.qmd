@@ -1,7 +1,3 @@
----
-title: "3.3 Planos acotados"
----
-
 ## 3.3.1 Fundamentos del sistema de planos Acotados
 
 ### Contenido
