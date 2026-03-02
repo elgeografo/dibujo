@@ -1,51 +1,17 @@
-## 3.3.1 Fundamentos del sistema de planos Acotados
+# &nbsp; 3.3 Planos Acotados {#sec-axonometrico .unnumbered}
 
-### Contenido
+El sistema ....
 
-::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
-<!--<p style="font-size: 1.2em; color: #333;">
+## Introducción
 
-La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0013534"  target="_blank">ISO 5455:1979</a>. Su contenido es el siguiente.
+[Contenido del capítulo sobre el planos acotados]
 
-</p>-->
+## ...
 
-<p style="font-size: 1em; color: #333;">
+....
 
-<ol>
+## Aplicaciones
 
-<li>Introducción al sistema</li>
+[Ejemplos y aplicaciones prácticas...]
 
-<li>Representación del punto</li>
 
-<li>Designación</li>
-
-<li>Inscripción</li>
-
-<li>Escalas</li>
-
-<li>Dibujos a gran escala</li>
-
-</ol>
-
-</p>
-:::
-
-### Apuntes
-
-#### Introducción al sistema
-
-*El sistema de planos acotados es una proyección cilíndrica ortogonal sobre un único plano coordenado horizontal.
-Es un sistema de representación en el que la proyección es paralela y ortogonal sobre un plano de proyección (PP) o comparación (PC), en el que a cada punto proyectado se le asocia con un valor, que es la cota o distancia con dicho plano de comparación.
- Se emplea principalmente en las representaciones topográficas, ya que usualmente a cada punto del plano sólo le corresponde uno del espacio. En estas representaciones, el relieve viene definido por las curvas de nivel resultantes de la intersección del terreno con planos a cotas determinadas, como se observa a continuación:*
-
-```{r}
-#| label: image-CurvasNivel 
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   Curvas de nivel.
-#| fig-alt: |
-#|   Curvas de nivel.
-
-knitr::include_graphics("images/curvas_nivel.jpg", dpi = 270)
-```
