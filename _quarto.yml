@@ -16,13 +16,22 @@ book:
     - 04-01-diedrico.qmd
     - 04-02-axonometrico.qmd
     - 04-03-planos-acotados.qmd
-    - 03-planos-acotados/fundamentos.qmd
-    #- 04-03-01-curvado-planos.qmd
+    - 03-planos-acotados/04-03-00-fundamentos.qmd
+    - 03-planos-acotados/04-03-01-curvado-planos.qmd
+    - 03-planos-acotados/04-03-02-vaguadas-divisorias.qmd
+    - 03-planos-acotados/04-03-03-perfiles-longitudinales.qmd
+    - 03-planos-acotados/04-03-04-explanaciones-horizontales.qmd
+    - 03-planos-acotados/04-03-05-explanaciones-pendiente.qmd
+    # - "Sistemas de Representación"
+    #   chapters:
+    #     - 04-01-diedrico.qmd
+    #     - 04-02-axonometrico.qmd
+    #     - 04-03-planos-acotados.qmd
+    #     - 04-04-perspectiva-conica.qmd
     #- 04-03-02-vaguadas-divisorias.qmd
     #- 04-03-03-perfiles-longitudinales.qmd
     #- 04-03-04-explanaciones-horizontales.qmd
     #- 04-03-05-explanaciones-pendiente.qmd
-    - 04-04-perspectiva-conica.qmd
 
     # - part: "Conocimientos previos"
     #   chapters:
@@ -49,7 +58,7 @@ format:
       - cosmo
       - r4ds.scss
     code-link: true
-    number-sections: true
+    number-sections: false
     number-depth: 2
     toc: true
     toc-depth: 3
@@ -61,6 +70,3 @@ format:
 
     # include-in-header: bootstrap-includes.html
 editor: visual
-
-
-

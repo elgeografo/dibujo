@@ -1,6 +1,8 @@
-## 3.3.1 Fundamentos del sistema de planos Acotados
+# 3.3.1 Fundamentos {#sec-fundamentos .unnumbered}
 
-### Contenido
+### Fundamentos del sistema de planos Acotados
+
+#### Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <!--<p style="font-size: 1.2em; color: #333;">
@@ -30,9 +32,9 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 </p>
 :::
 
-### Apuntes
+#### Apuntes
 
-#### Introducción al sistema
+##### Introducción al sistema
 
 *El sistema de planos acotados es una proyección cilíndrica ortogonal sobre un único plano coordenado horizontal.
 Es un sistema de representación en el que la proyección es paralela y ortogonal sobre un plano de proyección (PP) o comparación (PC), en el que a cada punto proyectado se le asocia con un valor, que es la cota o distancia con dicho plano de comparación.
@@ -47,5 +49,5 @@ Es un sistema de representación en el que la proyección es paralela y ortogona
 #| fig-alt: |
 #|   Curvas de nivel.
 
-knitr::include_graphics("images/curvas_nivel.jpg", dpi = 270)
+knitr::include_graphics("../images/curvas_nivel.jpg", dpi = 270)
 ```

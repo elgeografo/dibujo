@@ -1,17 +1,4 @@
-# &nbsp; 3.3 Planos Acotados {#sec-axonometrico .unnumbered}
+# 3.3 Planos acotados {#sec-acotados .unnumbered}
+
 
 El sistema ....
-
-## Introducción
-
-[Contenido del capítulo sobre el planos acotados]
-
-## ...
-
-....
-
-## Aplicaciones
-
-[Ejemplos y aplicaciones prácticas...]
-
-

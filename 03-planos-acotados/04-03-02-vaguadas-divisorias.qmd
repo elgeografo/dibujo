@@ -1,4 +1,4 @@
-# &nbsp;&nbsp; 4.3.2 Vaguadas y divisorias {#sec-vaguadas-divisorias .unnumbered}
+# 3.3.3 Vaguadas y divisorias {#sec-vaguadas-divisorias .unnumbered}
 
 Las vaguadas y divisorias son elementos fundamentales en el análisis topográfico del terreno.
 

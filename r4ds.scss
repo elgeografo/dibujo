@@ -58,3 +58,24 @@ pre {
   // background-image: linear-gradient(160deg,#f8f8f8 0,#f1f1f1 100%);
   background-image: linear-gradient(160deg,#fff 0,#fff 100%);
 }
+/* Manual sidebar indentation for chapter hierarchy */
+#quarto-sidebar .sidebar-item a[href$="/04-01-diedrico.html"] .menu-text,
+#quarto-sidebar .sidebar-item a[href$="/04-02-axonometrico.html"] .menu-text,
+#quarto-sidebar .sidebar-item a[href$="/04-03-planos-acotados.html"] .menu-text,
+#quarto-sidebar .sidebar-item a[href="./04-01-diedrico.html"] .menu-text,
+#quarto-sidebar .sidebar-item a[href="./04-02-axonometrico.html"] .menu-text,
+#quarto-sidebar .sidebar-item a[href="./04-03-planos-acotados.html"] .menu-text {
+  padding-left: 0.75rem;
+}
+
+#quarto-sidebar .sidebar-item a[href*="03-planos-acotados/04-03-0"] .menu-text {
+  padding-left: 1.5rem;
+}
+
+/* Wider left sidebar */
+#quarto-sidebar,
+.sidebar-navigation {
+  width: 340px;
+  max-width: 340px;
+  transform: translateX(-64px);
+}
