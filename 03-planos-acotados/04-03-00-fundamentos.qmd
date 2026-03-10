@@ -19,13 +19,11 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 
 <li>Representación del punto</li>
 
-<li>Designación</li>
+<li>Representación de la recta</li>
 
-<li>Inscripción</li>
+<li>Posiciones particulares de la recta</li>
 
-<li>Escalas</li>
-
-<li>Dibujos a gran escala</li>
+<li>Representación del plano</li>
 
 </ol>
 
@@ -36,18 +34,60 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 
 ##### Introducción al sistema
 
-*El sistema de planos acotados es una proyección cilíndrica ortogonal sobre un único plano coordenado horizontal.
-Es un sistema de representación en el que la proyección es paralela y ortogonal sobre un plano de proyección (PP) o comparación (PC), en el que a cada punto proyectado se le asocia con un valor, que es la cota o distancia con dicho plano de comparación.
- Se emplea principalmente en las representaciones topográficas, ya que usualmente a cada punto del plano sólo le corresponde uno del espacio. En estas representaciones, el relieve viene definido por las curvas de nivel resultantes de la intersección del terreno con planos a cotas determinadas, como se observa a continuación:*
+*El sistema de planos acotados es una proyección cilíndrica ortogonal sobre un único plano coordenado horizontal.*
+
+*Es un sistema de representación en el que la proyección es paralela y ortogonal sobre un plano de proyección (PP) o comparación (PC), en el que a cada punto proyectado se le asocia con un valor, que es la cota o distancia con dicho plano de comparación.*
+
+*Se emplea principalmente en las representaciones topográficas, ya que usualmente a cada punto del plano sólo le corresponde uno del espacio. En estas representaciones, el relieve viene definido por las curvas de nivel resultantes de la intersección del terreno con planos a cotas determinadas, como se observa a continuación:*
 
 ```{r}
 #| label: image-CurvasNivel 
 #| echo: false
 #| out.width: NULL
 #| fig-cap: |
-#|   Curvas de nivel.
+#|   Curvas de nivel. Fuente: https://acolita.com/que-son-las-curvas-de-nivel/
 #| fig-alt: |
 #|   Curvas de nivel.
 
 knitr::include_graphics("../images/curvas_nivel.jpg", dpi = 270)
 ```
+##### Representación del punto
+*Viene caracterizado por su proyección sobre el plano horizontal y por su cota con relación a dicho plano. En la siguiente figura, se representan algunos puntos en este sistema. Los puntos de cota cero estarían situados en el plano de proyección.*
+```{r}
+#| label: image-Punto
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Representación del punto en planos acotados.
+#| fig-alt: |
+#|   Representación del punto en planos acotados.
+
+knitr::include_graphics("../images/puntos_planosAcotados.gif", dpi = 270)
+```
+##### Representación de la recta
+*Si unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la siguiente figura se observa la recta R definida por los puntos A y B.*
+```{r}
+#| label: image-Punto
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Representación de la recta en planos acotados. R recta en el espacio, r proyección de R en el plano
+#| fig-alt: |
+#|   Representación de la recta en planos acotados.
+
+knitr::include_graphics("../images/recta_planosAcotados.gif", dpi = 270)
+```
+*Se denomina **traza de la recta (t)** al punto de cota cero de la misma, esto es, la intersección de la recta con el plano de referencia.*
+
+*La **Equidistancia (e)** es la distancia vertical que separa dos puntos de cota consecutiva.*
+
+*El **Intervalo de la recta R (i)** es la distancia horizontal que hay que recorrer para subir o bajar un valor de la equidistancia.*
+
+*La **Pendiente de la recta** es la relación entre las distancias vertical y horizontal de dos de sus puntos o lo que es lo mismo, la relación entre la equidistancia y el intervalo. Por lo tanto, es la tangente trigonométrica del ángulo (α) que la recta forma con el plano horizontal o de comparación.  Se puede expresar en grados (º), en tanto por ciento y en tanto por uno:*
+$$
+\text{Pendiente} = \frac{dV}{dH} = \frac{e}{i} = \tan \alpha
+$$
+:::: callout-note
+## Nota
+Por tanto, una recta está determinada si conoce la dirección de su proyección horizontal, un punto de la misma, el sentido en que la recta asciende y su pendiente. 
+::::
