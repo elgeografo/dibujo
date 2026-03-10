@@ -87,8 +87,10 @@ knitr::include_graphics("../images/recta_planosAcotados.gif", dpi = 270)
 $$
 \text{Pendiente} = \frac{dV}{dH} = \frac{e}{i} = \tan \alpha
 $$
+
 ::: callout-note
 ## Nota
+
 Por tanto, una recta está determinada si conoce la dirección de su proyección horizontal, un punto de la misma, el sentido en que la recta asciende y su pendiente. 
 :::
 
@@ -114,6 +116,13 @@ knitr::include_graphics("../images/ejemplo_pendiente.png", dpi = 270)
 También podría calcularse como 6/18 o cualquier otra combinación conocida de dos puntos de la recta, puesto que al tener  pendiente uniforme la relación es la misma entre cualquiera de sus puntos.
 
 ##### Posiciones particulares de la recta
+
+*Respecto al plano horizontal de comparación, las rectas pueden ser de ters tipos:
+
+-   **Oblicua**: *la recta r cortará el plano en el punto de su traza.*
+-   **Horizontal o paralela**: *todos sus puntos tienen la misma cota, es paralela al plano de comparación. Su pendiente es cero*
+-   **Vertical o perpendicular**: *La proyección de la recta es un punto. Su pendiente es infinita*
+
 ```{r}
 #| label: image-posicionesrecta
 #| echo: false
@@ -126,7 +135,8 @@ También podría calcularse como 6/18 o cualquier otra combinación conocida de 
 knitr::include_graphics("../images/posiciones_recta.png", dpi = 270)
 ```
 ##### Representación del plano
-Rectas singulares del plano:
+*Rectas singulares del plano:*
+
 -   **Horizontales del plano**: *Se denominan así las rectas del plano cuyos puntos tienen la misma cota. Para determinarlas bastará unir los puntos del plano que tengan la misma cota. Como todas las horizontales del plano son paralelas entre sí sus proyecciones también lo serán.*
 
 -   **Traza del plano**: *Se denomina así a la horizontal de cota cero del plano o, lo que es lo mismo, la intersección de ese plano con el de proyección.*
@@ -148,11 +158,10 @@ knitr::include_graphics("../images/plano_planosAcotados.gif", dpi = 270)
 <a href="https://www.balcazar.net/entrada.htm  " target="_blank">Web Agustín Balcázar</a>
 
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
+Vídeos y web sobre el sistema de planos Acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.
+</p>
 
-Vídeos y web sobre el sistema de planos Acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM
 <a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/  " target="_blank">Web de dibujo técnico</a>
-
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-
 Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.
 </p>
