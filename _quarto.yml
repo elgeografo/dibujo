@@ -17,7 +17,9 @@ book:
     - 04-02-axonometrico.qmd
     - 04-03-planos-acotados.qmd
     - 03-planos-acotados/04-03-00-fundamentos.qmd
-    - 03-planos-acotados/04-03-01-curvado-planos.qmd
+    - 03-planos-acotados/04-03-01-graduacion.qmd
+    - 03-planos-acotados/04-03-02-DefinicionPlanos.qmd
+    - 03-planos-acotados/04-03-04-curvado-planos.qmd
     - 03-planos-acotados/04-03-02-vaguadas-divisorias.qmd
     - 03-planos-acotados/04-03-03-perfiles-longitudinales.qmd
     - 03-planos-acotados/04-03-04-explanaciones-horizontales.qmd
