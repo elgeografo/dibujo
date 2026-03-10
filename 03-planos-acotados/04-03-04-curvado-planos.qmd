@@ -1,4 +1,4 @@
-# 3.3.2 Curvado de planos {#sec-curvado-planos .unnumbered}
+# 3.3.4 Curvado de planos {#sec-curvado-planos .unnumbered}
 
 El curvado de planos es una técnica fundamental en el sistema de planos acotados para representar superficies curvas.
 
