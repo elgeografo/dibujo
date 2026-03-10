@@ -120,8 +120,8 @@ También podría calcularse como 6/18 o cualquier otra combinación conocida de 
 *Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipos:
 
 -   **Oblicua**: *la recta r cortará el plano en el punto de su traza.*
--   **Horizontal o paralela**: *todos sus puntos tienen la misma cota, es paralela al plano de comparación. Su pendiente es cero*
--   **Vertical o perpendicular**: *La proyección de la recta es un punto. Su pendiente es infinita*
+-   **Horizontal o paralela**: *todos sus puntos tienen la misma cota, es paralela al plano de comparación. Su pendiente es cero.*
+-   **Vertical o perpendicular**: *La proyección de la recta es un punto. Su pendiente es infinita.*
 
 ```{r}
 #| label: image-posicionesrecta
@@ -153,6 +153,12 @@ knitr::include_graphics("../images/posiciones_recta.png", dpi = 270)
 
 knitr::include_graphics("../images/plano_planosAcotados.gif", dpi = 270)
 ```
+::: callout-note
+## Nota
+
+En el Sistema Acotado los planos se representan, en general, por la proyección graduada de su recta de máxima pendiente. La pendiente de un plano se mide por la de su línea de máxima pendiente.
+:::
+
 ### Material complementario
 
 <a href="https://www.balcazar.net/entrada.htm  " target="_blank">Web Agustín Balcázar</a>
