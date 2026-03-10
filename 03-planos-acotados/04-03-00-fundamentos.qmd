@@ -87,7 +87,72 @@ knitr::include_graphics("../images/recta_planosAcotados.gif", dpi = 270)
 $$
 \text{Pendiente} = \frac{dV}{dH} = \frac{e}{i} = \tan \alpha
 $$
-:::: callout-note
+::: callout-note
 ## Nota
 Por tanto, una recta está determinada si conoce la dirección de su proyección horizontal, un punto de la misma, el sentido en que la recta asciende y su pendiente. 
-::::
+:::
+
+En el siguiente ejemplo, la equidistancia es igual a 2, el intervalo (i) es igual a 6 y la pendiente se calcula como:
+$$
+\text{Pendiente} = \frac{2}{6} = 0.333
+$$
+
+$$
+\text{Expresada en tanto por ciento} = 33.3\%
+$$
+```{r}
+#| label: image-Pendiente
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Ejemplo de cálculo de la pendiente de la recta.
+#| fig-alt: |
+#|   Ejemplo de cálculo de la pendiente de la recta.
+
+knitr::include_graphics("../images/ejemplo_pendiente.png", dpi = 270)
+```
+También podría calcularse como 6/18 o cualquier otra combinación conocida de dos puntos de la recta, puesto que al tener  pendiente uniforme la relación es la misma entre cualquiera de sus puntos.
+
+##### Posiciones particulares de la recta
+```{r}
+#| label: image-posicionesrecta
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Posiciones de la recta. 
+#| fig-alt: |
+#|   Posiciones de la recta.
+
+knitr::include_graphics("../images/posiciones_recta.png", dpi = 270)
+```
+##### Representación del plano
+Rectas singulares del plano:
+-   **Horizontales del plano**: *Se denominan así las rectas del plano cuyos puntos tienen la misma cota. Para determinarlas bastará unir los puntos del plano que tengan la misma cota. Como todas las horizontales del plano son paralelas entre sí sus proyecciones también lo serán.*
+
+-   **Traza del plano**: *Se denomina así a la horizontal de cota cero del plano o, lo que es lo mismo, la intersección de ese plano con el de proyección.*
+
+-   **Recta de máxima pendiente (LMP)**: *Se denomina así a la recta del plano que forma el mayor ángulo con el plano de proyección. Como las rectas horizontales del plano son paralelas al plano de proyección la recta de máxima pendiente será perpendicular a dichas horizontales.*
+```{r}
+#| label: image-plano
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   El plano en el sistema de planos acotados. 
+#| fig-alt: |
+#|   El plano en el sistema de planos acotados. 
+
+knitr::include_graphics("../images/plano_planosAcotados.gif", dpi = 270)
+```
+### Material complementario
+
+<a href="https://www.balcazar.net/entrada.htm  " target="_blank">Web Agustín Balcázar</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Vídeos y web sobre el sistema de planos Acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/  " target="_blank">Web de dibujo técnico</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.
+</p>
