@@ -67,7 +67,7 @@ knitr::include_graphics("../images/puntos_planosAcotados.gif", dpi = 270)
 ##### Representación de la recta
 *Si unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la siguiente figura se observa la recta R definida por los puntos A y B.*
 ```{r}
-#| label: image-Punto
+#| label: image-Recta
 #| echo: false
 #| out.width: NULL
 #| fig-cap: |
