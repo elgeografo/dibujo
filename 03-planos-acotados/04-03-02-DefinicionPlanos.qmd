@@ -1,3 +1,35 @@
 # 3.3.3 Definición de planos {#sec-DefinicionPlanos .unnumbered}
 
-### Definición de planos
+## Definición de planos
+
+### Apuntes
+
+Un plano queda determinado por:
+-   tres puntos no alineados. 
+-   un punto y una recta que no pase por dicho punto.
+-   dos rectas, concurrentes ó paralelas 
+
+```{r}
+#| label: image-DefinicionPlano
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Definición del plano a partir de tres puntos no alineados.
+#| fig-alt: |
+#|   Definición del plano a partir de tres puntos no alineados.
+
+knitr::include_graphics("../images/definicionPlano.gif", dpi = 270)
+```
+
+### Material complementario
+
+<a href="https://www.balcazar.net/entrada.htm  " target="_blank">Web Agustín Balcázar</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Vídeos y web sobre el sistema de planos Acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.
+</p>
+
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/  " target="_blank">Web de dibujo técnico</a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.
+</p>
