@@ -67,7 +67,7 @@ $$
 \text{Pendiente} = 28.57\%
 $$
 
--   **Caso 1:** Me dan la proyección de la recta y la cota de dos de los puntos, pero al menos uno no pertenece a la serie.
+-   **Caso 2:** Me dan la proyección de la recta y la cota de dos de los puntos, pero al menos uno no pertenece a la serie.
 
 **Ejemplo: **
 Suponiendo que la equidistancia es **2 metros** y la cota de A y B es 509 y 516, respectivamente. Se debe graduar la recta, es decir, quiero situar las cotas 0, 2, …,**510, 512, 514, 516**. 
@@ -89,13 +89,51 @@ Si encuentro el punto de cota **510** estoy en el caso anterior. Para ello aplic
 Por lo tanto, si para subir desde la cota 509 a la cota 516 recorro horizontalmente 2.212 metros, ¿cuánto debo recorrer horizontalmente (x en la siguiente ecuación) para subir desde la cota 509 a la 510?
 
 $$
-\text{Pendiente} = \frac{\textcolor{red}{\text{DV}}}{\textcolor{red}{\text{DH}}}
+\text{Pendiente} = \frac{\textcolor{red}{\text{DV}}}{\textcolor{green}{\text{DH}}}
 $$
 
 $$
-\text{Pendiente} = \frac{\textcolor{red}{\text{516-509}}}{\textcolor{green}{\text{2212}}} = \frac{\textcolor{red}{\text{510-509}}}{\textcolor{yellow}{\text{x}}}
+\text{Pendiente} = \frac{\textcolor{red}{\text{516-509}}}{\textcolor{green}{\text{2212}}} = \frac{\textcolor{red}{\text{510-509}}}{\textcolor{orange}{\text{x}}}
 $$
 
 $$
-\text{Despejando:} \quad \textcolor{yellow}{\text{x}} = 316 \text{ m}
+\text{Despejando:} \quad \textcolor{orange}{\text{x}} = 316 \text{ m}
 $$
+
+Mido 316 m en la proyección de la recta desde el punto A y marco la cota 510. Ahora estoy en el caso anterior.
+
+-   **Caso 3:** Me dan la proyección de la recta, la cota de un punto y la pendiente
+
+**Ejemplo: **
+Suponiendo que la equidistancia es **2 metros**, la cota del punto A es 610 y la pendiente es del 35%, se debe graduar la recta, es decir, situar las cotas **612, 614, 616....** Para ello aplico la fórmula de la pendiente y despejo el intervalo (i):
+
+```{r}
+#| label: image-GraduacionCaso3
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Caso 3 de graduación de rectas.
+#| fig-alt: |
+#|   Caso 3 de graduación de rectas.
+
+knitr::include_graphics("../images/caso2_graduacionRectas.gif", dpi = 270)
+```
+
+$$
+\begin{aligned}
+\text{Pendiente} &= \frac{\textcolor{red}{\text{e}}}{\textcolor{green}{\text{i}}} \\
+\\
+\frac{35}{100} &= \frac{\textcolor{red}{\text{2}}}{\textcolor{green}{\text{i}}} \\
+\\
+\text{Despejando:} \quad \textcolor{green}{\text{i}} &= 5.71 \text{ m}
+\end{aligned}
+$$
+
+Mido 5.71m desde el punto A y marco la cota 612, y así sucesivamente voy subiendo un valor de la equidistancia.
+
+### Material complementario
+
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/  " target="_blank">Web de dibujo técnico</a>
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.
+</p>
