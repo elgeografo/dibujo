@@ -100,7 +100,7 @@ knitr::include_graphics("../images/superficieTIN.gif", dpi = 270)
 knitr::include_graphics("../images/graduacion_trazado_curvas.gif", dpi = 270)
 ```
 
-####Resultados
+#### Resultados
 *Ampliando el área de estudio, e incorporando como base el callejero de la ciudad de Madrid,  el resultado en un plano normalizado se representa de la siguiente forma:*
 
 ```{r}
