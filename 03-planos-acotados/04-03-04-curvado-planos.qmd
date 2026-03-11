@@ -1,17 +1,130 @@
-# 3.3.4 Curvado de planos {#sec-curvado-planos .unnumbered}
+# 3.3.4 Trazado de curvas de nivel o isolíneas {#sec-curvado-planos .unnumbered}
 
-El curvado de planos es una técnica fundamental en el sistema de planos acotados para representar superficies curvas.
+## Trazado de curvas de nivel o isolíneas
 
-## Introducción
+### Contenido
 
-[Contenido sobre el curvado de planos...]
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<!--<p style="font-size: 1.2em; color: #333;">
 
-## Metodología
+La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0013534"  target="_blank">ISO 5455:1979</a>. Su contenido es el siguiente.
 
-[Desarrolla los procedimientos y técnicas...]
+</p>-->
 
-## Ejemplos prácticos
+<p style="font-size: 1em; color: #333;">
 
+<ol>
 
+<li>Introducción</li>
 
+<li>Triangulación de Delaunay</li>
 
+<li>Interpolación lineal</li>
+
+<li>Resultados</li>
+
+</ol>
+
+</p>
+:::
+
+### Apuntes
+
+#### Introducción
+*El trazado de curvas de nivel o isolíneas se hace para extender en el territorio información puntual de cotas terreno (en el caso de las curvas de nivel) o de variables ambientales, por ejemplo, la precipitación, temperatura, contaminantes atmosféricos, etc. Para esto, inicialmente se lleva a cabo la triangulación en la que se generan planos (triángulos) a partir de tres puntos cercanos y, posteriormente se generan las isolíneas partir de la interpolación lineal, como se observa en la siguiente figura:*
+
+```{r}
+#| label: image-TIN_MD_Curvas
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   A partir de datos puntuales se genera la superficie TIN y las isolíneas.
+#| fig-alt: |
+#|   A partir de datos puntuales se genera la superficie TIN y las isolíneas.
+
+knitr::include_graphics("../images/TIN_MD_Curvas.gif", dpi = 270)
+```
+
+*En este ejemplo, los datos de partida son datos puntuales que provienen de estaciones de medición de NO2 y generaremos datos superficiales a partir de ellos, como si estuviéramos trabajando con el terreno. Asumiendo que representamos una superficie continua, como se hace con las variables ambientales a nivel territorial.*
+
+#### Triangulación de Delaunay
+
+*El primer paso será construir una red de triángulos irregulares (TIN) a partir de la nube de puntos, en este caso concentración de dióxido de nitrógeno, pero puede ser cualquier otra variable ambiental territorial. Para hacer esto, aplicaremos el método de triangulación de Delaunay, que se denomina así en honor al matemático ruso Boris Nikolaevich Delaunay.*
+
+*Para que la triangulación resultante cumpla el criterio de triángulo de Delaunay, la circunferencia circunscrita de cada triángulo de la red no debe contener ningún vértice de otro triángulo. Es decir, si construimos un círculo a partir de tres puntos, este círculo no debe contener ningún punto dentro, como se observa en la siguiente figura:*
+
+```{r}
+#| label: image-triangulacion
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Triangulación de Dalaunay
+#| fig-alt: |
+#|   Triangulación de Dalaunay
+
+knitr::include_graphics("../images/triangulacion_trazado_curvas.gif", dpi = 270)
+```
+
+*Si se cumple el criterio de Delaunay en todo el TIN (Triangulated Irregular Network), el resultado es una superficie suave que se ajusta de la forma óptima a la nube de puntos evitando triángulos finos y largos como se observa en la siguiente figura:*
+
+```{r}
+#| label: image-TIN
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Superficie TIN (Triangulated Irregular Network)
+#| fig-alt: |
+#|   Superficie TIN (Triangulated Irregular Network)
+
+knitr::include_graphics("../images/superficieTIN.gif", dpi = 270)
+```
+
+####Interpolación lineal
+*Una vez determinados los triángulos, necesitamos obtener puntos con la misma cota o valor que sean múltiplo de la equidistancia para unirlos y determinar el trayecto de las isolíneas. Para esto, utilizamos la graduación de rectas.*
+
+*En este ejemplo, la equidistancia es igual a 5 microg/m³, el valor mínimo es 18 microg/m³ y el valor máximo: 60 microg/m³. Por lo tanto, la serie de la equidistancia es 0, 5, 10, 15, 20,…, 55 y 60, y los valores (o cotas en el caso de curvas de nivel) a situar son: 20, 25, 30, 35, 40, 45, 50 y 55.*
+
+*Una vez graduadas las rectas, se unen los puntos con el mismo valor y se obtienen las isolíneas.*
+
+*La siguiente figura ilustra el proceso de graduación de las rectas según pertenezcan a uno de los casos estudiados.*
+
+```{r}
+#| label: image-GraduacionCN
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Graduación de rectas aplicado al trazado de isolíneas
+#| fig-alt: |
+#|   Graduación de rectas aplicado al trazado de isolíneas
+
+knitr::include_graphics("../images/graduacion_trazado_curvas.gif", dpi = 270)
+```
+
+####Resultados
+*Ampliando el área de estudio, e incorporando como base el callejero de la ciudad de Madrid,  el resultado en un plano normalizado se representa de la siguiente forma:*
+
+```{r}
+#| label: image-planoNO2
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Plano normalizado con el resultado del trazado de las isolíneas de concentración de NO2
+#| fig-alt: |
+#|   Plano normalizado con el resultado del trazado de las isolíneas de concentración de NO2
+
+knitr::include_graphics("../images/plano_trazadoIsolineas.png", dpi = 270)
+```
+
+*La superficie generada vista en 3D, se observa en la siguiente figura:*
+
+```{r}
+#| label: image-modeloNO2
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   superficie de concentración de NO2 vista en 3D
+#| fig-alt: |
+#|   superficie de concentración de NO2 vista en 3D
+
+knitr::include_graphics("../images/MDE.gif", dpi = 270)
+```
