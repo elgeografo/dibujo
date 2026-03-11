@@ -9,6 +9,7 @@ Las explanaciones horizontales son superficies planas que se construyen sobre te
 ## Cálculo de taludes
 
 [Metodología para determinar los taludes de desmonte y terraplén...]
+[Explicación teórica explanada Horizontal (Storyteller)](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/00-ejemplo-basico)
 
 ## Trazado en planos acotados
 
@@ -16,4 +17,4 @@ Las explanaciones horizontales son superficies planas que se construyen sobre te
 
 ## Aplicaciones prácticas
 
-[Ejemplos de plataformas, aparcamientos, etc...]
+[Ejemplo de explanada horizontal con terreno (Storyteller)](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/01-explanacion-horizontal)

@@ -144,7 +144,7 @@
     "href": "03-planos-acotados/04-03-00-fundamentos.html",
     "title": "3.3.1 Fundamentos",
     "section": "",
-    "text": "Fundamentos del sistema de planos Acotados\n\nContenido\n\n\n\n\n\nIntroducción al sistema\n\n\nRepresentación del punto\n\n\nDesignación\n\n\nInscripción\n\n\nEscalas\n\n\nDibujos a gran escala\n\n\n\n\n\n\nApuntes\n\nIntroducción al sistema\nEl sistema de planos acotados es una proyección cilíndrica ortogonal sobre un único plano coordenado horizontal. Es un sistema de representación en el que la proyección es paralela y ortogonal sobre un plano de proyección (PP) o comparación (PC), en el que a cada punto proyectado se le asocia con un valor, que es la cota o distancia con dicho plano de comparación. Se emplea principalmente en las representaciones topográficas, ya que usualmente a cada punto del plano sólo le corresponde uno del espacio. En estas representaciones, el relieve viene definido por las curvas de nivel resultantes de la intersección del terreno con planos a cotas determinadas, como se observa a continuación:\n\n\n\n\n\nCurvas de nivel.",
+    "text": "Fundamentos del sistema de planos Acotados",
     "crumbs": [
       "3.3.1 Fundamentos"
     ]
@@ -254,7 +254,7 @@
     "href": "03-planos-acotados/04-03-04-explanaciones-horizontales.html#cálculo-de-taludes",
     "title": "3.3.5 Explanaciones horizontales",
     "section": "Cálculo de taludes",
-    "text": "Cálculo de taludes\n[Metodología para determinar los taludes de desmonte y terraplén…]",
+    "text": "Cálculo de taludes\n[Metodología para determinar los taludes de desmonte y terraplén…] Explicación teórica explanada Horizontal (Storyteller)",
     "crumbs": [
       "3.3.5 Explanaciones horizontales"
     ]
@@ -274,7 +274,7 @@
     "href": "03-planos-acotados/04-03-04-explanaciones-horizontales.html#aplicaciones-prácticas",
     "title": "3.3.5 Explanaciones horizontales",
     "section": "Aplicaciones prácticas",
-    "text": "Aplicaciones prácticas\n[Ejemplos de plataformas, aparcamientos, etc…]",
+    "text": "Aplicaciones prácticas\nEjemplo de explanada horizontal con terreno (Storyteller)",
     "crumbs": [
       "3.3.5 Explanaciones horizontales"
     ]
@@ -304,7 +304,7 @@
     "href": "03-planos-acotados/04-03-05-explanaciones-pendiente.html#trazado-y-cálculo",
     "title": "3.3.6 Explanaciones con pendiente",
     "section": "Trazado y cálculo",
-    "text": "Trazado y cálculo\n[Metodología para diseñar y trazar explanaciones inclinadas…]",
+    "text": "Trazado y cálculo\n[Metodología para diseñar y trazar explanaciones inclinadas…]\nExplicación teórica explanada en pendiente (Storyteller)",
     "crumbs": [
       "3.3.6 Explanaciones con pendiente"
     ]
@@ -317,6 +317,86 @@
     "text": "Aplicaciones en vías forestales\n[Ejemplos específicos de caminos y pistas con pendiente…]",
     "crumbs": [
       "3.3.6 Explanaciones con pendiente"
+    ]
+  },
+  {
+    "objectID": "03-planos-acotados/04-03-00-fundamentos.html#fundamentos-del-sistema-de-planos-acotados",
+    "href": "03-planos-acotados/04-03-00-fundamentos.html#fundamentos-del-sistema-de-planos-acotados",
+    "title": "3.3.1 Fundamentos",
+    "section": "",
+    "text": "Contenido\n\n\n\n\n\nIntroducción al sistema\n\n\nRepresentación del punto\n\n\nRepresentación de la recta\n\n\nPosiciones particulares de la recta\n\n\nRepresentación del plano\n\n\n\n\n\n\nApuntes\n\nIntroducción al sistema\nEl sistema de planos acotados es una proyección cilíndrica ortogonal sobre un único plano coordenado horizontal.\nEs un sistema de representación en el que la proyección es paralela y ortogonal sobre un plano de proyección (PP) o comparación (PC), en el que a cada punto proyectado se le asocia con un valor, que es la cota o distancia con dicho plano de comparación.\nSe emplea principalmente en las representaciones topográficas, ya que usualmente a cada punto del plano sólo le corresponde uno del espacio. En estas representaciones, el relieve viene definido por las curvas de nivel resultantes de la intersección del terreno con planos a cotas determinadas, como se observa a continuación:\n\n\n\n\n\nCurvas de nivel. Fuente: https://acolita.com/que-son-las-curvas-de-nivel/\n\n\n\n\n\n\nRepresentación del punto\nViene caracterizado por su proyección sobre el plano horizontal y por su cota con relación a dicho plano. En la siguiente figura, se representan algunos puntos en este sistema. Los puntos de cota cero estarían situados en el plano de proyección.\n\n\n\n\n\nRepresentación del punto en planos acotados.\n\n\n\n\n\n\nRepresentación de la recta\nSi unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la siguiente figura se observa la recta R definida por los puntos A y B.\n\n\n\n\n\nRepresentación de la recta en planos acotados. R recta en el espacio, r proyección de R en el plano\n\n\n\n\nSe denomina traza de la recta (t) al punto de cota cero de la misma, esto es, la intersección de la recta con el plano de referencia.\nLa Equidistancia (e) es la distancia vertical que separa dos puntos de cota consecutiva.\nEl Intervalo de la recta R (i) es la distancia horizontal que hay que recorrer para subir o bajar un valor de la equidistancia.\nLa Pendiente de la recta es la relación entre las distancias vertical y horizontal de dos de sus puntos o lo que es lo mismo, la relación entre la equidistancia y el intervalo. Por lo tanto, es la tangente trigonométrica del ángulo (α) que la recta forma con el plano horizontal o de comparación. Se puede expresar en grados (º), en tanto por ciento y en tanto por uno: \\[\n\\text{Pendiente} = \\frac{dV}{dH} = \\frac{e}{i} = \\tan \\alpha\n\\]\n\n\n\n\n\n\nNota\n\n\n\nPor tanto, una recta está determinada si conoce la dirección de su proyección horizontal, un punto de la misma, el sentido en que la recta asciende y su pendiente.\n\n\nEn el siguiente ejemplo, la equidistancia es igual a 2, el intervalo (i) es igual a 6 y la pendiente se calcula como: \\[\n\\text{Pendiente} = \\frac{2}{6} = 0.333\n\\]\n\\[\n\\text{Expresada en tanto por ciento} = 33.3\\%\n\\]\n\n\n\n\n\nEjemplo de cálculo de la pendiente de la recta.\n\n\n\n\nTambién podría calcularse como 6/18 o cualquier otra combinación conocida de dos puntos de la recta, puesto que al tener pendiente uniforme la relación es la misma entre cualquiera de sus puntos.\n\n\nPosiciones particulares de la recta\n*Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipos:\n\nOblicua: la recta r cortará el plano en el punto de su traza.\nHorizontal o paralela: todos sus puntos tienen la misma cota, es paralela al plano de comparación. Su pendiente es cero.\nVertical o perpendicular: La proyección de la recta es un punto. Su pendiente es infinita.\n\n\n\n\n\n\nPosiciones de la recta.\n\n\n\n\n\n\nRepresentación del plano\nRectas singulares del plano:\n\nHorizontales del plano: Se denominan así las rectas del plano cuyos puntos tienen la misma cota. Para determinarlas bastará unir los puntos del plano que tengan la misma cota. Como todas las horizontales del plano son paralelas entre sí sus proyecciones también lo serán.\nTraza del plano: Se denomina así a la horizontal de cota cero del plano o, lo que es lo mismo, la intersección de ese plano con el de proyección.\nRecta de máxima pendiente (LMP): Se denomina así a la recta del plano que forma el mayor ángulo con el plano de proyección. Como las rectas horizontales del plano son paralelas al plano de proyección la recta de máxima pendiente será perpendicular a dichas horizontales.\n\n\n\n\n\n\nEl plano en el sistema de planos acotados.\n\n\n\n\n\n\n\n\n\n\nNota\n\n\n\nEn el Sistema Acotado los planos se representan, en general, por la proyección graduada de su recta de máxima pendiente. La pendiente de un plano se mide por la de su línea de máxima pendiente.\n\n\n\n\n\nMaterial complementario\nWeb Agustín Balcázar\n\nVídeos y web sobre el sistema de planos Acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.\n\nWeb de dibujo técnico\n\nPágina web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.",
+    "crumbs": [
+      "3.3.1 Fundamentos"
+    ]
+  },
+  {
+    "objectID": "03-planos-acotados/04-03-01-graduacion.html",
+    "href": "03-planos-acotados/04-03-01-graduacion.html",
+    "title": "3.3.2 Graduación de rectas",
+    "section": "",
+    "text": "Graduación de rectas",
+    "crumbs": [
+      "3.3.2 Graduación de rectas"
+    ]
+  },
+  {
+    "objectID": "03-planos-acotados/04-03-01-graduacion.html#graduación-de-rectas",
+    "href": "03-planos-acotados/04-03-01-graduacion.html#graduación-de-rectas",
+    "title": "3.3.2 Graduación de rectas",
+    "section": "",
+    "text": "Contenido\n\n\n\n\n\nDefinición\n\n\nCasos\n\n\n\n\n\n\nApuntes\n\nDefinición\nLa Graduación de rectas consiste en señalar sobre su proyección los puntos cuyas cotas pertenezcan a la serie definida por la equidistancia o cota entera. Para ello, será suficiente con determinar dos puntos de cota entera (o que sean de la serie de la equidistancia) lo que permitirá deducir el intervalo y una vez conocido éste será posible situar, con toda exactitud, cualquier punto de cota entera de la recta.\n\n\nCasos\n\nCaso 1: Me dan la proyección de la recta y la cota de dos de los puntos, y los dos corresponden a la serie.\n\nEjemplo:  Suponiendo que la equidistancia es 10 metros y las cotas de los puntos A y B son 500 y 540, respectivamente. La serie de la equidistancia es: 0, 10, …, 500, 510, 520, 530, 540,… Es decir, las cotas de A y B corresponden a la serie de la equidistancia. Por lo tanto, debo graduar la recta y localizar los puntos de cota 510, 520 y 530. Para esto, divido el segmento a-b en partes igual. ¿En cuántas partes? \\[\n\\frac{540 - 500}{10} = \\frac{40}{10} = 4\n\\] \\[\n\\text{En 4 partes iguales.}\n\\]\n\n\n\n\n\nCaso 1 de graduación de rectas.\n\n\n\n\n¿Cuál es el intervalo de esta recta? Se mide sobre la proyección de la recta r: i= 35\n¿Qué pendiente tiene esta recta? \\[\n\\text{Pendiente} = \\frac{\\textcolor{red}{\\text{equidistancia}}}{\\textcolor{green}{\\text{intervalo}}}\n\\] \\[\n\\text{Pendiente} = \\frac{\\textcolor{red}{\\text{10}}}{\\textcolor{green}{\\text{35}}}\n\\] \\[\n\\text{Pendiente} = 28.57\\%\n\\]\n\nCaso 2: Me dan la proyección de la recta y la cota de dos de los puntos, pero al menos uno no pertenece a la serie.\n\nEjemplo:  Suponiendo que la equidistancia es 2 metros y la cota de A y B es 509 y 516, respectivamente. Se debe graduar la recta, es decir, quiero situar las cotas 0, 2, …,510, 512, 514, 516.\n\n\n\n\n\nCaso 2 de graduación de rectas.\n\n\n\n\nSi encuentro el punto de cota 510 estoy en el caso anterior. Para ello aplico la fórmula de la pendiente o una regla de tres simple teniendo en cuenta que la distancia vertical es la diferencia de cotas entre A y B, y la distancia horizontal la mido sobre la proyección de la recta.\nPor lo tanto, si para subir desde la cota 509 a la cota 516 recorro horizontalmente 2.212 metros, ¿cuánto debo recorrer horizontalmente (x en la siguiente ecuación) para subir desde la cota 509 a la 510?\n\\[\n\\text{Pendiente} = \\frac{\\textcolor{red}{\\text{DV}}}{\\textcolor{green}{\\text{DH}}}\n\\]\n\\[\n\\text{Pendiente} = \\frac{\\textcolor{red}{\\text{516-509}}}{\\textcolor{green}{\\text{2212}}} = \\frac{\\textcolor{red}{\\text{510-509}}}{\\textcolor{orange}{\\text{x}}}\n\\]\n\\[\n\\text{Despejando:} \\quad \\textcolor{orange}{\\text{x}} = 316 \\text{ m}\n\\]\nMido 316 m en la proyección de la recta desde el punto A y marco la cota 510. Ahora estoy en el caso anterior.\n\nCaso 3: Me dan la proyección de la recta, la cota de un punto y la pendiente\n\nEjemplo:  Suponiendo que la equidistancia es 2 metros, la cota del punto A es 610 y la pendiente es del 35%, se debe graduar la recta, es decir, situar las cotas 612, 614, 616…. Para ello aplico la fórmula de la pendiente y despejo el intervalo (i):\n\n\n\n\n\nCaso 3 de graduación de rectas.\n\n\n\n\n\\[\n\\begin{aligned}\n\\text{Pendiente} &= \\frac{\\textcolor{red}{\\text{e}}}{\\textcolor{green}{\\text{i}}} \\\\\n\\\\\n\\frac{35}{100} &= \\frac{\\textcolor{red}{\\text{2}}}{\\textcolor{green}{\\text{i}}} \\\\\n\\\\\n\\text{Despejando:} \\quad \\textcolor{green}{\\text{i}} &= 5.71 \\text{ m}\n\\end{aligned}\n\\]\nMido 5.71m desde el punto A y marco la cota 612, y así sucesivamente voy subiendo un valor de la equidistancia.\n\n\n\nMaterial complementario\nWeb de dibujo técnico\n\nPágina web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.",
+    "crumbs": [
+      "3.3.2 Graduación de rectas"
+    ]
+  },
+  {
+    "objectID": "03-planos-acotados/04-03-02-DefinicionPlanos.html",
+    "href": "03-planos-acotados/04-03-02-DefinicionPlanos.html",
+    "title": "3.3.3 Definición de planos",
+    "section": "",
+    "text": "Definición de planos",
+    "crumbs": [
+      "3.3.3 Definición de planos"
+    ]
+  },
+  {
+    "objectID": "03-planos-acotados/04-03-02-DefinicionPlanos.html#definición-de-planos",
+    "href": "03-planos-acotados/04-03-02-DefinicionPlanos.html#definición-de-planos",
+    "title": "3.3.3 Definición de planos",
+    "section": "",
+    "text": "Apuntes\nUn plano queda determinado por: - tres puntos no alineados. - un punto y una recta que no pase por dicho punto. - dos rectas, concurrentes ó paralelas\n\n\n\n\n\nDefinición del plano a partir de tres puntos no alineados.\n\n\n\n\n\n\nMaterial complementario\nWeb Agustín Balcázar\n\nVídeos y web sobre el sistema de planos Acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.\n\nWeb de dibujo técnico\n\nPágina web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.",
+    "crumbs": [
+      "3.3.3 Definición de planos"
+    ]
+  },
+  {
+    "objectID": "03-planos-acotados/04-03-04-curvado-planos.html",
+    "href": "03-planos-acotados/04-03-04-curvado-planos.html",
+    "title": "3.3.4 Curvado de planos",
+    "section": "",
+    "text": "Introducción\nEl curvado de planos es una técnica fundamental en el sistema de planos acotados para representar superficies curvas.\n[Contenido sobre el curvado de planos…]",
+    "crumbs": [
+      "3.3.4 Curvado de planos"
+    ]
+  },
+  {
+    "objectID": "03-planos-acotados/04-03-04-curvado-planos.html#metodología",
+    "href": "03-planos-acotados/04-03-04-curvado-planos.html#metodología",
+    "title": "3.3.4 Curvado de planos",
+    "section": "Metodología",
+    "text": "Metodología\n[Desarrolla los procedimientos y técnicas…]",
+    "crumbs": [
+      "3.3.4 Curvado de planos"
+    ]
+  },
+  {
+    "objectID": "03-planos-acotados/04-03-04-curvado-planos.html#ejemplos-prácticos",
+    "href": "03-planos-acotados/04-03-04-curvado-planos.html#ejemplos-prácticos",
+    "title": "3.3.4 Curvado de planos",
+    "section": "Ejemplos prácticos",
+    "text": "Ejemplos prácticos",
+    "crumbs": [
+      "3.3.4 Curvado de planos"
     ]
   }
 ]

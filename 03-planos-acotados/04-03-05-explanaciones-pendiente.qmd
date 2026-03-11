@@ -14,6 +14,8 @@ Las explanaciones con pendiente son superficies planas inclinadas que se adaptan
 
 [Metodología para diseñar y trazar explanaciones inclinadas...]
 
+[Explicación teórica explanada en pendiente (Storyteller)](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/00-ejemplo-basico-pendiente)
+
 ## Aplicaciones en vías forestales
 
 [Ejemplos específicos de caminos y pistas con pendiente...]
