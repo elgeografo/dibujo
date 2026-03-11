@@ -1,8 +1,8 @@
 # 3.3.1 Fundamentos {#sec-fundamentos .unnumbered}
 
-### Fundamentos del sistema de planos Acotados
+## Fundamentos del sistema de planos Acotados
 
-#### Contenido
+### Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <!--<p style="font-size: 1.2em; color: #333;">
@@ -30,9 +30,9 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 </p>
 :::
 
-#### Apuntes
+### Apuntes
 
-##### Introducción al sistema
+#### Introducción al sistema
 
 *El sistema de planos acotados es una proyección cilíndrica ortogonal sobre un único plano coordenado horizontal.*
 
@@ -51,7 +51,7 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 
 knitr::include_graphics("../images/curvas_nivel.jpg", dpi = 270)
 ```
-##### Representación del punto
+#### Representación del punto
 *Viene caracterizado por su proyección sobre el plano horizontal y por su cota con relación a dicho plano. En la siguiente figura, se representan algunos puntos en este sistema. Los puntos de cota cero estarían situados en el plano de proyección.*
 ```{r}
 #| label: image-Punto
@@ -64,7 +64,7 @@ knitr::include_graphics("../images/curvas_nivel.jpg", dpi = 270)
 
 knitr::include_graphics("../images/puntos_planosAcotados.gif", dpi = 270)
 ```
-##### Representación de la recta
+#### Representación de la recta
 *Si unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la siguiente figura se observa la recta R definida por los puntos A y B.*
 ```{r}
 #| label: image-Recta
@@ -115,7 +115,7 @@ knitr::include_graphics("../images/ejemplo_pendiente.png", dpi = 270)
 ```
 También podría calcularse como 6/18 o cualquier otra combinación conocida de dos puntos de la recta, puesto que al tener  pendiente uniforme la relación es la misma entre cualquiera de sus puntos.
 
-##### Posiciones particulares de la recta
+#### Posiciones particulares de la recta
 
 *Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipos:
 
@@ -134,7 +134,7 @@ También podría calcularse como 6/18 o cualquier otra combinación conocida de 
 
 knitr::include_graphics("../images/posiciones_recta.png", dpi = 270)
 ```
-##### Representación del plano
+#### Representación del plano
 *Rectas singulares del plano:*
 
 -   **Horizontales del plano**: *Se denominan así las rectas del plano cuyos puntos tienen la misma cota. Para determinarlas bastará unir los puntos del plano que tengan la misma cota. Como todas las horizontales del plano son paralelas entre sí sus proyecciones también lo serán.*
