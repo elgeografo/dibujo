@@ -1,8 +1,8 @@
 # 3.3.2 Graduación de rectas {#sec-graduacion .unnumbered}
 
-### Graduación de rectas
+## Graduación de rectas
 
-#### Contenido
+### Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <!--<p style="font-size: 1.2em; color: #333;">
@@ -24,12 +24,12 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 </p>
 :::
 
-#### Apuntes
+### Apuntes
 
-##### Definición
+#### Definición
 *La Graduación de rectas consiste en señalar sobre su proyección los puntos cuyas cotas pertenezcan a la serie definida por la equidistancia o cota entera. Para ello, será suficiente con determinar dos puntos de cota entera (o que sean de la serie de la equidistancia) lo que permitirá deducir el intervalo y una vez conocido éste será posible situar, con toda exactitud, cualquier punto de cota entera de la recta.*
 
-##### Casos
+#### Casos
 -   **Caso 1:** Me dan la proyección de la recta y la cota de dos de los puntos, y los dos corresponden a la serie.
 
 **Ejemplo: **
