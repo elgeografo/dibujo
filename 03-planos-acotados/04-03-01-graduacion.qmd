@@ -42,7 +42,6 @@ $$
 \text{En 4 partes iguales.}
 $$
 
-
 ```{r}
 #| label: image-GraduacionCaso1
 #| echo: false
@@ -66,4 +65,37 @@ $$
 $$
 $$
 \text{Pendiente} = 28.57\%
+$$
+
+-   **Caso 1:** Me dan la proyección de la recta y la cota de dos de los puntos, pero al menos uno no pertenece a la serie.
+
+**Ejemplo: **
+Suponiendo que la equidistancia es **2 metros** y la cota de A y B es 509 y 516, respectivamente. Se debe graduar la recta, es decir, quiero situar las cotas 0, 2, …,**510, 512, 514, 516**. 
+
+```{r}
+#| label: image-GraduacionCaso2
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Caso 2 de graduación de rectas.
+#| fig-alt: |
+#|   Caso 2 de graduación de rectas.
+
+knitr::include_graphics("../images/caso2_graduacionRectas.gif", dpi = 270)
+```
+
+Si encuentro el punto de cota **510** estoy en el caso anterior. Para ello aplico la fórmula de la pendiente o una regla de tres simple teniendo en cuenta que la distancia vertical es la diferencia de cotas entre A y B, y la distancia horizontal la mido sobre la proyección de la recta. 
+
+Por lo tanto, si para subir desde la cota 509 a la cota 516 recorro horizontalmente 2.212 metros, ¿cuánto debo recorrer horizontalmente (x en la siguiente ecuación) para subir desde la cota 509 a la 510?
+
+$$
+\text{Pendiente} = \frac{\textcolor{red}{\text{DV}}}{\textcolor{red}{\text{DH}}}
+$$
+
+$$
+\text{Pendiente} = \frac{\textcolor{red}{\text{516-509}}}{\textcolor{green}{\text{2212}}} = \frac{\textcolor{red}{\text{510-509}}}{\textcolor{yellow}{\text{x}}}
+$$
+
+$$
+\text{Despejando:} \quad \textcolor{yellow}{\text{x}} = 316 \text{ m}
 $$
