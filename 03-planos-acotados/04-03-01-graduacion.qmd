@@ -30,7 +30,7 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 *La Graduación de rectas consiste en señalar sobre su proyección los puntos cuyas cotas pertenezcan a la serie definida por la equidistancia o cota entera. Para ello, será suficiente con determinar dos puntos de cota entera (o que sean de la serie de la equidistancia) lo que permitirá deducir el intervalo y una vez conocido éste será posible situar, con toda exactitud, cualquier punto de cota entera de la recta.*
 
 ##### Casos
-**Caso 1:** Me dan la proyección de la recta y la cota de dos de los puntos, y los dos corresponden a la serie.
+-   **Caso 1:** Me dan la proyección de la recta y la cota de dos de los puntos, y los dos corresponden a la serie.
 
 **Ejemplo: **
 Suponiendo que la equidistancia es **10 metros** y las cotas de los puntos A y B son 500 y 540, respectivamente. La serie de la equidistancia es: 0, 10, …, 500, **510, 520, 530,** 540,… Es decir, las cotas de A y B corresponden a la serie de la equidistancia.
@@ -38,8 +38,10 @@ Por lo tanto, debo graduar la recta y localizar los puntos de cota 510, 520 y 53
 $$
 \frac{540 - 500}{10} = \frac{40}{10} = 4
 $$
-
+$$
 En **4 partes iguales.**
+$$
+
 
 ```{r}
 #| label: image-GraduacionCaso1
@@ -52,8 +54,9 @@ En **4 partes iguales.**
 
 knitr::include_graphics("../images/caso1_graduacionRectas.gif", dpi = 270)
 ```
-¿Cuál es el **interval** de esta recta?
+¿Cuál es el **intervalo** de esta recta?
 Se mide sobre la proyección de la recta r: <span style="color:green;">i</span>= 35
+
 ¿Qué pendiente tiene esta recta?
 $$
 \text{Pendiente} = \frac{\textcolor{red}{\text{equidistancia}}}{\textcolor{green}{\text{intervalo}}}
@@ -62,5 +65,5 @@ $$
 \text{Pendiente} = \frac{\textcolor{red}{\text{10}}}{\textcolor{green}{\text{35}}}
 $$
 $$
-\text{Pendiente} = 28.57%
+\text{Pendiente} = 28.57\%
 $$
