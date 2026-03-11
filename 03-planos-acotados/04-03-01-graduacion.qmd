@@ -39,7 +39,7 @@ $$
 \frac{540 - 500}{10} = \frac{40}{10} = 4
 $$
 $$
-\text{En **4 partes iguales.**}
+\text{En 4 partes iguales.}
 $$
 
 
