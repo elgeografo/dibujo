@@ -1,4 +1,20 @@
 # 3.3 Planos acotados {#sec-acotados .unnumbered}
 
+#### Introducción al sistema
 
-El sistema ....
+*El sistema de planos acotados es una proyección cilíndrica ortogonal sobre un único plano coordenado horizontal.*
+
+*Es un sistema de representación en el que la proyección es paralela y ortogonal sobre un plano de proyección (PP) o comparación (PC), en el que a cada punto proyectado se le asocia con un valor, que es la cota o distancia con dicho plano de comparación.*
+
+*Se emplea principalmente en las representaciones topográficas, ya que usualmente a cada punto del plano sólo le corresponde uno del espacio. En estas representaciones, el relieve viene definido por las curvas de nivel resultantes de la intersección del terreno con planos a cotas determinadas, como se observa a continuación:*
+
+```{r}
+#| label: image-CurvasNivel 
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Curvas de nivel. Fuente: https://acolita.com/que-son-las-curvas-de-nivel/
+#| fig-alt: |
+#|   Curvas de nivel.
+
+knitr::include_graphics("../images/curvas_nivel.jpg", dpi = 270)
