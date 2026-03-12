@@ -8,3 +8,14 @@
 
 *Se emplea principalmente en las representaciones topográficas, ya que usualmente a cada punto del plano sólo le corresponde uno del espacio. En estas representaciones, el relieve viene definido por las curvas de nivel resultantes de la intersección del terreno con planos a cotas determinadas, como se observa a continuación:*
 
+```{r}
+#| label: image-curvas 
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Curvas de nivel. Fuente: https://acolita.com/que-son-las-curvas-de-nivel/
+#| fig-alt: |
+#|   Curvas de nivel. Fuente: https://acolita.com/que-son-las-curvas-de-nivel/
+
+knitr::include_graphics("images/curvas_nivel.jpg", dpi = 270)
+```
