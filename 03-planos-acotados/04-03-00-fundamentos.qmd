@@ -98,7 +98,7 @@ También podría calcularse como 6/18 o cualquier otra combinación conocida de 
 
 #### Posiciones particulares de la recta
 
-*Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipos:
+*Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipos:*
 
 -   **Oblicua**: *la recta r cortará el plano en el punto de su traza.*
 -   **Horizontal o paralela**: *todos sus puntos tienen la misma cota, es paralela al plano de comparación. Su pendiente es cero.*
