@@ -30,6 +30,21 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 
 ### Apuntes
 
+#### Representación del punto
+*Viene caracterizado por su proyección sobre el plano horizontal y por su cota con relación a dicho plano. En la siguiente figura, se representan algunos puntos en este sistema. Los puntos de cota cero estarían situados en el plano de proyección.
+
+```{r}
+#| label: image-punto
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Representación del punto en planos acotados. 
+#| fig-alt: |
+#|   Representación del punto en planos acotados. 
+
+knitr::include_graphics("../images/puntos_planosAcotados.gif", dpi = 270)
+```
+
 #### Representación de la recta
 *Si unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la siguiente figura se observa la recta R definida por los puntos A y B.*
 ```{r}
