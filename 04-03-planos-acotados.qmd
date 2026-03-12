@@ -18,3 +18,4 @@
 #|   Curvas de nivel.
 
 knitr::include_graphics("../images/curvas_nivel.jpg", dpi = 270)
+```
