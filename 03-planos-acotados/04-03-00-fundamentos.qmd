@@ -31,7 +31,7 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 ### Apuntes
 
 #### Representación del punto
-*Viene caracterizado por su proyección sobre el plano horizontal y por su cota con relación a dicho plano. En la siguiente figura, se representan algunos puntos en este sistema. Los puntos de cota cero estarían situados en el plano de proyección.
+*Viene caracterizado por su proyección sobre el plano horizontal y por su cota con relación a dicho plano. En la siguiente figura, se representan algunos puntos en este sistema. Los puntos de cota cero estarían situados en el plano de proyección.*
 
 ```{r}
 #| label: image-punto
