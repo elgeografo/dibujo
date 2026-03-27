@@ -122,11 +122,11 @@ Respecto a la **inscripción** la norma dice *"La designación de la escala util
 *Sí, para aplicaciones especiales, se estima necesaria una escala de ampliación mayor o una escala de reducción menor, puede aumentarse a condición de que la escala deseada se derive de una escala recomendada mediante multiplicación por una potencia de 10.*
 
 *En casos excepcionales, en los que, por razones funcionales, las escalas recomendadas no puedan aplicarse, se pueden elegir escalas intermedias. En la asignatura de expresión gráfica, las escalas intermedias que se utilizan, dado que son ampliamente utilizadas en proyectos de ingeniería son: *
--  3:2
--  2:3
--  1:3
--  1:4
--  1:25
+-   3:2
+-   2:3
+-   1:3
+-   1:4
+-   1:25
 
 *En ningún caso se podrán utilizar escalas con números decimales, por ejemplo: 1:6.6, y aunque se utilicen números enteros, no es nada recomendable utilizar escalas del tipo 1/345 o 1/77.*
 
