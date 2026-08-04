@@ -65,6 +65,15 @@ jobs:
         run: |
           rm -rf _book _site _freeze .quarto *_cache
 
+      # Las presentaciones Reveal.js son un proyecto Quarto aparte cuyos
+      # HTML no están en git: hay que renderizarlas antes que el libro
+      # para que el glob de resources (presentaciones/*.html) las copie a _book
+      - name: Render presentaciones Reveal.js
+        run: |
+          cd presentaciones
+          quarto render
+          ls -la *.html
+
       # Render con log detallado
       - name: Render (verbose)
         run: |
