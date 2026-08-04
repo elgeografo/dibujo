@@ -1,13 +1,165 @@
 # 1.1 La expresión gráfica como lenguaje de la técnica {#sec-lenguaje-tecnica .unnumbered}
 
-::: callout-note
-## Capítulo en desarrollo
-
-Este capítulo forma parte de la nueva estructura del libro y su contenido se está elaborando a partir del material del equipo docente.
-:::
-
 ## Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+En este tema se presenta la expresión gráfica como el lenguaje propio de la técnica: representar el mundo en planos.
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Las características del dibujo técnico: gráfico, universal y preciso</li>
+
+<li>La correspondencia biunívoca entre el objeto y su representación</li>
+
+<li>Los dos grandes problemas de la representación y sus soluciones: los sistemas de representación y la geometría constructiva</li>
+
+</ol>
+
+</p>
+:::
 
 ## Apuntes
 
+### Representar el mundo en planos
+
+La ingeniería necesita comunicar con exactitud cómo son los objetos que diseña y construye: una pieza, una nave, una explanación del terreno. Para ello utiliza un lenguaje propio, el **dibujo técnico**, cuyas características esenciales son tres:
+
+-   **Gráfico**: transmite la información mediante imágenes, no mediante descripciones verbales.
+-   **Universal**: gracias a la normalización, un plano se interpreta igual en cualquier país y en cualquier oficina técnica.
+-   **Preciso**: define las formas y dimensiones sin ambigüedad, con la exactitud que exige la fabricación o la construcción.
+
+```{r}
+#| label: image-mundo-papel
+#| echo: false
+#| out.width: "40%"
+#| fig-cap: |
+#|   Representar el mundo en planos: del objeto real al papel y del papel al objeto real.
+#| fig-alt: |
+#|   Icono del mundo y un pliego de papel unidos por flechas en ambos sentidos.
+
+knitr::include_graphics("images/01-01-A-mundo-papel.png", dpi = 270)
+```
+
+### La correspondencia biunívoca
+
+En ingeniería es clave que la representación mantenga una **relación biunívoca** con el objeto: a cada objeto le corresponde una única representación, y a cada representación le corresponde un único objeto. Quien dibuja el plano y quien lo interpreta deben llegar exactamente a la misma pieza, sin margen para la interpretación libre.
+
+```{r}
+#| label: image-biunivoca
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Correspondencia biunívoca: el plano acotado define una única pieza y la pieza queda descrita por un único plano.
+#| fig-alt: |
+#|   Plano con vistas y cortes de una pieza a la izquierda y modelo tridimensional de la misma pieza a la derecha, unidos por flechas en ambos sentidos.
+
+knitr::include_graphics("images/01-01-B-biunivoca.png", dpi = 270)
+```
+
+### Los dos grandes problemas
+
+Para conseguir esa correspondencia biunívoca, la expresión gráfica debe resolver dos problemas:
+
+**Problema 1: el mundo es tridimensional y el papel es plano.** Hay que representar objetos de tres dimensiones sobre un soporte de dos. La solución son los **sistemas de representación**, basados en la proyección, que estudiaremos en el Bloque 2.
+
+::: {#fig-problema1 layout-ncol="2"}
+```{r}
+#| label: image-pieza-isometrica
+#| echo: false
+#| out.width: NULL
+#| fig-alt: |
+#|   Pieza formada por prismas dibujada en perspectiva isométrica.
+
+knitr::include_graphics("images/01-01-C-pieza-isometrica.png", dpi = 270)
+```
+
+```{r}
+#| label: image-vistas
+#| echo: false
+#| out.width: NULL
+#| fig-alt: |
+#|   Vistas normalizadas de la pieza: alzado, perfil y planta.
+
+knitr::include_graphics("images/01-01-D-vistas.png", dpi = 270)
+```
+
+Mundo 3D sobre plano 2D: la misma pieza en perspectiva y descrita por sus vistas.
+:::
+
+**Problema 2: el mundo es muy complejo.** Los objetos reales —una caja, una herramienta, un árbol— tienen formas complicadas que no se pueden abordar de golpe. La solución es **simplificar**: dividir el problema en trozos más pequeños y descomponer los objetos en volúmenes elementales. Ese es el camino de la **geometría constructiva**, que se desarrolla en el tema siguiente ([1.2 Conceptos básicos de geometría métrica](03-geometria-constructiva.qmd)).
+
+::: {#fig-problema2 layout-ncol="3"}
+```{r}
+#| label: image-caja
+#| echo: false
+#| out.width: NULL
+#| fig-alt: |
+#|   Caja de cartón.
+
+knitr::include_graphics("images/01-01-E-caja.png", dpi = 270)
+```
+
+```{r}
+#| label: image-hacha
+#| echo: false
+#| out.width: NULL
+#| fig-alt: |
+#|   Hacha con mango de madera.
+
+knitr::include_graphics("images/01-01-F-hacha.png", dpi = 270)
+```
+
+```{r}
+#| label: image-arbol
+#| echo: false
+#| out.width: NULL
+#| fig-alt: |
+#|   Árbol de gran porte en un prado.
+
+knitr::include_graphics("images/01-01-G-arbol.png", dpi = 270)
+```
+
+Un "mundo" muy complejo: objetos cotidianos con formas cada vez más difíciles de representar.
+:::
+
+Estos dos caminos —los sistemas de representación y la geometría constructiva— estructuran buena parte de la asignatura y de este libro.
+
 ## Material complementario
+
+<strong>Presentación de clase: Representar el mundo en planos (Reveal.js)</strong>
+
+<a href="presentaciones/clase-1-1-mundo-en-planos.html" target="_blank">Clase 1.1 — Representar el mundo en planos. Geometría constructiva: fundamentos</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Presentación utilizada en clase. Incluye la introducción de este tema y los fundamentos de geometría constructiva del tema 1.2.
+
+</p>
+
+<strong>Croquización (materiales auxiliares de la presentación)</strong>
+
+<a href="https://ibiguridt.wordpress.com/temas/principios-de-representacion/croquizacion/" target="_blank">Página web con conceptos básicos de croquización</a>
+
+<a href="https://www.youtube.com/shorts/YPJicwgb4fQ" target="_blank">Vídeo: dibujar un prisma sencillo en perspectiva caballera (menos de 1')</a>
+
+<a href="https://www.youtube.com/watch?app=desktop&v=8BciV_kZQi4" target="_blank">Vídeo: dibujar varios prismas sencillos en caballera (4', con explicación verbal)</a>
+
+<a href="https://www.youtube.com/watch?v=htyQlm2p7j4" target="_blank">Vídeo: dibujar elipses y cilindros en perspectiva (9', con reglas útiles)</a>
+
+<a href="https://www.youtube.com/watch?v=vHut4yk6rFw" target="_blank">Vídeo: 8 bocetos de 8 objetos a partir de cilindros (11', interesante para el diseño del Proyecto)</a>
+
+<strong>Para practicar</strong>
+
+<a href="http://piziadas.com/dibujo/dibujo-tecnico/piezas" target="_blank">Colección de piezas para practicar (web Piziadas)</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Piezas descargables en pdf. Para visualizarlas y girarlas, descargar el archivo y abrirlo con un lector de pdf (no en el navegador).
+
+</p>

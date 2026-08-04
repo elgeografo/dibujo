@@ -1,5 +1,7 @@
 project:
   type: book
+  resources:
+    - presentaciones/*.html
 
 book:
   #title: "Apuntes guía Expresión Gráfica <br>  Grupo investigación <a href='https://www.geoso2.es'>GEOSO2</a> "

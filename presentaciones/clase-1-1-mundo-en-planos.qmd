@@ -1,0 +1,121 @@
+---
+title: "Representar el mundo en planos"
+subtitle: "Geometría constructiva: fundamentos · Clase 1.1"
+author: "Expresión Gráfica · E.T.S.I. Montes, Forestal y del Medio Natural · UPM"
+format:
+  revealjs:
+    theme: white
+    slide-number: true
+    embed-resources: true
+    lang: es
+    footer: "Expresión Gráfica — Representar el mundo en planos"
+---
+
+## Representar el mundo en planos
+
+*El dibujo técnico es gráfico, universal y preciso.*
+
+:::: columns
+::: {.column width="30%"}
+![](media/clase-1-1/image13.png)
+:::
+
+::: {.column width="70%"}
+-   En **INGENIERÍA** es **CLAVE**: mantener la **relación biunívoca**
+-   **DOS problemas**:
+    -   Mundo 3D → plano 2D ⟹ [Sistemas de Representación]{style="color:#c00;"}
+    -   "Mundo" muy complejo ⟹ [Geometría constructiva]{style="color:#c00;"}
+:::
+::::
+
+::: {layout-ncol="5"}
+![](media/clase-1-1/image5.png)
+
+![](media/clase-1-1/image4.png)
+
+![](media/clase-1-1/image8.png)
+
+![](media/clase-1-1/image6.png)
+
+![](media/clase-1-1/image7.png)
+:::
+
+# "Mundo" muy complejo<br>Geometría constructiva
+
+## Correspondencia biunívoca {background-image="media/clase-1-1/slide-04.png" background-size="contain" background-color="white"}
+
+## ¿Qué se puede hacer? {background-image="media/clase-1-1/slide-05.png" background-size="contain" background-color="white"}
+
+::: notes
+Dividir los problemas en trozos más pequeños → SIMPLIFICAR
+:::
+
+## Modelo de representación de geometría constructiva {background-image="media/clase-1-1/slide-06.png" background-size="contain" background-color="white"}
+
+::: notes
+1\. Se genera el modelo por combinación de sólidos elementales o primitivas sólidas. 2. Mediante escalado y movimiento se sitúan las primitivas en su posición, orientación y tamaño correctos. 3. Se efectúan las operaciones booleanas de unión/intersección/diferencia.
+:::
+
+## Operaciones booleanas
+
+-   **Unión** ∪ o + → junta dos sólidos incluyendo la parte común y no común para crear un nuevo sólido.
+-   **Intersección** ∩ → incluye solo la parte común de los dos sólidos, creando un sólido nuevo.
+-   **Diferencia**, sustracción o resta − → incluye solo la parte no común del primer sólido.
+
+![](media/clase-1-1/image17.png){fig-align="center"}
+
+## Volúmenes básicos
+
+::: {style="font-size: 1.3em;"}
+-   Ortoedro
+-   Cilindro
+-   Cono
+-   Esfera
+:::
+
+<br>
+
+*Dimensiones necesarias para definirlos*
+
+## Ejemplos: ortoedro (I) {background-image="media/clase-1-1/slide-09.png" background-size="contain" background-color="white"}
+
+::: notes
+Grados de libertad y restricciones. Explicar y ver cómo se aplica. Disminuyen porque no nos importa en qué lugar del espacio se encuentra el objeto. https://piziadas.com/2011/10/los-grados-de-libertad-y-las-restricciones-alumnos.html
+:::
+
+## Ejemplos: ortoedro (II) {background-image="media/clase-1-1/slide-10.png" background-size="contain" background-color="white"}
+
+## Ejemplos: cilindro {background-image="media/clase-1-1/slide-11.png" background-size="contain" background-color="white"}
+
+## Ejemplos: cono {background-image="media/clase-1-1/slide-12.png" background-size="contain" background-color="white"}
+
+## Ejemplos: esfera {background-image="media/clase-1-1/slide-13.png" background-size="contain" background-color="white"}
+
+## Análisis de una pieza {background-image="media/clase-1-1/slide-14.png" background-size="contain" background-color="white"}
+
+::: notes
+Análisis de una pieza en base a su descomposición en modelos geométricos elementales aplicando el Método Lógico Geométrico. Aplicación de las operaciones booleanas. Para DEFINIRLA, ¿cuántas cotas necesita? Lo vemos el próximo día.
+:::
+
+## Materiales auxiliares: croquización
+
+-   [Página web con conceptos básicos de croquización](https://ibiguridt.wordpress.com/temas/principios-de-representacion/croquizacion/)
+-   [Vídeo: dibujar un prisma sencillo en perspectiva caballera (\<1')](https://www.youtube.com/shorts/YPJicwgb4fQ)
+-   [Vídeo: dibujar varios prismas sencillos en caballera (4', con explicación verbal)](https://www.youtube.com/watch?app=desktop&v=8BciV_kZQi4)
+-   [Vídeo: dibujar elipses y cilindros en perspectiva (9', con reglas útiles)](https://www.youtube.com/watch?v=htyQlm2p7j4)
+-   [Vídeo: 8 bocetos de 8 objetos a partir de cilindros (11', para el diseño del Proyecto)](https://www.youtube.com/watch?v=vHut4yk6rFw)
+
+## Cómo practicar
+
+-   Piezas reales sencillas → en clase
+-   Otros ejemplos → [web Piziadas](http://piziadas.com/dibujo/dibujo-tecnico/piezas)
+
+:::: columns
+::: {.column width="60%"}
+![](media/clase-1-1/image18.png)
+:::
+
+::: {.column width="40%"}
+*Para visualizar y girar las piezas, descargarlas y abrirlas con un lector de pdf (no en el navegador).*
+:::
+::::
