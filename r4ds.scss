@@ -79,3 +79,10 @@ pre {
   max-width: 340px;
   transform: translateX(-64px);
 }
+
+/* Air between the sidebar and the main content */
+@media (min-width: 992px) {
+  #quarto-content main.content {
+    padding-left: 3rem;
+  }
+}
