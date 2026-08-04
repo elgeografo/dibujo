@@ -9,48 +9,44 @@ book:
   #date: "9/8/2024"
   chapters:
     - index.qmd
-    - 01-normalizacion.qmd
-    #- 02-proyecciones.qmd
-    - 03-geometria-constructiva.qmd
-    - 04-sistemas-representacion.qmd
-    - 04-01-diedrico.qmd
-    - 04-02-axonometrico.qmd
-    - 04-03-planos-acotados.qmd
-    - 03-planos-acotados/04-03-00-fundamentos.qmd
-    - 03-planos-acotados/04-03-01-graduacion.qmd
-    - 03-planos-acotados/04-03-02-DefinicionPlanos.qmd
-    - 03-planos-acotados/04-03-04-curvado-planos.qmd
-    - 03-planos-acotados/04-03-02-vaguadas-divisorias.qmd
-    - 03-planos-acotados/04-03-03-perfiles-longitudinales.qmd
-    - 03-planos-acotados/04-03-04-explanaciones-horizontales.qmd
-    - 03-planos-acotados/04-03-05-explanaciones-pendiente.qmd
-    # - "Sistemas de Representación"
-    #   chapters:
-    #     - 04-01-diedrico.qmd
-    #     - 04-02-axonometrico.qmd
-    #     - 04-03-planos-acotados.qmd
-    #     - 04-04-perspectiva-conica.qmd
-    #- 04-03-02-vaguadas-divisorias.qmd
-    #- 04-03-03-perfiles-longitudinales.qmd
-    #- 04-03-04-explanaciones-horizontales.qmd
-    #- 04-03-05-explanaciones-pendiente.qmd
-
-    # - part: "Conocimientos previos"
-    #   chapters:
-    #     - 00-01-conocimientos-previos.qmd
-    # - part: "Introducción"
-    #   chapters:
-    #     - 01-01-instrumentos.qmd
-    #     - 01-02-lenguaje.qmd
-    #     - 01-03-normalizacion.qmd
-    #     - 01-04-proyecciones.qmd
-    #     #- tricks/010-cuadradoFacil.qmd
-    # #- part: "Sistema Diédrico"
-
-
-    #- intro.qmd
-    #- summary.qmd
-    #- references.qmd
+    - part: "Bloque 1. Introducción a la Expresión Gráfica"
+      chapters:
+        - 01-01-lenguaje-tecnica.qmd
+        - 03-geometria-constructiva.qmd
+        - 01-normalizacion.qmd
+        - 01-04-croquizacion.qmd
+    - part: "Bloque 2. Fundamentos de los Sistemas de Representación"
+      chapters:
+        - 04-sistemas-representacion.qmd
+        - 04-01-diedrico.qmd
+        - 04-02-axonometrico.qmd
+        - 04-04-perspectiva-conica.qmd
+    - part: "Bloque 3. Representación Gráfica de la Información Ambiental"
+      chapters:
+        - 04-03-planos-acotados.qmd
+        - 03-planos-acotados/04-03-00-fundamentos.qmd
+        - 03-planos-acotados/04-03-01-graduacion.qmd
+        - 03-planos-acotados/04-03-02-DefinicionPlanos.qmd
+        - 03-planos-acotados/04-03-04-curvado-planos.qmd
+        - 03-planos-acotados/04-03-02-vaguadas-divisorias.qmd
+        - 03-planos-acotados/04-03-03-perfiles-longitudinales.qmd
+        - 03-planos-acotados/04-03-04-explanaciones-horizontales.qmd
+        - 03-planos-acotados/04-03-05-explanaciones-pendiente.qmd
+    - part: "Bloque 4. Elaboración de Planos"
+      chapters:
+        - 04-elaboracion-planos/04-01-normativa.qmd
+        - 04-elaboracion-planos/04-02-situacion-localizacion.qmd
+        - 04-elaboracion-planos/04-03-estructuras-infraestructuras.qmd
+        - 04-elaboracion-planos/04-04-conjunto-despiece.qmd
+        - 04-elaboracion-planos/04-05-detalle.qmd
+        - 04-elaboracion-planos/04-06-cartografia-ambiental-forestal.qmd
+    - part: "Bloque 5. Representación Gráfica Digital"
+      chapters:
+        - 05-representacion-digital/05-01-cad.qmd
+        - 05-representacion-digital/05-02-sig.qmd
+        - 05-representacion-digital/05-03-bim-gis.qmd
+  appendices:
+    - anexos/anexo-videos-autocad.qmd
 
 bibliography: references.bib
 

@@ -1,4 +1,4 @@
-# 3.3 Planos acotados {#sec-acotados .unnumbered}
+# El sistema de planos acotados {#sec-acotados .unnumbered}
 
 
 El sistema ....

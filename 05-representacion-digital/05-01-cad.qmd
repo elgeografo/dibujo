@@ -1,0 +1,11 @@
+# Fundamentos del Diseño Asistido por Ordenador {#sec-cad .unnumbered}
+
+::: callout-note
+## Capítulo en desarrollo
+
+Este capítulo forma parte de la nueva estructura del libro y su contenido se está elaborando a partir del material del equipo docente. Se apoya en la colección de vídeos cortos de AutoCAD recogida en el [anexo de vídeos](../anexos/anexo-videos-autocad.qmd).
+:::
+
+## Modelización y representación bidimensional
+
+## Modelización y representación tridimensional: modelado de sólidos y superficies

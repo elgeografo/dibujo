@@ -1,4 +1,4 @@
-# 3.3.1 Fundamentos {#sec-fundamentos .unnumbered}
+# Fundamentos {#sec-fundamentos .unnumbered}
 
 ## Fundamentos del sistema de planos Acotados
 

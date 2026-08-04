@@ -1,4 +1,4 @@
-# 3.3.6 Explanaciones con pendiente {#sec-explanaciones-pendiente .unnumbered}
+# Explanaciones con pendiente {#sec-explanaciones-pendiente .unnumbered}
 
 Las explanaciones con pendiente son superficies planas inclinadas que se adaptan mejor a terrenos con pendiente.
 

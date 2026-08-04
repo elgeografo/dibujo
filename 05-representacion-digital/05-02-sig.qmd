@@ -1,0 +1,11 @@
+# Fundamentos de los sistemas de información geográfica {#sec-sig .unnumbered}
+
+::: callout-note
+## Capítulo en desarrollo
+
+Este capítulo forma parte de la nueva estructura del libro y su contenido se está elaborando a partir del material del equipo docente.
+:::
+
+## Modelos vectorial y ráster de representación de la información
+
+## Adquisición y visualización de datos de variables ambientales

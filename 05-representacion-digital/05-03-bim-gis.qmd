@@ -1,0 +1,7 @@
+# Modelos integrales de gestión de la información del proyecto: BIM y BIM-GIS {#sec-bim .unnumbered}
+
+::: callout-note
+## Capítulo en desarrollo
+
+Este capítulo forma parte de la nueva estructura del libro y su contenido se está elaborando a partir del material del equipo docente.
+:::

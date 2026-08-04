@@ -1,0 +1,7 @@
+# Planos de estructuras e infraestructuras {#sec-planos-estructuras .unnumbered}
+
+::: callout-note
+## Capítulo en desarrollo
+
+Este capítulo forma parte de la nueva estructura del libro y su contenido se está elaborando a partir del material del equipo docente.
+:::

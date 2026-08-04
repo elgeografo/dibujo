@@ -1,5 +1,5 @@
 ---
-title: "1 Representación normalizada"
+title: "Normalización: normas UNE sobre Dibujo Técnico"
 ---
 
 ::: {style="font-size: 2em; font-weight: bold;  margin-bottom: 1em;background-color: white;"}

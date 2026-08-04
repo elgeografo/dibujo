@@ -1,0 +1,144 @@
+# Anexo: Vídeos cortos de AutoCAD {#sec-anexo-videos .unnumbered}
+
+Este anexo recoge la colección de vídeos cortos de AutoCAD elaborada por el equipo docente. Cada vídeo aborda un único concepto o comando, de forma que puedan consultarse de manera independiente mientras se trabaja con el programa. Los enlaces se irán añadiendo a medida que los vídeos estén disponibles.
+
+## 1. Introducción
+
+| Nº  | Vídeo                                  | Enlace    |
+|-----|----------------------------------------|-----------|
+| 1.1 | Registro en Autodesk como estudiante   | Pendiente |
+| 1.2 | Instalación                            | Pendiente |
+| 1.3 | Uso en línea                           | Pendiente |
+| 1.4 | Uso en Escritorio remoto UPM           | Pendiente |
+| 1.5 | Crear nuevo documento                  | Pendiente |
+| 1.6 | Guardado automático                    | Pendiente |
+
+## 2. Espacio de trabajo
+
+| Nº    | Vídeo                              | Enlace    |
+|-------|------------------------------------|-----------|
+| 2.1   | Espacio Modelo                     | Pendiente |
+| 2.2   | Barra de comandos                  | Pendiente |
+| 2.3   | Barra de menús                     | Pendiente |
+| 2.4   | Barra de grupos                    | Pendiente |
+| 2.5   | Barra de botones (inferior)        | Pendiente |
+| 2.5.1 | Ortogonal                          | Pendiente |
+| 2.5.2 | Referencia a objetos               | Pendiente |
+| 2.5.3 | Grosor de línea                    | Pendiente |
+| 2.6.1 | Coordenadas cartesianas            | Pendiente |
+| 2.6.2 | Coordenadas polares                | Pendiente |
+| 2.7   | Ayuda de AutoCAD                   | Pendiente |
+
+## 3. Dibujo
+
+| Nº  | Vídeo                  | Enlace    |
+|-----|------------------------|-----------|
+| 3.1 | Línea                  | Pendiente |
+| 3.2 | Polilínea              | Pendiente |
+| 3.3 | Polígono               | Pendiente |
+| 3.4 | Círculo                | Pendiente |
+| 3.5 | Arco                   | Pendiente |
+| 3.6 | Punto                  | Pendiente |
+| 3.7 | Rayo y línea auxiliar  | Pendiente |
+
+## 4. Modificar
+
+| Nº   | Vídeo               | Enlace    |
+|------|---------------------|-----------|
+| 4.1  | Borrar              | Pendiente |
+| 4.2  | Desplazar           | Pendiente |
+| 4.3  | Copiar              | Pendiente |
+| 4.4  | Girar               | Pendiente |
+| 4.5  | Simetría            | Pendiente |
+| 4.6  | Recortar / Alargar  | Pendiente |
+| 4.7  | Partir / Juntar     | Pendiente |
+| 4.8  | Empalme             | Pendiente |
+| 4.9  | Desfase             | Pendiente |
+| 4.10 | Escala              | Pendiente |
+| 4.11 | Estirar             | Pendiente |
+| 4.12 | Matriz              | Pendiente |
+
+## 5. Capas
+
+| Nº    | Vídeo                     | Enlace    |
+|-------|---------------------------|-----------|
+| 5.1   | Menú capas                | Pendiente |
+| 5.2.1 | Propiedades: color        | Pendiente |
+| 5.2.2 | Propiedades: grosor de línea | Pendiente |
+| 5.2.3 | Propiedades: tipo de línea | Pendiente |
+| 5.3   | Activar / Desactivar      | Pendiente |
+| 5.4   | Bloquear                  | Pendiente |
+| 5.5   | Menú Propiedades          | Pendiente |
+| 5.6   | Comando Lista             | Pendiente |
+
+## 6. Texto
+
+| Nº  | Vídeo                     | Enlace    |
+|-----|---------------------------|-----------|
+| 6.1 | Texto en una línea        | Pendiente |
+| 6.2 | Texto en líneas múltiples | Pendiente |
+| 6.3 | Editar texto              | Pendiente |
+| 6.4 | Estilos de texto          | Pendiente |
+
+## 7. Papel
+
+| Nº  | Vídeo                        | Enlace    |
+|-----|------------------------------|-----------|
+| 7.1 | Espacio Papel                | Pendiente |
+| 7.2 | Configuración                | Pendiente |
+| 7.3 | Ventanas                     | Pendiente |
+| 7.4 | Capas en ventanas            | Pendiente |
+| 7.5 | Imprimir a PDF               | Pendiente |
+| 7.6 | Escala: factor de zoom XP    | Pendiente |
+
+## 8. Bloques
+
+| Nº  | Vídeo    | Enlace    |
+|-----|----------|-----------|
+| 8.1 | Creación | Pendiente |
+| 8.2 | Guardado | Pendiente |
+| 8.3 | Edición  | Pendiente |
+
+## 9. Dibujo en 3D
+
+| Nº  | Vídeo    | Enlace    |
+|-----|----------|-----------|
+| 9.1 | Prisma   | Pendiente |
+| 9.2 | Cilindro | Pendiente |
+| 9.3 | Cono     | Pendiente |
+| 9.4 | Esfera   | Pendiente |
+| 9.5 | Pirámide | Pendiente |
+| 9.6 | Cuña     | Pendiente |
+| 9.7 | Toroide  | Pendiente |
+| 9.8 | SCP      | Pendiente |
+
+## 10. Modificar en 3D
+
+| Nº    | Vídeo                          | Enlace    |
+|-------|--------------------------------|-----------|
+| 10.1  | Unión                          | Pendiente |
+| 10.2  | Diferencia                     | Pendiente |
+| 10.3  | Intersección                   | Pendiente |
+| 10.4  | Empalmar / Achaflanar aristas  | Pendiente |
+| 10.5  | Inclinar caras                 | Pendiente |
+| 10.6  | Extrusión                      | Pendiente |
+| 10.7  | Revolución                     | Pendiente |
+| 10.8  | Barrer                         | Pendiente |
+| 10.9  | Solevar                        | Pendiente |
+| 10.10 | Plano de sección               | Pendiente |
+
+## 11. Vistas
+
+| Nº   | Vídeo               | Enlace    |
+|------|---------------------|-----------|
+| 11.1 | Vistas principales  | Pendiente |
+| 11.2 | Ordenación          | Pendiente |
+| 11.3 | Cortes y secciones  | Pendiente |
+| 11.4 | Solperfil           | Pendiente |
+
+## 12. Acotación
+
+| Nº   | Vídeo              | Enlace    |
+|------|--------------------|-----------|
+| 12.1 | Tipos de acotación | Pendiente |
+| 12.2 | Estilos de cotas   | Pendiente |

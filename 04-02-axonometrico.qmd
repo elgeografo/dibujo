@@ -1,4 +1,4 @@
-# 3.2 Axonométrico {#sec-axonometrico-chapter .unnumbered}
+# Sistema axonométrico {#sec-axonometrico-chapter .unnumbered}
 
 ## Axonométrico {#sec-axonometrico}
 
