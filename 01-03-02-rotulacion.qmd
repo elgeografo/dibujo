@@ -1,0 +1,71 @@
+# 1.3.2 Rotulación {#sec-rotulacion .unnumbered}
+
+
+## Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+La norma ISO que define los aspectos generales de la rotulación es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0054594"  target="_blank">ISO 3098-1</a>. Su contenido es el siguiente (en Inglés).
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Scope</li>
+
+<li>Normative references</li>
+
+<li>Terms and definitions</li>
+
+<li>General requirements</li>
+
+<li>Dimensions</li>
+
+<li>Designation</li>
+
+</ol>
+
+</p>
+:::
+
+## Apuntes
+
+Lo más importante de la rotulación es que produzca letras legibles y claras que ayuden a la correcta interpretación del plano.
+
+Es muy importante que el tamaño de la letra no sea demasiado pequeño (inferior a 2,3 mm. no se lee) ni demasiado grande (superior a 5 mm. ocupa mucho). En los planos raramente se usan tamaños superiores a 7 mm.
+
+Parece demostrado que los tipos de letra con “ serif” (con rabillos) ayudan a la lectura rápida de textos largos, ya que el lector solo se fija en la parte superior de la línea, esto se debe a los <a href="https://es.wikipedia.org/wiki/Psicolog%C3%ADa_de_la_Gestalt#La_escuela_de_la_Gestalt"  target="_blank">principios de la Gestalt</a> que permiten al cerebro “completar” la forma. Precisamente este aspecto se ha usado por investigadores del Australia's Royal Melbourne Institute of Technology para dificultar la lectura y hacer que el lector recuerde más información del texto leído.
+
+Sin embargo, en el caso de los planos interesan letras sencillas, sin adornos para aumentar la claridad y legibilidad, en general “sans serif”.
+
+Por otra parte, si las letras están un poco separadas aumenta la legibilidad, pero hay que llegar a un compromiso, ya que esos textos “ocupan mucho espacio” para una altura dada, y en ocasiones eso no interesa en un plano, como p.e. en los <strong>textos de acotación</strong>, que es mejor que sean estilizados.
+
+## Material complementario
+
+<a href="https://magentag.wordpress.com/wp-content/uploads/2018/09/rotulacion.pdf " target="_blank">Resumen rotulación IES Gómez Pereira </a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Se trata de un pdf de una sola página con los contenidos más relevantes de la rotulación.
+
+</p>
+
+<a href=" " target="_blank">Con la tipografía 'Sans Forgetica' es más fácil que recuerdes lo que lees </a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Artículo divulgativo que ilustra aspectos de la claridad y legibilidad de una tipografía y describe un experimento científico asociado con ello.
+
+</p>
+
+<a href="https://www.vistaprint.es/hub/analisis-de-diseno-12-fuentes-mas-faciles-de-leer  " target="_blank">Análisis de diseño: Las 12 fuentes más fáciles de leer </a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Web corta que analiza porque unas tipografías son más claras o legibles que otras.
+
+</p>
+

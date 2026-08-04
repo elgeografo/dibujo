@@ -1,0 +1,107 @@
+# 1.3.1 Formatos de papel {#sec-formatos-papel .unnumbered}
+
+
+## Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+La norma ISO que define los formatos de papel es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0040991"  target="_blank">UNE-EN ISO 216:2008</a>. Su contenido es el siguiente.
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Objeto y campo de aplicación</li>
+
+<li>Normas para consulta</li>
+
+<li>Términos y definiciones</li>
+
+<li>Principios generales</li>
+
+<li>Designación de los formatos acabados y del sentido máquina</li>
+
+<li>Formatos acabados</li>
+
+<li>Tolerancias</li>
+
+</ol>
+
+</p>
+:::
+
+## Apuntes
+
+### Denominación correcta de los pliegos de papel
+
+<strong>El formato más común </strong> y que usamos todos habitualmente es el <strong>DIN A4 </strong> (201X297mm). En España se le sigue denominando “Folio” que era el anterior formato, cuyas dimensiones son 215×315 mm. De forma semejante, la clásica “cuartilla” equivaldría en los formatos normalizados al A5.
+
+```{r}
+#| label: image_dina5_cuartilla
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Comparación del formato DIN A5 con la cuartilla.
+#| fig-alt: |
+#|   Comparación del formato DIN A5 con la cuartilla.
+
+knitr::include_graphics("images/01-10-formatosPapel.png", dpi = 270)
+```
+
+No hay que confundir denominaciones y hay que usar siempre que sea posible los formatos normalizados.
+
+### Obtención de los diferentes formatos de la serie A
+
+Recordar las dimensiones de la serie A es muy sencillo, ya que para obtener un formato del inmediatamente más pequeño se “duplica su lado corto”.
+
+Por ejemplo, en la imagen se observa como duplicando el lado corto del A4 (que mide 210mm) se obtiene el lado largo del A3.
+
+```{r}
+#| label: image_formatos_serie_a
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Obtención de los diferentes formatos de la serie A.
+#| fig-alt: |
+#|   Obtención de los diferentes formatos de la serie A.
+
+knitr::include_graphics("images/01-11-ObtencionTamanios.png", dpi = 270)
+```
+
+### Posiciones de los diferentes formatos para planos.
+
+En general, todos los formatos se utilizan en posición apaisada, es decir, si hubiese superpuesto un sistema de ejes cartesianos, la dimensión larga del formato estaría situada siempre paralela al eje x.
+
+```{r}
+#| label: image_formatos_apaisados
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Posiciones de los diferentes formatos para planos.
+#| fig-alt: |
+#|   Posiciones de los diferentes formatos para planos.
+
+knitr::include_graphics("images/01-12-formatos apaisados.png", dpi = 270)
+```
+
+<strong>El formato A4 es la excepción</strong>. En este caso, NUNCA se usa apaisado, SIEMPRE se usa en posición vertical.
+
+Esta regla no impide el máximo aprovechamiento del pliego en los casos que sea necesario, es decir, se puede girar el dibujo para que quepa dentro del formato, pero el cajetín siempre quedará en la esquina inferior derecha del lado largo y por tanto la posición del plano será apaisada, tal y como se muestra en la siguiente figura.
+
+```{r}
+#| label: image_a3_girado
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Formato A3 en posición apaisada con dibujo girado.
+#| fig-alt: |
+#|   Formato A3 en posición apaisada con dibujo girado.
+
+knitr::include_graphics("images/01-13-a3_girado.png", dpi = 270)
+```
+
+## Material complementario
+

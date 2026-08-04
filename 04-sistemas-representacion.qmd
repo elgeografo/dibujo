@@ -1,4 +1,4 @@
-# Introducción a los sistemas de representación {#sec-sistemas-representacion .unnumbered}
+# 2.1 Introducción a los sistemas de representación {#sec-sistemas-representacion .unnumbered}
 
 Los sistemas de representación son métodos gráficos que permiten representar objetos tridimensionales sobre un soporte bidimensional (papel o pantalla).
 

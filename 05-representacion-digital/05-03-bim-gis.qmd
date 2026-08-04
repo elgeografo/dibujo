@@ -1,4 +1,4 @@
-# Modelos integrales de gestión de la información del proyecto: BIM y BIM-GIS {#sec-bim .unnumbered}
+# 5.3 Modelos integrales de gestión de la información del proyecto: BIM y BIM-GIS {#sec-bim .unnumbered}
 
 ::: callout-note
 ## Capítulo en desarrollo

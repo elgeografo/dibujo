@@ -1,4 +1,4 @@
-# Planos típicos de cartografía ambiental y forestal {#sec-planos-cartografia .unnumbered}
+# 4.6 Planos típicos de cartografía ambiental y forestal {#sec-planos-cartografia .unnumbered}
 
 ::: callout-note
 ## Capítulo en desarrollo

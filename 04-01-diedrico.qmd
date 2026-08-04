@@ -1,4 +1,4 @@
-# Sistema diédrico {#sec-diedrico-chapter .unnumbered}
+# 2.2 Sistema diédrico {#sec-diedrico-chapter .unnumbered}
 ### Diédrico {#sec-diedrico}
 
 El sistema diédrico es un método de representación gráfica que utiliza proyecciones ortogonales sobre dos planos perpendiculares entre sí.

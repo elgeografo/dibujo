@@ -1,0 +1,138 @@
+# 1.3.5 Acotación {#sec-acotacion .unnumbered}
+
+
+## Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+La norma ISO que define los principios generales de la acotación es es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0000034"  target="_blank">ISO 1039:1994</a>. Su contenido es el siguiente (Revisar. Pone que está anulada por una del 2019 pero no la encuentro).
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Objeto y campo de aplicación</li>
+
+<li>Normas para consulta</li>
+
+<li>Principios generales</li>
+
+<li>Método de acotación</li>
+
+<li>Disposiciones e inscripción de las cotas</li>
+
+<li>Indicaciones especiales</li>
+
+<li>Indicación de niveles</li>
+
+<li>Correspondencia con otras normas</li>
+
+</ol>
+
+</p>
+:::
+
+## Apuntes
+
+<strong>Toda figura</strong>, objeto o pieza, <strong>queda definida</strong> por aquellos elementos que definen su funcionamiento o que, simplemente, determinan su forma geométrica.
+
+Las cotas se pueden clasificar <strong>en función de su importancia</strong>: (1) Funcionales (2) No funcionales y (3) Auxiliares
+
+```{r}
+#| label: image_clasificacion_cotas
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Clasificación de las cotas en función de su importancia.
+#| fig-alt: |
+#|  Clasificación de las cotas en función de su importancia.
+
+knitr::include_graphics("images/01-18-acotacion1.png", dpi = 270)
+```
+
+Otra clasificación es en <strong>función de su cometido en el plano</strong>: (1) Cotas de dimensión y (2) cotas de situación o posición.
+
+```{r}
+#| label: image_clasificacion_cotas2
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Clasificación de las cotas en función de su contenido.
+#| fig-alt: |
+#|  Clasificación de las cotas en función de su contenido.
+
+knitr::include_graphics("images/01-19-acotacion2.png", dpi = 270)
+```
+
+Las <strong>cotas de situación (S)</strong> determinan la posición de los elementos de la pieza, las <strong>cotas de dimensión (D)</strong> definen el tamaño de cada parte de la pieza
+
+Comprender estos tipos de cotas y cómo se aplican ayuda a definir adecuadamente los objetos con la acotación.
+
+## Material complementario
+
+<strong> Video de referencia. Normas de acotación básicas (5 minutos) ★★★</strong>
+
+::: cell
+<iframe width="750" height="422" src="https://www.youtube.com/embed/YCssCLAe-80" frameborder="0" allowfullscreen>
+
+</iframe>
+:::
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+<ol>
+
+<li>0:10 Normas generales de acotación</li>
+
+<li>0:25 Elementos de acotación</li>
+
+<li>1:00 Acotación de arístas</li>
+
+<li>3:30 Acotación de diámetros</li>
+
+<li>4:25 Acotación de radios</li>
+
+</ol>
+
+</p>
+
+<strong> Vídeo “Arturo Geometría” Acotación (20’17’’) ★★★ </strong>
+
+::: cell
+<iframe width="750" height="422" src="https://www.youtube.com/embed/v1vjHB60c8Q?si=5sLVz52jU5zO1Y5A" frameborder="0" allowfullscreen>
+
+</iframe>
+:::
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Vídeo completo con explicaciones verbales sobre las normas básicas de acotación
+
+</p>
+
+<a href="https://www.youtube.com/playlist?list=PLgZEwwjOo0OpdEYD2QsYiaEVQe7c7S0Dw" target="_blank">Web de youtube con 8 vídeos sobre diversos aspectos y casos de acotación </a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Tratan de casos algo más complejos, pero muy útiles para ampliar conocimientos sobre acotación.
+
+</p>
+
+<a href="https://ibiguridt.wordpress.com/temas/acotacion/" target="_blank">Web sobre acotación del profesor Iñaki Biguri (recomendada) ★★★</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Se trata de una web completa y bien ordenada para estudiar diversos aspectos de la acotación normalizada.
+
+</p>
+
+<a href="https://edea.juntadeandalucia.es/bancorecursos/items/05714c84-d536-4abd-8d25-56e702bd0aa1/1/viewscorm.jsp?.vi=file  " target="_blank">Web sobre acotación (nivel 1º Bachillerato) Junta Andalucía </a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Se trata de una web para el nivel básico de dibujo de 1º de Bachillerato.
+
+</p>

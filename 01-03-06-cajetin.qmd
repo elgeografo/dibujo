@@ -1,0 +1,119 @@
+# 1.3.6 Carátula, sello o cajetín {#sec-cajetin .unnumbered}
+
+
+## Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+La norma ISO que define los campos de datos en bloques de títulos y en cabeceras de documentos es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0031532"  target="_blank">UNE-EN ISO 7200:2004</a>. Su contenido es el siguiente.
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Objeto y campo de aplicación</li>
+
+<li>Normas para consulta</li>
+
+<li>Términos y definiciones</li>
+
+<li>Generalidades</li>
+
+<li>Campos de datos en el bloque de títulos</li>
+
+<li>Disposiciones del bloque de títulos</li>
+
+</ol>
+
+</p>
+:::
+
+## Apuntes
+
+### Posición del cajetín en el plano
+
+En todos los formatos, el cajetín se sitúa alineado con los márgenes en la esquina inferior derecha, tal como se muestra en la siguiente figura. En el A4, y debido precisamente a las dimensiones de su anchura el cajetín ocupa todo el espacio entre los dos márgenes.
+
+```{r}
+#| label: image_posicion_cajetin
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Posición del cajetín en el plano.
+#| fig-alt: |
+#|   Posición del cajetín en el plano.
+
+knitr::include_graphics("images/01-14-posicion-cajetines.png", dpi = 270)
+```
+
+### Dimensión del cajetín
+
+En altura es libre, en anchura, viene condicionada por lo siguiente:
+
+<ol>
+
+<li>La información contenida en el cajetín debe estar siempre a la vista, es decir, este no se puede doblar</li>
+
+<li>Todos los planos de la serie se archivan doblados en formato A4</li>
+
+<li>Los márgenes normalizados del A4 son 20 mm+ 10mm, por tanto, la anchura del cajetín debe ser de 180 mm. (210 - 30)</li>
+
+</ol>
+
+### Ejemplo de cajetín
+
+No es imprescindible recordar todos los campos incluidos en la norma, ésta siempre se puede consultar. Sin embargo, es muy importante <strong>comprender bien los conceptos </strong> cuyo contenido se refleja en las casillas del cajetín <strong>y cómo se aplican</strong> según el caso concreto de un proyecto dado.
+
+El cajetín de un plano es su documento de identidad.
+
+El cajetín es único para cada proyecto y debe ser idéntico en todos los planos del mismo proyecto. <strong>No todos los campos son imprescindibles en todos los proyectos</strong>. En la siguiente figura se aclaran algunos de los campos más importantes.
+
+<i><strong>Caso:</strong> se trata de un proyecto para construir una explanación del terreno en la que situar un observatorio de estrellas. El Ayuntamiento de la Raposa quiere realizar el proyecto y encarga la redacción del mismo a la empresa consultora Soluciones Territoriales S.L. En el plano se han dibujado los movimientos de tierra necesarios para construir la explanación y un perfil del terreno para visualizarlo.</i>
+
+```{r}
+#| label: image_ejemplo_cajetín01
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Elementos fundamentales de un cajetín.
+#| fig-alt: |
+#|   Elementos fundamentales de un cajetín.
+
+knitr::include_graphics("images/01-15-cajetin1.png", dpi = 270)
+```
+
+La norma no obliga a que aparezcan en el cajetín la <string>escala</string> ni las <string>unidades de cota</string>, sin embargo, ES IMPRESCINDIBLE que la escala esté presente en el plano, hasta el punto de que un dibujo que no tiene escala no puede ser un plano. También si hay dibujos acotados en el plano, es necesario que aparezca la unidad en la que están dichas cotas.
+
+Por eso, para <string>no olvidar</string> estos dos conceptos tan importantes, recomendamos se incluyan en el cajetín.
+
+### Otros ejemplos de cajetín
+
+```{r}
+#| label: image_ejemplo_cajetín02
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Ejemplo académico de cajetín para un carro portacables.
+#| fig-alt: |
+#|   Ejemplo académico de cajetín para un carro portacables.
+
+knitr::include_graphics("images/01-16-cajetin2.png", dpi = 270)
+```
+
+```{r}
+#| label: image_ejemplo_cajetín03
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Ejemplo de cajetín en un proyecto fin de carrera. Ingeniero de Montes.
+#| fig-alt: |
+#|  Ejemplo de cajetín en un proyecto fin de carrera. Ingeniero de Montes.
+
+knitr::include_graphics("images/01-17-cajetin3.png", dpi = 270)
+```
+
+## Material complementario
+

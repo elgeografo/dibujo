@@ -14,6 +14,12 @@ book:
         - 01-01-lenguaje-tecnica.qmd
         - 03-geometria-constructiva.qmd
         - 01-normalizacion.qmd
+        - 01-03-01-formatos-papel.qmd
+        - 01-03-02-rotulacion.qmd
+        - 01-03-03-tipos-linea.qmd
+        - 01-03-04-escalas.qmd
+        - 01-03-05-acotacion.qmd
+        - 01-03-06-cajetin.qmd
         - 01-04-croquizacion.qmd
     - part: "Bloque 2. Fundamentos de los Sistemas de Representación"
       chapters:

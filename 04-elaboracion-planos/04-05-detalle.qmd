@@ -1,4 +1,4 @@
-# Planos de detalle {#sec-planos-detalle .unnumbered}
+# 4.5 Planos de detalle {#sec-planos-detalle .unnumbered}
 
 ::: callout-note
 ## Capítulo en desarrollo

@@ -1,4 +1,4 @@
-# Planos de situación y localización. Plantas generales {#sec-planos-situacion .unnumbered}
+# 4.2 Planos de situación y localización. Plantas generales {#sec-planos-situacion .unnumbered}
 
 ::: callout-note
 ## Capítulo en desarrollo

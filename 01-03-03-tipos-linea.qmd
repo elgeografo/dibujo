@@ -1,0 +1,55 @@
+# 1.3.3 Tipos de líneas {#sec-tipos-linea .unnumbered}
+
+
+## Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+La norma ISO que define los principios generales de representación. Parte 2: convenciones básicas para lineas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0070490" target="_blank">UNE-en ISO 128-2:2022</a>. Su contenido es el siguiente (en inglés).
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Scope</li>
+
+<li>Normative references</li>
+
+<li>Terms and definitions</li>
+
+<li>Types of lines</li>
+
+<li>Line dimensions</li>
+
+<li>Draughting of lines</li>
+
+<li>Colours</li>
+
+<li>Designation</li>
+
+<li>Basic conventions and applications for leader lines and reference lines</li>
+
+</ol>
+
+</p>
+:::
+
+## Apuntes
+
+Los planos deben contener dibujos claros que eviten la confusión. Las líneas normalizadas ayudan a que las zonas importantes del dibujo estén resaltadas (líneas gruesas) y otras más finas que sirvan para otros datos o referencias
+
+En este <a href="https://ibiguridt.wordpress.com/wp-content/uploads/2017/03/tipos-de-lc3adneas-normalizadas2.pdf" target="_blank">poster</a> se resumen los tipos de línea más comunes en los planos y su uso.
+
+## Material complementario
+
+<a href="https://ibiguridt.wordpress.com/temas/vistas/lineas-normalizadas/" target="_blank">Web del Profesor Iñaki Biguri sobre líneas normalizadas </a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Web corta, completa y con explicaciones claras y ejemplos sobre los usos de las líneas normalizadas
+
+</p>
+
