@@ -1,0 +1,84 @@
+/*-- scss:defaults --*/
+
+// Tema de presentaciones del Libro Electrónico de Expresión Gráfica (EGM)
+// Colores tomados del material docente original
+$egm-azul: #2d2d8a;
+$egm-azul-medio: #4472c4;
+$egm-rojo: #d00000;
+$egm-nota: #fff9c4;
+
+$body-bg: #ffffff;
+$body-color: #1a1a1a;
+$link-color: #2d6cc0;
+$presentation-heading-color: $egm-azul;
+$presentation-heading-font-weight: 700;
+$presentation-h2-font-size: 1.35em;
+$presentation-font-size-root: 30px;
+
+/*-- scss:rules --*/
+
+.reveal {
+  // Etiqueta destacada roja sobre fondo oscuro (estilo del material original)
+  .etiqueta-roja {
+    background: #1a1a1a;
+    color: #ff4040;
+    padding: 0.1em 0.5em;
+    font-size: 0.6em;
+    font-weight: 700;
+    border-radius: 2px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  // Nota flotante amarilla (equivalente a los cuadros de énfasis del PPT)
+  .nota-flotante {
+    background: $egm-nota;
+    border: 1px solid #e0d890;
+    border-radius: 4px;
+    padding: 0.4em 0.7em;
+    font-size: 0.75em;
+    color: #0070c0;
+  }
+
+  // Banda de cierre (los "para el próximo día" del material original)
+  .banda-cierre {
+    background: $egm-nota;
+    padding: 0.3em 0.8em;
+    font-size: 0.75em;
+    color: $egm-azul;
+    em { color: #7030a0; }
+  }
+
+  // Texto azul corporativo para cuerpos de texto destacados
+  .texto-azul {
+    color: $egm-azul;
+  }
+
+  // Pie con fórmulas booleanas y anotaciones en diagramas SVG
+  svg text {
+    font-family: inherit;
+  }
+
+  // Sección invertida (portadillas de bloque)
+  .seccion-oscura {
+    background-color: $egm-azul;
+
+    h1 {
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.6em;
+    }
+  }
+
+  // Listas con más aire en diapositivas de texto
+  ul li,
+  ol li {
+    margin-bottom: 0.35em;
+  }
+
+  // Enlaces de recursos: que quepan URLs largas
+  .recursos {
+    font-size: 0.72em;
+    li { margin-bottom: 0.55em; }
+  }
+}

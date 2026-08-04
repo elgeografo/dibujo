@@ -2,3 +2,17 @@ project:
   type: default
 
 lang: es
+
+# Formato común de todas las presentaciones del libro:
+# lienzo 960x720 (idéntico al de los PPT originales, para poder
+# transcribir coordenadas 1:1 en los SVG), tema propio EGM y
+# salida autocontenida (un único html con todo incrustado).
+format:
+  revealjs:
+    theme: [default, egm.scss]
+    width: 960
+    height: 720
+    margin: 0.05
+    slide-number: true
+    embed-resources: true
+    lang: es
