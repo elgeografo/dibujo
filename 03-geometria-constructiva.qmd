@@ -1,7 +1,209 @@
----
-title: "1.2 Conceptos básicos de geometría métrica"
----
+# 1.2 Conceptos básicos de geometría métrica {#sec-geometria .unnumbered}
 
-::: {style="font-size: 2em; font-weight: bold;  margin-bottom: 1em;background-color: white;"}
-Contenido de la geometría constructiva
+## Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+En este tema se presenta la geometría constructiva como herramienta de modelado: cómo describir cualquier objeto, por complejo que sea, a partir de volúmenes elementales.
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>El modelo de representación de geometría constructiva</li>
+
+<li>Las operaciones booleanas: unión, intersección y diferencia</li>
+
+<li>Los volúmenes básicos y sus dimensiones</li>
+
+<li>El análisis de piezas: el Método Lógico Geométrico y el descriptor</li>
+
+</ol>
+
+</p>
 :::
+
+::: callout-note
+## En ampliación
+
+Este tema se completará con los conceptos básicos de geometría métrica (proporcionalidad, razón simple, teorema de Thales) que fundamentan las propiedades de las proyecciones que se estudian en el Bloque 2.
+:::
+
+## Apuntes
+
+### El modelo de geometría constructiva
+
+En el tema anterior vimos que el mundo real es demasiado complejo para representarlo de golpe, y que la estrategia del dibujo técnico es **simplificar**: dividir los problemas en trozos más pequeños. La **geometría constructiva** lleva esta idea al modelado de objetos. El modelo se construye en tres pasos:
+
+1.  Se genera el modelo por **combinación de sólidos elementales** o *primitivas sólidas*.
+2.  Mediante **escalado y movimiento** se sitúa cada primitiva en su posición, orientación y tamaño correctos.
+3.  Se efectúan las **operaciones booleanas** de unión, intersección o diferencia entre las primitivas.
+
+```{=html}
+<svg viewBox="60 300 900 400" style="width:100%; max-width:820px; display:block; margin:0 auto;">
+<defs>
+<linearGradient id="cylb" x1="0" x2="1"><stop offset="0" stop-color="#9dbbe8"/><stop offset="0.5" stop-color="#7fa8dc"/><stop offset="1" stop-color="#5d86c4"/></linearGradient>
+</defs>
+<path d="M120,345 v110 a35,10 0 0 0 70,0 v-110" fill="url(#cylb)" stroke="#333" stroke-width="1.5"/>
+<ellipse cx="155" cy="345" rx="35" ry="10" fill="#b6cdf0" stroke="#333" stroke-width="1.5"/>
+<text x="95" y="405" font-size="30" fill="#1a1a1a">1</text>
+<path d="M141,505 v85 a15,5 0 0 0 30,0 v-85" fill="url(#cylb)" stroke="#333" stroke-width="1.5"/>
+<ellipse cx="156" cy="505" rx="15" ry="5" fill="#b6cdf0" stroke="#333" stroke-width="1.5"/>
+<text x="112" y="555" font-size="30" fill="#1a1a1a">2</text>
+<text x="250" y="465" font-size="40" font-weight="bold" fill="#d00000">(−)</text>
+<path d="M320,400 v110 a35,10 0 0 0 70,0 v-110" fill="url(#cylb)" stroke="#333" stroke-width="1.5"/>
+<ellipse cx="355" cy="400" rx="35" ry="10" fill="#b6cdf0" stroke="#333" stroke-width="1.5"/>
+<ellipse cx="355" cy="400" rx="15" ry="5" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
+<text x="410" y="460" font-size="30" fill="#1a1a1a">3</text>
+<text x="300" y="570" font-size="28" fill="#1a1a1a">3 = 1 − 2</text>
+<polygon points="280,600 460,600 460,660 280,660" fill="#7fa8dc" stroke="#333" stroke-width="1.5"/>
+<polygon points="280,600 320,570 500,570 460,600" fill="#9dbbe8" stroke="#333" stroke-width="1.5"/>
+<polygon points="460,600 500,570 500,630 460,660" fill="#5d86c4" stroke="#333" stroke-width="1.5"/>
+<text x="360" y="640" font-size="30" fill="#1a1a1a">4</text>
+<text x="545" y="590" font-size="40" font-weight="bold" fill="#d00000">(+)</text>
+<polygon points="640,600 820,600 820,660 640,660" fill="#7fa8dc" stroke="#333" stroke-width="1.5"/>
+<polygon points="640,600 680,570 860,570 820,600" fill="#9dbbe8" stroke="#333" stroke-width="1.5"/>
+<polygon points="820,600 860,570 860,630 820,660" fill="#5d86c4" stroke="#333" stroke-width="1.5"/>
+<path d="M715,475 v108 a35,10 0 0 0 70,0 v-108" fill="url(#cylb)" stroke="#333" stroke-width="1.5"/>
+<ellipse cx="750" cy="475" rx="35" ry="10" fill="#b6cdf0" stroke="#333" stroke-width="1.5"/>
+<ellipse cx="750" cy="475" rx="15" ry="5" fill="#ffffff" stroke="#333" stroke-width="1.5"/>
+<text x="875" y="640" font-size="28" fill="#1a1a1a">5 = 3 + 4</text>
+</svg>
+```
+
+En el ejemplo, el tubo (3) se obtiene restando el cilindro pequeño (2) al cilindro grande (1); la pieza final (5) se obtiene sumando el tubo (3) a la placa (4).
+
+### Las operaciones booleanas
+
+-   **Unión** ( ∪ o + ): junta dos sólidos incluyendo la parte común y la no común para crear un nuevo sólido.
+-   **Intersección** ( ∩ ): incluye solo la parte común de los dos sólidos, creando un sólido nuevo.
+-   **Diferencia**, sustracción o resta ( − ): incluye solo la parte no común del primer sólido.
+
+```{r}
+#| label: image-booleanas
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Las tres operaciones booleanas aplicadas a un mismo par de sólidos.
+#| fig-alt: |
+#|   Unión, diferencia e intersección de un cilindro y un prisma.
+
+knitr::include_graphics("images/01-02-A-booleanas.png", dpi = 270)
+```
+
+### Los volúmenes básicos y sus dimensiones
+
+Las primitivas más habituales son el **ortoedro**, el **cilindro**, el **cono** y la **esfera**. Cada una queda completamente definida por muy pocas dimensiones:
+
+| Volumen  | Dimensiones necesarias        |
+|----------|-------------------------------|
+| Ortoedro | ancho (x), fondo (y), altura (z) |
+| Cilindro | diámetro (Ø), altura (z)      |
+| Cono     | diámetro (Ø), altura (z)      |
+| Esfera   | diámetro (SØ)                 |
+
+Este análisis dimensional tiene dos consecuencias importantes para el dibujo:
+
+-   **Las vistas surgen del análisis dimensional de la pieza**: una sola vista de un ortoedro solo permite acotar dos dimensiones; hace falta una segunda vista para poder situar la tercera (la *z*).
+-   **No se debe repetir información**: si una dimensión ya está acotada en una vista, no debe volver a acotarse en otra.
+
+### El análisis de piezas: el descriptor
+
+Para representar una pieza real aplicamos el **Método Lógico Geométrico**: analizarla descomponiéndola en modelos geométricos elementales combinados mediante operaciones booleanas.
+
+El resultado de ese análisis se recoge en un **descriptor**: *una definición global de la forma del objeto o pieza representada, mediante una descomposición del objeto en formas más elementales y simples*. No hay una única solución: puede haber muchas descomposiciones válidas, y unas mejores que otras. La forma de efectuar la descripción depende incluso del procedimiento de fabricación previsto (operaciones booleanas, extrusión, revolución, barrido…).
+
+```{r}
+#| label: image-pieza-descriptor
+#| echo: false
+#| out.width: "45%"
+#| fig-cap: |
+#|   Pieza de ejemplo para elaborar un descriptor.
+#| fig-alt: |
+#|   Modelo 3D de una pieza compuesta por una placa redondeada con taladros y un anillo partido.
+
+knitr::include_graphics("images/01-02-B-pieza-descriptor.jpeg", dpi = 270)
+```
+
+```{r}
+#| label: image-descomposicion
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Descriptor completo de la pieza: descomposición en primitivas mediante operaciones booleanas.
+#| fig-alt: |
+#|   Árbol de descomposición de la pieza en placas, cilindros y anillos relacionados mediante sumas y restas.
+
+knitr::include_graphics("images/01-02-C-descomposicion.png", dpi = 270)
+```
+
+```{r}
+#| label: image-descriptor-clasico
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Ejemplo clásico de descriptor: soporte descompuesto en sus elementos y su plano acotado.
+#| fig-alt: |
+#|   Despiece de un soporte en sus componentes elementales junto a las vistas acotadas de la pieza.
+
+knitr::include_graphics("images/01-02-D-descriptor-clasico.png", dpi = 270)
+```
+
+## Material complementario
+
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/clase-1-1-mundo-en-planos.html" target="_blank">Clase 1.1 — Representar el mundo en planos. Geometría constructiva: fundamentos</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Incluye el modelo de geometría constructiva, las operaciones booleanas y los volúmenes básicos con sus dimensiones.
+
+</p>
+
+<a href="presentaciones/clase-1-2-descriptor.html" target="_blank">Clase 1.2 (parte B) — El descriptor</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Desarrolla el concepto de descriptor con un ejemplo completo de descomposición de una pieza paso a paso.
+
+</p>
+
+<strong>Para profundizar: la geometría constructiva de sólidos (CSG)</strong>
+
+<a href="https://lsi2.ugr.es/~cad/teoria/Tema5/RESUMENTEMA5.PDF" target="_blank">Modelado de sólidos (resumen del Tema 5, Universidad de Granada)</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Apuntes en español sobre representación de sólidos en CAD, con una sección dedicada a la geometría constructiva de sólidos (CSG).
+
+</p>
+
+<a href="https://www.cs.unca.edu/~bruce/Spring15/180/SWch3.pdf" target="_blank">Constructive Solid Geometry Concepts (Universidad de Carolina del Norte, en inglés)</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Capítulo introductorio sobre CSG aplicado con un programa de modelado 3D, con ejercicios guiados.
+
+</p>
+
+<a href="https://openscad.org/documentation.html" target="_blank">Documentación de OpenSCAD</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+OpenSCAD es un programa gratuito de modelado que usa la geometría constructiva de forma directa: se escribe código que describe operaciones booleanas entre sólidos. Muy didáctico para interiorizar el modelo CSG.
+
+</p>
+
+<strong>Para practicar</strong>
+
+<a href="http://piziadas.com/dibujo/dibujo-tecnico/piezas" target="_blank">Colección de piezas para practicar (web Piziadas)</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Elaborar el descriptor de piezas sencillas: descomponerlas en primitivas indicando las operaciones booleanas.
+
+</p>
