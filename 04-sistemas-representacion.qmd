@@ -1,36 +1,108 @@
 # 2.1 Introducción a los sistemas de representación {#sec-sistemas-representacion .unnumbered}
 
-Los sistemas de representación son métodos gráficos que permiten representar objetos tridimensionales sobre un soporte bidimensional (papel o pantalla).
+## Contenido
 
-### Introducción
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
 
-En el dibujo técnico existen diversos sistemas de representación, cada uno con sus características y aplicaciones específicas. Los principales sistemas son:
+En este tema se presenta el concepto de proyección y la clasificación de los sistemas de representación que resuelven el primer gran problema de la expresión gráfica: representar el mundo 3D sobre un plano 2D.
 
--   **Sistema Diédrico**: Utiliza proyecciones ortogonales sobre planos perpendiculares
--   **Sistema Axonométrico**: Representa objetos en una sola proyección tridimensional
--   **Sistema de Planos Acotados**: Especialmente útil para topografía y terrenos
--   **Perspectiva Cónica**: Reproduce la visión humana del espacio
+</p>
 
-### Clasificación de los sistemas
+<p style="font-size: 1em; color: #333;">
 
-Los sistemas de representación se pueden clasificar según el tipo de proyección que utilizan:
+<ol>
 
-### Sistemas de proyección cilíndrica ortogonal
+<li>La proyección y sus elementos</li>
 
--   Sistema Diédrico
--   Sistema Axonométrico
+<li>Tipos de proyección: cónica y cilíndrica (ortogonal y oblicua)</li>
 
-### Sistemas de proyección cilíndrica oblicua
+<li>El compromiso ver bien / medir bien</li>
 
--   Perspectiva Caballera
--   Perspectiva Militar
+<li>La ventaja de las proyecciones cilíndricas: la conservación de la razón simple</li>
 
-### Sistemas de proyección cónica
+</ol>
 
--   Perspectiva Cónica
+</p>
+:::
 
-### Sistemas de proyección acotada
+## Apuntes
 
--   Sistema de Planos Acotados
+### La proyección y sus elementos
 
-En los siguientes apartados se desarrollan en detalle los principales sistemas de representación utilizados en ingeniería y arquitectura.
+**Proyectar** es llevar los puntos, líneas y planos de un OBJETO (3D) en dirección rectilínea sobre un PLANO (2D). Los elementos de toda proyección son:
+
+-   El **objeto** que se quiere representar.
+-   El **punto de vista** o centro de proyección.
+-   El **plano de proyección** o plano del cuadro.
+-   El **haz de rayos proyectantes**.
+
+```{r}
+#| label: image-proyecciones
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Proyección cónica y proyección cilíndrica (ortogonal y oblicua) de un mismo triángulo.
+#| fig-alt: |
+#|   Esquema de los tres tipos de proyección de un triángulo sobre un plano.
+
+knitr::include_graphics("images/02-01-A-proyecciones.png", dpi = 270)
+```
+
+### Tipos de proyección
+
+La posición del punto de vista determina el tipo de proyección:
+
+-   **Proyección cónica o central**: el punto de vista está a distancia finita; los rayos proyectantes forman un haz cónico. Da lugar a la [perspectiva cónica](04-04-perspectiva-conica.qmd).
+-   **Proyección cilíndrica**: el punto de vista está en el infinito, por lo que los rayos proyectantes son paralelos entre sí. Puede ser:
+    -   **Ortogonal**: los rayos inciden perpendicularmente al plano del cuadro. Da lugar al [sistema diédrico](04-01-diedrico.qmd), al [sistema axonométrico ortogonal](04-02-axonometrico.qmd) (isométrica, dimétrica, trimétrica) y al sistema de planos acotados (Bloque 3).
+    -   **Oblicua**: los rayos inciden con un ángulo distinto de 90°. Da lugar a las perspectivas caballera y militar.
+
+### El compromiso ver bien / medir bien
+
+Representar objetos 3D en 2D obliga siempre a elegir entre dos objetivos que no se pueden conseguir a la vez:
+
+-   **Una sola vista** (perspectivas): el objeto **se ve bien**, pero **se mide mal** — las magnitudes llegan deformadas al papel.
+-   **Muchas vistas** (diédrico): cada vista por separado **se ve mal** (no da la sensación de volumen), pero el objeto **se mide bien** — las dimensiones están en verdadera magnitud.
+
+Por eso en la práctica conviven los dos enfoques: la perspectiva para comunicar la forma y el diédrico para definir y fabricar.
+
+### La ventaja de las proyecciones cilíndricas: la razón simple
+
+La utilización de un sistema de proyección cilíndrico (con el centro de proyección en el infinito) aporta una ventaja fundamental desde el punto de vista métrico: **se conserva la razón simple** de tres puntos alineados, propiedad derivada del **teorema de Thales**.
+
+```{r}
+#| label: image-razon-simple
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   La proyección cilíndrica conserva la razón simple: (ABC) = (A'B'C').
+#| fig-alt: |
+#|   Esquema de la conservación de la razón simple de tres puntos alineados al proyectarlos cilíndricamente.
+
+knitr::include_graphics("images/02-01-B-razon-simple.png", dpi = 270)
+```
+
+Esta propiedad es la que permite que las proporciones del objeto se mantengan en el dibujo, y es la base métrica del sistema diédrico que se estudia en el tema siguiente.
+
+## Material complementario
+
+<strong>Presentación de clase: Sistemas de representación (Reveal.js)</strong>
+
+<a href="presentaciones/clase-1-2-sistemas-representacion.html" target="_blank">Clase 1.2 (parte A) — Mundo 3D → plano 2D: sistemas de representación</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Incluye este tema completo y los fundamentos del sistema diédrico del tema 2.2.
+
+</p>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://ibiguridt.wordpress.com/temas/sistemas-de-representacion/" target="_blank">Web del profesor Iñaki Biguri sobre sistemas de representación</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Panorámica clara de los distintos sistemas con ejemplos gráficos.
+
+</p>

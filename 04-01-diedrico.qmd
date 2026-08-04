@@ -1,16 +1,239 @@
 # 2.2 Sistema diédrico {#sec-diedrico-chapter .unnumbered}
-### Diédrico {#sec-diedrico}
 
-El sistema diédrico es un método de representación gráfica que utiliza proyecciones ortogonales sobre dos planos perpendiculares entre sí.
+## Contenido
 
-#### Introducción
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
 
-[Contenido del capítulo sobre el sistema diédrico...]
+En este tema se estudian los fundamentos del sistema diédrico y su aplicación técnica: la representación de objetos mediante vistas.
 
-#### Fundamentos
+</p>
 
-[Desarrolla los conceptos fundamentales...]
+<p style="font-size: 1em; color: #333;">
 
-#### Aplicaciones
+<ol>
 
-[Ejemplos y aplicaciones prácticas...]
+<li>Fundamentos: proyección cilíndrica sobre planos ortogonales y abatimiento</li>
+
+<li>Sistema europeo y sistema americano</li>
+
+<li>Las vistas: elección del alzado y correspondencia entre vistas</li>
+
+<li>¿Cuántas vistas son necesarias?</li>
+
+</ol>
+
+</p>
+:::
+
+::: callout-note
+## En ampliación
+
+Este tema se completará con la representación normalizada de vistas: cortes, secciones, roturas, vistas auxiliares y detalles (material de la CLASE 3-1 Multivista).
+:::
+
+## Apuntes
+
+### Fundamentos: proyectar sobre planos ortogonales
+
+Los puntos del espacio necesitan **tres coordenadas** (x, y, z) para su completa determinación. Al proyectar sobre un único plano (dos coordenadas) perdemos información espacial: por eso son necesarias **al menos dos proyecciones** sobre planos distintos para determinar inequívocamente cada punto.
+
+El modelo de representación del dibujo técnico se apoya en dos proyecciones (o tres) sobre **planos ortogonales entre sí**:
+
+```{r}
+#| label: image-pieza
+#| echo: false
+#| out.width: "55%"
+#| fig-cap: |
+#|   La pieza que queremos representar.
+#| fig-alt: |
+#|   Pieza prismática con un plano inclinado dibujada en perspectiva.
+
+knitr::include_graphics("images/02-02-A-pieza.png", dpi = 270)
+```
+
+```{r}
+#| label: image-proyecciones-planos
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Proyección cilíndrica ortogonal de la pieza sobre dos planos perpendiculares entre sí.
+#| fig-alt: |
+#|   La pieza proyectada simultáneamente sobre un plano vertical y otro horizontal.
+
+knitr::include_graphics("images/02-02-B-proyecciones.png", dpi = 270)
+```
+
+Como la proyección es cilíndrica, **la posición concreta de los planos no cambia la forma proyectada**: solo influye su orientación espacial respecto del objeto.
+
+### El abatimiento
+
+Después de proyectar sobre los planos de proyección, debemos **girar o abatir** el conjunto sobre uno de ellos para obtener una representación plana:
+
+```{r}
+#| label: image-diedro
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Las dos proyecciones sobre el diedro formado por los planos vertical y horizontal.
+#| fig-alt: |
+#|   Diedro con las proyecciones de la pieza sobre ambos planos.
+
+knitr::include_graphics("images/02-02-C-diedro.png", dpi = 270)
+```
+
+```{r}
+#| label: image-abatimiento
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   El abatimiento: el plano horizontal gira hasta situarse en el plano del dibujo.
+#| fig-alt: |
+#|   El plano horizontal del diedro girando para coincidir con el plano vertical.
+
+knitr::include_graphics("images/02-02-D-abatimiento.png", dpi = 270)
+```
+
+```{r}
+#| label: image-resultado
+#| echo: false
+#| out.width: "45%"
+#| fig-cap: |
+#|   Resultado del abatimiento: las dos proyecciones sobre un mismo plano.
+#| fig-alt: |
+#|   Las dos vistas de la pieza alineadas verticalmente sobre el plano del dibujo.
+
+knitr::include_graphics("images/02-02-E-resultado.png", dpi = 270)
+```
+
+Este sistema es el usado en ingeniería para **definir los objetos**, y su estudio se acompaña de las normas de representación normalizada particulares de cada sector industrial, junto a las normas generales de acotación (Normas UNE).
+
+```{r}
+#| label: image-comparacion
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   El compromiso del diédrico: cada vista por separado "se ve mal", pero el conjunto "se mide bien".
+#| fig-alt: |
+#|   Comparación entre las vistas diédricas de la pieza y su perspectiva.
+
+knitr::include_graphics("images/02-02-F-comparacion.png", dpi = 270)
+```
+
+### Sistema europeo y sistema americano
+
+Hay dos convenios normalizados para disponer las vistas:
+
+-   **Sistema europeo** (primer ángulo de proyección): el objeto se sitúa en el **1º cuadrante**. La planta superior queda **ABAJO** del alzado. La regla mnemotécnica es *"empujo"*: cada vista se empuja hasta el plano situado detrás del objeto.
+
+::: {layout-ncol="2"}
+```{r}
+#| label: image-europeo-3d
+#| echo: false
+#| out.width: NULL
+#| fig-alt: |
+#|   Cubo de proyecciones del sistema europeo con el objeto dentro.
+
+knitr::include_graphics("images/02-02-G-europeo-3d.png", dpi = 270)
+```
+
+```{r}
+#| label: image-europeo-vistas
+#| echo: false
+#| out.width: NULL
+#| fig-alt: |
+#|   Disposición de las seis vistas en el sistema europeo con su símbolo normalizado.
+
+knitr::include_graphics("images/02-02-H-europeo-vistas.png", dpi = 270)
+```
+:::
+
+-   **Sistema americano** (tercer ángulo de proyección): el objeto se sitúa en el **3º cuadrante**. La planta superior queda **ARRIBA** del alzado. La regla es *"tiro"*: cada vista se tira hacia el plano situado entre el observador y el objeto.
+
+::: {layout-ncol="2"}
+```{r}
+#| label: image-americano-3d
+#| echo: false
+#| out.width: NULL
+#| fig-alt: |
+#|   Cubo de proyecciones del sistema americano con el objeto dentro.
+
+knitr::include_graphics("images/02-02-I-americano-3d.png", dpi = 270)
+```
+
+```{r}
+#| label: image-americano-vistas
+#| echo: false
+#| out.width: NULL
+#| fig-alt: |
+#|   Disposición de las seis vistas en el sistema americano con su símbolo normalizado.
+
+knitr::include_graphics("images/02-02-J-americano-vistas.png", dpi = 270)
+```
+:::
+
+Cada convenio tiene su **símbolo normalizado** (el tronco de cono en alzado y planta), que debe figurar en el cajetín del plano para indicar cuál se ha utilizado.
+
+### Las vistas: el alzado y la correspondencia
+
+Tomaremos como **alzado** siempre la **vista más representativa** de la pieza: la que más información contiene, o con la que mejor se entiende la geometría del conjunto. Una vez fijado el alzado, en el sistema europeo se pueden representar hasta cinco vistas más.
+
+```{r}
+#| label: image-vistas-pieza
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Alzado, vista lateral derecha y planta superior de una pieza.
+#| fig-alt: |
+#|   Pieza en perspectiva con sus vistas de alzado, lateral derecha y planta.
+
+knitr::include_graphics("images/02-02-K-vistas-pieza.png", dpi = 270)
+```
+
+La **correspondencia entre las vistas** es IMPRESCINDIBLE para poder interpretar correctamente la pieza: las vistas comparten alineaciones (alturas entre alzado y lateral, anchuras entre alzado y planta) que deben mantenerse rigurosamente.
+
+```{r}
+#| label: image-correspondencia
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Correspondencia entre alzado, vista lateral derecha y planta superior (sistema europeo).
+#| fig-alt: |
+#|   Las tres vistas de la pieza con las líneas de correspondencia entre ellas.
+
+knitr::include_graphics("images/02-02-L-correspondencia.png", dpi = 270)
+```
+
+### ¿Cuántas vistas son necesarias?
+
+**Depende**: las necesarias para que el objeto quede **completamente definido**, y ni una más. El criterio para decidirlo es el análisis de la pieza mediante la geometría constructiva ([tema 1.2](03-geometria-constructiva.qmd)): cada primitiva de la descomposición debe quedar definida con sus dimensiones en las vistas elegidas, sin repetir información.
+
+## Material complementario
+
+<strong>Presentación de clase: Sistemas de representación (Reveal.js)</strong>
+
+<a href="presentaciones/clase-1-2-sistemas-representacion.html" target="_blank">Clase 1.2 (parte A) — Mundo 3D → plano 2D: sistemas de representación</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Incluye la secuencia completa de proyección y abatimiento paso a paso, y los sistemas europeo y americano.
+
+</p>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://ibiguridt.wordpress.com/temas/vistas/" target="_blank">Web del profesor Iñaki Biguri sobre vistas normalizadas</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Desarrolla la obtención de vistas con ejemplos y ejercicios resueltos.
+
+</p>
+
+<a href="https://trazoide.com/tres-vistas-y-la-vista-auxiliar-971/" target="_blank">Trazoide: ejercicios de vistas</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Colección de ejercicios de obtención de vistas con soluciones.
+
+</p>

@@ -1,17 +1,224 @@
 # 2.3 Sistema axonométrico {#sec-axonometrico-chapter .unnumbered}
 
-## Axonométrico {#sec-axonometrico}
+## Contenido
 
-El sistema axonométrico es un método de representación que permite visualizar objetos tridimensionales en una sola proyección.
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
 
-### Introducción
+En este tema se estudia el sistema axonométrico: la representación del objeto en una sola proyección que conserva la sensación de volumen, y las reglas para poder medir en ella.
 
-[Contenido del capítulo sobre el sistema axonométrico...]
+</p>
 
-### Tipos de proyección axonométrica
+<p style="font-size: 1em; color: #333;">
 
-[Desarrolla isométrica, dimétrica, trimétrica...]
+<ol>
 
-### Aplicaciones
+<li>El sistema axonométrico y la deformación de magnitudes y ángulos</li>
 
-[Ejemplos y aplicaciones prácticas...]
+<li>Proyecciones ortogonales: perspectiva isométrica (dimétrica y trimétrica)</li>
+
+<li>Medir en isométrica: descomposición sobre los ejes y circunferencias</li>
+
+<li>Proyecciones oblicuas: perspectiva caballera (y militar)</li>
+
+</ol>
+
+</p>
+:::
+
+## Apuntes
+
+### El sistema axonométrico
+
+El sistema axonométrico proyecta el objeto, junto con un triedro de ejes de referencia (X, Y, Z), sobre un único plano del cuadro. El resultado es una imagen con sensación de volumen en la que, en general, **hay deformación en las magnitudes y en los ángulos**: es el precio de "ver bien".
+
+```{r}
+#| label: image-axonometrico
+#| echo: false
+#| out.width: "50%"
+#| fig-cap: |
+#|   El cubo en proyección axonométrica: una sola vista con sensación de volumen.
+#| fig-alt: |
+#|   Cubo dibujado en proyección axonométrica con aristas ocultas a trazos.
+
+knitr::include_graphics("images/02-03-A-axonometrico.png", dpi = 270)
+```
+
+```{r}
+#| label: image-deformacion
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   La proyección del triedro de ejes sobre el plano del cuadro produce la deformación.
+#| fig-alt: |
+#|   Cubo proyectado ortogonalmente sobre un plano inclinado respecto de sus ejes.
+
+knitr::include_graphics("images/02-03-B-deformacion.png", dpi = 270)
+```
+
+Según la orientación del plano del cuadro respecto de los tres ejes, la proyección axonométrica **ortogonal** se clasifica en:
+
+-   **Isométrica**: los tres ejes forman ángulos iguales con el plano del cuadro. Es la más utilizada.
+-   **Dimétrica**: dos ejes forman el mismo ángulo y el tercero distinto.
+-   **Trimétrica**: los tres ángulos son distintos.
+
+### La perspectiva isométrica
+
+```{r}
+#| label: image-isometrico
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   En isométrica los tres ejes proyectados forman 120° entre sí.
+#| fig-alt: |
+#|   Los ejes isométricos formando tres ángulos iguales de 120 grados.
+
+knitr::include_graphics("images/02-03-C-isometrico-120.png", dpi = 270)
+```
+
+Sus propiedades fundamentales:
+
+-   Los tres ángulos entre ejes proyectados son **iguales, de 120°** — y representan ángulos reales de 90° (los tres ejes son perpendiculares entre sí en el espacio).
+-   La **deformación es la misma en los tres ejes**: el coeficiente de reducción es **0,816**. (En la práctica del dibujo isométrico suele trabajarse sin aplicar la reducción, a "escala isométrica".)
+-   **Se conserva el paralelismo**: dos rectas paralelas en la realidad son paralelas en la perspectiva.
+
+#### Medir en isométrica
+
+¿Se puede medir en isométrica? **Solo en direcciones paralelas a los ejes** X', Y', Z', y sabiendo que lo que se mide está afectado por el coeficiente 0,816. Para medir un segmento oblicuo AB se descompone en sus proyecciones sobre los ejes (magnitudes m y n) y se opera con ellas:
+
+```{=html}
+<figure style="text-align:center;">
+<svg viewBox="0 0 400 320" style="width:60%; max-width:420px;">
+<defs>
+<marker id="ejeiso-cap" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2d2d8a"/></marker>
+</defs>
+<line x1="200" y1="160" x2="200" y2="30" stroke="#2d2d8a" stroke-width="2" marker-end="url(#ejeiso-cap)"/>
+<line x1="200" y1="160" x2="340" y2="241" stroke="#2d2d8a" stroke-width="2" marker-end="url(#ejeiso-cap)"/>
+<line x1="200" y1="160" x2="60" y2="241" stroke="#2d2d8a" stroke-width="2" marker-end="url(#ejeiso-cap)"/>
+<text x="205" y="28" font-size="20" fill="#2d2d8a" font-style="italic">Z'</text>
+<text x="344" y="250" font-size="20" fill="#2d2d8a" font-style="italic">X'</text>
+<text x="48" y="250" font-size="20" fill="#2d2d8a" font-style="italic">Y'</text>
+<polygon points="200,160 321,230 200,300 79,230" fill="#eef4fb" stroke="#9db8d8" stroke-width="1"/>
+<line x1="224" y1="174" x2="284" y2="209" stroke="#d00000" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="284" y1="209" x2="212" y2="251" stroke="#d00000" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="224" y1="174" x2="212" y2="251" stroke="#1a1a1a" stroke-width="2.5"/>
+<circle cx="224" cy="174" r="4" fill="#1a1a1a"/>
+<circle cx="212" cy="251" r="4" fill="#1a1a1a"/>
+<text x="230" y="168" font-size="20" font-weight="bold">A</text>
+<text x="216" y="274" font-size="20" font-weight="bold">B</text>
+<text x="262" y="182" font-size="19" fill="#d00000" font-style="italic">m</text>
+<text x="258" y="242" font-size="19" fill="#d00000" font-style="italic">n</text>
+</svg>
+<figcaption style="font-size:0.85em; color:#555;">Medición de un segmento AB descomponiéndolo en sus proyecciones m y n sobre los ejes X' e Y'.</figcaption>
+</figure>
+```
+
+#### Las circunferencias en isométrica
+
+Las circunferencias, al ser proyectadas, se transforman en **elipses** inscritas en el rombo proyección del cuadrado circunscrito. El centro se encuentra en el cruce de las diagonales del rombo, y no se mide el radio sino el **diámetro**:
+
+```{r}
+#| label: image-elipses
+#| echo: false
+#| out.width: "50%"
+#| fig-cap: |
+#|   Las circunferencias contenidas en los planos del triedro se proyectan como elipses.
+#| fig-alt: |
+#|   Los tres planos del triedro isométrico con las elipses proyección de circunferencias.
+
+knitr::include_graphics("images/02-03-E-elipses.png", dpi = 270)
+```
+
+### La perspectiva caballera
+
+La caballera es una proyección **cilíndrica oblicua**: el plano del cuadro es paralelo al plano ZX (el del alzado), y los rayos proyectantes inciden oblicuamente.
+
+```{r}
+#| label: image-comparativa-caballera
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Comparativa del mismo cubo en perspectiva isométrica y en perspectiva caballera.
+#| fig-alt: |
+#|   Dos cubos dibujados uno en isométrica y otro en caballera para comparar sus ejes.
+
+knitr::include_graphics("images/02-03-F-comparativa-caballera.png", dpi = 270)
+```
+
+Sus propiedades fundamentales:
+
+-   Los ejes **Z y X forman 90°** y todo lo contenido en el plano ZX está **en verdadera magnitud**, sin deformación de magnitudes ni de ángulos, porque está sobre el plano del cuadro. Por eso **el alzado en caballera se dibuja siempre en el plano ZX**.
+-   El eje **Y'** forma un ángulo **φ** que hay que definir como dato (por convenio se mide desde el eje X en sentido horario).
+-   Sobre el eje Y' hay una deformación dada por el **coeficiente de reducción** (también dato de la perspectiva; puede ser de reducción o de ampliación).
+
+```{r}
+#| label: image-ejes-caballera
+#| echo: false
+#| out.width: "40%"
+#| fig-cap: |
+#|   Los ejes de la caballera: ZX en verdadera magnitud y eje Y' con ángulo y coeficiente propios.
+#| fig-alt: |
+#|   Cubo en caballera con los ejes Z, X en el plano del cuadro y el eje Y en fuga.
+
+knitr::include_graphics("images/02-03-G-ejes-caballera.png", dpi = 270)
+```
+
+```{r}
+#| label: image-posiciones-ejes
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Distintas posiciones del eje Y' y su efecto sobre la perspectiva del mismo cubo.
+#| fig-alt: |
+#|   Varios cubos en caballera con diferentes ángulos del eje Y.
+
+knitr::include_graphics("images/02-03-H-posiciones-ejes.png", dpi = 270)
+```
+
+#### Medir y circunferencias en caballera
+
+-   En el **plano ZX se mide todo directamente**: magnitudes y ángulos en verdadera magnitud.
+-   En los planos ZY' o XY' se mide **llevando magnitudes sobre los ejes**, como en isométrica (sobre Z y X no hay deformación; sobre Y' se aplica el coeficiente).
+-   Las circunferencias son **circunferencias reales** si están en el plano ZX, y **elipses** si están en ZY' o XY' (se trazan llevando puntos, como en isométrica).
+
+```{r}
+#| label: image-circunf-caballera
+#| echo: false
+#| out.width: "40%"
+#| fig-cap: |
+#|   La circunferencia en caballera: circunferencia en el plano ZX, elipse en los demás.
+#| fig-alt: |
+#|   Cubo en caballera con una circunferencia en la cara frontal.
+
+knitr::include_graphics("images/02-03-I-circunf-caballera.png", dpi = 270)
+```
+
+### La perspectiva militar
+
+La perspectiva **militar** es la otra proyección cilíndrica oblicua de uso común: en ella el plano en verdadera magnitud es el **horizontal (XY)** — la planta — lo que la hace útil en urbanismo y arquitectura para representar plantas de edificios y conjuntos.
+
+## Material complementario
+
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/perspectiva-isometrica.html" target="_blank">Perspectiva isométrica: fundamentos y medición en el sistema</a>
+
+<a href="presentaciones/perspectiva-caballera.html" target="_blank">Perspectiva caballera: fundamentos y medición en el sistema</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://www.edu.xunta.gal/espazoAbalar/sites/espazoAbalar/files/datos/1464946300/contido/7_perspectiva_isomtrica.html" target="_blank">Perspectiva isométrica (espazoAbalar, Xunta de Galicia)</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Curso interactivo sobre la perspectiva isométrica con trazados paso a paso.
+
+</p>
+
+<a href="https://trazoide.com/tres-vistas-y-la-vista-auxiliar-971/" target="_blank">Trazoide: de las vistas a la perspectiva</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Ejercicios resueltos de paso de vistas diédricas a perspectiva.
+
+</p>

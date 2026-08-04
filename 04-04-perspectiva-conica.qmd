@@ -1,29 +1,94 @@
 # 2.4 Sistema cónico: la perspectiva cónica {#sec-perspectiva-conica .unnumbered}
 
-La perspectiva cónica es el sistema de representación que más se aproxima a la visión humana del espacio tridimensional.
+## Contenido
 
-### Introducción
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
 
-[Contenido sobre perspectiva cónica...]
+En este tema se presenta el sistema cónico: el que reproduce la visión humana del espacio y produce las representaciones más realistas.
 
-### Elementos de la perspectiva
+</p>
 
-[Punto de vista, plano del cuadro, línea de horizonte, puntos de fuga...]
+<p style="font-size: 1em; color: #333;">
 
-### Tipos de perspectiva cónica
+<ol>
 
-#### Perspectiva frontal (un punto de fuga)
+<li>La proyección cónica y sus elementos</li>
 
-[Desarrolla la perspectiva con un punto de fuga...]
+<li>La representación realista: ver bien, medir mal</li>
 
-#### Perspectiva oblicua (dos puntos de fuga)
+<li>Proyección cónica central y proyección cónica oblicua</li>
 
-[Desarrolla la perspectiva con dos puntos de fuga...]
+</ol>
 
-#### Perspectiva aérea (tres puntos de fuga)
+</p>
+:::
 
-[Desarrolla la perspectiva con tres puntos de fuga...]
+## Apuntes
 
-### Aplicaciones
+### La proyección cónica
 
-[Ejemplos de uso en arquitectura, diseño, arte...]
+En la proyección cónica o central el **punto de vista está a distancia finita** del objeto: los rayos proyectantes forman un haz cónico que pasa por él, igual que los rayos de luz que llegan a nuestro ojo. Por eso es el sistema que **más se aproxima a la visión humana** del espacio.
+
+Sus elementos son los de toda proyección — objeto, punto de vista, plano del cuadro y haz de rayos — más los propios del sistema: la **línea de horizonte** y los **puntos de fuga**, donde convergen las proyecciones de las rectas paralelas.
+
+### La representación realista: ver bien, medir mal
+
+La gran ventaja de la perspectiva cónica es el **realismo**. Es el sistema del arte y de la arquitectura desde el Renacimiento:
+
+```{r}
+#| label: image-ultima-cena
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   La última cena (Leonardo da Vinci): la perspectiva cónica organiza todo el espacio del cuadro.
+#| fig-alt: |
+#|   La última cena de Leonardo da Vinci, construida en perspectiva cónica frontal.
+
+knitr::include_graphics("images/02-04-A-ultima-cena.png", dpi = 270)
+```
+
+```{r}
+#| label: image-corredor
+#| echo: false
+#| out.width: "55%"
+#| fig-cap: |
+#|   "Light After Light" (Antonio Rojas): la perspectiva cónica como recurso expresivo.
+#| fig-alt: |
+#|   Pintura de un corredor en perspectiva cónica que se abre al mar.
+
+knitr::include_graphics("images/02-04-B-corredor.png", dpi = 270)
+```
+
+A cambio, **se mide mal**: las magnitudes llegan al papel deformadas por la distancia y la posición respecto del punto de vista, así que la cónica no sirve para definir dimensionalmente un objeto. Es el extremo opuesto del diédrico en el compromiso ver bien / medir bien del [tema 2.1](04-sistemas-representacion.qmd).
+
+### Tipos de proyección cónica
+
+-   **Proyección cónica central (frontal)**: el plano del cuadro es paralelo a una de las caras principales del objeto; hay un único punto de fuga sobre la línea de horizonte (como en La última cena).
+-   **Proyección cónica oblicua**: el plano del cuadro es oblicuo a las caras del objeto; aparecen dos puntos de fuga (o tres, si el plano del cuadro también es oblicuo a las verticales).
+
+::: callout-note
+## En ampliación
+
+Este tema se desarrollará con los trazados propios del sistema: la construcción con uno y dos puntos de fuga, la línea de tierra y la medición mediante puntos métricos.
+:::
+
+## Material complementario
+
+<strong>Recursos digitales</strong>
+
+<a href="https://laperspectivaconica.wordpress.com/" target="_blank">La perspectiva cónica (blog monográfico)</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Monográfico con fundamentos, trazados y numerosos ejemplos artísticos de perspectiva cónica.
+
+</p>
+
+<a href="https://ibiguridt.wordpress.com/temas/sistema-conico/" target="_blank">Web del profesor Iñaki Biguri sobre el sistema cónico</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Fundamentos y trazados del sistema cónico con ejemplos gráficos.
+
+</p>
