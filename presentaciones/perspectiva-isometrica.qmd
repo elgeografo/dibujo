@@ -6,50 +6,183 @@ author: "Expresión Gráfica · E.T.S.I. Montes, Forestal y del Medio Natural ·
 
 ## Representar el mundo en papel
 
-::: {.texto-azul style="font-size:0.8em;"}
--   **1 vista deformada** = perspectivas
--   **Muchas vistas en verdadera magnitud** = diédrico
+::: {.texto-azul style="font-size:0.7em; margin-bottom:0.3em;"}
+Dos estrategias para llevar el "mundo 3D" al papel:
 :::
 
-<div style="display:flex; gap:18px; justify-content:center; align-items:center; margin-top:14px;">
-<img src="media/isometrica/image1.png" style="height:200px; margin:0;"/>
-<img src="media/isometrica/image2.png" style="height:170px; margin:0;"/>
-<img src="media/isometrica/image3.png" style="height:200px; margin:0;"/>
-<img src="media/isometrica/image4.png" style="height:200px; margin:0;"/>
-</div>
+:::: columns
+::: {.column width="50%"}
+::: {.fragment fragment-index="1"}
+<div class="texto-azul" style="font-size:0.62em; font-weight:700; text-align:center;">1 vista deformada = PERSPECTIVA</div>
+<svg viewBox="95 50 210 225" xmlns="http://www.w3.org/2000/svg" style="width:62%; display:block; margin:6px auto;">
+<polygon points="175.0,59.8 222.1,87.0 151.4,127.8 104.3,100.6" fill="#c9f2f7" stroke="#075985" stroke-width="2"/>
+<polygon points="222.1,134.6 292.8,175.4 222.1,216.2 151.4,175.4" fill="#c9f2f7" stroke="#075985" stroke-width="2"/>
+<polygon points="222.1,134.6 151.4,175.4 151.4,127.8 222.1,87.0" fill="#55c4d6" stroke="#075985" stroke-width="2"/>
+<polygon points="292.8,223.0 222.1,263.8 222.1,216.2 292.8,175.4" fill="#55c4d6" stroke="#075985" stroke-width="2"/>
+<polygon points="104.3,195.8 222.1,263.8 222.1,216.2 151.4,175.4 151.4,127.8 104.3,100.6" fill="#8fe3ef" stroke="#075985" stroke-width="2"/>
+</svg>
+<div style="font-size:0.52em; color:#666; text-align:center;">Se <b>ve</b> bien, se <b>mide</b> mal</div>
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment fragment-index="2"}
+<div class="texto-azul" style="font-size:0.62em; font-weight:700; text-align:center;">Muchas vistas en verdadera magnitud = DIÉDRICO</div>
+<svg viewBox="30 20 290 230" xmlns="http://www.w3.org/2000/svg" style="width:72%; display:block; margin:6px auto;">
+<text x="102" y="34" font-size="13" font-weight="700" fill="#2d2d8a">Alzado</text>
+<text x="222" y="34" font-size="13" font-weight="700" fill="#2d2d8a">Perfil</text>
+<text x="102" y="248" font-size="13" font-weight="700" fill="#2d2d8a">Planta</text>
+<polygon points="70,124 190,124 190,82 118,82 118,40 70,40" fill="none" stroke="#14532d" stroke-width="3"/>
+<rect x="70" y="154" width="120" height="72" fill="none" stroke="#14532d" stroke-width="3"/>
+<line x1="118" y1="154" x2="118" y2="226" stroke="#14532d" stroke-width="3"/>
+<rect x="220" y="40" width="72" height="84" fill="none" stroke="#14532d" stroke-width="3"/>
+<line x1="220" y1="82" x2="292" y2="82" stroke="#14532d" stroke-width="2" stroke-dasharray="7,5"/>
+</svg>
+<div style="font-size:0.52em; color:#666; text-align:center;">Se <b>ve</b> mal, se <b>mide</b> bien</div>
+:::
+:::
+::::
+
+::: {.fragment fragment-index="3" .texto-azul style="font-size:0.68em; text-align:center; margin-top:0.5em;"}
+Hoy: la perspectiva **isométrica** — la más usada de las axonométricas… ¿y se puede **medir** en ella?
+:::
 
 ## El sistema axonométrico
 
-<img src="media/isometrica/image9.png" style="max-height:420px; display:block; margin:0 auto;"/>
-
-## La deformación
-
 :::: columns
-::: {.column width="55%"}
-<img src="media/isometrica/image10.png" style="width:100%; margin:6px 0;"/>
+::: {.column width="52%"}
+<svg viewBox="0 0 300 285" xmlns="http://www.w3.org/2000/svg" style="width:100%;">
+<polygon points="8,258 78,208 292,208 222,258" fill="#d2b077" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="70" y1="45" x2="70" y2="252" stroke="#909090" stroke-width="1.2"/>
+<line x1="205" y1="45" x2="205" y2="230" stroke="#909090" stroke-width="1.2"/>
+<line x1="148" y1="45" x2="148" y2="256" stroke="#909090" stroke-width="1.2"/>
+<polygon points="70,246 205,224 148,250" fill="#7d9ce0" stroke="#1a1a1a" stroke-width="2.5"/>
+<polygon points="70,135 205,105 148,155" fill="#4a6096" stroke="#1a1a1a" stroke-width="2"/>
+<text x="45" y="62" font-size="14" font-weight="700" fill="#1a1a1a">V</text>
+<text x="14" y="78" font-size="10" fill="#1a1a1a">En el</text>
+<text x="14" y="90" font-size="10" fill="#1a1a1a">infinito</text>
+</svg>
+<div style="font-size:0.52em; color:#666; text-align:center;">Proyección cilíndrica <b>ortogonal</b>: rayos paralelos, perpendiculares al plano del cuadro</div>
 :::
 
-::: {.column width="45%"}
-::: {.texto-azul style="font-size:0.72em; margin-left:0.8em; margin-top:1.5em;"}
-Al proyectar el triedro de ejes sobre el plano del cuadro:
+::: {.column width="48%"}
+::: {.texto-azul style="font-size:0.62em; margin-left:0.8em; margin-top:0.8em;"}
+El sistema axonométrico es una **proyección cilíndrica ortogonal**: se proyecta el objeto **junto con su triedro de ejes** (X, Y, Z) sobre un único plano del cuadro.
 
-::: incremental
--   Hay **deformación en las magnitudes**
--   Hay **deformación en los ángulos**
+::: {.fragment}
+El resultado: **una sola vista con sensación de volumen**… en la que en general hay **deformación**.
+:::
+
+::: {.fragment}
+Según la **orientación del plano del cuadro** respecto de los tres ejes, la axonometría será **isométrica**, **dimétrica** o **trimétrica**.
 :::
 :::
 :::
 ::::
 
+## La deformación
+
+:::: columns
+::: {.column width="45%"}
+<svg viewBox="30 20 260 235" xmlns="http://www.w3.org/2000/svg" style="width:82%; display:block; margin:0 auto;">
+<line x1="150" y1="155" x2="150" y2="40" stroke="#d00000" stroke-width="2.5"/>
+<line x1="150" y1="155" x2="245" y2="199" stroke="#d00000" stroke-width="2.5"/>
+<line x1="150" y1="155" x2="82" y2="235" stroke="#d00000" stroke-width="2.5"/>
+<text x="156" y="42" font-size="16" font-weight="700" fill="#d00000">Z'</text>
+<text x="250" y="206" font-size="16" font-weight="700" fill="#d00000">X'</text>
+<text x="62" y="244" font-size="16" font-weight="700" fill="#d00000">Y'</text>
+<path d="M 150 113 A 42 42 0 0 1 188 172" fill="none" stroke="#c9a800" stroke-width="2.5"/>
+<path d="M 188 172 A 42 42 0 0 1 123 187" fill="none" stroke="#c9a800" stroke-width="2.5"/>
+<path d="M 123 187 A 42 42 0 0 1 150 113" fill="none" stroke="#c9a800" stroke-width="2.5"/>
+<text x="196" y="140" font-size="14" fill="#a08600" font-style="italic">a</text>
+<text x="158" y="205" font-size="14" fill="#a08600" font-style="italic">b</text>
+<text x="103" y="140" font-size="14" fill="#a08600" font-style="italic">c</text>
+</svg>
+:::
+
+::: {.column width="55%"}
+::: {.texto-azul style="font-size:0.68em; margin-left:0.8em; margin-top:1.2em;"}
+Al proyectar el triedro de ejes sobre el plano del cuadro:
+
+::: incremental
+-   Hay **deformación en las magnitudes**
+-   Hay **deformación en los ángulos** (a, b, c ya no son de 90°)
+:::
+:::
+:::
+::::
+
+::: {.fragment}
+<div style="display:flex; gap:14px; justify-content:center; margin-top:0.4em;">
+<div style="text-align:center; width:30%;">
+<svg viewBox="0 0 120 115" xmlns="http://www.w3.org/2000/svg" style="width:64%;">
+<line x1="60" y1="50" x2="60" y2="10" stroke="#d00000" stroke-width="2"/>
+<line x1="60" y1="50" x2="96.4" y2="71" stroke="#d00000" stroke-width="2"/>
+<line x1="60" y1="50" x2="23.6" y2="71" stroke="#d00000" stroke-width="2"/>
+<text x="41" y="34" font-size="10" fill="#666">120°</text>
+<text x="67" y="34" font-size="10" fill="#666">120°</text>
+<text x="49" y="86" font-size="10" fill="#666">120°</text>
+</svg>
+<div class="texto-azul" style="font-size:0.55em; font-weight:700;">ISOMÉTRICA</div>
+<div style="font-size:0.48em; color:#666;">tres ángulos iguales</div>
+</div>
+<div style="text-align:center; width:30%;">
+<svg viewBox="0 0 120 115" xmlns="http://www.w3.org/2000/svg" style="width:64%;">
+<line x1="60" y1="50" x2="60" y2="10" stroke="#d00000" stroke-width="2"/>
+<line x1="60" y1="50" x2="100.6" y2="60.9" stroke="#d00000" stroke-width="2"/>
+<line x1="60" y1="50" x2="19.4" y2="60.9" stroke="#d00000" stroke-width="2"/>
+<text x="40" y="32" font-size="10" fill="#666">105°</text>
+<text x="66" y="32" font-size="10" fill="#666">105°</text>
+<text x="49" y="80" font-size="10" fill="#666">150°</text>
+</svg>
+<div class="texto-azul" style="font-size:0.55em; font-weight:700;">DIMÉTRICA</div>
+<div style="font-size:0.48em; color:#666;">dos iguales, uno distinto</div>
+</div>
+<div style="text-align:center; width:30%;">
+<svg viewBox="0 0 120 115" xmlns="http://www.w3.org/2000/svg" style="width:64%;">
+<line x1="60" y1="50" x2="60" y2="10" stroke="#d00000" stroke-width="2"/>
+<line x1="60" y1="50" x2="99.5" y2="64.4" stroke="#d00000" stroke-width="2"/>
+<line x1="60" y1="50" x2="27.8" y2="77" stroke="#d00000" stroke-width="2"/>
+<text x="38" y="32" font-size="10" fill="#666">130°</text>
+<text x="66" y="32" font-size="10" fill="#666">110°</text>
+<text x="50" y="84" font-size="10" fill="#666">120°</text>
+</svg>
+<div class="texto-azul" style="font-size:0.55em; font-weight:700;">TRIMÉTRICA</div>
+<div style="font-size:0.48em; color:#666;">tres distintos</div>
+</div>
+</div>
+:::
+
 ## El sistema axonométrico — Isométrico
 
 :::: columns
-::: {.column width="50%"}
-<img src="media/isometrica/image11.png" style="width:100%; margin:6px 0;"/>
-<img src="media/isometrica/image12.png" style="width:70%; display:block; margin:0 auto;"/>
+::: {.column width="46%"}
+<svg viewBox="20 20 260 210" xmlns="http://www.w3.org/2000/svg" style="width:88%; display:block; margin:0 auto;">
+<path d="M 150.0 110.0 A 45 45 0 0 1 189.0 177.5" fill="none" stroke="#e8862c" stroke-width="14" stroke-opacity="0.55"/>
+<path d="M 189.0 177.5 A 45 45 0 0 1 111.0 177.5" fill="none" stroke="#2d9bd8" stroke-width="14" stroke-opacity="0.55"/>
+<path d="M 111.0 177.5 A 45 45 0 0 1 150.0 110.0" fill="none" stroke="#3aa63a" stroke-width="14" stroke-opacity="0.55"/>
+<line x1="150" y1="155" x2="150" y2="40" stroke="#d00000" stroke-width="2.5"/>
+<line x1="150" y1="155" x2="240.9" y2="207.5" stroke="#d00000" stroke-width="2.5"/>
+<line x1="150" y1="155" x2="59.1" y2="207.5" stroke="#d00000" stroke-width="2.5"/>
+<text x="156" y="42" font-size="16" font-weight="700" fill="#d00000">Z'</text>
+<text x="246" y="214" font-size="16" font-weight="700" fill="#d00000">X'</text>
+<text x="40" y="214" font-size="16" font-weight="700" fill="#d00000">Y'</text>
+<text x="182" y="128" font-size="13" font-weight="700" fill="#b45309">120°</text>
+<text x="134" y="212" font-size="13" font-weight="700" fill="#1d6fa3">120°</text>
+<text x="88" y="128" font-size="13" font-weight="700" fill="#2a7a2a">120°</text>
+</svg>
+<svg viewBox="0 0 120 112" xmlns="http://www.w3.org/2000/svg" style="width:34%; display:block; margin:4px auto;">
+<line x1="60" y1="54" x2="60" y2="10" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="60" y1="54" x2="20" y2="76" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="60" y1="54" x2="100" y2="76" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="60" y1="54" x2="20" y2="32" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="60" y1="54" x2="100" y2="32" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="60" y1="54" x2="60" y2="98" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="60,10 100,32 100,76 60,98 20,76 20,32" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+</svg>
 :::
 
-::: {.column width="50%"}
+::: {.column width="54%"}
 ::: {.texto-azul style="font-size:0.62em; margin-left:0.8em;"}
 ::: incremental
 -   Los 3 ángulos son **iguales entre sí** y por tanto iguales a **120°**
@@ -64,43 +197,52 @@ Al proyectar el triedro de ejes sobre el plano del cuadro:
 ## Medir en perspectiva isométrica
 
 :::: columns
-::: {.column width="45%"}
-<svg viewBox="0 0 400 320" style="width:95%; display:block; margin:10px auto;">
-<defs>
-<marker id="ejeiso" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#2d2d8a"/></marker>
-</defs>
-<!-- ejes isométricos -->
-<line x1="200" y1="160" x2="200" y2="30" stroke="#2d2d8a" stroke-width="2" marker-end="url(#ejeiso)"/>
-<line x1="200" y1="160" x2="340" y2="241" stroke="#2d2d8a" stroke-width="2" marker-end="url(#ejeiso)"/>
-<line x1="200" y1="160" x2="60" y2="241" stroke="#2d2d8a" stroke-width="2" marker-end="url(#ejeiso)"/>
-<text x="205" y="28" font-size="20" fill="#2d2d8a" font-style="italic">Z'</text>
-<text x="344" y="250" font-size="20" fill="#2d2d8a" font-style="italic">X'</text>
-<text x="48" y="250" font-size="20" fill="#2d2d8a" font-style="italic">Y'</text>
-<!-- rombo del plano X'Y' -->
-<polygon points="200,160 321,230 200,300 79,230" fill="#eef4fb" stroke="#9db8d8" stroke-width="1"/>
-<!-- segmento AB y componentes -->
-<line x1="224" y1="174" x2="284" y2="209" stroke="#d00000" stroke-width="1.5" stroke-dasharray="6 4"/>
-<line x1="284" y1="209" x2="212" y2="251" stroke="#d00000" stroke-width="1.5" stroke-dasharray="6 4"/>
-<line x1="224" y1="174" x2="212" y2="251" stroke="#1a1a1a" stroke-width="2.5"/>
-<circle cx="224" cy="174" r="4" fill="#1a1a1a"/>
-<circle cx="212" cy="251" r="4" fill="#1a1a1a"/>
-<text x="230" y="168" font-size="20" font-weight="bold">A</text>
-<text x="216" y="274" font-size="20" font-weight="bold">B</text>
-<text x="262" y="182" font-size="19" fill="#d00000" font-style="italic">m</text>
-<text x="258" y="242" font-size="19" fill="#d00000" font-style="italic">n</text>
+::: {.column width="46%"}
+<svg viewBox="0 0 290 245" xmlns="http://www.w3.org/2000/svg" style="width:92%; display:block; margin:10px auto;">
+<!-- ejes prolongados -->
+<line x1="142" y1="133.8" x2="142" y2="17" stroke="#d00000" stroke-width="1.6"/>
+<line x1="142" y1="133.8" x2="265" y2="202" stroke="#d00000" stroke-width="1.6"/>
+<line x1="142" y1="133.8" x2="19" y2="202" stroke="#d00000" stroke-width="1.6"/>
+<text x="148" y="20" font-size="14" font-weight="700" fill="#d00000">Z'</text>
+<text x="268" y="210" font-size="14" font-weight="700" fill="#d00000">X'</text>
+<text x="6" y="210" font-size="14" font-weight="700" fill="#d00000">Y'</text>
+<!-- cubo -->
+<line x1="142" y1="133.8" x2="142" y2="37" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="142" y1="133.8" x2="54" y2="182.2" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="142" y1="133.8" x2="230" y2="182.2" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4,3"/>
+<line x1="142" y1="133.8" x2="54" y2="85.4" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="142" y1="133.8" x2="230" y2="85.4" stroke="#1a1a1a" stroke-width="2"/>
+<line x1="142" y1="133.8" x2="142" y2="230.6" stroke="#1a1a1a" stroke-width="2"/>
+<polygon points="142,37 230,85.4 230,182.2 142,230.6 54,182.2 54,85.4" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+<!-- segmento AB sobre la cara superior y sus proyecciones m, n -->
+<g class="fragment" data-fragment-index="1">
+<line x1="98" y1="109.6" x2="142" y2="133.8" stroke="#d00000" stroke-width="2" stroke-dasharray="6,4"/>
+<line x1="142" y1="133.8" x2="186" y2="109.6" stroke="#0f766e" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="110" y="132" font-size="15" font-weight="700" fill="#d00000" font-style="italic">m</text>
+<text x="166" y="132" font-size="15" font-weight="700" fill="#0f766e" font-style="italic">n</text>
+</g>
+<line x1="98" y1="109.6" x2="186" y2="109.6" stroke="#1a1a1a" stroke-width="3"/>
+<circle cx="98" cy="109.6" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="186" cy="109.6" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="84" y="103" font-size="15" font-weight="700">A</text>
+<text x="192" y="103" font-size="15" font-weight="700">B</text>
 </svg>
 :::
 
-::: {.column width="55%"}
+::: {.column width="54%"}
 ::: {.texto-azul style="font-size:0.62em;"}
 **¿Puedo medir en isométrica?**
 
 Solo en direcciones **paralelas a los ejes** X' Y' Z', y sabiendo que lo que mido está reducido por 0,816.
 
-::: fragment
+::: {.fragment fragment-index="1"}
 **¿Cómo mido el segmento AB?**
 
-Descomponiéndolo en sus proyecciones sobre el eje X' e Y' y midiendo las magnitudes **m** y **n**. Luego uniré los extremos de m y n para obtener el segmento AB.
+Descomponiéndolo en sus proyecciones sobre los ejes: **m** (paralela a X') y **n** (paralela a Y'). Mido m y n sobre los ejes; para dibujarlo, recorro m y n y uno los extremos.
+:::
+
+::: {.fragment fragment-index="2"}
+En cualquier **otra dirección** no se puede medir la longitud, y los **ángulos** no se pueden medir en ninguna.
 :::
 :::
 :::
@@ -115,24 +257,56 @@ Descomponiéndolo en sus proyecciones sobre el eje X' e Y' y midiendo las magnit
 ## Medir en perspectiva isométrica — Curvas
 
 :::: columns
-::: {.column width="45%"}
-<img src="media/isometrica/image16.png" style="width:90%; display:block; margin:10px auto;"/>
+::: {.column width="48%"}
+<svg viewBox="0 10 340 280" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block; margin:0 auto;">
+<!-- ejes -->
+<line x1="170" y1="170" x2="293.5" y2="241.3" stroke="#8a8a5a" stroke-width="1.6"/>
+<line x1="170" y1="170" x2="46.5" y2="241.3" stroke="#8a8a5a" stroke-width="1.6"/>
+<line x1="170" y1="170" x2="170" y2="33.6" stroke="#8a8a5a" stroke-width="1.6"/>
+<text x="298" y="248" font-size="14" font-weight="700" fill="#555">X</text>
+<text x="36" y="248" font-size="14" font-weight="700" fill="#555">Y</text>
+<text x="176" y="38" font-size="14" font-weight="700" fill="#555">Z</text>
+<!-- cara ZX (derecha): rombo + diagonales + elipse -->
+<polygon points="178.1,165.3 258.6,211.8 258.6,118.9 178.1,72.4" fill="#eef4fb" stroke="#2d2d8a" stroke-width="2"/>
+<line x1="178.1" y1="165.3" x2="258.6" y2="118.9" stroke="#9db8d8" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="258.6" y1="211.8" x2="178.1" y2="72.4" stroke="#9db8d8" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="0" cy="0" r="0.75" transform="matrix(53.7,31,0,-62,218.3,142.1)" fill="none" stroke="#8a4a2a" stroke-width="2" vector-effect="non-scaling-stroke"/>
+<circle cx="218.3" cy="142.1" r="2.5" fill="#8a4a2a"/>
+<text x="224" y="139" font-size="12" font-weight="700" fill="#8a4a2a">O</text>
+<!-- cara ZY (izquierda) -->
+<polygon points="161.9,165.3 81.4,211.8 81.4,118.9 161.9,72.4" fill="#eef4fb" stroke="#2d2d8a" stroke-width="2"/>
+<line x1="161.9" y1="165.3" x2="81.4" y2="118.9" stroke="#9db8d8" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="81.4" y1="211.8" x2="161.9" y2="72.4" stroke="#9db8d8" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="0" cy="0" r="0.75" transform="matrix(-53.7,31,0,-62,121.7,142.1)" fill="none" stroke="#8a4a2a" stroke-width="2" vector-effect="non-scaling-stroke"/>
+<circle cx="121.7" cy="142.1" r="2.5" fill="#8a4a2a"/>
+<!-- a = b en la cara izquierda -->
+<line x1="81.4" y1="118.9" x2="161.9" y2="72.4" stroke="#c026d3" stroke-width="3.5"/>
+<line x1="81.4" y1="118.9" x2="81.4" y2="211.8" stroke="#c026d3" stroke-width="3.5"/>
+<text x="112" y="82" font-size="14" font-weight="700" fill="#c026d3" font-style="italic">a</text>
+<text x="68" y="170" font-size="14" font-weight="700" fill="#c026d3" font-style="italic">b</text>
+<!-- cara XY (inferior) -->
+<polygon points="170.0,179.3 250.5,225.8 170.0,272.3 89.5,225.8" fill="#eef4fb" stroke="#2d2d8a" stroke-width="2"/>
+<line x1="170" y1="179.3" x2="170" y2="272.3" stroke="#9db8d8" stroke-width="1" stroke-dasharray="5,4"/>
+<line x1="89.5" y1="225.8" x2="250.5" y2="225.8" stroke="#9db8d8" stroke-width="1" stroke-dasharray="5,4"/>
+<circle cx="0" cy="0" r="0.75" transform="matrix(53.7,31,-53.7,31,170,225.8)" fill="none" stroke="#8a4a2a" stroke-width="2" vector-effect="non-scaling-stroke"/>
+<circle cx="170" cy="225.8" r="2.5" fill="#8a4a2a"/>
+</svg>
 :::
 
-::: {.column width="55%"}
+::: {.column width="52%"}
 ::: {.texto-azul style="font-size:0.6em;"}
-Las circunferencias, al ser proyectadas, **se transforman en elipses**.
+Las circunferencias, al ser proyectadas, **se transforman en elipses** inscritas en el rombo proyección del cuadrado circunscrito.
 
 ::: fragment
-**¿Por qué sé que es una circunferencia?** Porque a = b (está inscrita en la proyección de un cuadrado).
+**¿Por qué sé que es una circunferencia?** Porque **a = b**: está inscrita en la proyección de un cuadrado.
 :::
 
 ::: fragment
-**¿Cómo encuentro el centro?** En el cruce de las dos diagonales.
+**¿Cómo encuentro el centro?** En el **cruce de las dos diagonales** del rombo.
 :::
 
 ::: fragment
-**¿Cómo mido el radio?** No mido radio sino **diámetro**.
+**¿Cómo mido el radio?** No mido radio sino **diámetro** (paralelo a los ejes).
 :::
 :::
 :::
