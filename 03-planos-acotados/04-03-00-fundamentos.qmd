@@ -1,16 +1,10 @@
 # Fundamentos {#sec-fundamentos .unnumbered}
 
-## Fundamentos del sistema de planos Acotados
+## Fundamentos del sistema de planos acotados
 
 ### Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
-<!--<p style="font-size: 1.2em; color: #333;">
-
-La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0013534"  target="_blank">ISO 5455:1979</a>. Su contenido es el siguiente.
-
-</p>-->
-
 <p style="font-size: 1em; color: #333;">
 
 <ol>
@@ -31,40 +25,91 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 ### Apuntes
 
 #### Representación del punto
-*Viene caracterizado por su proyección sobre el plano horizontal y por su cota con relación a dicho plano. En la siguiente figura, se representan algunos puntos en este sistema. Los puntos de cota cero estarían situados en el plano de proyección.*
 
-```{r}
-#| label: image-punto
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   Representación del punto en planos acotados. 
-#| fig-alt: |
-#|   Representación del punto en planos acotados. 
+Un punto queda caracterizado por su **proyección** sobre el plano horizontal y por su **cota** con relación a dicho plano. La cota puede ser positiva (punto por encima del plano de comparación), nula (punto en el propio plano) o negativa (por debajo). El **desnivel** entre dos puntos es la diferencia de sus cotas.
 
-knitr::include_graphics("../images/puntos_planosAcotados.gif", dpi = 270)
-```
+::: {#fig-punto}
+<div style="max-width:640px; margin:0 auto;">
+<svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" style="width:96%; display:block; margin:0 auto;">
+<polygon points="28.4,256 388.4,256 464,202 104,202" fill="#d2b077" stroke="#1a1a1a" stroke-width="1.6" stroke-linejoin="round" fill-opacity="0.9"/>
+<text x="47.4" y="248.4" font-size="11.5" fill="#6a5335" font-style="italic">PC (cota 0)</text>
+<line x1="200.4" y1="226" x2="200.4" y2="190" stroke="#909090" stroke-width="1.3" stroke-dasharray="4,3"/>
+<circle cx="200.4" cy="190" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="207.4" y="185" font-size="14" fill="#1a1a1a" font-weight="700">A</text>
+<circle cx="200.4" cy="226" r="3.2" fill="#e8a33d" stroke="#7a5510" stroke-width="1.4"/>
+<text x="206.4" y="241" font-size="12.5" fill="#2d2d8a" font-weight="700">a(4)</text>
+<line x1="318" y1="217" x2="318" y2="172" stroke="#909090" stroke-width="1.3" stroke-dasharray="4,3"/>
+<circle cx="318" cy="172" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="325" y="167" font-size="14" fill="#1a1a1a" font-weight="700">C</text>
+<circle cx="318" cy="217" r="3.2" fill="#e8a33d" stroke="#7a5510" stroke-width="1.4"/>
+<text x="324" y="232" font-size="12.5" fill="#2d2d8a" font-weight="700">c(5)</text>
+<circle cx="159.3" cy="212.5" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="165.3" y="227.5" font-size="12.5" fill="#2d2d8a" font-weight="700">d(0)</text>
+<text x="155.3" y="202.5" font-size="14" fill="#1a1a1a" font-weight="700">D</text>
+<line x1="380.6" y1="241.6" x2="380.6" y2="259.6" stroke="#909090" stroke-width="1.3" stroke-dasharray="4,3"/>
+<circle cx="380.6" cy="259.6" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="387.6" y="254.6" font-size="14" fill="#1a1a1a" font-weight="700">B</text>
+<circle cx="380.6" cy="241.6" r="3.2" fill="#e8a33d" stroke="#7a5510" stroke-width="1.4"/>
+<text x="388.6" y="232.6" font-size="12.5" fill="#2d2d8a" font-weight="700">b(-2)</text>
+<line x1="200.4" y1="190" x2="318" y2="190" stroke="#d00000" stroke-width="1.2" stroke-dasharray="5,3"/>
+<line x1="318" y1="172" x2="318" y2="190" stroke="#d00000" stroke-width="2.2"/>
+<text x="326" y="185" font-size="12.5" fill="#d00000" font-weight="700">desnivel = 5 − 4 = 1 m</text>
+<rect x="480" y="30" width="150" height="220" fill="#ffffff" stroke="#b8a37e" stroke-width="2"/>
+<text x="555" y="50" font-size="12" fill="#6a5335" text-anchor="middle" font-style="italic">El papel</text>
+<circle cx="534.2" cy="127.8" r="3.2" fill="#e8a33d" stroke="#7a5510" stroke-width="1.4"/>
+<text x="539.2" y="140.8" font-size="12" fill="#2d2d8a" font-weight="700">a(4)</text>
+<circle cx="577.9" cy="91.1" r="3.2" fill="#e8a33d" stroke="#7a5510" stroke-width="1.4"/>
+<text x="582.9" y="104.1" font-size="12" fill="#2d2d8a" font-weight="700">c(5)</text>
+<circle cx="509.2" cy="72.8" r="3.2" fill="#e8a33d" stroke="#7a5510" stroke-width="1.4"/>
+<text x="514.2" y="85.8" font-size="12" fill="#2d2d8a" font-weight="700">d(0)</text>
+<circle cx="618.3" cy="191.3" r="3.2" fill="#e8a33d" stroke="#7a5510" stroke-width="1.4"/>
+<text x="612.3" y="204.3" font-size="12" fill="#2d2d8a" font-weight="700" text-anchor="end">b(-2)</text>
+</svg>
+</div>
+
+Representación del punto en planos acotados: cotas positivas, nula y negativa, desnivel entre C y A, y el resultado que queda en el papel.
+:::
 
 #### Representación de la recta
-*Si unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la siguiente figura se observa la recta R definida por los puntos A y B.*
-```{r}
-#| label: image-Recta
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   Representación de la recta en planos acotados. R recta en el espacio, r proyección de R en el plano
-#| fig-alt: |
-#|   Representación de la recta en planos acotados.
 
-knitr::include_graphics("../images/recta_planosAcotados.gif", dpi = 270)
-```
-*Se denomina **traza de la recta (t)** al punto de cota cero de la misma, esto es, la intersección de la recta con el plano de referencia.*
+Si unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la figura se observa la recta R definida por los puntos T y A, con su proyección r.
 
-*La **Equidistancia (e)** es la distancia vertical que separa dos puntos de cota consecutiva.*
+::: {#fig-recta}
+<div style="max-width:640px; margin:0 auto;">
+<svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" style="width:96%; display:block; margin:0 auto;">
+<defs><marker id="fr-flecha-rojo" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d00000"/></marker><marker id="fr-flecha-verde" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#14532d"/></marker><marker id="fr-flecha-naranja" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e8862c"/></marker><marker id="fr-flecha-gris" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#909090"/></marker><marker id="fr-flecha-negro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1a1a1a"/></marker><marker id="fr-flecha-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/></marker></defs>
+<polygon points="28.4,279 428.4,279 504,225 104,225" fill="#d2b077" stroke="#1a1a1a" stroke-width="1.6" stroke-linejoin="round" fill-opacity="0.9"/>
+<circle cx="397.2" cy="159" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="405.2" y="155" font-size="14" fill="#1a1a1a" font-weight="700">A</text>
+<line x1="397.2" y1="237" x2="397.2" y2="159" stroke="#909090" stroke-width="1.3" stroke-dasharray="4,3"/>
+<circle cx="397.2" cy="237" r="3.2" fill="#e8a33d" stroke="#7a5510" stroke-width="1.4"/>
+<text x="404.2" y="251" font-size="12.5" fill="#2d2d8a" font-weight="700">a(3)</text>
+<line x1="103.1" y1="268.5" x2="397.2" y2="159" stroke="#1a1a1a" stroke-width="2.6"/>
+<text x="236.1" y="203.8" font-size="14" fill="#1a1a1a" font-weight="700" font-style="italic">R</text>
+<line x1="103.1" y1="268.5" x2="397.2" y2="237" stroke="#14532d" stroke-width="2.6"/>
+<text x="250.1" y="268.8" font-size="14" fill="#14532d" font-weight="700" font-style="italic">r</text>
+<circle cx="103.1" cy="268.5" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="97.1" y="286.5" font-size="12.5" fill="#2d2d8a" font-weight="700">t(0)</text>
+<text x="93.1" y="258.5" font-size="14" fill="#1a1a1a" font-weight="700">T</text>
+<line x1="397.2" y1="237" x2="397.2" y2="159" stroke="#d00000" stroke-width="2.4"/>
+<text x="407.2" y="202" font-size="12.5" fill="#d00000" font-weight="700">dV = 3 m</text>
+<text x="210.1" y="278.8" font-size="12.5" fill="#14532d" font-weight="700">dH = 300 m</text>
+<path d="M 154.8,263 A 52 52 0 0 0 151.8,250.4" fill="none" stroke="#e8862c" stroke-width="2"/>
+<text x="165.1" y="262.5" font-size="14" fill="#e8862c" font-weight="700">α</text>
+</svg>
+</div>
 
-*El **Intervalo de la recta R (i)** es la distancia horizontal que hay que recorrer para subir o bajar un valor de la equidistancia.*
+La recta en planos acotados: R en el espacio, r su proyección, t la traza (cota 0) y el triángulo dV/dH que define la pendiente.
+:::
 
-*La **Pendiente de la recta** es la relación entre las distancias vertical y horizontal de dos de sus puntos o lo que es lo mismo, la relación entre la equidistancia y el intervalo. Por lo tanto, es la tangente trigonométrica del ángulo (α) que la recta forma con el plano horizontal o de comparación.  Se puede expresar en grados (º), en tanto por ciento y en tanto por uno:*
+Se denomina **traza de la recta (t)** al punto de cota cero de la misma, esto es, la intersección de la recta con el plano de referencia.
+
+La **equidistancia (e)** es la distancia vertical que separa dos puntos de cota consecutiva de la serie.
+
+El **intervalo de la recta (i)** es la distancia horizontal que hay que recorrer para subir o bajar un valor de la equidistancia.
+
+La **pendiente de la recta** es la relación entre las distancias vertical y horizontal de dos de sus puntos o, lo que es lo mismo, la relación entre la equidistancia y el intervalo. Es, por lo tanto, la tangente trigonométrica del ángulo (α) que la recta forma con el plano horizontal o de comparación. Se puede expresar en grados (º), en tanto por ciento y en tanto por uno:
+
 $$
 \text{Pendiente} = \frac{dV}{dH} = \frac{e}{i} = \tan \alpha
 $$
@@ -72,10 +117,11 @@ $$
 ::: callout-note
 ## Nota
 
-Por tanto, una recta está determinada si conoce la dirección de su proyección horizontal, un punto de la misma, el sentido en que la recta asciende y su pendiente. 
+Por tanto, una recta está determinada si se conoce la dirección de su proyección horizontal, un punto de la misma, el sentido en que la recta asciende y su pendiente.
 :::
 
 En el siguiente ejemplo, la equidistancia es igual a 2, el intervalo (i) es igual a 6 y la pendiente se calcula como:
+
 $$
 \text{Pendiente} = \frac{2}{6} = 0.333
 $$
@@ -83,72 +129,176 @@ $$
 $$
 \text{Expresada en tanto por ciento} = 33.3\%
 $$
-```{r}
-#| label: image-Pendiente
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   Ejemplo de cálculo de la pendiente de la recta.
-#| fig-alt: |
-#|   Ejemplo de cálculo de la pendiente de la recta.
 
-knitr::include_graphics("../images/ejemplo_pendiente.png", dpi = 270)
-```
-También podría calcularse como 6/18 o cualquier otra combinación conocida de dos puntos de la recta, puesto que al tener  pendiente uniforme la relación es la misma entre cualquiera de sus puntos.
+::: {#fig-pendiente}
+<div style="max-width:520px; margin:0 auto;">
+<svg viewBox="0 0 560 190" xmlns="http://www.w3.org/2000/svg" style="width:80%; display:block; margin:0 auto;">
+<defs><marker id="pe-flecha-verde" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#14532d"/></marker></defs>
+<line x1="7.2" y1="160.6" x2="552.8" y2="51.4" stroke="#c9c9c9" stroke-width="4" stroke-linecap="round"/>
+<circle cx="60" cy="150" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="48" y="170" font-size="12.5" fill="#2d2d8a" font-weight="700">(500)</text>
+<circle cx="206.7" cy="120.7" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="194.7" y="140.7" font-size="12.5" fill="#2d2d8a" font-weight="700">(502)</text>
+<circle cx="353.3" cy="91.3" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="341.3" y="111.3" font-size="12.5" fill="#2d2d8a" font-weight="700">(504)</text>
+<circle cx="500" cy="62" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="488" y="82" font-size="12.5" fill="#2d2d8a" font-weight="700">(506)</text>
+<line x1="206.7" y1="107.7" x2="353.3" y2="78.3" stroke="#14532d" stroke-width="2.4" marker-start="url(#pe-flecha-verde)" marker-end="url(#pe-flecha-verde)"/>
+<text x="260" y="74" font-size="13" fill="#14532d" font-weight="700">i = 6 m</text>
+<text x="16" y="182" font-size="12.5" fill="#555">Equidistancia = 2 m: pendiente = 2/6 = 33,3 %</text>
+</svg>
+</div>
+
+Ejemplo de cálculo de la pendiente de una recta graduada.
+:::
+
+También podría calcularse como 6/18 o cualquier otra combinación conocida de dos puntos de la recta, puesto que al tener pendiente uniforme la relación es la misma entre cualquiera de sus puntos.
 
 #### Posiciones particulares de la recta
 
-*Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipos:*
+Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipos:
 
--   **Oblicua**: *la recta r cortará el plano en el punto de su traza.*
--   **Horizontal o paralela**: *todos sus puntos tienen la misma cota, es paralela al plano de comparación. Su pendiente es cero.*
--   **Vertical o perpendicular**: *La proyección de la recta es un punto. Su pendiente es infinita.*
+-   **Oblicua**: la recta corta el plano en el punto de su traza. Es la posición general.
+-   **Horizontal o paralela**: todos sus puntos tienen la misma cota. Su pendiente es cero y su proyección está en verdadera magnitud.
+-   **Vertical o perpendicular**: la proyección de la recta es un punto. Su pendiente es infinita.
 
-```{r}
-#| label: image-posicionesrecta
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   Posiciones de la recta. 
-#| fig-alt: |
-#|   Posiciones de la recta.
+::: {#fig-posiciones-recta}
+<div style="max-width:660px; margin:0 auto;">
+<svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" style="width:98%; display:block; margin:0 auto;">
+<polygon points="18,190 78,130 218,130 158,190" fill="#d2b077" stroke="#1a1a1a" stroke-width="1.4" stroke-linejoin="round" fill-opacity="0.85"/>
+<line x1="63" y1="175" x2="180" y2="52" stroke="#1a1a1a" stroke-width="2.4"/>
+<line x1="63" y1="175" x2="180" y2="145" stroke="#14532d" stroke-width="2.4"/>
+<line x1="180" y1="52" x2="180" y2="145" stroke="#909090" stroke-width="1.2" stroke-dasharray="4,3"/>
+<circle cx="63" cy="175" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="50" y="172" font-size="12" fill="#1a1a1a" font-weight="700" font-style="italic">t</text>
+<text x="118" y="216" font-size="13" fill="#2d2d8a" font-weight="700" text-anchor="middle">OBLICUA</text>
+<text x="118" y="232" font-size="10.5" fill="#666" text-anchor="middle">posición general</text>
+<polygon points="238,190 298,130 438,130 378,190" fill="#d2b077" stroke="#1a1a1a" stroke-width="1.4" stroke-linejoin="round" fill-opacity="0.85"/>
+<line x1="276" y1="92" x2="396" y2="74" stroke="#1a1a1a" stroke-width="2.4"/>
+<line x1="291" y1="172" x2="411" y2="154" stroke="#14532d" stroke-width="2.4"/>
+<line x1="276" y1="92" x2="291" y2="172" stroke="#909090" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="396" y1="74" x2="411" y2="154" stroke="#909090" stroke-width="1.1" stroke-dasharray="4,3"/>
+<text x="326" y="66" font-size="11.5" fill="#1a1a1a" font-weight="700">A</text>
+<text x="404" y="62" font-size="11.5" fill="#1a1a1a" font-weight="700">B</text>
+<text x="332" y="186" font-size="11" fill="#2d2d8a" font-weight="700">a(3)  b(3)</text>
+<text x="338" y="216" font-size="13" fill="#2d2d8a" font-weight="700" text-anchor="middle">HORIZONTAL</text>
+<text x="338" y="232" font-size="10.5" fill="#666" text-anchor="middle">pendiente = 0 · proyección en V.M.</text>
+<polygon points="458,190 518,130 658,130 598,190" fill="#d2b077" stroke="#1a1a1a" stroke-width="1.4" stroke-linejoin="round" fill-opacity="0.85"/>
+<line x1="558" y1="40" x2="558" y2="158" stroke="#1a1a1a" stroke-width="2.4"/>
+<circle cx="558" cy="158" r="3.4" fill="#e8a33d" stroke="#7a5510" stroke-width="1.4"/>
+<text x="565" y="172" font-size="11" fill="#2d2d8a" font-weight="700">r = un punto</text>
+<text x="558" y="216" font-size="13" fill="#2d2d8a" font-weight="700" text-anchor="middle">VERTICAL</text>
+<text x="558" y="232" font-size="10.5" fill="#666" text-anchor="middle">pendiente = ∞ · proyección: un punto</text>
+</svg>
+</div>
 
-knitr::include_graphics("../images/posiciones_recta.png", dpi = 270)
-```
+Las tres posiciones de la recta respecto del plano de comparación.
+:::
+
 #### Representación del plano
-*Rectas singulares del plano:*
 
--   **Horizontales del plano**: *Se denominan así las rectas del plano cuyos puntos tienen la misma cota. Para determinarlas bastará unir los puntos del plano que tengan la misma cota. Como todas las horizontales del plano son paralelas entre sí sus proyecciones también lo serán.*
+Rectas singulares del plano:
 
--   **Traza del plano**: *Se denomina así a la horizontal de cota cero del plano o, lo que es lo mismo, la intersección de ese plano con el de proyección.*
+-   **Horizontales del plano (líneas de nivel)**: se denominan así las rectas del plano cuyos puntos tienen la misma cota. Para determinarlas bastará unir los puntos del plano que tengan la misma cota. Como todas las horizontales del plano son paralelas entre sí, sus proyecciones también lo serán.
 
--   **Recta de máxima pendiente (LMP)**: *Se denomina así a la recta del plano que forma el mayor ángulo con el plano de proyección. Como las rectas horizontales del plano son paralelas al plano de proyección la recta de máxima pendiente será perpendicular a dichas horizontales.*
-```{r}
-#| label: image-plano
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   El plano en el sistema de planos acotados. 
-#| fig-alt: |
-#|   El plano en el sistema de planos acotados. 
+-   **Traza del plano**: se denomina así a la horizontal de cota cero del plano o, lo que es lo mismo, la intersección de ese plano con el de proyección.
 
-knitr::include_graphics("../images/plano_planosAcotados.gif", dpi = 270)
-```
+-   **Recta de máxima pendiente (l.m.p.)**: se denomina así a la recta del plano que forma el mayor ángulo con el plano de proyección. Como las rectas horizontales del plano son paralelas al plano de proyección, la recta de máxima pendiente será perpendicular a dichas horizontales.
+
+::: {#fig-plano}
+<div style="max-width:680px; margin:0 auto;">
+<svg viewBox="0 168 660 178" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block; margin:0 auto;">
+<defs><marker id="fp-flecha-rojo" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d00000"/></marker><marker id="fp-flecha-verde" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#14532d"/></marker><marker id="fp-flecha-naranja" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e8862c"/></marker><marker id="fp-flecha-gris" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#909090"/></marker><marker id="fp-flecha-negro" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#1a1a1a"/></marker><marker id="fp-flecha-teal" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#0f766e"/></marker></defs>
+<polygon points="17.1,328.5 562.1,328.5 656.6,261 111.6,261" fill="#d2b077" stroke="#1a1a1a" stroke-width="1.6" stroke-linejoin="round" fill-opacity="0.55"/>
+<polygon points="142.6,321 492.6,321 559.8,201 209.8,201" fill="#6f9fd8" stroke="#24537a" stroke-width="1.8" stroke-linejoin="round" fill-opacity="0.22"/>
+<text x="533.8" y="217" font-size="16" fill="#24537a" font-weight="700">P</text>
+<line x1="142.6" y1="321" x2="492.6" y2="321" stroke="#1a1a1a" stroke-width="3.4"/>
+<text x="357.6" y="339" font-size="12.5" fill="#1a1a1a" font-weight="700">traza de P (cota 0)</text>
+<line x1="159.4" y1="291" x2="509.4" y2="291" stroke="#2e9e40" stroke-width="3"/>
+<text x="517.4" y="295" font-size="12.5" fill="#d00000" font-weight="700">2</text>
+<text x="500.6" y="325" font-size="12.5" fill="#d00000" font-weight="700">0</text>
+<line x1="159.4" y1="309" x2="509.4" y2="309" stroke="#909090" stroke-width="1.0" stroke-dasharray="5,4"/>
+<line x1="176.2" y1="261" x2="526.2" y2="261" stroke="#2e9e40" stroke-width="3"/>
+<text x="534.2" y="265" font-size="12.5" fill="#d00000" font-weight="700">4</text>
+<line x1="176.2" y1="297" x2="526.2" y2="297" stroke="#909090" stroke-width="1.0" stroke-dasharray="5,4"/>
+<line x1="193" y1="231" x2="543" y2="231" stroke="#2e9e40" stroke-width="3"/>
+<text x="551" y="235" font-size="12.5" fill="#d00000" font-weight="700">6</text>
+<line x1="193" y1="285" x2="543" y2="285" stroke="#909090" stroke-width="1.0" stroke-dasharray="5,4"/>
+<line x1="209.8" y1="201" x2="559.8" y2="201" stroke="#2e9e40" stroke-width="3"/>
+<text x="567.8" y="205" font-size="12.5" fill="#d00000" font-weight="700">8</text>
+<line x1="209.8" y1="273" x2="559.8" y2="273" stroke="#909090" stroke-width="1.0" stroke-dasharray="5,4"/>
+<text x="205.8" y="191" font-size="12" fill="#2e9e40" font-weight="700">líneas de nivel del plano</text>
+<line x1="312.6" y1="321" x2="379.8" y2="201" stroke="#d00000" stroke-width="3"/>
+<text x="356.2" y="263" font-size="12.5" fill="#d00000" font-weight="700" font-style="italic">l.m.p.</text>
+<line x1="312.6" y1="321" x2="379.8" y2="273" stroke="#d00000" stroke-width="1.4" stroke-dasharray="5,4"/>
+<text x="324.6" y="307" font-size="14" fill="#e8862c" font-weight="700">α</text>
+<line x1="159.4" y1="291" x2="159.4" y2="309" stroke="#d00000" stroke-width="2.6"/>
+<line x1="176.2" y1="261" x2="176.2" y2="279" stroke="#d00000" stroke-width="2.6"/>
+<line x1="142.6" y1="321" x2="159.4" y2="309" stroke="#14532d" stroke-width="2.6"/>
+<text x="134.6" y="291" font-size="12" fill="#d00000" font-weight="700" text-anchor="end">equidistancia (dV)</text>
+<text x="134.6" y="307" font-size="12" fill="#14532d" font-weight="700" text-anchor="end">intervalo (dH)</text>
+<line x1="132.6" y1="295" x2="145.4" y2="310" stroke="#909090" stroke-width="0"/>
+</svg>
+</div>
+
+El plano P en el sistema acotado: traza, líneas de nivel, línea de máxima pendiente, equidistancia e intervalo.
+:::
+
+::: {#fig-plano-planta}
+<div style="max-width:480px; margin:0 auto;">
+<svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" style="width:80%; display:block; margin:0 auto;">
+<line x1="120" y1="60" x2="513.9" y2="129.5" stroke="#1a1a1a" stroke-width="3.2"/>
+<text x="505.9" y="121.5" font-size="12.5" fill="#1a1a1a" font-weight="700">traza (0)</text>
+<line x1="130.4" y1="119.1" x2="524.3" y2="188.5" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="528.3" y="192.5" font-size="12.5" fill="#d00000" font-weight="700">2</text>
+<line x1="140.8" y1="178.2" x2="534.8" y2="247.6" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="538.8" y="251.6" font-size="12.5" fill="#d00000" font-weight="700">4</text>
+<line x1="151.3" y1="237.3" x2="545.2" y2="306.7" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="549.2" y="310.7" font-size="12.5" fill="#d00000" font-weight="700">6</text>
+<line x1="161.7" y1="296.4" x2="555.6" y2="365.8" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="559.6" y="369.8" font-size="12.5" fill="#d00000" font-weight="700">8</text>
+<line x1="333" y1="77.5" x2="383" y2="361.1" stroke="#d00000" stroke-width="3"/>
+<text x="389" y="363.1" font-size="12.5" fill="#d00000" font-weight="700" font-style="italic">l.m.p.</text>
+<circle cx="336.7" cy="98.2" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="347.1" cy="157.3" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="357.5" cy="216.4" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="367.9" cy="275.5" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="378.3" cy="334.6" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<line x1="373.3" y1="219.2" x2="383.7" y2="278.2" stroke="#14532d" stroke-width="3"/>
+<text x="390.5" y="250.7" font-size="13" fill="#14532d" font-weight="700">i = 6,67 m</text>
+<text x="40" y="390" font-size="12.5" fill="#555">Equidistancia = 2 m · Pendiente del plano = 30 % · Escala 1:500</text>
+</svg>
+</div>
+
+El mismo plano en el papel: la proyección graduada de su línea de máxima pendiente con las líneas de nivel perpendiculares.
+:::
+
 ::: callout-note
 ## Nota
 
-En el Sistema Acotado los planos se representan, en general, por la proyección graduada de su recta de máxima pendiente. La pendiente de un plano se mide por la de su línea de máxima pendiente.
+En el sistema acotado los planos se representan, en general, por la proyección graduada de su recta de máxima pendiente. La pendiente de un plano se mide por la de su línea de máxima pendiente: en un plano existen infinitas pendientes, entre cero (sus horizontales) y la de la l.m.p.
 :::
 
 ### Material complementario
 
-<a href="https://www.balcazar.net/entrada.htm  " target="_blank">Web Agustín Balcázar</a>
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/acotados-2-fundamentos.html" target="_blank">Fundamentos del sistema de planos acotados: punto, recta y plano; graduación de rectas</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://www.balcazar.net/entrada.htm" target="_blank">Web Agustín Balcázar</a>
 
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-Vídeos y web sobre el sistema de planos Acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.
+
+Vídeos y web sobre el sistema de planos acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.
+
 </p>
 
-<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/  " target="_blank">Web de dibujo técnico</a>
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.
+
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas; la ventaja es que el contenido está bien estructurado.
+
 </p>

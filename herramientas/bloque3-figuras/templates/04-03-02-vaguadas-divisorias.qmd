@@ -1,0 +1,94 @@
+# Vaguadas y divisorias {#sec-vaguadas-divisorias .unnumbered}
+
+## Vaguadas y divisorias
+
+### Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>De la cubierta al terreno: limatesa y limahoya</li>
+
+<li>Vaguadas</li>
+
+<li>Divisorias</li>
+
+<li>Cómo identificarlas en el plano</li>
+
+</ol>
+
+</p>
+:::
+
+### Apuntes
+
+#### De la cubierta al terreno
+
+Los faldones de una cubierta son planos que se cortan, y sus intersecciones tienen nombre propio: la **limatesa** es la arista saliente por la que el agua se separa (el caballete es el caso más claro) y la **limahoya** es el rincón entrante por el que el agua se junta y corre.
+
+::: {#fig-limatesa}
+<div style="max-width:560px; margin:0 auto;">
+<img src="../images/tejados_limatesa.png" style="width:100%;"/>
+</div>
+
+Las cubiertas de la E.T.S.I. de Montes vistas desde el aire: las intersecciones de los faldones son limatesas (aristas salientes) y limahoyas (rincones entrantes). Imagen: Google Maps.
+:::
+
+En el terreno ocurre exactamente lo mismo, pero las "cubiertas" son las laderas y las líneas se llaman **divisorias** y **vaguadas**.
+
+#### Vaguadas
+
+La **vaguada** (o talweg) es la línea que **recoge las aguas de escorrentía**: une los puntos más bajos de un valle, y por ella acaba corriendo el agua que cae en las laderas que la flanquean. Es el germen de los arroyos y ríos.
+
+#### Divisorias
+
+La **divisoria** es la línea que **separa las aguas** de dos cuencas vecinas: sigue las crestas del terreno, uniendo los puntos más altos. Una gota que caiga a un lado de la divisoria acabará en una cuenca; una gota que caiga al otro, en la contraria.
+
+#### Cómo identificarlas en el plano
+
+Sin cotas es imposible distinguir una vaguada de una divisoria: ambas son líneas aproximadamente perpendiculares a las curvas de nivel. Con las cotas, la lectura es directa:
+
+-   En una **vaguada**, las curvas de nivel forman uves cuyo vértice "apunta" **aguas arriba** (hacia las cotas altas).
+-   En una **divisoria**, las uves apuntan **aguas abajo** (hacia las cotas bajas).
+
+::: {#fig-vaguadas-divisorias}
+<div style="max-width:520px; margin:0 auto;">
+{{SVG:pl3_vaguadas_static}}
+</div>
+
+Vaguadas (azul) y divisorias (rojo, a trazos) del terreno conductor del bloque: ambas familias se cruzan en el collado y son perpendiculares a las curvas de nivel.
+:::
+
+Sobre un modelo digital del terreno sombreado, la diferencia se aprecia de un vistazo:
+
+::: {#fig-mdt-vaguada}
+<div style="max-width:560px; margin:0 auto;">
+<img src="../images/mdt_vaguada_divisoria.png" style="width:100%;"/>
+</div>
+
+Sobre el modelo sombreado con cotas, la línea azul recoge el agua (vaguada) y la roja la separa (divisoria).
+:::
+
+::: callout-note
+## Nota
+
+Vaguadas y divisorias son **líneas de máxima pendiente** del terreno: por eso cortan perpendicularmente a las curvas de nivel. Identificarlas es el primer paso de casi cualquier análisis hidrológico de un plano topográfico.
+:::
+
+### Material complementario
+
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/acotados-3-plano-vaguadas-divisorias.html" target="_blank">El plano y el terreno: definición de planos, vaguadas y divisorias</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas; la ventaja es que el contenido está bien estructurado.
+
+</p>

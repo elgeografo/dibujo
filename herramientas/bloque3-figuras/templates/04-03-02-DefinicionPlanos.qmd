@@ -1,0 +1,109 @@
+# Definición de planos {#sec-DefinicionPlanos .unnumbered}
+
+## Definición de planos
+
+### Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Recta contenida en un plano</li>
+
+<li>Formas de definir un plano</li>
+
+<li>Intersección de planos</li>
+
+</ol>
+
+</p>
+:::
+
+### Apuntes
+
+#### Recta contenida en un plano
+
+Una recta pertenece a un plano cuando al menos dos de sus puntos están contenidos en él. Por lo tanto, en las intersecciones de la recta con las líneas de nivel del plano, la cota de la recta es la de la línea de nivel correspondiente: la recta queda **graduada por pertenencia**.
+
+::: {#fig-pertenencia}
+<div style="max-width:480px; margin:0 auto;">
+{{SVG:pl3_pertenencia_static}}
+</div>
+
+Recta s contenida en un plano graduado: en los cruces con las líneas de nivel toma las cotas del plano.
+:::
+
+#### Formas de definir un plano
+
+Un plano queda determinado por:
+
+-   **tres puntos** no alineados,
+-   **un punto y una recta** que no pase por dicho punto,
+-   **dos rectas**, concurrentes o paralelas.
+
+En el sistema acotado, todas se reducen en la práctica a la misma construcción. El caso más directo es conocer **una línea de nivel y la pendiente** del plano: se calcula el intervalo, se gradúa la línea de máxima pendiente (perpendicular a las líneas de nivel) y se trazan las demás líneas de nivel en paralelo.
+
+::: {#fig-definir-pendiente}
+<div style="max-width:480px; margin:0 auto;">
+{{SVG:pl3_definir1_static}}
+</div>
+
+Plano definido por una línea de nivel y la pendiente: se calcula el intervalo y se gradúa la l.m.p.
+:::
+
+Si el dato es **una recta graduada y un punto** con cota, la línea de nivel que pasa por el punto se obtiene uniéndolo con el punto de igual cota de la recta; las demás son paralelas a ella por los puntos de cota de la recta.
+
+::: {#fig-definir-recta-punto}
+<div style="max-width:480px; margin:0 auto;">
+{{SVG:pl3_definir2_static}}
+</div>
+
+Plano definido por una recta graduada y un punto: la línea de nivel del punto pasa por la cota igual de la recta.
+:::
+
+Y si el dato son **tres puntos no alineados**, se unen dos de ellos, se gradúa la recta resultante y se está en el caso anterior.
+
+::: {#fig-definir-tres-puntos}
+<div style="max-width:480px; margin:0 auto;">
+{{SVG:pl3_definir3_static}}
+</div>
+
+Plano definido por tres puntos: uniendo a y b se obtiene una recta graduada y se reduce al caso anterior.
+:::
+
+#### Intersección de planos
+
+La intersección de dos planos es una recta: la que une los puntos donde se cortan las **líneas de nivel de igual cota** de ambos planos. La recta intersección queda además graduada automáticamente. Esta construcción es la base de las **explanaciones** que se estudian al final del bloque.
+
+::: {#fig-interseccion-planos}
+<div style="max-width:500px; margin:0 auto;">
+{{SVG:pl3_interseccion_static}}
+</div>
+
+Intersección de dos planos graduados: la recta que une los cruces de las líneas de nivel de igual cota.
+:::
+
+### Material complementario
+
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/acotados-3-plano-vaguadas-divisorias.html" target="_blank">El plano y el terreno: definición de planos, vaguadas y divisorias</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://www.balcazar.net/entrada.htm" target="_blank">Web Agustín Balcázar</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Vídeos y web sobre el sistema de planos acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.
+
+</p>
+
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas; la ventaja es que el contenido está bien estructurado.
+
+</p>

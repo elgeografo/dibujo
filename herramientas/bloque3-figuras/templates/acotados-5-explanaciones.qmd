@@ -1,0 +1,135 @@
+---
+title: "Modificación del terreno"
+subtitle: "Explanaciones: plataformas horizontales y en pendiente"
+author: "Expresión Gráfica · E.T.S.I. Montes, Forestal y del Medio Natural · UPM"
+---
+
+## Índice
+
+::: {.texto-azul style="font-size:0.78em; margin-top:0.8em;"}
+-   El problema: apoyar una **plataforma** en un terreno
+-   **Desmonte**, **terraplén** y **línea de paso**
+-   **Plataforma horizontal** a una cota dada: el método
+-   **Plataformas en pendiente**: el método de los conos
+-   Un ejemplo desarrollado
+:::
+
+## El problema, visto en sección
+
+:::: columns
+::: {.column width="64%"}
+{{SVG:exp_seccion}}
+:::
+
+::: {.column width="36%"}
+::: {.texto-azul style="font-size:0.6em; margin-top:0.6em;"}
+Queremos apoyar una **plataforma** (una explanada, una pista, una caseta…) en un terreno natural.
+
+::: {.fragment fragment-index="2"}
+Donde el terreno está **por encima**, excavo: **desmonte**, con su talud (aquí 1:1).
+:::
+
+::: {.fragment fragment-index="3"}
+Donde está **por debajo**, relleno: **terraplén**, con un talud más tendido (aquí 2:3), porque la tierra aportada es menos estable.
+:::
+
+::: {.fragment fragment-index="4"}
+Los puntos del borde donde el terreno está **justo a la cota** de la plataforma forman la **línea de paso** de desmonte a terraplén.
+:::
+:::
+:::
+::::
+
+## Plataforma horizontal a una cota dada
+
+:::: columns
+::: {.column width="58%"}
+{{SVG:exp_planta}}
+:::
+
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.54em; margin-top:0.3em;"}
+Plataforma a **cota 108** en el collado de nuestro terreno.
+
+::: {.fragment fragment-index="1"}
+1.  Determinar las zonas de **desmonte y terraplén** = línea de paso (borde donde terreno y plataforma tienen la misma cota).
+:::
+
+::: {.fragment fragment-index="2"}
+2.  Por cada borde, hacer pasar un **plano de talud**: el de **desmonte** sube (1:1)… — sus líneas de nivel son paralelas al borde, separadas el **intervalo** del talud.
+:::
+
+::: {.fragment fragment-index="3"}
+3.  …y el de **terraplén** baja (2:3). En las **esquinas**, el talud es un **cono** (líneas de nivel: arcos).
+:::
+
+::: {.fragment fragment-index="4"}
+4.  Calcular la **intersección de cada plano con el terreno** (unir los cruces de líneas de nivel de igual cota) y el **cierre entre taludes**: las líneas de encuentro.
+:::
+:::
+:::
+::::
+
+## Plataformas en pendiente
+
+:::: columns
+::: {.column width="58%"}
+{{SVG:exp_conos}}
+:::
+
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.56em; margin-top:0.4em;"}
+Si el borde de la plataforma **tiene pendiente** (una pista, un camino), sus puntos ya no están a una cota única: el borde es una **recta graduada**.
+
+::: {.fragment fragment-index="1"}
+El talud que se apoya en él es la superficie **tangente a los conos de talud** con vértice en los puntos del borde y radio su intervalo.
+:::
+
+::: {.fragment fragment-index="2"}
+Cada **línea de nivel del talud** es la **tangente** desde un punto del borde a la circunferencia base del cono del punto contiguo.
+:::
+
+::: {.fragment fragment-index="3"}
+Las demás son **paralelas** por los puntos graduados. El intervalo del desmonte y el del terraplén son **distintos**: cada talud tiene su pendiente.
+:::
+:::
+:::
+::::
+
+## La misma idea, en perspectiva
+
+<img src="media/acotados-explanaciones/conos-clasico.png" style="max-height:420px; display:block; margin:10px auto; border:1px solid #ccc;"/>
+
+::: {.texto-azul style="font-size:0.58em; text-align:center; margin-top:0.4em;"}
+La figura clásica: entre las horizontales 10 y 11 del borde en pendiente, el talud de **desmonte** abre hacia arriba con su intervalo i<sub>d</sub> y el de **terraplén** hacia abajo con i<sub>t</sub>, ambos tangentes a los conos.
+:::
+
+## Un ejemplo desarrollado
+
+:::: columns
+::: {.column width="46%"}
+<img src="media/acotados-explanaciones/plataforma-pendiente-cad.png" style="max-height:580px; width:96%; display:block; margin:0 auto; border:1px solid #ccc;"/>
+:::
+
+::: {.column width="54%"}
+::: {.texto-azul style="font-size:0.54em; margin-top:0.4em;"}
+Plataforma **en pendiente** (rasante A→B) resuelta en AutoCAD sobre un terreno real:
+
+1.  **Línea de paso**: intersección del plano de la plataforma con el terreno (azul, a trazos).
+2.  Plano de **desmonte/terraplén** por cada borde. Si el borde es **horizontal**, como en la plataforma horizontal; si **tiene pendiente**, con el **cono**: desde el punto contiguo del borde, tangente a la base (rojo desmonte, morado terraplén).
+3.  **Líneas de nivel de los planos** de talud, paralelas a la tangente hallada.
+4.  **Intersección de cada plano con el terreno** y de los planos entre sí.
+5.  **Cierre de los taludes**: la intersección de tres planos es un único punto.
+:::
+:::
+::::
+
+## Para explorar en 3D
+
+::: {.texto-azul style="font-size:0.75em; margin-top:1.2em;"}
+Dos escenas interactivas (Storyteller) para girar y entender las explanaciones:
+
+-   [Explicación teórica de la explanada **horizontal**](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/00-ejemplo-basico)
+-   [Explicación teórica de la explanada **en pendiente**](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/00-ejemplo-basico-pendiente)
+-   [Ejemplo de explanada horizontal con terreno](https://webserver02.leftcape.com/08_TEST/MJ/)
+:::

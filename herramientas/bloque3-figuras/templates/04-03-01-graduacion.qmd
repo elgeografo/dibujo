@@ -1,0 +1,133 @@
+# Graduación de rectas {#sec-graduacion .unnumbered}
+
+## Graduación de rectas
+
+### Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Definición</li>
+
+<li>Casos</li>
+
+</ol>
+
+</p>
+:::
+
+### Apuntes
+
+#### Definición
+
+La graduación de rectas consiste en señalar sobre su proyección los puntos cuyas cotas pertenezcan a la serie definida por la equidistancia o cota entera. Para ello será suficiente con determinar dos puntos de cota entera (o que sean de la serie de la equidistancia), lo que permitirá deducir el intervalo; una vez conocido éste, será posible situar con toda exactitud cualquier punto de cota entera de la recta.
+
+#### Casos
+
+-   **Caso 1:** me dan la proyección de la recta y la cota de dos de los puntos, y los dos corresponden a la serie.
+
+**Ejemplo:** suponiendo que la equidistancia es **10 metros** y las cotas de los puntos A y B son 500 y 540, respectivamente. La serie de la equidistancia es: 0, 10, …, 500, **510, 520, 530,** 540, … Es decir, las cotas de A y B corresponden a la serie de la equidistancia. Por lo tanto, debo graduar la recta y localizar los puntos de cota 510, 520 y 530. Para esto, divido el segmento ab en partes iguales. ¿En cuántas partes?
+
+$$
+\frac{540 - 500}{10} = \frac{40}{10} = 4
+$$
+
+$$
+\text{En 4 partes iguales.}
+$$
+
+::: {#fig-graduacion-caso1}
+<div style="max-width:620px; margin:0 auto;">
+{{SVG:grad_caso1_static}}
+</div>
+
+Caso 1 de graduación de rectas: división de ab en cuatro partes iguales (construcción de Thales en gris).
+:::
+
+¿Cuál es el **intervalo** de esta recta? Se mide sobre la proyección de la recta: <span style="color:green;">i</span> = 35 m.
+
+¿Qué pendiente tiene esta recta?
+
+$$
+\text{Pendiente} = \frac{\textcolor{red}{\text{equidistancia}}}{\textcolor{green}{\text{intervalo}}}
+$$
+
+$$
+\text{Pendiente} = \frac{\textcolor{red}{\text{10}}}{\textcolor{green}{\text{35}}}
+$$
+
+$$
+\text{Pendiente} = 28.57\%
+$$
+
+-   **Caso 2:** me dan la proyección de la recta y la cota de dos de los puntos, pero al menos uno no pertenece a la serie.
+
+**Ejemplo:** suponiendo que la equidistancia es **2 metros** y la cota de A y B es 509 y 516, respectivamente. Se debe graduar la recta, es decir, quiero situar las cotas 0, 2, …, **510, 512, 514, 516**.
+
+::: {#fig-graduacion-caso2}
+<div style="max-width:620px; margin:0 auto;">
+{{SVG:grad_caso2_static}}
+</div>
+
+Caso 2 de graduación de rectas: localización del primer punto de cota entera (510) y reducción al caso anterior.
+:::
+
+Si encuentro el punto de cota **510** estoy en el caso anterior. Para ello aplico la fórmula de la pendiente o una regla de tres simple, teniendo en cuenta que la distancia vertical es la diferencia de cotas entre A y B, y la distancia horizontal la mido sobre la proyección de la recta.
+
+Por lo tanto, si para subir desde la cota 509 a la cota 516 recorro horizontalmente 2.212 metros, ¿cuánto debo recorrer horizontalmente (x en la siguiente ecuación) para subir desde la cota 509 a la 510?
+
+$$
+\text{Pendiente} = \frac{\textcolor{red}{\text{DV}}}{\textcolor{green}{\text{DH}}}
+$$
+
+$$
+\text{Pendiente} = \frac{\textcolor{red}{\text{516-509}}}{\textcolor{green}{\text{2212}}} = \frac{\textcolor{red}{\text{510-509}}}{\textcolor{orange}{\text{x}}}
+$$
+
+$$
+\text{Despejando:} \quad \textcolor{orange}{\text{x}} = 316 \text{ m}
+$$
+
+Mido 316 m en la proyección de la recta desde el punto A y marco la cota 510. Ahora estoy en el caso anterior.
+
+-   **Caso 3:** me dan la proyección de la recta, la cota de un punto y la pendiente.
+
+**Ejemplo:** suponiendo que la equidistancia es **2 metros**, la cota del punto A es 610 y la pendiente es del 35 % ascendente, se debe graduar la recta, es decir, situar las cotas **612, 614, 616 …** Para ello aplico la fórmula de la pendiente y despejo el intervalo (i):
+
+::: {#fig-graduacion-caso3}
+<div style="max-width:620px; margin:0 auto;">
+{{SVG:grad_caso3_static}}
+</div>
+
+Caso 3 de graduación de rectas: cálculo del intervalo a partir de la pendiente y traslado sucesivo sobre la proyección.
+:::
+
+$$
+\begin{aligned}
+\text{Pendiente} &= \frac{\textcolor{red}{\text{e}}}{\textcolor{green}{\text{i}}} \\
+\\
+\frac{35}{100} &= \frac{\textcolor{red}{\text{2}}}{\textcolor{green}{\text{i}}} \\
+\\
+\text{Despejando:} \quad \textcolor{green}{\text{i}} &= 5.71 \text{ m}
+\end{aligned}
+$$
+
+Mido 5,71 m desde el punto A y marco la cota 612, y así sucesivamente voy subiendo un valor de la equidistancia.
+
+### Material complementario
+
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/acotados-2-fundamentos.html" target="_blank">Fundamentos del sistema de planos acotados: punto, recta y plano; graduación de rectas</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas; la ventaja es que el contenido está bien estructurado.
+
+</p>

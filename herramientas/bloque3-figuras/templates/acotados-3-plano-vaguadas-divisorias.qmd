@@ -1,0 +1,227 @@
+---
+title: "El plano y el terreno"
+subtitle: "Repaso · Definición de planos · Vaguadas y divisorias"
+author: "Expresión Gráfica · E.T.S.I. Montes, Forestal y del Medio Natural · UPM"
+---
+
+## Índice
+
+::: {.texto-azul style="font-size:0.78em; margin-top:0.8em;"}
+-   Repaso: equidistancia, intervalo y pendiente
+-   El plano: **recta contenida** en un plano
+-   Formas de **definir un plano**
+-   **Intersección** de planos
+-   Limatesa y limahoya
+-   **Vaguadas y divisorias**
+:::
+
+## Repaso: el plano graduado
+
+:::: columns
+::: {.column width="52%"}
+{{SVG:fund_plano_planta_static}}
+:::
+
+::: {.column width="48%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.5em;"}
+Un plano se representa por la **proyección graduada de su línea de máxima pendiente**.
+
+::: {.fragment}
+-   La **equidistancia** es la distancia vertical entre líneas de nivel consecutivas
+-   El **intervalo** es su separación horizontal, medida sobre la l.m.p.
+-   La **pendiente** del plano es la de su l.m.p.: $\text{pte} = e/i$
+:::
+
+::: {.fragment}
+Con e = 2 m y pendiente 30 %: $i = 2/0{,}30 = 6{,}67$ m — **constante** en todo el plano.
+:::
+:::
+:::
+::::
+
+## Recta contenida en un plano
+
+:::: columns
+::: {.column width="58%"}
+{{SVG:pl3_pertenencia}}
+:::
+
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.8em;"}
+Una recta **pertenece a un plano** cuando al menos dos de sus puntos están contenidos en él.
+
+::: {.fragment fragment-index="1"}
+Dibujo una recta s cualquiera sobre el plano graduado…
+:::
+
+::: {.fragment fragment-index="2"}
+…y en las **intersecciones con las líneas de nivel**, la cota de la recta es la de la línea de nivel del plano: la recta queda **graduada por pertenencia**.
+:::
+:::
+:::
+::::
+
+## Definir un plano: una línea de nivel y la pendiente
+
+:::: columns
+::: {.column width="58%"}
+{{SVG:pl3_definir1}}
+:::
+
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.8em;"}
+**Dato**: una línea de nivel del plano y su pendiente.
+
+::: {.fragment fragment-index="1"}
+Calculo el **intervalo** y **gradúo la l.m.p.** (perpendicular a la línea de nivel):
+
+$$i = \frac{e}{\text{pte}} = \frac{2}{0{,}30} = 6{,}67 \text{ m}$$
+:::
+
+::: {.fragment fragment-index="2"}
+Las demás líneas de nivel son **paralelas** por los puntos graduados.
+:::
+:::
+:::
+::::
+
+## Definir un plano: una recta y un punto
+
+:::: columns
+::: {.column width="58%"}
+{{SVG:pl3_definir2}}
+:::
+
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.8em;"}
+**Dato**: una recta graduada y un punto exterior con cota.
+
+::: {.fragment fragment-index="1"}
+La **línea de nivel** que pasa por el punto une m(2) con el punto de cota 2 de la recta.
+:::
+
+::: {.fragment fragment-index="2"}
+Las demás son **paralelas a ella** por los puntos de cota de la recta.
+
+Otras variantes del dato — **dos puntos** con cota y **un punto y la pendiente** — se reducen a ésta graduando primero.
+:::
+:::
+:::
+::::
+
+## Definir un plano: tres puntos
+
+:::: columns
+::: {.column width="58%"}
+{{SVG:pl3_definir3}}
+:::
+
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.8em;"}
+**Dato**: tres puntos no alineados — la forma clásica de definir un plano.
+
+::: {.fragment fragment-index="1"}
+**Uno dos puntos** y tengo una recta, que gradúo entre sus cotas (de 2 a 8 por tercios: 4 y 6).
+:::
+
+::: {.fragment fragment-index="2"}
+Con la recta graduada y el tercer punto… **se reduce al caso anterior**.
+:::
+:::
+:::
+::::
+
+## Intersección de planos
+
+:::: columns
+::: {.column width="56%"}
+{{SVG:pl3_interseccion}}
+:::
+
+::: {.column width="44%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.8em;"}
+La intersección de dos planos es una **recta**: la que une los puntos donde se cortan las **líneas de nivel de igual cota**.
+
+::: {.fragment fragment-index="1"}
+Gradúo el plano verde…
+:::
+::: {.fragment fragment-index="2"}
+…gradúo el plano rosa…
+:::
+::: {.fragment fragment-index="3"}
+…y **uno los cruces de igual cota**: 100 con 100, 105 con 105…
+
+La recta intersección queda **graduada** automáticamente.
+:::
+:::
+:::
+::::
+
+## Limatesa y limahoya
+
+:::: columns
+::: {.column width="58%"}
+<img src="media/acotados-vaguadas/tejados-etsi.png" style="width:100%; display:block; margin:6px auto; border:1px solid #ccc;"/>
+<div style="font-size:0.5em; color:#666; text-align:center;">La E.T.S.I. de Montes vista desde arriba (imagen: Google Maps)</div>
+:::
+
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.62em; margin-top:0.6em;"}
+Los faldones de una cubierta son **planos que se cortan**: sus intersecciones se ven perfectamente desde el aire.
+
+::: {.fragment}
+-   **Limatesa**: intersección por la que el agua **se separa** (caballete, aristas salientes)
+-   **Limahoya**: intersección por la que el agua **se junta** (rincones entrantes)
+:::
+
+::: {.fragment}
+En el terreno pasa exactamente lo mismo… pero con otros nombres: **divisorias** y **vaguadas**.
+:::
+:::
+:::
+::::
+
+## ¿Vaguada o divisoria?
+
+:::: columns
+::: {.column width="54%"}
+{{SVG:pl3_quiz}}
+:::
+
+::: {.column width="46%"}
+::: {.texto-azul style="font-size:0.62em; margin-top:0.8em;"}
+Sin las cotas **no se puede saber**: una vaguada y una divisoria son, ambas, líneas perpendiculares a las curvas de nivel.
+:::
+
+::: {.fragment}
+<img src="media/acotados-vaguadas/mdt-vaguada-divisoria.png" style="width:96%; display:block; margin:10px auto; border:1px solid #ccc;"/>
+<div style="font-size:0.5em; color:#666; text-align:center;">En un modelo real, con cotas y sombreado: la línea azul <b>recoge</b> el agua (vaguada) y la roja la <b>separa</b> (divisoria)</div>
+:::
+:::
+::::
+
+## Vaguadas y divisorias en nuestro terreno
+
+:::: columns
+::: {.column width="56%"}
+{{SVG:pl3_vaguadas}}
+:::
+
+::: {.column width="44%"}
+::: {.texto-azul style="font-size:0.6em; margin-top:0.5em;"}
+::: {.fragment fragment-index="1"}
+La **vaguada** es la línea que **recoge** las aguas: une los puntos donde las curvas de nivel "apuntan" **aguas arriba** (el vértice de la V señala hacia las cotas altas).
+:::
+
+::: {.fragment fragment-index="2"}
+La **divisoria** **separa** las aguas de dos cuencas: sigue las crestas, donde las curvas "apuntan" **aguas abajo**.
+:::
+
+::: {.fragment fragment-index="3"}
+Ambas **se cruzan en el collado**: el punto de paso entre las dos cimas.
+
+Vaguadas y divisorias son **perpendiculares a las curvas de nivel**: son líneas de máxima pendiente del terreno.
+:::
+:::
+:::
+::::

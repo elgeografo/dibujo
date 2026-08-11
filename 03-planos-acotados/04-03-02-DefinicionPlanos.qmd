@@ -2,34 +2,229 @@
 
 ## Definición de planos
 
+### Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Recta contenida en un plano</li>
+
+<li>Formas de definir un plano</li>
+
+<li>Intersección de planos</li>
+
+</ol>
+
+</p>
+:::
+
 ### Apuntes
 
+#### Recta contenida en un plano
+
+Una recta pertenece a un plano cuando al menos dos de sus puntos están contenidos en él. Por lo tanto, en las intersecciones de la recta con las líneas de nivel del plano, la cota de la recta es la de la línea de nivel correspondiente: la recta queda **graduada por pertenencia**.
+
+::: {#fig-pertenencia}
+<div style="max-width:480px; margin:0 auto;">
+<svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" style="width:78%; display:block; margin:0 auto;">
+<line x1="120" y1="55" x2="513.9" y2="124.5" stroke="#1a1a1a" stroke-width="3.2"/>
+<text x="509.9" y="116.5" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="end">traza (0)</text>
+<line x1="130.4" y1="114.1" x2="524.3" y2="183.5" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="529.3" y="187.5" font-size="12.5" fill="#d00000" font-weight="700">2</text>
+<line x1="140.8" y1="173.2" x2="534.8" y2="242.6" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="539.8" y="246.6" font-size="12.5" fill="#d00000" font-weight="700">4</text>
+<line x1="151.3" y1="232.3" x2="545.2" y2="301.7" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="550.2" y="305.7" font-size="12.5" fill="#d00000" font-weight="700">6</text>
+<line x1="161.7" y1="291.4" x2="555.6" y2="360.8" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="560.6" y="364.8" font-size="12.5" fill="#d00000" font-weight="700">8</text>
+<line x1="313.8" y1="72" x2="363.3" y2="352.7" stroke="#d00000" stroke-width="2.6"/>
+<circle cx="317" cy="89.7" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="327.4" cy="148.8" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="337.8" cy="207.9" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="348.2" cy="267" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="358.6" cy="326.1" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="369.3" y="354.7" font-size="12" fill="#d00000" font-weight="700" font-style="italic">l.m.p.</text>
+<line x1="453.6" y1="85.2" x2="416.3" y2="393.5" stroke="#6a4a92" stroke-width="2.8"/>
+<text x="463.6" y="87.2" font-size="14" fill="#6a4a92" font-weight="700" font-style="italic">s</text>
+<circle cx="443.4" cy="169.3" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="450.4" y="185.3" font-size="12.5" fill="#2d2d8a" font-weight="700">(2)</text>
+<circle cx="429.9" cy="281.4" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="436.9" y="297.4" font-size="12.5" fill="#2d2d8a" font-weight="700">(6)</text>
+<text x="60" y="372" font-size="12.5" fill="#2d2d8a" font-weight="700">En los cruces con las líneas de nivel, la cota de la recta es la del plano</text>
+<text x="60" y="392" font-size="12" fill="#555">Equidistancia = 2 m</text>
+</svg>
+</div>
+
+Recta s contenida en un plano graduado: en los cruces con las líneas de nivel toma las cotas del plano.
+:::
+
+#### Formas de definir un plano
+
 Un plano queda determinado por:
--   tres puntos no alineados. 
--   un punto y una recta que no pase por dicho punto.
--   dos rectas, concurrentes ó paralelas 
 
-```{r}
-#| label: image-DefinicionPlano
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   Definición del plano a partir de tres puntos no alineados.
-#| fig-alt: |
-#|   Definición del plano a partir de tres puntos no alineados.
+-   **tres puntos** no alineados,
+-   **un punto y una recta** que no pase por dicho punto,
+-   **dos rectas**, concurrentes o paralelas.
 
-knitr::include_graphics("../images/definicionPlano.gif", dpi = 270)
-```
+En el sistema acotado, todas se reducen en la práctica a la misma construcción. El caso más directo es conocer **una línea de nivel y la pendiente** del plano: se calcula el intervalo, se gradúa la línea de máxima pendiente (perpendicular a las líneas de nivel) y se trazan las demás líneas de nivel en paralelo.
+
+::: {#fig-definir-pendiente}
+<div style="max-width:480px; margin:0 auto;">
+<svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" style="width:78%; display:block; margin:0 auto;">
+<line x1="130.4" y1="114.1" x2="524.3" y2="183.5" stroke="#2e9e40" stroke-width="3"/>
+<text x="529.3" y="187.5" font-size="12.5" fill="#d00000" font-weight="700">2</text>
+<text x="60" y="34" font-size="12.5" fill="#444" font-style="italic">dato: una línea de nivel y la pendiente (30 %)</text>
+<line x1="324.3" y1="131.1" x2="363.3" y2="352.7" stroke="#d00000" stroke-width="2.6"/>
+<circle cx="327.4" cy="148.8" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="337.8" cy="207.9" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="348.2" cy="267" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="358.6" cy="326.1" r="3.2" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="347.8" y="199.9" font-size="12.5" fill="#d00000" font-weight="700">i = e / pte = 2 / 0,30 = 6,67 m</text>
+<line x1="140.8" y1="173.2" x2="534.8" y2="242.6" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="539.8" y="246.6" font-size="12.5" fill="#d00000" font-weight="700">4</text>
+<line x1="151.3" y1="232.3" x2="545.2" y2="301.7" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="550.2" y="305.7" font-size="12.5" fill="#d00000" font-weight="700">6</text>
+<line x1="161.7" y1="291.4" x2="555.6" y2="360.8" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="560.6" y="364.8" font-size="12.5" fill="#d00000" font-weight="700">8</text>
+<line x1="120" y1="55" x2="513.9" y2="124.5" stroke="#1a1a1a" stroke-width="3.2"/>
+<text x="509.9" y="116.5" font-size="12.5" fill="#1a1a1a" font-weight="700" text-anchor="end">traza (0)</text>
+<text x="60" y="392" font-size="12" fill="#555">Equidistancia = 2 m · Escala 1:500</text>
+</svg>
+</div>
+
+Plano definido por una línea de nivel y la pendiente: se calcula el intervalo y se gradúa la l.m.p.
+:::
+
+Si el dato es **una recta graduada y un punto** con cota, la línea de nivel que pasa por el punto se obtiene uniéndolo con el punto de igual cota de la recta; las demás son paralelas a ella por los puntos de cota de la recta.
+
+::: {#fig-definir-recta-punto}
+<div style="max-width:480px; margin:0 auto;">
+<svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" style="width:78%; display:block; margin:0 auto;">
+<line x1="226.1" y1="50.8" x2="376.9" y2="386.6" stroke="#1a1a1a" stroke-width="2.6"/>
+<text x="218.1" y="42.8" font-size="12" fill="#444" font-style="italic">recta graduada</text>
+<circle cx="237.3" cy="75.7" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="233.3" y="93.7" font-size="12" fill="#2d2d8a" font-weight="700">0</text>
+<circle cx="265.2" cy="137.9" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="261.2" y="155.9" font-size="12" fill="#2d2d8a" font-weight="700">2</text>
+<circle cx="293.2" cy="200" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="289.2" y="218" font-size="12" fill="#2d2d8a" font-weight="700">4</text>
+<circle cx="321.1" cy="262.2" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="317.1" y="280.2" font-size="12" fill="#2d2d8a" font-weight="700">6</text>
+<circle cx="349" cy="324.4" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="345" y="342.4" font-size="12" fill="#2d2d8a" font-weight="700">8</text>
+<circle cx="477.1" cy="175.2" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="484.1" y="169.2" font-size="12.5" fill="#2d2d8a" font-weight="700">m(2)</text>
+<line x1="265.2" y1="137.9" x2="515.2" y2="181.9" stroke="#2e9e40" stroke-width="3"/>
+<text x="371.1" y="146.5" font-size="12" fill="#2e9e40" font-weight="700">línea de nivel 2</text>
+<line x1="197.9" y1="68.7" x2="500" y2="122" stroke="#1a1a1a" stroke-width="3"/>
+<text x="506" y="126" font-size="12" fill="#1a1a1a" font-weight="700">traza (0)</text>
+<line x1="253.8" y1="193.1" x2="500" y2="236.5" stroke="#2e9e40" stroke-width="2.2"/>
+<text x="506" y="240.5" font-size="12" fill="#d00000" font-weight="700">4</text>
+<line x1="281.7" y1="255.3" x2="500" y2="293.8" stroke="#2e9e40" stroke-width="2.2"/>
+<text x="506" y="297.8" font-size="12" fill="#d00000" font-weight="700">6</text>
+<line x1="309.6" y1="317.4" x2="500" y2="351" stroke="#2e9e40" stroke-width="2.2"/>
+<text x="506" y="355" font-size="12" fill="#d00000" font-weight="700">8</text>
+<text x="60" y="372" font-size="12.5" fill="#2d2d8a" font-weight="700">Las demás líneas de nivel: paralelas por los puntos de cota de la recta</text>
+<text x="60" y="392" font-size="12" fill="#555">Equidistancia = 2 m</text>
+</svg>
+</div>
+
+Plano definido por una recta graduada y un punto: la línea de nivel del punto pasa por la cota igual de la recta.
+:::
+
+Y si el dato son **tres puntos no alineados**, se unen dos de ellos, se gradúa la recta resultante y se está en el caso anterior.
+
+::: {#fig-definir-tres-puntos}
+<div style="max-width:480px; margin:0 auto;">
+<svg viewBox="0 0 560 400" xmlns="http://www.w3.org/2000/svg" style="width:78%; display:block; margin:0 auto;">
+<circle cx="140" cy="300" r="3.8" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="148" y="316" font-size="13" fill="#2d2d8a" font-weight="700">a(2)</text>
+<circle cx="430" cy="120" r="3.8" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="438" y="136" font-size="13" fill="#2d2d8a" font-weight="700">b(8)</text>
+<circle cx="410" cy="330" r="3.8" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="370" y="352" font-size="13" fill="#2d2d8a" font-weight="700">c(4)</text>
+<text x="70" y="60" font-size="12.5" fill="#444" font-style="italic">dato: tres puntos no alineados</text>
+<line x1="140" y1="300" x2="430" y2="120" stroke="#1a1a1a" stroke-width="2.6"/>
+<circle cx="236.7" cy="240" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="230.7" y="258" font-size="12" fill="#2d2d8a" font-weight="700">(4)</text>
+<circle cx="333.3" cy="180" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="327.3" y="198" font-size="12" fill="#2d2d8a" font-weight="700">(6)</text>
+<text x="150" y="130" font-size="12" fill="#555" font-style="italic">uno a y b, y gradúo ab</text>
+<line x1="210" y1="226.2" x2="454.4" y2="353" stroke="#2e9e40" stroke-width="3"/>
+<text x="463.7" y="359.8" font-size="12" fill="#2e9e40" font-weight="700">línea de nivel 4</text>
+<text x="70" y="372" font-size="12.5" fill="#2d2d8a" font-weight="700">…y ya es el caso anterior: recta graduada + punto</text>
+<text x="70" y="392" font-size="12" fill="#555">Equidistancia = 2 m</text>
+</svg>
+</div>
+
+Plano definido por tres puntos: uniendo a y b se obtiene una recta graduada y se reduce al caso anterior.
+:::
+
+#### Intersección de planos
+
+La intersección de dos planos es una recta: la que une los puntos donde se cortan las **líneas de nivel de igual cota** de ambos planos. La recta intersección queda además graduada automáticamente. Esta construcción es la base de las **explanaciones** que se estudian al final del bloque.
+
+::: {#fig-interseccion-planos}
+<div style="max-width:500px; margin:0 auto;">
+<svg viewBox="0 0 620 420" xmlns="http://www.w3.org/2000/svg" style="width:80%; display:block; margin:0 auto;">
+<line x1="60" y1="344" x2="420" y2="316" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="52" y="348" font-size="12" fill="#2e9e40" font-weight="700" text-anchor="end">100</text>
+<line x1="60" y1="282" x2="420" y2="254" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="52" y="286" font-size="12" fill="#2e9e40" font-weight="700" text-anchor="end">105</text>
+<line x1="60" y1="220" x2="420" y2="192" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="52" y="224" font-size="12" fill="#2e9e40" font-weight="700" text-anchor="end">110</text>
+<line x1="60" y1="158" x2="420" y2="130" stroke="#2e9e40" stroke-width="2.4"/>
+<text x="52" y="162" font-size="12" fill="#2e9e40" font-weight="700" text-anchor="end">115</text>
+<text x="120" y="396" font-size="12.5" fill="#2e9e40" font-weight="700">plano verde: gradúo sus líneas de nivel</text>
+<line x1="180" y1="60" x2="226" y2="400" stroke="#c05ad0" stroke-width="2.4"/>
+<text x="178" y="52" font-size="12" fill="#a03ab0" font-weight="700">100</text>
+<line x1="268" y1="60" x2="314" y2="400" stroke="#c05ad0" stroke-width="2.4"/>
+<text x="266" y="52" font-size="12" fill="#a03ab0" font-weight="700">105</text>
+<line x1="356" y1="60" x2="402" y2="400" stroke="#c05ad0" stroke-width="2.4"/>
+<text x="354" y="52" font-size="12" fill="#a03ab0" font-weight="700">110</text>
+<line x1="444" y1="60" x2="490" y2="400" stroke="#c05ad0" stroke-width="2.4"/>
+<text x="442" y="52" font-size="12" fill="#a03ab0" font-weight="700">115</text>
+<text x="480" y="90" font-size="12.5" fill="#a03ab0" font-weight="700">plano rosa:</text>
+<text x="480" y="106" font-size="12.5" fill="#a03ab0" font-weight="700">gradúo</text>
+<circle cx="216.8" cy="331.8" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="295.6" cy="263.7" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="374.3" cy="195.6" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="453.1" cy="127.4" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<line x1="216.8" y1="331.8" x2="453.1" y2="127.4" stroke="#d2b077" stroke-width="5" stroke-linecap="round"/>
+<circle cx="216.8" cy="331.8" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="295.6" cy="263.7" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="374.3" cy="195.6" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<circle cx="453.1" cy="127.4" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="608" y="386" font-size="13" fill="#8a6a30" font-weight="700" text-anchor="end">intersección: puntos de igual cota</text>
+<text x="52" y="416" font-size="12" fill="#555">Equidistancia = 5 m</text>
+</svg>
+</div>
+
+Intersección de dos planos graduados: la recta que une los cruces de las líneas de nivel de igual cota.
+:::
 
 ### Material complementario
 
-<a href="https://www.balcazar.net/entrada.htm  " target="_blank">Web Agustín Balcázar</a>
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/acotados-3-plano-vaguadas-divisorias.html" target="_blank">El plano y el terreno: definición de planos, vaguadas y divisorias</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://www.balcazar.net/entrada.htm" target="_blank">Web Agustín Balcázar</a>
 
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-Vídeos y web sobre el sistema de planos Acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.
+
+Vídeos y web sobre el sistema de planos acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.
+
 </p>
 
-<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/  " target="_blank">Web de dibujo técnico</a>
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.
+
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas; la ventaja es que el contenido está bien estructurado.
+
 </p>

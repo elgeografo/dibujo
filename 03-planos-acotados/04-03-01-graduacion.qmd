@@ -5,12 +5,6 @@
 ### Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
-<!--<p style="font-size: 1.2em; color: #333;">
-
-La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.aenor.com/pdf/UNE/N0013534"  target="_blank">ISO 5455:1979</a>. Su contenido es el siguiente.
-
-</p>-->
-
 <p style="font-size: 1em; color: #333;">
 
 <ol>
@@ -27,64 +21,105 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 ### Apuntes
 
 #### Definición
-*La Graduación de rectas consiste en señalar sobre su proyección los puntos cuyas cotas pertenezcan a la serie definida por la equidistancia o cota entera. Para ello, será suficiente con determinar dos puntos de cota entera (o que sean de la serie de la equidistancia) lo que permitirá deducir el intervalo y una vez conocido éste será posible situar, con toda exactitud, cualquier punto de cota entera de la recta.*
+
+La graduación de rectas consiste en señalar sobre su proyección los puntos cuyas cotas pertenezcan a la serie definida por la equidistancia o cota entera. Para ello será suficiente con determinar dos puntos de cota entera (o que sean de la serie de la equidistancia), lo que permitirá deducir el intervalo; una vez conocido éste, será posible situar con toda exactitud cualquier punto de cota entera de la recta.
 
 #### Casos
--   **Caso 1:** Me dan la proyección de la recta y la cota de dos de los puntos, y los dos corresponden a la serie.
 
-**Ejemplo: **
-Suponiendo que la equidistancia es **10 metros** y las cotas de los puntos A y B son 500 y 540, respectivamente. La serie de la equidistancia es: 0, 10, …, 500, **510, 520, 530,** 540,… Es decir, las cotas de A y B corresponden a la serie de la equidistancia.
-Por lo tanto, debo graduar la recta y localizar los puntos de cota 510, 520 y 530. Para esto, divido el segmento a-b en partes igual. ¿En cuántas partes? 
+-   **Caso 1:** me dan la proyección de la recta y la cota de dos de los puntos, y los dos corresponden a la serie.
+
+**Ejemplo:** suponiendo que la equidistancia es **10 metros** y las cotas de los puntos A y B son 500 y 540, respectivamente. La serie de la equidistancia es: 0, 10, …, 500, **510, 520, 530,** 540, … Es decir, las cotas de A y B corresponden a la serie de la equidistancia. Por lo tanto, debo graduar la recta y localizar los puntos de cota 510, 520 y 530. Para esto, divido el segmento ab en partes iguales. ¿En cuántas partes?
+
 $$
 \frac{540 - 500}{10} = \frac{40}{10} = 4
 $$
+
 $$
 \text{En 4 partes iguales.}
 $$
 
-```{r}
-#| label: image-GraduacionCaso1
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   Caso 1 de graduación de rectas.
-#| fig-alt: |
-#|   Caso 1 de graduación de rectas.
+::: {#fig-graduacion-caso1}
+<div style="max-width:620px; margin:0 auto;">
+<svg viewBox="0 0 620 330" xmlns="http://www.w3.org/2000/svg" style="width:94%; display:block; margin:0 auto;">
+<defs><marker id="g1-flecha-gris" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#909090"/></marker><marker id="g1-flecha-verde" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#14532d"/></marker></defs>
+<line x1="37.2" y1="289.1" x2="582.8" y2="70.9" stroke="#c9c9c9" stroke-width="4" stroke-linecap="round"/>
+<circle cx="90" cy="268" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="78" y="290" font-size="13.5" fill="#2d2d8a" font-weight="700">a(500)</text>
+<circle cx="530" cy="92" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="518" y="114" font-size="13.5" fill="#2d2d8a" font-weight="700">b(540)</text>
+<line x1="90" y1="268" x2="410" y2="308" stroke="#909090" stroke-width="1.3" marker-end="url(#g1-flecha-gris)"/>
+<circle cx="161.1" cy="276.9" r="2.4" fill="#909090" stroke="#909090" stroke-width="1.6"/>
+<circle cx="232.2" cy="285.8" r="2.4" fill="#909090" stroke="#909090" stroke-width="1.6"/>
+<circle cx="303.3" cy="294.7" r="2.4" fill="#909090" stroke="#909090" stroke-width="1.6"/>
+<circle cx="374.4" cy="303.6" r="2.4" fill="#909090" stroke="#909090" stroke-width="1.6"/>
+<line x1="374.4" y1="303.6" x2="530" y2="92" stroke="#909090" stroke-width="1.3"/>
+<line x1="161.1" y1="276.9" x2="200" y2="224" stroke="#909090" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="232.2" y1="285.8" x2="310" y2="180" stroke="#909090" stroke-width="1.1" stroke-dasharray="4,3"/>
+<line x1="303.3" y1="294.7" x2="420" y2="136" stroke="#909090" stroke-width="1.1" stroke-dasharray="4,3"/>
+<text x="420" y="298" font-size="12" fill="#777" font-style="italic">divido en 4 partes iguales</text>
+<circle cx="200" cy="224" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="190" y="246" font-size="12.5" fill="#2d2d8a" font-weight="700">(510)</text>
+<circle cx="310" cy="180" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="300" y="202" font-size="12.5" fill="#2d2d8a" font-weight="700">(520)</text>
+<circle cx="420" cy="136" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="410" y="158" font-size="12.5" fill="#2d2d8a" font-weight="700">(530)</text>
+<line x1="200" y1="210" x2="310" y2="166" stroke="#14532d" stroke-width="2.4" marker-start="url(#g1-flecha-verde)" marker-end="url(#g1-flecha-verde)"/>
+<text x="229" y="168" font-size="13.5" fill="#14532d" font-weight="700">i = 35 m</text>
+<text x="16" y="318" font-size="12.5" fill="#555">Equidistancia = 10 m · Las cotas de a y b pertenecen a la serie</text>
+</svg>
+</div>
 
-knitr::include_graphics("../images/caso1_graduacionRectas.gif", dpi = 270)
-```
-¿Cuál es el **intervalo** de esta recta?
-Se mide sobre la proyección de la recta r: <span style="color:green;">i</span>= 35
+Caso 1 de graduación de rectas: división de ab en cuatro partes iguales (construcción de Thales en gris).
+:::
+
+¿Cuál es el **intervalo** de esta recta? Se mide sobre la proyección de la recta: <span style="color:green;">i</span> = 35 m.
 
 ¿Qué pendiente tiene esta recta?
+
 $$
 \text{Pendiente} = \frac{\textcolor{red}{\text{equidistancia}}}{\textcolor{green}{\text{intervalo}}}
 $$
+
 $$
 \text{Pendiente} = \frac{\textcolor{red}{\text{10}}}{\textcolor{green}{\text{35}}}
 $$
+
 $$
 \text{Pendiente} = 28.57\%
 $$
 
--   **Caso 2:** Me dan la proyección de la recta y la cota de dos de los puntos, pero al menos uno no pertenece a la serie.
+-   **Caso 2:** me dan la proyección de la recta y la cota de dos de los puntos, pero al menos uno no pertenece a la serie.
 
-**Ejemplo: **
-Suponiendo que la equidistancia es **2 metros** y la cota de A y B es 509 y 516, respectivamente. Se debe graduar la recta, es decir, quiero situar las cotas 0, 2, …,**510, 512, 514, 516**. 
+**Ejemplo:** suponiendo que la equidistancia es **2 metros** y la cota de A y B es 509 y 516, respectivamente. Se debe graduar la recta, es decir, quiero situar las cotas 0, 2, …, **510, 512, 514, 516**.
 
-```{r}
-#| label: image-GraduacionCaso2
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   Caso 2 de graduación de rectas.
-#| fig-alt: |
-#|   Caso 2 de graduación de rectas.
+::: {#fig-graduacion-caso2}
+<div style="max-width:620px; margin:0 auto;">
+<svg viewBox="0 0 620 330" xmlns="http://www.w3.org/2000/svg" style="width:94%; display:block; margin:0 auto;">
+<defs><marker id="g2-flecha-verde" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#14532d"/></marker><marker id="g2-flecha-naranja" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e8862c"/></marker></defs>
+<line x1="11.8" y1="284.1" x2="613.2" y2="55.9" stroke="#c9c9c9" stroke-width="4" stroke-linecap="round"/>
+<circle cx="70" cy="262" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="58" y="284" font-size="13.5" fill="#2d2d8a" font-weight="700">a(509)</text>
+<circle cx="555" cy="78" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="543" y="100" font-size="13.5" fill="#2d2d8a" font-weight="700">b(516)</text>
+<line x1="80" y1="244" x2="539" y2="58" stroke="#14532d" stroke-width="2" marker-start="url(#g2-flecha-verde)" marker-end="url(#g2-flecha-verde)"/>
+<text x="272.5" y="136" font-size="13" fill="#14532d" font-weight="700">dH = 2.212 m</text>
+<line x1="70" y1="262" x2="139.3" y2="235.7" stroke="#e8862c" stroke-width="3.4" stroke-linecap="round"/>
+<circle cx="139.3" cy="235.7" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="127.3" y="257.7" font-size="12.5" fill="#2d2d8a" font-weight="700">(510)</text>
+<text x="93.3" y="223.7" font-size="13.5" fill="#e8862c" font-weight="700">¿x?</text>
+<circle cx="277.9" cy="183.1" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="267.9" y="205.1" font-size="12.5" fill="#2d2d8a" font-weight="700">(512)</text>
+<circle cx="416.4" cy="130.6" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="406.4" y="152.6" font-size="12.5" fill="#2d2d8a" font-weight="700">(514)</text>
+<text x="425" y="124" font-size="12" fill="#777" font-style="italic">…y sigo como en el caso 1</text>
+<text x="16" y="318" font-size="12.5" fill="#555">Equidistancia = 2 m · La cota de a no pertenece a la serie</text>
+</svg>
+</div>
 
-knitr::include_graphics("../images/caso2_graduacionRectas.gif", dpi = 270)
-```
+Caso 2 de graduación de rectas: localización del primer punto de cota entera (510) y reducción al caso anterior.
+:::
 
-Si encuentro el punto de cota **510** estoy en el caso anterior. Para ello aplico la fórmula de la pendiente o una regla de tres simple teniendo en cuenta que la distancia vertical es la diferencia de cotas entre A y B, y la distancia horizontal la mido sobre la proyección de la recta. 
+Si encuentro el punto de cota **510** estoy en el caso anterior. Para ello aplico la fórmula de la pendiente o una regla de tres simple, teniendo en cuenta que la distancia vertical es la diferencia de cotas entre A y B, y la distancia horizontal la mido sobre la proyección de la recta.
 
 Por lo tanto, si para subir desde la cota 509 a la cota 516 recorro horizontalmente 2.212 metros, ¿cuánto debo recorrer horizontalmente (x en la siguiente ecuación) para subir desde la cota 509 a la 510?
 
@@ -102,22 +137,33 @@ $$
 
 Mido 316 m en la proyección de la recta desde el punto A y marco la cota 510. Ahora estoy en el caso anterior.
 
--   **Caso 3:** Me dan la proyección de la recta, la cota de un punto y la pendiente
+-   **Caso 3:** me dan la proyección de la recta, la cota de un punto y la pendiente.
 
-**Ejemplo: **
-Suponiendo que la equidistancia es **2 metros**, la cota del punto A es 610 y la pendiente es del 35%, se debe graduar la recta, es decir, situar las cotas **612, 614, 616....** Para ello aplico la fórmula de la pendiente y despejo el intervalo (i):
+**Ejemplo:** suponiendo que la equidistancia es **2 metros**, la cota del punto A es 610 y la pendiente es del 35 % ascendente, se debe graduar la recta, es decir, situar las cotas **612, 614, 616 …** Para ello aplico la fórmula de la pendiente y despejo el intervalo (i):
 
-```{r}
-#| label: image-GraduacionCaso3
-#| echo: false
-#| out.width: NULL
-#| fig-cap: |
-#|   Caso 3 de graduación de rectas.
-#| fig-alt: |
-#|   Caso 3 de graduación de rectas.
+::: {#fig-graduacion-caso3}
+<div style="max-width:620px; margin:0 auto;">
+<svg viewBox="0 0 620 330" xmlns="http://www.w3.org/2000/svg" style="width:94%; display:block; margin:0 auto;">
+<defs><marker id="g3-flecha-verde" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#14532d"/></marker><marker id="g3-flecha-naranja" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e8862c"/></marker></defs>
+<line x1="28.6" y1="283.8" x2="611.4" y2="58.2" stroke="#c9c9c9" stroke-width="4" stroke-linecap="round"/>
+<circle cx="85" cy="262" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="73" y="284" font-size="13.5" fill="#2d2d8a" font-weight="700">a(610)</text>
+<line x1="122.3" y1="217.6" x2="206.2" y2="185.1" stroke="#e8862c" stroke-width="2.6" marker-end="url(#g3-flecha-naranja)"/>
+<text x="40" y="172" font-size="12.5" fill="#e8862c" font-weight="700">pendiente 35 % (ascendente)</text>
+<circle cx="224.9" cy="207.8" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="214.9" y="229.8" font-size="12.5" fill="#2d2d8a" font-weight="700">(612)</text>
+<circle cx="364.8" cy="153.7" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="354.8" y="175.7" font-size="12.5" fill="#2d2d8a" font-weight="700">(614)</text>
+<circle cx="504.6" cy="99.5" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="494.6" y="121.5" font-size="12.5" fill="#2d2d8a" font-weight="700">(616)</text>
+<line x1="224.9" y1="193.8" x2="364.8" y2="139.7" stroke="#14532d" stroke-width="2.4" marker-start="url(#g3-flecha-verde)" marker-end="url(#g3-flecha-verde)"/>
+<text x="270.8" y="146.8" font-size="13.5" fill="#14532d" font-weight="700">i = 5,71 m</text>
+<text x="16" y="318" font-size="12.5" fill="#555">Equidistancia = 2 m · Conozco un punto y la pendiente</text>
+</svg>
+</div>
 
-knitr::include_graphics("../images/caso2_graduacionRectas.gif", dpi = 270)
-```
+Caso 3 de graduación de rectas: cálculo del intervalo a partir de la pendiente y traslado sucesivo sobre la proyección.
+:::
 
 $$
 \begin{aligned}
@@ -129,11 +175,20 @@ $$
 \end{aligned}
 $$
 
-Mido 5.71m desde el punto A y marco la cota 612, y así sucesivamente voy subiendo un valor de la equidistancia.
+Mido 5,71 m desde el punto A y marco la cota 612, y así sucesivamente voy subiendo un valor de la equidistancia.
 
 ### Material complementario
 
-<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/  " target="_blank">Web de dibujo técnico</a>
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/acotados-2-fundamentos.html" target="_blank">Fundamentos del sistema de planos acotados: punto, recta y plano; graduación de rectas</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
+
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas, la ventaja es que el contenido está bien estructurado.
+
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas; la ventaja es que el contenido está bien estructurado.
+
 </p>

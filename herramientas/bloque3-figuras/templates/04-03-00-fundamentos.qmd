@@ -1,0 +1,159 @@
+# Fundamentos {#sec-fundamentos .unnumbered}
+
+## Fundamentos del sistema de planos acotados
+
+### Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Representación del punto</li>
+
+<li>Representación de la recta</li>
+
+<li>Posiciones particulares de la recta</li>
+
+<li>Representación del plano</li>
+
+</ol>
+
+</p>
+:::
+
+### Apuntes
+
+#### Representación del punto
+
+Un punto queda caracterizado por su **proyección** sobre el plano horizontal y por su **cota** con relación a dicho plano. La cota puede ser positiva (punto por encima del plano de comparación), nula (punto en el propio plano) o negativa (por debajo). El **desnivel** entre dos puntos es la diferencia de sus cotas.
+
+::: {#fig-punto}
+<div style="max-width:640px; margin:0 auto;">
+{{SVG:fund_punto_static}}
+</div>
+
+Representación del punto en planos acotados: cotas positivas, nula y negativa, desnivel entre C y A, y el resultado que queda en el papel.
+:::
+
+#### Representación de la recta
+
+Si unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la figura se observa la recta R definida por los puntos T y A, con su proyección r.
+
+::: {#fig-recta}
+<div style="max-width:640px; margin:0 auto;">
+{{SVG:fund_recta_static}}
+</div>
+
+La recta en planos acotados: R en el espacio, r su proyección, t la traza (cota 0) y el triángulo dV/dH que define la pendiente.
+:::
+
+Se denomina **traza de la recta (t)** al punto de cota cero de la misma, esto es, la intersección de la recta con el plano de referencia.
+
+La **equidistancia (e)** es la distancia vertical que separa dos puntos de cota consecutiva de la serie.
+
+El **intervalo de la recta (i)** es la distancia horizontal que hay que recorrer para subir o bajar un valor de la equidistancia.
+
+La **pendiente de la recta** es la relación entre las distancias vertical y horizontal de dos de sus puntos o, lo que es lo mismo, la relación entre la equidistancia y el intervalo. Es, por lo tanto, la tangente trigonométrica del ángulo (α) que la recta forma con el plano horizontal o de comparación. Se puede expresar en grados (º), en tanto por ciento y en tanto por uno:
+
+$$
+\text{Pendiente} = \frac{dV}{dH} = \frac{e}{i} = \tan \alpha
+$$
+
+::: callout-note
+## Nota
+
+Por tanto, una recta está determinada si se conoce la dirección de su proyección horizontal, un punto de la misma, el sentido en que la recta asciende y su pendiente.
+:::
+
+En el siguiente ejemplo, la equidistancia es igual a 2, el intervalo (i) es igual a 6 y la pendiente se calcula como:
+
+$$
+\text{Pendiente} = \frac{2}{6} = 0.333
+$$
+
+$$
+\text{Expresada en tanto por ciento} = 33.3\%
+$$
+
+::: {#fig-pendiente}
+<div style="max-width:520px; margin:0 auto;">
+{{SVG:fund_pendiente_ej}}
+</div>
+
+Ejemplo de cálculo de la pendiente de una recta graduada.
+:::
+
+También podría calcularse como 6/18 o cualquier otra combinación conocida de dos puntos de la recta, puesto que al tener pendiente uniforme la relación es la misma entre cualquiera de sus puntos.
+
+#### Posiciones particulares de la recta
+
+Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipos:
+
+-   **Oblicua**: la recta corta el plano en el punto de su traza. Es la posición general.
+-   **Horizontal o paralela**: todos sus puntos tienen la misma cota. Su pendiente es cero y su proyección está en verdadera magnitud.
+-   **Vertical o perpendicular**: la proyección de la recta es un punto. Su pendiente es infinita.
+
+::: {#fig-posiciones-recta}
+<div style="max-width:660px; margin:0 auto;">
+{{SVG:fund_posiciones_static}}
+</div>
+
+Las tres posiciones de la recta respecto del plano de comparación.
+:::
+
+#### Representación del plano
+
+Rectas singulares del plano:
+
+-   **Horizontales del plano (líneas de nivel)**: se denominan así las rectas del plano cuyos puntos tienen la misma cota. Para determinarlas bastará unir los puntos del plano que tengan la misma cota. Como todas las horizontales del plano son paralelas entre sí, sus proyecciones también lo serán.
+
+-   **Traza del plano**: se denomina así a la horizontal de cota cero del plano o, lo que es lo mismo, la intersección de ese plano con el de proyección.
+
+-   **Recta de máxima pendiente (l.m.p.)**: se denomina así a la recta del plano que forma el mayor ángulo con el plano de proyección. Como las rectas horizontales del plano son paralelas al plano de proyección, la recta de máxima pendiente será perpendicular a dichas horizontales.
+
+::: {#fig-plano}
+<div style="max-width:680px; margin:0 auto;">
+{{SVG:fund_plano_static}}
+</div>
+
+El plano P en el sistema acotado: traza, líneas de nivel, línea de máxima pendiente, equidistancia e intervalo.
+:::
+
+::: {#fig-plano-planta}
+<div style="max-width:480px; margin:0 auto;">
+{{SVG:fund_plano_planta_static}}
+</div>
+
+El mismo plano en el papel: la proyección graduada de su línea de máxima pendiente con las líneas de nivel perpendiculares.
+:::
+
+::: callout-note
+## Nota
+
+En el sistema acotado los planos se representan, en general, por la proyección graduada de su recta de máxima pendiente. La pendiente de un plano se mide por la de su línea de máxima pendiente: en un plano existen infinitas pendientes, entre cero (sus horizontales) y la de la l.m.p.
+:::
+
+### Material complementario
+
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/acotados-2-fundamentos.html" target="_blank">Fundamentos del sistema de planos acotados: punto, recta y plano; graduación de rectas</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://www.balcazar.net/entrada.htm" target="_blank">Web Agustín Balcázar</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Vídeos y web sobre el sistema de planos acotados del profesor Agustín Balcázar Fernández de la Escuela Técnica Superior de Edificación de la UPM.
+
+</p>
+
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas; la ventaja es que el contenido está bien estructurado.
+
+</p>

@@ -1,0 +1,195 @@
+---
+title: "Perfiles"
+subtitle: "Perfil longitudinal, guitarra, perfil desarrollado y transversales"
+author: "Expresión Gráfica · E.T.S.I. Montes, Forestal y del Medio Natural · UPM"
+---
+
+## Índice
+
+::: {.texto-azul style="font-size:0.78em; margin-top:0.8em;"}
+-   Perfil de un terreno: **definición** y construcción
+-   Perfil **natural** vs perfil **realzado**
+-   La **guitarra**
+-   Perfil **desarrollado** (alineaciones y tramos curvos)
+-   Perfil del terreno **con rasante** vs perfil de obra con terreno
+-   Perfiles **transversales**
+:::
+
+## Perfil de un terreno: definición
+
+:::: columns
+::: {.column width="58%"}
+{{SVG:perf_traza}}
+:::
+
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.8em;"}
+El **perfil longitudinal** es la intersección del terreno con un **plano vertical** que pasa por una traza dada — aquí, la recta AB sobre nuestro terreno.
+
+::: {.fragment fragment-index="1"}
+La traza AB cruza el Cerro Mayor, el collado y el Cerro Menor.
+:::
+
+::: {.fragment fragment-index="2"}
+En el plano, del terreno solo conocemos las curvas de nivel: los datos del perfil son los **cruces de AB con cada curva** — de cada cruce sé su **distancia a A** y su **cota**.
+:::
+:::
+:::
+::::
+
+## Levantar el perfil
+
+:::: columns
+::: {.column width="66%"}
+{{SVG:perf_levantar}}
+:::
+
+::: {.column width="34%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.5em;"}
+::: {.fragment fragment-index="1"}
+1. Llevo sobre una recta los **cruces** con su distancia a A.
+:::
+::: {.fragment fragment-index="2"}
+2. Dibujo una **guía horizontal por cada cota** de la serie.
+:::
+::: {.fragment fragment-index="3"}
+3. Subo una **vertical** desde cada cruce hasta su cota.
+:::
+::: {.fragment fragment-index="4"}
+4. Uno los puntos: el **perfil del terreno**. Entre curva y curva el terreno se supone uniforme.
+:::
+:::
+:::
+::::
+
+## Perfil natural y perfil realzado
+
+:::: columns
+::: {.column width="62%"}
+{{SVG:perf_natural}}
+:::
+
+::: {.column width="38%"}
+::: {.texto-azul style="font-size:0.6em; margin-top:0.8em;"}
+::: {.fragment fragment-index="1"}
+En el perfil **natural** la escala vertical y la horizontal son **iguales**: refleja las pendientes reales, pero en general queda demasiado suave. Solo se usa cuando hay que **visualizar correctamente las pendientes**.
+:::
+
+::: {.fragment fragment-index="2"}
+En el perfil **realzado** se **exagera la escala vertical** para ver mejor el relieve. El realce es el cociente de escalas: con Eh 1:8000 y Ev 1:2000, el realce es 8000/2000 = **×4**.
+:::
+:::
+:::
+::::
+
+## La guitarra
+
+:::: columns
+::: {.column width="70%"}
+{{SVG:perf_guitarra}}
+:::
+
+::: {.column width="30%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.6em;"}
+La **guitarra** es la información **alfanumérica** asociada al dibujo del perfil.
+
+::: {.fragment fragment-index="1"}
+Las filas mínimas:
+
+-   **Plano de comparación** (la cota de la base del dibujo)
+-   **Ordenadas del terreno** (cotas de los puntos tomados)
+-   **Distancias al origen**
+-   **Distancias parciales**
+
+Se ajusta a los datos de cada perfil: si hay rasante, se añaden sus filas.
+:::
+:::
+:::
+::::
+
+## Perfil desarrollado
+
+:::: columns
+::: {.column width="64%"}
+{{SVG:perf_desarrollado}}
+:::
+
+::: {.column width="36%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.5em;"}
+Cuando el eje tiene **varias alineaciones** (o tramos curvos), el perfil se **desarrolla**: se endereza el eje llevando cada tramo a continuación del anterior, con su longitud real.
+
+::: {.fragment fragment-index="1"}
+En el desarrollo se marca el **punto de giro** (V) con su ángulo.
+
+Si el tramo es **curvo**, se desarrolla según la **longitud del arco**:
+
+$$L_{arco} = \alpha_{(rad)} \cdot R$$
+:::
+:::
+:::
+::::
+
+## Perfil del terreno con rasante
+
+:::: columns
+::: {.column width="64%"}
+{{SVG:perf_rasante}}
+:::
+
+::: {.column width="36%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.5em;"}
+::: {.fragment fragment-index="1"}
+Sobre el perfil del terreno se representa la **rasante** de la obra (el perfil sigue siendo **el del terreno**).
+:::
+
+::: {.fragment fragment-index="2"}
+Donde el terreno queda **por encima** de la rasante hay que excavar: **desmonte**. Donde queda **por debajo**, hay que aportar tierra: **terraplén**.
+
+Los puntos donde rasante y terreno se cortan son los **puntos de paso**.
+:::
+:::
+:::
+::::
+
+## Perfil de obra con terreno
+
+<img src="media/acotados-perfiles/perfil-obra-real.png" style="max-height:520px; display:block; margin:6px auto; border:1px solid #ccc;"/>
+
+::: {.texto-azul style="font-size:0.55em; text-align:center;"}
+Un perfil real de proyecto: aquí el perfil dibujado es **el de la obra** (la rasante) y el terreno va superpuesto a trazos. La guitarra incorpora rasante, cotas rojas de desmonte y terraplén, y acuerdos verticales.
+:::
+
+## Perfiles transversales
+
+:::: columns
+::: {.column width="50%"}
+{{SVG:perf_transversales}}
+::: {.fragment .texto-azul style="font-size:0.56em; text-align:center;"}
+Se usaban sobre todo para el **cálculo de volúmenes** de desmonte y terraplén.
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+<img src="media/acotados-perfiles/seccion-tipo.png" style="width:98%; display:block; margin:8px auto; border:1px solid #ccc;"/>
+<div style="font-size:0.5em; color:#666; text-align:center;">Otro uso habitual: las <b>secciones tipo</b> de un proyecto de obra lineal</div>
+:::
+:::
+::::
+
+## Práctica evaluable
+
+:::: columns
+::: {.column width="55%"}
+<img src="media/acotados-perfiles/practica-perfil.png" style="max-height:580px; width:98%; display:block; margin:0 auto; border:1px solid #ccc;"/>
+:::
+
+::: {.column width="45%"}
+::: {.texto-azul style="font-size:0.62em; margin-top:1em;"}
+Sobre el plano dado (escala 1:15.000):
+
+1.  Realizar un plano en el que se identifiquen las principales **vaguadas y divisorias** de este terreno.
+2.  Levantar el **perfil longitudinal AB realzado** con Eh = 1:8.000 y Ev = 1:2.000, con su **guitarra**.
+:::
+:::
+::::

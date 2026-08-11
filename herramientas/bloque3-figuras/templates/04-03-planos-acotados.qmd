@@ -1,0 +1,99 @@
+# El sistema de planos acotados {#sec-acotados .unnumbered}
+
+## Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1.2em; color: #333;">
+
+En este bloque se estudia el sistema de planos acotados: el sistema de representación univista con el que se dibuja el terreno y, en general, cualquier variable ambiental continua sobre el territorio.
+
+</p>
+
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>Introducción al sistema: cota, equidistancia, intervalo y pendiente</li>
+
+<li>Fundamentos: el punto, la recta y el plano; graduación de rectas</li>
+
+<li>El plano y el terreno: curvas de nivel, vaguadas y divisorias</li>
+
+<li>Perfiles longitudinales y transversales</li>
+
+<li>Modificación del terreno: explanaciones horizontales y en pendiente</li>
+
+</ol>
+
+</p>
+:::
+
+## Apuntes
+
+### Introducción al sistema
+
+El sistema de planos acotados es una **proyección cilíndrica ortogonal sobre un único plano horizontal**, llamado **plano de proyección** o **plano de comparación** (PC). Es un sistema **univista**: solo se dibuja la planta, y la dimensión que falta — la altura — se sustituye por un número asociado a cada punto proyectado: su **cota**, la distancia vertical del punto al plano de comparación.
+
+Con la proyección y la cota el sistema es **biunívoco**: a cada punto del espacio le corresponde una única representación en el plano, y viceversa. En España las cotas absolutas (altitudes) se refieren al nivel medio del mar en Alicante.
+
+### El terreno: curvas de nivel
+
+Para representar un objeto tan complejo como un terreno, se corta por **planos horizontales separados una distancia vertical constante**, llamada **equidistancia**. Cada corte produce una **curva de nivel**: la línea que une los puntos del terreno con la misma cota. Proyectando todas las curvas sobre el plano de comparación se obtiene el **plano acotado** del terreno.
+
+::: {#fig-fundamento-acotado}
+<div style="max-width:640px; margin:0 auto;">
+{{SVG:intro_hero_static}}
+</div>
+
+El fundamento del sistema: el terreno se corta con planos horizontales equidistantes, cada corte es una curva de nivel y las curvas se proyectan sobre el plano de comparación.
+:::
+
+En un plano de curvas de nivel hay **una única distancia vertical**, la equidistancia, que no se ve dibujada: se **lee** restando las cotas de dos curvas consecutivas. Las **distancias horizontales**, en cambio, se miden directamente sobre el plano; la distancia horizontal entre dos curvas consecutivas se llama **intervalo**, y es distinta en cada zona: donde las curvas van juntas el terreno tiene mucha pendiente, y donde van separadas, poca.
+
+::: {#fig-terreno-conductor}
+<div style="max-width:520px; margin:0 auto;">
+{{SVG:intro_leer_static}}
+</div>
+
+El terreno de trabajo del bloque, con la lectura de la equidistancia y dos intervalos: curvas juntas indican mucha pendiente y curvas separadas, poca.
+:::
+
+Este terreno — dos cerros separados por un collado — será el **terreno conductor** de todo el bloque: sobre él graduaremos rectas, trazaremos vaguadas y divisorias, levantaremos perfiles y proyectaremos explanaciones.
+
+### La pendiente
+
+La **pendiente** entre dos puntos es la relación entre la distancia vertical y la distancia horizontal que los separa:
+
+$$
+\text{Pendiente} = \frac{dV}{dH} = \tan \alpha
+$$
+
+Se expresa en tanto por uno, en tanto por ciento o mediante el ángulo α que la línea forma con la horizontal.
+
+### Otros fenómenos ambientales
+
+La misma técnica sirve para representar **cualquier variable continua** sobre el territorio: temperatura, precipitación, concentración de contaminantes (por ejemplo NO₂), ruido… Las curvas que unen puntos de igual valor se llaman en general **isolíneas** (isotermas, isoyetas, isófonas…). El trazado de isolíneas a partir de datos puntuales se estudia en el capítulo de trazado de curvas de nivel de este mismo bloque.
+
+## Material complementario
+
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/acotados-1-introduccion.html" target="_blank">Introducción al sistema de planos acotados</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://www.balcazar.net/entrada.htm" target="_blank">Web Agustín Balcázar</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Vídeos y web sobre el sistema de planos acotados del profesor Agustín Balcázar Fernández, de la Escuela Técnica Superior de Edificación de la UPM.
+
+</p>
+
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Página web sobre dibujo técnico en sentido amplio, con explicaciones cortas y bien estructuradas del sistema acotado.
+
+</p>

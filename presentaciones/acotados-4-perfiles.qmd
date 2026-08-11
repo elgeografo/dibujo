@@ -1,41 +1,24 @@
-# Perfiles longitudinales {#sec-perfiles-longitudinales .unnumbered}
+---
+title: "Perfiles"
+subtitle: "Perfil longitudinal, guitarra, perfil desarrollado y transversales"
+author: "Expresión Gráfica · E.T.S.I. Montes, Forestal y del Medio Natural · UPM"
+---
 
-## Perfiles longitudinales
+## Índice
 
-### Contenido
-
-::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
-<p style="font-size: 1em; color: #333;">
-
-<ol>
-
-<li>Definición y construcción del perfil</li>
-
-<li>Perfil natural y perfil realzado</li>
-
-<li>La guitarra</li>
-
-<li>Perfil desarrollado</li>
-
-<li>Perfil del terreno con rasante</li>
-
-<li>Perfiles transversales</li>
-
-</ol>
-
-</p>
+::: {.texto-azul style="font-size:0.78em; margin-top:0.8em;"}
+-   Perfil de un terreno: **definición** y construcción
+-   Perfil **natural** vs perfil **realzado**
+-   La **guitarra**
+-   Perfil **desarrollado** (alineaciones y tramos curvos)
+-   Perfil del terreno **con rasante** vs perfil de obra con terreno
+-   Perfiles **transversales**
 :::
 
-### Apuntes
+## Perfil de un terreno: definición
 
-#### Definición y construcción del perfil
-
-El **perfil longitudinal** de un terreno a lo largo de una traza es la intersección del terreno con el **plano vertical** que pasa por ella. Permite visualizar la sección del terreno a lo largo de un recorrido: el trazado de una pista, un canal, una carretera…
-
-En el plano acotado, los datos del perfil son los **cruces de la traza con las curvas de nivel**: de cada cruce se conoce su distancia al origen y su cota.
-
-::: {#fig-perfil-traza}
-<div style="max-width:520px; margin:0 auto;">
+:::: columns
+::: {.column width="58%"}
 <svg viewBox="-10 -14 500 390" xmlns="http://www.w3.org/2000/svg" style="width:82%; display:block; margin:0 auto;">
 <rect x="-10" y="-14" width="500" height="390" fill="#fdfbf7"/>
 <path d="M 461.4,360.0 L 480.0,346.6" fill="none" stroke="#8a5a2a" stroke-width="2.2" stroke-linejoin="round"/>
@@ -62,11 +45,14 @@ En el plano acotado, los datos del perfil son los **cruces de la traza con las c
 <text x="213" y="233.3" font-size="11" fill="#8a5a2a" font-weight="700" text-anchor="middle">100</text>
 <text x="155" y="31.5" font-size="11" fill="#8a5a2a" font-weight="700" text-anchor="middle" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.9">130</text>
 <text x="155" y="31.5" font-size="11" fill="#8a5a2a" font-weight="700" text-anchor="middle">130</text>
+<g class="fragment" data-fragment-index="1">
 <line x1="45" y1="52" x2="445" y2="310" stroke="#d00000" stroke-width="2.6"/>
 <circle cx="45" cy="52" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
 <circle cx="445" cy="310" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
 <text x="33" y="42" font-size="15" fill="#1a1a1a" font-weight="700">A</text>
 <text x="453" y="316" font-size="15" fill="#1a1a1a" font-weight="700">B</text>
+</g>
+<g class="fragment" data-fragment-index="2">
 <circle cx="56.7" cy="59.5" r="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
 <circle cx="70" cy="68.1" r="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
 <circle cx="83.6" cy="76.9" r="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
@@ -84,20 +70,34 @@ En el plano acotado, los datos del perfil son los **cruces de la traza con las c
 <circle cx="438.2" cy="305.6" r="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
 <text x="240" y="372" font-size="13" fill="#2d2d8a" font-weight="700" text-anchor="middle" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" opacity="0.9">marco los cruces de AB con cada curva de nivel</text>
 <text x="240" y="372" font-size="13" fill="#2d2d8a" font-weight="700" text-anchor="middle">marco los cruces de AB con cada curva de nivel</text>
+</g>
 </svg>
-</div>
-
-La traza AB del perfil sobre el terreno conductor, con los cruces con cada curva de nivel marcados.
 :::
 
-Para **levantar el perfil**: se llevan los cruces sobre una recta con sus distancias al origen, se dibuja una guía horizontal por cada cota de la serie, se sube una vertical desde cada cruce hasta su cota y se unen los puntos obtenidos. Entre curva y curva se supone que el terreno varía uniformemente.
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.8em;"}
+El **perfil longitudinal** es la intersección del terreno con un **plano vertical** que pasa por una traza dada — aquí, la recta AB sobre nuestro terreno.
 
-::: {#fig-perfil-levantar}
-<div style="max-width:640px; margin:0 auto;">
+::: {.fragment fragment-index="1"}
+La traza AB cruza el Cerro Mayor, el collado y el Cerro Menor.
+:::
+
+::: {.fragment fragment-index="2"}
+En el plano, del terreno solo conocemos las curvas de nivel: los datos del perfil son los **cruces de AB con cada curva** — de cada cruce sé su **distancia a A** y su **cota**.
+:::
+:::
+:::
+::::
+
+## Levantar el perfil
+
+:::: columns
+::: {.column width="66%"}
 <svg viewBox="0 0 660 420" xmlns="http://www.w3.org/2000/svg" style="width:94%; display:block; margin:0 auto;">
 <line x1="40" y1="40" x2="620" y2="40" stroke="#1a1a1a" stroke-width="2.4"/>
 <text x="34" y="32" font-size="14" fill="#1a1a1a" font-weight="700" text-anchor="end">A</text>
 <text x="626" y="32" font-size="14" fill="#1a1a1a" font-weight="700">B</text>
+<g class="fragment" data-fragment-index="1">
 <line x1="56.9" y1="34" x2="56.9" y2="46" stroke="#8a5a2a" stroke-width="1.8"/>
 <line x1="76.3" y1="34" x2="76.3" y2="46" stroke="#8a5a2a" stroke-width="1.8"/>
 <line x1="95.9" y1="34" x2="95.9" y2="46" stroke="#8a5a2a" stroke-width="1.8"/>
@@ -114,6 +114,8 @@ Para **levantar el perfil**: se llevan los cruces sobre una recta con sus distan
 <line x1="579" y1="34" x2="579" y2="46" stroke="#8a5a2a" stroke-width="1.8"/>
 <line x1="610.2" y1="34" x2="610.2" y2="46" stroke="#8a5a2a" stroke-width="1.8"/>
 <text x="48" y="22" font-size="11.5" fill="#8a5a2a" font-style="italic">cruces con las curvas de nivel (con su cota)</text>
+</g>
+<g class="fragment" data-fragment-index="2">
 <line x1="40" y1="384" x2="620" y2="384" stroke="#c9c9c9" stroke-width="0.9"/>
 <text x="34" y="388" font-size="11" fill="#777" text-anchor="end">100</text>
 <line x1="40" y1="362" x2="620" y2="362" stroke="#c9c9c9" stroke-width="0.9"/>
@@ -128,6 +130,8 @@ Para **levantar el perfil**: se llevan los cruces sobre una recta con sus distan
 <text x="34" y="278" font-size="11" fill="#777" text-anchor="end">150</text>
 <line x1="40" y1="252" x2="620" y2="252" stroke="#c9c9c9" stroke-width="0.9"/>
 <text x="34" y="256" font-size="11" fill="#777" text-anchor="end">160</text>
+</g>
+<g class="fragment" data-fragment-index="3">
 <line x1="56.9" y1="46" x2="56.9" y2="318" stroke="#909090" stroke-width="0.9" stroke-dasharray="4,3"/>
 <circle cx="56.9" cy="318" r="2.8" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
 <line x1="76.3" y1="46" x2="76.3" y2="296" stroke="#909090" stroke-width="0.9" stroke-dasharray="4,3"/>
@@ -158,41 +162,69 @@ Para **levantar el perfil**: se llevan los cruces sobre una recta con sus distan
 <circle cx="579" cy="318" r="2.8" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
 <line x1="610.2" y1="46" x2="610.2" y2="340" stroke="#909090" stroke-width="0.9" stroke-dasharray="4,3"/>
 <circle cx="610.2" cy="340" r="2.8" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+</g>
+<g class="fragment" data-fragment-index="4">
 <path d="M 40,335.7 L 57,318 L 95.7,274.2 L 115.1,255.4 L 126,247 L 136.9,240.9 L 147.8,237.2 L 157.5,236.2 L 165.9,237.1 L 175.6,240.1 L 184.1,244.4 L 193.8,251.1 L 203.5,259.3 L 214.4,270.1 L 260.4,322.4 L 272.5,335.1 L 283.4,345.3 L 296.7,356 L 308.8,363.7 L 320.9,369.6 L 333,373.5 L 346.3,375.5 L 359.7,375.4 L 374.2,372.9 L 388.7,368.1 L 402,362 L 416.6,353.8 L 463.8,321.9 L 482,311.1 L 491.6,306.4 L 501.3,302.8 L 509.8,300.5 L 518.3,299.3 L 528,299 L 538.9,300.4 L 549.8,303.3 L 560.7,307.8 L 571.6,313.5 L 583.7,321 L 620,347.2" fill="none" stroke="#14532d" stroke-width="3" stroke-linejoin="round"/>
 <text x="240" y="226.2" font-size="13" fill="#14532d" font-weight="700">el perfil del terreno</text>
+</g>
 </svg>
-</div>
-
-Construcción del perfil: cruces sobre la línea base, guías horizontales por cota, verticales y perfil resultante.
 :::
 
-#### Perfil natural y perfil realzado
+::: {.column width="34%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.5em;"}
+::: {.fragment fragment-index="1"}
+1. Llevo sobre una recta los **cruces** con su distancia a A.
+:::
+::: {.fragment fragment-index="2"}
+2. Dibujo una **guía horizontal por cada cota** de la serie.
+:::
+::: {.fragment fragment-index="3"}
+3. Subo una **vertical** desde cada cruce hasta su cota.
+:::
+::: {.fragment fragment-index="4"}
+4. Uno los puntos: el **perfil del terreno**. Entre curva y curva el terreno se supone uniforme.
+:::
+:::
+:::
+::::
 
-En el perfil **natural** las escalas vertical y horizontal son **iguales**: refleja las pendientes reales, pero suele quedar demasiado suave. En el perfil **realzado** se exagera la escala vertical para apreciar mejor el relieve; el realce es el cociente de escalas (por ejemplo, con Eh = 1:8.000 y Ev = 1:2.000 el realce es ×4).
+## Perfil natural y perfil realzado
 
-::: {#fig-perfil-natural}
-<div style="max-width:640px; margin:0 auto;">
+:::: columns
+::: {.column width="62%"}
 <svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg" style="width:94%; display:block; margin:0 auto;">
+<g class="fragment" data-fragment-index="1">
 <text x="40" y="28" font-size="13.5" fill="#2d2d8a" font-weight="700">Perfil NATURAL: Ev = Eh</text>
 <line x1="60" y1="118" x2="336.1" y2="118" stroke="#999" stroke-width="1"/>
 <path d="M 60,102.4 L 86.5,86.2 L 95.7,81.2 L 106.1,77.4 L 115.9,76.1 L 124.6,77.2 L 133.2,80.1 L 143,85.1 L 164.9,98.9 L 175.8,104.9 L 188,109.8 L 199.5,112.3 L 212.2,112.8 L 226,110.9 L 239.2,107.1 L 270.4,95.9 L 279.6,93.7 L 287.7,92.8 L 297.5,93.1 L 307.8,95 L 318.8,98.5 L 336.1,105.4" fill="none" stroke="#14532d" stroke-width="2.6" stroke-linejoin="round"/>
 <text x="348.1" y="96" font-size="11.5" fill="#666" font-style="italic">queda demasiado</text>
 <text x="348.1" y="110" font-size="11.5" fill="#666" font-style="italic">“suave”</text>
+</g>
+<g class="fragment" data-fragment-index="2">
 <text x="40" y="168" font-size="13.5" fill="#2d2d8a" font-weight="700">Perfil REALZADO: Ev = 4 × Eh (p. ej. Eh 1:8000, Ev 1:2000)</text>
 <line x1="60" y1="388" x2="336.1" y2="388" stroke="#999" stroke-width="1"/>
 <path d="M 60,325.5 L 86.5,260.6 L 95.7,240.7 L 100.9,232 L 106.1,225.5 L 111.3,221.6 L 115.9,220.5 L 119.9,221.5 L 124.6,224.7 L 128.6,229.2 L 133.2,236.2 L 143,256.3 L 164.9,311.5 L 175.8,335.6 L 182.2,346.9 L 188,355 L 193.7,361.2 L 199.5,365.3 L 205.8,367.5 L 212.2,367.3 L 219.1,364.7 L 226,359.7 L 232.3,353.2 L 239.2,344.5 L 261.7,310.9 L 270.4,299.5 L 279.6,290.7 L 283.6,288.4 L 287.7,287 L 292.3,286.8 L 297.5,288.2 L 302.6,291.3 L 307.8,296 L 318.8,310 L 336.1,337.6" fill="none" stroke="#14532d" stroke-width="2.6" stroke-linejoin="round"/>
+</g>
 </svg>
-</div>
-
-El mismo perfil en natural (arriba) y realzado ×4 (abajo).
 :::
 
-#### La guitarra
+::: {.column width="38%"}
+::: {.texto-azul style="font-size:0.6em; margin-top:0.8em;"}
+::: {.fragment fragment-index="1"}
+En el perfil **natural** la escala vertical y la horizontal son **iguales**: refleja las pendientes reales, pero en general queda demasiado suave. Solo se usa cuando hay que **visualizar correctamente las pendientes**.
+:::
 
-La **guitarra** es la información alfanumérica asociada a la representación gráfica del perfil. Sus filas mínimas son el **plano de comparación**, las **ordenadas del terreno**, las **distancias al origen** y las **distancias parciales**; se ajusta a los datos que aparezcan en cada perfil (si hay rasante, se añaden sus ordenadas, las cotas rojas, etc.).
+::: {.fragment fragment-index="2"}
+En el perfil **realzado** se **exagera la escala vertical** para ver mejor el relieve. El realce es el cociente de escalas: con Eh 1:8000 y Ev 1:2000, el realce es 8000/2000 = **×4**.
+:::
+:::
+:::
+::::
 
-::: {#fig-perfil-guitarra}
-<div style="max-width:660px; margin:0 auto;">
+## La guitarra
+
+:::: columns
+::: {.column width="70%"}
 <svg viewBox="0 0 660 430" xmlns="http://www.w3.org/2000/svg" style="width:94%; display:block; margin:0 auto;">
 <path d="M 40,174.2 L 57,160.5 L 95.7,126.7 L 115.1,112.1 L 126,105.7 L 136.9,100.9 L 147.8,98.1 L 157.5,97.3 L 165.9,98 L 175.6,100.3 L 184.1,103.7 L 193.8,108.8 L 203.5,115.2 L 214.4,123.5 L 260.4,163.9 L 283.4,181.6 L 296.7,189.9 L 308.8,195.8 L 320.9,200.4 L 333,203.4 L 346.3,205 L 359.7,204.9 L 374.2,202.9 L 388.7,199.2 L 402,194.5 L 416.6,188.1 L 463.8,163.5 L 482,155.1 L 501.3,148.7 L 518.3,146 L 528,145.8 L 538.9,146.9 L 549.8,149.2 L 560.7,152.6 L 583.7,162.8 L 620,183.1" fill="none" stroke="#14532d" stroke-width="2.6" stroke-linejoin="round"/>
 <circle cx="56.9" cy="160.5" r="2.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
@@ -226,6 +258,7 @@ La **guitarra** es la información alfanumérica asociada a la representación g
 <circle cx="610.2" cy="177.5" r="2.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
 <line x1="610.2" y1="177.5" x2="610.2" y2="240" stroke="#bbb" stroke-width="0.7"/>
 <line x1="40" y1="240" x2="620" y2="240" stroke="#1a1a1a" stroke-width="1.6"/>
+<g class="fragment" data-fragment-index="1">
 <text x="8" y="254" font-size="10.5" fill="#333">Plano de comparación 95 m</text>
 <line x1="40" y1="240" x2="620" y2="240" stroke="#1a1a1a" stroke-width="1.1"/>
 <text x="8" y="274" font-size="10.5" fill="#333">Ordenadas del terreno</text>
@@ -297,22 +330,32 @@ La **guitarra** es la información alfanumérica asociada a la representación g
 <text x="623" y="296" font-size="9.5" fill="#1a1a1a" transform="rotate(-90 623 296)">116.7</text>
 <text x="623" y="356" font-size="9.5" fill="#1a1a1a" transform="rotate(-90 623 356)">476</text>
 <text x="602.5" y="416" font-size="9.5" fill="#555" transform="rotate(-90 602.5 416)">34</text>
+</g>
 </svg>
-</div>
-
-El perfil AB con su guitarra: plano de comparación, ordenadas del terreno, distancias al origen y parciales.
 :::
 
-#### Perfil desarrollado
+::: {.column width="30%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.6em;"}
+La **guitarra** es la información **alfanumérica** asociada al dibujo del perfil.
 
-Cuando el eje tiene **varias alineaciones** o **tramos curvos**, el perfil se **desarrolla**: cada tramo se lleva a continuación del anterior con su longitud real, y en el desarrollo se marca cada punto de giro con su ángulo. Un tramo curvo se desarrolla según la longitud de su arco:
+::: {.fragment fragment-index="1"}
+Las filas mínimas:
 
-$$
-L_{arco} = \alpha_{(rad)} \cdot R
-$$
+-   **Plano de comparación** (la cota de la base del dibujo)
+-   **Ordenadas del terreno** (cotas de los puntos tomados)
+-   **Distancias al origen**
+-   **Distancias parciales**
 
-::: {#fig-perfil-desarrollado}
-<div style="max-width:660px; margin:0 auto;">
+Se ajusta a los datos de cada perfil: si hay rasante, se añaden sus filas.
+:::
+:::
+:::
+::::
+
+## Perfil desarrollado
+
+:::: columns
+::: {.column width="64%"}
 <svg viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg" style="width:94%; display:block; margin:0 auto;">
 <g opacity="0.95">
 <path d="M 223.8,171.2 L 231.6,165.6" fill="none" stroke="#8a5a2a" stroke-width="1.4" stroke-linejoin="round"/>
@@ -339,6 +382,7 @@ $$
 <text x="216.6" y="150" font-size="13" fill="#1a1a1a" font-weight="700">B</text>
 </g>
 <text x="240" y="30" font-size="12.5" fill="#444" font-style="italic">dos alineaciones: A–V y V–B</text>
+<g class="fragment" data-fragment-index="1">
 <line x1="40" y1="405" x2="640" y2="405" stroke="#999" stroke-width="1"/>
 <path d="M 40,315.4 L 70.6,289.7 L 82.5,281.2 L 93.1,274.7 L 103.8,269.5 L 114.4,265.9 L 125,263.8 L 135.6,263.5 L 146.3,264.9 L 158.2,268.5 L 170.2,274 L 182.1,281.3 L 204.7,298.5 L 259.2,345.8 L 273.8,356.9 L 288.4,366.5 L 301.7,373.7 L 313.6,378.9 L 325.6,382.8 L 338.9,385.7 L 353.5,387.1 L 369.3,386.7 L 384.7,384.4 L 401.2,379.9 L 415.4,374.7 L 431.9,367.3 L 484,339.7 L 504.1,330.1 L 524.1,322.8 L 543.1,318.9 L 553.7,318.1 L 564.3,318.4 L 575,319.8 L 586.8,322.6 L 598.6,326.5 L 610.4,331.4 L 640,346.9" fill="none" stroke="#14532d" stroke-width="2.8" stroke-linejoin="round"/>
 <line x1="357.5" y1="405" x2="357.5" y2="230" stroke="#d00000" stroke-width="1.4" stroke-dasharray="6,4"/>
@@ -347,51 +391,74 @@ $$
 <text x="371.5" y="240" font-size="11.5" fill="#d00000" font-style="italic">el desarrollo “endereza” el eje: giro en V</text>
 <text x="40" y="236" font-size="13" fill="#1a1a1a" font-weight="700">A</text>
 <text x="636" y="236" font-size="13" fill="#1a1a1a" font-weight="700">B</text>
+</g>
 </svg>
-</div>
-
-Perfil desarrollado del eje A–V–B: las dos alineaciones se enderezan y el giro se marca en V.
 :::
 
-#### Perfil del terreno con rasante
+::: {.column width="36%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.5em;"}
+Cuando el eje tiene **varias alineaciones** (o tramos curvos), el perfil se **desarrolla**: se endereza el eje llevando cada tramo a continuación del anterior, con su longitud real.
 
-Sobre el perfil del terreno se representa la **rasante** de la obra. Donde el terreno queda por encima de la rasante hay que excavar (**desmonte**); donde queda por debajo, hay que aportar tierra (**terraplén**). Los puntos donde ambos se cortan son los **puntos de paso**.
+::: {.fragment fragment-index="1"}
+En el desarrollo se marca el **punto de giro** (V) con su ángulo.
 
-::: {#fig-perfil-rasante}
-<div style="max-width:640px; margin:0 auto;">
+Si el tramo es **curvo**, se desarrolla según la **longitud del arco**:
+
+$$L_{arco} = \alpha_{(rad)} \cdot R$$
+:::
+:::
+:::
+::::
+
+## Perfil del terreno con rasante
+
+:::: columns
+::: {.column width="64%"}
 <svg viewBox="0 0 660 340" xmlns="http://www.w3.org/2000/svg" style="width:94%; display:block; margin:0 auto;">
+<g class="fragment" data-fragment-index="2">
 <path d="M 40,261.1 L 41.2,260 L 42.4,258.9 L 43.6,257.8 L 44.8,256.7 L 46.1,255.6 L 47.3,254.4 L 48.5,253.3 L 49.7,252.1 L 50.9,250.9 L 52.1,249.8 L 52.1,249.9 L 50.9,249.8 L 49.7,249.7 L 48.5,249.6 L 47.3,249.6 L 46.1,249.5 L 44.8,249.4 L 43.6,249.3 L 42.4,249.2 L 41.2,249.1 L 40,249 Z" fill="#7ac07a" stroke="none" stroke-width="0" stroke-linejoin="round" fill-opacity="0.55"/>
 <path d="M 52.1,249.8 L 53.3,248.6 L 54.5,247.4 L 55.7,246.2 L 57,245 L 58.2,243.8 L 59.4,242.5 L 60.6,241.3 L 61.8,240.1 L 63,238.8 L 64.2,237.6 L 65.4,236.3 L 66.6,235.1 L 67.8,233.8 L 69.1,232.6 L 70.3,231.3 L 71.5,230 L 72.7,228.8 L 73.9,227.5 L 75.1,226.2 L 76.3,225 L 77.5,223.7 L 78.7,222.4 L 80,221.2 L 81.2,219.9 L 82.4,218.7 L 83.6,217.4 L 84.8,216.2 L 86,214.9 L 87.2,213.7 L 88.4,212.4 L 89.6,211.2 L 90.9,210 L 92.1,208.8 L 93.3,207.6 L 94.5,206.4 L 95.7,205.2 L 96.9,204 L 98.1,202.9 L 99.3,201.7 L 100.5,200.6 L 101.8,199.4 L 103,198.3 L 104.2,197.2 L 105.4,196.1 L 106.6,195.1 L 107.8,194 L 109,193 L 110.2,192 L 111.4,191 L 112.7,190 L 113.9,189 L 115.1,188.1 L 116.3,187.1 L 117.5,186.2 L 118.7,185.3 L 119.9,184.5 L 121.1,183.6 L 122.3,182.8 L 123.5,182 L 124.8,181.2 L 126,180.5 L 127.2,179.8 L 128.4,179.1 L 129.6,178.4 L 130.8,177.7 L 132,177.1 L 133.2,176.5 L 134.4,176 L 135.7,175.4 L 136.9,174.9 L 138.1,174.4 L 139.3,174 L 140.5,173.5 L 141.7,173.1 L 142.9,172.7 L 144.1,172.4 L 145.3,172.1 L 146.6,171.8 L 147.8,171.6 L 149,171.3 L 150.2,171.1 L 151.4,171 L 152.6,170.9 L 153.8,170.8 L 155,170.7 L 156.2,170.6 L 157.5,170.6 L 158.7,170.7 L 159.9,170.7 L 161.1,170.8 L 162.3,170.9 L 163.5,171.1 L 164.7,171.2 L 165.9,171.5 L 167.1,171.7 L 168.4,172 L 169.6,172.3 L 170.8,172.6 L 172,172.9 L 173.2,173.3 L 174.4,173.8 L 175.6,174.2 L 176.8,174.7 L 178,175.2 L 179.2,175.7 L 180.5,176.3 L 181.7,176.9 L 182.9,177.5 L 184.1,178.1 L 185.3,178.8 L 186.5,179.5 L 187.7,180.2 L 188.9,180.9 L 190.1,181.7 L 191.4,182.5 L 192.6,183.3 L 193.8,184.2 L 195,185 L 196.2,185.9 L 197.4,186.8 L 198.6,187.8 L 199.8,188.7 L 201,189.7 L 202.3,190.7 L 203.5,191.7 L 204.7,192.7 L 205.9,193.7 L 207.1,194.8 L 208.3,195.9 L 209.5,197 L 210.7,198.1 L 211.9,199.2 L 213.2,200.3 L 214.4,201.5 L 215.6,202.7 L 216.8,203.8 L 218,205 L 219.2,206.2 L 220.4,207.4 L 221.6,208.6 L 222.8,209.9 L 224.1,211.1 L 225.3,212.4 L 226.5,213.6 L 227.7,214.9 L 228.9,216.1 L 230.1,217.4 L 231.3,218.7 L 232.5,219.9 L 233.7,221.2 L 234.9,222.5 L 236.2,223.8 L 237.4,225.1 L 238.6,226.4 L 239.8,227.6 L 241,228.9 L 242.2,230.2 L 243.4,231.5 L 244.6,232.8 L 245.8,234.1 L 247.1,235.3 L 248.3,236.6 L 249.5,237.9 L 250.7,239.1 L 251.9,240.4 L 253.1,241.7 L 254.3,242.9 L 255.5,244.1 L 256.7,245.4 L 258,246.6 L 259.2,247.8 L 260.4,249 L 261.6,250.2 L 262.8,251.4 L 264,252.6 L 265.2,253.8 L 266.4,254.9 L 267.6,256.1 L 268.9,257.2 L 270.1,258.3 L 271.3,259.4 L 272.5,260.5 L 273.7,261.6 L 274.9,262.7 L 276.1,263.8 L 277.3,264.8 L 278.5,265.8 L 279.7,266.9 L 281,267.9 L 281,267.3 L 279.7,267.2 L 278.5,267.1 L 277.3,267 L 276.1,266.9 L 274.9,266.8 L 273.7,266.7 L 272.5,266.6 L 271.3,266.5 L 270.1,266.5 L 268.9,266.4 L 267.6,266.3 L 266.4,266.2 L 265.2,266.1 L 264,266 L 262.8,265.9 L 261.6,265.8 L 260.4,265.7 L 259.2,265.6 L 258,265.5 L 256.7,265.4 L 255.5,265.4 L 254.3,265.3 L 253.1,265.2 L 251.9,265.1 L 250.7,265 L 249.5,264.9 L 248.3,264.8 L 247.1,264.7 L 245.8,264.6 L 244.6,264.5 L 243.4,264.4 L 242.2,264.3 L 241,264.2 L 239.8,264.2 L 238.6,264.1 L 237.4,264 L 236.2,263.9 L 234.9,263.8 L 233.7,263.7 L 232.5,263.6 L 231.3,263.5 L 230.1,263.4 L 228.9,263.3 L 227.7,263.2 L 226.5,263.1 L 225.3,263.1 L 224.1,263 L 222.8,262.9 L 221.6,262.8 L 220.4,262.7 L 219.2,262.6 L 218,262.5 L 216.8,262.4 L 215.6,262.3 L 214.4,262.2 L 213.2,262.1 L 211.9,262 L 210.7,262 L 209.5,261.9 L 208.3,261.8 L 207.1,261.7 L 205.9,261.6 L 204.7,261.5 L 203.5,261.4 L 202.3,261.3 L 201,261.2 L 199.8,261.1 L 198.6,261 L 197.4,260.9 L 196.2,260.8 L 195,260.8 L 193.8,260.7 L 192.6,260.6 L 191.4,260.5 L 190.1,260.4 L 188.9,260.3 L 187.7,260.2 L 186.5,260.1 L 185.3,260 L 184.1,259.9 L 182.9,259.8 L 181.7,259.7 L 180.5,259.7 L 179.2,259.6 L 178,259.5 L 176.8,259.4 L 175.6,259.3 L 174.4,259.2 L 173.2,259.1 L 172,259 L 170.8,258.9 L 169.6,258.8 L 168.4,258.7 L 167.1,258.6 L 165.9,258.6 L 164.7,258.5 L 163.5,258.4 L 162.3,258.3 L 161.1,258.2 L 159.9,258.1 L 158.7,258 L 157.5,257.9 L 156.2,257.8 L 155,257.7 L 153.8,257.6 L 152.6,257.5 L 151.4,257.5 L 150.2,257.4 L 149,257.3 L 147.8,257.2 L 146.6,257.1 L 145.3,257 L 144.1,256.9 L 142.9,256.8 L 141.7,256.7 L 140.5,256.6 L 139.3,256.5 L 138.1,256.4 L 136.9,256.3 L 135.7,256.3 L 134.4,256.2 L 133.2,256.1 L 132,256 L 130.8,255.9 L 129.6,255.8 L 128.4,255.7 L 127.2,255.6 L 126,255.5 L 124.8,255.4 L 123.5,255.3 L 122.3,255.2 L 121.1,255.2 L 119.9,255.1 L 118.7,255 L 117.5,254.9 L 116.3,254.8 L 115.1,254.7 L 113.9,254.6 L 112.7,254.5 L 111.4,254.4 L 110.2,254.3 L 109,254.2 L 107.8,254.1 L 106.6,254.1 L 105.4,254 L 104.2,253.9 L 103,253.8 L 101.8,253.7 L 100.5,253.6 L 99.3,253.5 L 98.1,253.4 L 96.9,253.3 L 95.7,253.2 L 94.5,253.1 L 93.3,253 L 92.1,252.9 L 90.9,252.9 L 89.6,252.8 L 88.4,252.7 L 87.2,252.6 L 86,252.5 L 84.8,252.4 L 83.6,252.3 L 82.4,252.2 L 81.2,252.1 L 80,252 L 78.7,251.9 L 77.5,251.8 L 76.3,251.8 L 75.1,251.7 L 73.9,251.6 L 72.7,251.5 L 71.5,251.4 L 70.3,251.3 L 69.1,251.2 L 67.8,251.1 L 66.6,251 L 65.4,250.9 L 64.2,250.8 L 63,250.7 L 61.8,250.7 L 60.6,250.6 L 59.4,250.5 L 58.2,250.4 L 57,250.3 L 55.7,250.2 L 54.5,250.1 L 53.3,250 L 52.1,249.9 Z" fill="#e07a7a" stroke="none" stroke-width="0" stroke-linejoin="round" fill-opacity="0.55"/>
 <path d="M 281,267.9 L 282.2,268.9 L 283.4,269.8 L 284.6,270.8 L 285.8,271.7 L 287,272.7 L 288.2,273.6 L 289.4,274.5 L 290.6,275.4 L 291.9,276.2 L 293.1,277.1 L 294.3,277.9 L 295.5,278.7 L 296.7,279.5 L 297.9,280.3 L 299.1,281.1 L 300.3,281.8 L 301.5,282.6 L 302.8,283.3 L 304,284 L 305.2,284.7 L 306.4,285.3 L 307.6,286 L 308.8,286.6 L 310,287.2 L 311.2,287.8 L 312.4,288.4 L 313.7,288.9 L 314.9,289.5 L 316.1,290 L 317.3,290.5 L 318.5,291 L 319.7,291.4 L 320.9,291.9 L 322.1,292.3 L 323.3,292.7 L 324.6,293.1 L 325.8,293.5 L 327,293.9 L 328.2,294.2 L 329.4,294.5 L 330.6,294.9 L 331.8,295.1 L 333,295.4 L 334.2,295.7 L 335.4,295.9 L 336.7,296.1 L 337.9,296.3 L 339.1,296.5 L 340.3,296.7 L 341.5,296.9 L 342.7,297 L 343.9,297.1 L 345.1,297.2 L 346.3,297.3 L 347.6,297.4 L 348.8,297.4 L 350,297.5 L 351.2,297.5 L 352.4,297.5 L 353.6,297.5 L 354.8,297.5 L 356,297.4 L 357.2,297.4 L 358.5,297.3 L 359.7,297.2 L 360.9,297.1 L 362.1,297 L 363.3,296.8 L 364.5,296.7 L 365.7,296.5 L 366.9,296.3 L 368.1,296.1 L 369.4,295.9 L 370.6,295.7 L 371.8,295.4 L 373,295.2 L 374.2,294.9 L 375.4,294.6 L 376.6,294.3 L 377.8,294 L 379,293.7 L 380.3,293.3 L 381.5,293 L 382.7,292.6 L 383.9,292.2 L 385.1,291.8 L 386.3,291.4 L 387.5,291 L 388.7,290.6 L 389.9,290.1 L 391.1,289.7 L 392.4,289.2 L 393.6,288.7 L 394.8,288.2 L 396,287.7 L 397.2,287.2 L 398.4,286.7 L 399.6,286.1 L 400.8,285.6 L 402,285 L 403.3,284.4 L 404.5,283.8 L 405.7,283.3 L 406.9,282.6 L 408.1,282 L 409.3,281.4 L 410.5,280.8 L 411.7,280.1 L 412.9,279.5 L 414.2,278.8 L 415.4,278.2 L 416.6,277.5 L 416.6,277.6 L 415.4,277.5 L 414.2,277.4 L 412.9,277.3 L 411.7,277.2 L 410.5,277.1 L 409.3,277 L 408.1,276.9 L 406.9,276.8 L 405.7,276.7 L 404.5,276.6 L 403.3,276.6 L 402,276.5 L 400.8,276.4 L 399.6,276.3 L 398.4,276.2 L 397.2,276.1 L 396,276 L 394.8,275.9 L 393.6,275.8 L 392.4,275.7 L 391.1,275.6 L 389.9,275.5 L 388.7,275.5 L 387.5,275.4 L 386.3,275.3 L 385.1,275.2 L 383.9,275.1 L 382.7,275 L 381.5,274.9 L 380.3,274.8 L 379,274.7 L 377.8,274.6 L 376.6,274.5 L 375.4,274.4 L 374.2,274.4 L 373,274.3 L 371.8,274.2 L 370.6,274.1 L 369.4,274 L 368.1,273.9 L 366.9,273.8 L 365.7,273.7 L 364.5,273.6 L 363.3,273.5 L 362.1,273.4 L 360.9,273.3 L 359.7,273.3 L 358.5,273.2 L 357.2,273.1 L 356,273 L 354.8,272.9 L 353.6,272.8 L 352.4,272.7 L 351.2,272.6 L 350,272.5 L 348.8,272.4 L 347.6,272.3 L 346.3,272.2 L 345.1,272.1 L 343.9,272.1 L 342.7,272 L 341.5,271.9 L 340.3,271.8 L 339.1,271.7 L 337.9,271.6 L 336.7,271.5 L 335.4,271.4 L 334.2,271.3 L 333,271.2 L 331.8,271.1 L 330.6,271 L 329.4,271 L 328.2,270.9 L 327,270.8 L 325.8,270.7 L 324.6,270.6 L 323.3,270.5 L 322.1,270.4 L 320.9,270.3 L 319.7,270.2 L 318.5,270.1 L 317.3,270 L 316.1,269.9 L 314.9,269.9 L 313.7,269.8 L 312.4,269.7 L 311.2,269.6 L 310,269.5 L 308.8,269.4 L 307.6,269.3 L 306.4,269.2 L 305.2,269.1 L 304,269 L 302.8,268.9 L 301.5,268.8 L 300.3,268.7 L 299.1,268.7 L 297.9,268.6 L 296.7,268.5 L 295.5,268.4 L 294.3,268.3 L 293.1,268.2 L 291.9,268.1 L 290.6,268 L 289.4,267.9 L 288.2,267.8 L 287,267.7 L 285.8,267.6 L 284.6,267.6 L 283.4,267.5 L 282.2,267.4 L 281,267.3 Z" fill="#7ac07a" stroke="none" stroke-width="0" stroke-linejoin="round" fill-opacity="0.55"/>
 <path d="M 416.6,277.5 L 417.8,276.8 L 419,276.1 L 420.2,275.4 L 421.4,274.7 L 422.6,274 L 423.8,273.3 L 425.1,272.6 L 426.3,271.9 L 427.5,271.1 L 428.7,270.4 L 429.9,269.7 L 431.1,268.9 L 432.3,268.2 L 433.5,267.4 L 434.7,266.7 L 435.9,265.9 L 437.2,265.2 L 438.4,264.4 L 439.6,263.6 L 440.8,262.9 L 442,262.1 L 443.2,261.3 L 444.4,260.6 L 445.6,259.8 L 446.8,259 L 448.1,258.3 L 449.3,257.5 L 450.5,256.7 L 451.7,256 L 452.9,255.2 L 454.1,254.4 L 455.3,253.7 L 456.5,252.9 L 457.7,252.2 L 459,251.5 L 460.2,250.7 L 461.4,250 L 462.6,249.3 L 463.8,248.5 L 465,247.8 L 466.2,247.1 L 467.4,246.4 L 468.6,245.7 L 469.9,245 L 471.1,244.4 L 472.3,243.7 L 473.5,243 L 474.7,242.4 L 475.9,241.7 L 477.1,241.1 L 478.3,240.5 L 479.5,239.9 L 480.8,239.3 L 482,238.7 L 483.2,238.1 L 484.4,237.6 L 485.6,237 L 486.8,236.5 L 488,235.9 L 489.2,235.4 L 490.4,234.9 L 491.6,234.5 L 492.9,234 L 494.1,233.5 L 495.3,233.1 L 496.5,232.7 L 497.7,232.3 L 498.9,231.9 L 500.1,231.5 L 501.3,231.1 L 502.5,230.8 L 503.8,230.5 L 505,230.2 L 506.2,229.9 L 507.4,229.6 L 508.6,229.4 L 509.8,229.1 L 511,228.9 L 512.2,228.7 L 513.4,228.5 L 514.7,228.3 L 515.9,228.2 L 517.1,228.1 L 518.3,228 L 519.5,227.9 L 520.7,227.8 L 521.9,227.7 L 523.1,227.7 L 524.3,227.7 L 525.6,227.7 L 526.8,227.7 L 528,227.8 L 529.2,227.8 L 530.4,227.9 L 531.6,228 L 532.8,228.1 L 534,228.2 L 535.2,228.4 L 536.5,228.6 L 537.7,228.8 L 538.9,229 L 540.1,229.2 L 541.3,229.4 L 542.5,229.7 L 543.7,230 L 544.9,230.3 L 546.1,230.6 L 547.3,230.9 L 548.6,231.3 L 549.8,231.7 L 551,232 L 552.2,232.4 L 553.4,232.9 L 554.6,233.3 L 555.8,233.7 L 557,234.2 L 558.2,234.7 L 559.5,235.2 L 560.7,235.7 L 561.9,236.2 L 563.1,236.8 L 564.3,237.3 L 565.5,237.9 L 566.7,238.5 L 567.9,239 L 569.1,239.6 L 570.4,240.3 L 571.6,240.9 L 572.8,241.5 L 574,242.2 L 575.2,242.8 L 576.4,243.5 L 577.6,244.2 L 578.8,244.9 L 580,245.6 L 581.3,246.3 L 582.5,247 L 583.7,247.7 L 584.9,248.5 L 586.1,249.2 L 587.3,250 L 588.5,250.7 L 589.7,251.5 L 590.9,252.3 L 592.2,253 L 593.4,253.8 L 594.6,254.6 L 595.8,255.4 L 597,256.2 L 598.2,257 L 599.4,257.8 L 600.6,258.6 L 601.8,259.4 L 603,260.2 L 604.3,261 L 605.5,261.8 L 606.7,262.6 L 607.9,263.5 L 609.1,264.3 L 610.3,265.1 L 611.5,265.9 L 612.7,266.7 L 613.9,267.5 L 615.2,268.3 L 616.4,269.2 L 617.6,270 L 618.8,270.8 L 620,271.6 L 620,293 L 618.8,292.9 L 617.6,292.8 L 616.4,292.7 L 615.2,292.6 L 613.9,292.5 L 612.7,292.4 L 611.5,292.4 L 610.3,292.3 L 609.1,292.2 L 607.9,292.1 L 606.7,292 L 605.5,291.9 L 604.3,291.8 L 603,291.7 L 601.8,291.6 L 600.6,291.5 L 599.4,291.4 L 598.2,291.3 L 597,291.3 L 595.8,291.2 L 594.6,291.1 L 593.4,291 L 592.2,290.9 L 590.9,290.8 L 589.7,290.7 L 588.5,290.6 L 587.3,290.5 L 586.1,290.4 L 584.9,290.3 L 583.7,290.2 L 582.5,290.2 L 581.3,290.1 L 580,290 L 578.8,289.9 L 577.6,289.8 L 576.4,289.7 L 575.2,289.6 L 574,289.5 L 572.8,289.4 L 571.6,289.3 L 570.4,289.2 L 569.1,289.1 L 567.9,289.1 L 566.7,289 L 565.5,288.9 L 564.3,288.8 L 563.1,288.7 L 561.9,288.6 L 560.7,288.5 L 559.5,288.4 L 558.2,288.3 L 557,288.2 L 555.8,288.1 L 554.6,288 L 553.4,287.9 L 552.2,287.9 L 551,287.8 L 549.8,287.7 L 548.6,287.6 L 547.3,287.5 L 546.1,287.4 L 544.9,287.3 L 543.7,287.2 L 542.5,287.1 L 541.3,287 L 540.1,286.9 L 538.9,286.8 L 537.7,286.8 L 536.5,286.7 L 535.2,286.6 L 534,286.5 L 532.8,286.4 L 531.6,286.3 L 530.4,286.2 L 529.2,286.1 L 528,286 L 526.8,285.9 L 525.6,285.8 L 524.3,285.7 L 523.1,285.7 L 521.9,285.6 L 520.7,285.5 L 519.5,285.4 L 518.3,285.3 L 517.1,285.2 L 515.9,285.1 L 514.7,285 L 513.4,284.9 L 512.2,284.8 L 511,284.7 L 509.8,284.6 L 508.6,284.5 L 507.4,284.5 L 506.2,284.4 L 505,284.3 L 503.8,284.2 L 502.5,284.1 L 501.3,284 L 500.1,283.9 L 498.9,283.8 L 497.7,283.7 L 496.5,283.6 L 495.3,283.5 L 494.1,283.4 L 492.9,283.4 L 491.6,283.3 L 490.4,283.2 L 489.2,283.1 L 488,283 L 486.8,282.9 L 485.6,282.8 L 484.4,282.7 L 483.2,282.6 L 482,282.5 L 480.8,282.4 L 479.5,282.3 L 478.3,282.3 L 477.1,282.2 L 475.9,282.1 L 474.7,282 L 473.5,281.9 L 472.3,281.8 L 471.1,281.7 L 469.9,281.6 L 468.6,281.5 L 467.4,281.4 L 466.2,281.3 L 465,281.2 L 463.8,281.2 L 462.6,281.1 L 461.4,281 L 460.2,280.9 L 459,280.8 L 457.7,280.7 L 456.5,280.6 L 455.3,280.5 L 454.1,280.4 L 452.9,280.3 L 451.7,280.2 L 450.5,280.1 L 449.3,280 L 448.1,280 L 446.8,279.9 L 445.6,279.8 L 444.4,279.7 L 443.2,279.6 L 442,279.5 L 440.8,279.4 L 439.6,279.3 L 438.4,279.2 L 437.2,279.1 L 435.9,279 L 434.7,278.9 L 433.5,278.9 L 432.3,278.8 L 431.1,278.7 L 429.9,278.6 L 428.7,278.5 L 427.5,278.4 L 426.3,278.3 L 425.1,278.2 L 423.8,278.1 L 422.6,278 L 421.4,277.9 L 420.2,277.8 L 419,277.8 L 417.8,277.7 L 416.6,277.6 Z" fill="#e07a7a" stroke="none" stroke-width="0" stroke-linejoin="round" fill-opacity="0.55"/>
 <text x="150" y="120" font-size="12.5" fill="#b03030" font-weight="700">DESMONTE (quito tierra)</text>
 <text x="300" y="300" font-size="12.5" fill="#2a7a2a" font-weight="700">TERRAPLÉN (aporto tierra)</text>
+</g>
 <path d="M 40,261.1 L 57,245 L 95.7,205.2 L 115.1,188.1 L 126,180.5 L 136.9,174.9 L 147.8,171.6 L 157.5,170.6 L 165.9,171.5 L 175.6,174.2 L 184.1,178.1 L 193.8,184.2 L 203.5,191.7 L 214.4,201.5 L 260.4,249 L 272.5,260.5 L 283.4,269.8 L 296.7,279.5 L 308.8,286.6 L 320.9,291.9 L 333,295.4 L 346.3,297.3 L 359.7,297.2 L 374.2,294.9 L 388.7,290.6 L 402,285 L 416.6,277.5 L 463.8,248.5 L 482,238.7 L 491.6,234.5 L 501.3,231.1 L 509.8,229.1 L 518.3,228 L 528,227.8 L 538.9,229 L 549.8,231.7 L 560.7,235.7 L 571.6,240.9 L 583.7,247.7 L 620,271.6" fill="none" stroke="#14532d" stroke-width="2.8" stroke-linejoin="round"/>
+<g class="fragment" data-fragment-index="1">
 <line x1="40" y1="249" x2="620" y2="293" stroke="#1a1a1a" stroke-width="2.6"/>
 <text x="48" y="239" font-size="12.5" fill="#1a1a1a" font-weight="700">rasante de la obra</text>
 <text x="616" y="259.6" font-size="12.5" fill="#14532d" font-weight="700" text-anchor="end">terreno</text>
+</g>
 </svg>
-</div>
-
-Perfil del terreno con la rasante de la obra: zonas de desmonte (rojo) y terraplén (verde).
 :::
 
-En los proyectos de obra lineal es habitual el planteamiento inverso — el **perfil de la obra con el terreno** superpuesto — con una guitarra mucho más completa: ordenadas de rasante y terreno, cotas rojas de desmonte y terraplén, acuerdos verticales y estado de las alineaciones.
-
-::: {#fig-perfil-obra}
-<div style="max-width:660px; margin:0 auto;">
-<img src="../images/perfil_obra_real.png" style="width:100%;"/>
-</div>
-
-Perfil longitudinal real de un proyecto: el perfil es el de la obra y el terreno va a trazos; la guitarra incluye rasante, cotas rojas y acuerdos verticales.
+::: {.column width="36%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.5em;"}
+::: {.fragment fragment-index="1"}
+Sobre el perfil del terreno se representa la **rasante** de la obra (el perfil sigue siendo **el del terreno**).
 :::
 
-#### Perfiles transversales
+::: {.fragment fragment-index="2"}
+Donde el terreno queda **por encima** de la rasante hay que excavar: **desmonte**. Donde queda **por debajo**, hay que aportar tierra: **terraplén**.
 
-Los **perfiles transversales** cortan perpendicularmente al eje de la obra; la sección es diferente según el punto del perfil longitudinal donde se corta. Se utilizaban sobre todo para el **cálculo de volúmenes** de desmonte y terraplén, y hoy siguen siendo la base de las **secciones tipo** de los proyectos.
+Los puntos donde rasante y terreno se cortan son los **puntos de paso**.
+:::
+:::
+:::
+::::
 
-::: {#fig-perfil-transversales}
-<div style="max-width:520px; margin:0 auto;">
+## Perfil de obra con terreno
+
+<img src="media/acotados-perfiles/perfil-obra-real.png" style="max-height:520px; display:block; margin:6px auto; border:1px solid #ccc;"/>
+
+::: {.texto-azul style="font-size:0.55em; text-align:center;"}
+Un perfil real de proyecto: aquí el perfil dibujado es **el de la obra** (la rasante) y el terreno va superpuesto a trazos. La guitarra incorpora rasante, cotas rojas de desmonte y terraplén, y acuerdos verticales.
+:::
+
+## Perfiles transversales
+
+:::: columns
+::: {.column width="50%"}
 <svg viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg" style="width:80%; display:block; margin:0 auto;">
 <line x1="60" y1="240" x2="280" y2="140" stroke="#d00000" stroke-width="2.6"/>
 <line x1="280" y1="140" x2="500" y2="180" stroke="#d00000" stroke-width="2.6"/>
@@ -412,23 +479,32 @@ Los **perfiles transversales** cortan perpendicularmente al eje de la obra; la s
 <text x="455.5" y="220.6" font-size="11.5" fill="#0f766e" font-weight="700" text-anchor="middle">T7</text>
 <text x="280" y="292" font-size="12.5" fill="#555" text-anchor="middle">Perfiles perpendiculares al eje: la sección cambia en cada punto</text>
 </svg>
-</div>
-
-Perfiles transversales: cortes perpendiculares al eje de la obra, numerados a lo largo del trazado.
+::: {.fragment .texto-azul style="font-size:0.56em; text-align:center;"}
+Se usaban sobre todo para el **cálculo de volúmenes** de desmonte y terraplén.
+:::
 :::
 
-### Material complementario
+::: {.column width="50%"}
+::: {.fragment}
+<img src="media/acotados-perfiles/seccion-tipo.png" style="width:98%; display:block; margin:8px auto; border:1px solid #ccc;"/>
+<div style="font-size:0.5em; color:#666; text-align:center;">Otro uso habitual: las <b>secciones tipo</b> de un proyecto de obra lineal</div>
+:::
+:::
+::::
 
-<strong>Presentaciones de clase (Reveal.js)</strong>
+## Práctica evaluable
 
-<a href="presentaciones/acotados-4-perfiles.html" target="_blank">Perfiles: longitudinal, guitarra, desarrollado y transversales</a>
+:::: columns
+::: {.column width="55%"}
+<img src="media/acotados-perfiles/practica-perfil.png" style="max-height:580px; width:98%; display:block; margin:0 auto; border:1px solid #ccc;"/>
+:::
 
-<strong>Recursos digitales</strong>
+::: {.column width="45%"}
+::: {.texto-azul style="font-size:0.62em; margin-top:1em;"}
+Sobre el plano dado (escala 1:15.000):
 
-<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
-
-<p style="font-size: 0.8em; color: #333; font-style: italic;">
-
-Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas; la ventaja es que el contenido está bien estructurado.
-
-</p>
+1.  Realizar un plano en el que se identifiquen las principales **vaguadas y divisorias** de este terreno.
+2.  Levantar el **perfil longitudinal AB realzado** con Eh = 1:8.000 y Ev = 1:2.000, con su **guitarra**.
+:::
+:::
+::::

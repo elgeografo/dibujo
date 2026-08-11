@@ -1,0 +1,87 @@
+# Explanaciones horizontales {#sec-explanaciones-horizontales .unnumbered}
+
+## Explanaciones horizontales
+
+### Contenido
+
+::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
+<p style="font-size: 1em; color: #333;">
+
+<ol>
+
+<li>El problema: desmonte, terraplén y línea de paso</li>
+
+<li>Método para una plataforma horizontal</li>
+
+<li>Recursos interactivos</li>
+
+</ol>
+
+</p>
+:::
+
+### Apuntes
+
+#### El problema
+
+Una **explanación** es la modificación del terreno necesaria para apoyar en él una superficie plana — una explanada, una pista, la base de una construcción. Al encajar una **plataforma horizontal** a una cota dada en un terreno natural aparecen dos situaciones:
+
+-   donde el terreno queda **por encima** de la plataforma hay que excavar: zona de **desmonte**, limitada por su **talud de desmonte** (típicamente empinado, aquí 1:1);
+-   donde queda **por debajo** hay que rellenar: zona de **terraplén**, con un talud más tendido (aquí 2:3), porque la tierra aportada es menos estable que el terreno natural.
+
+Los puntos del borde de la plataforma donde el terreno está exactamente a su cota forman la **línea de paso** de desmonte a terraplén.
+
+::: {#fig-explanacion-seccion}
+<div style="max-width:620px; margin:0 auto;">
+{{SVG:exp_seccion_static}}
+</div>
+
+La explanación vista en sección: plataforma, talud de desmonte (rojo) y talud de terraplén (verde).
+:::
+
+#### Método para una plataforma horizontal
+
+Sobre el terreno conductor del bloque, encajamos una plataforma rectangular a **cota 108** en el collado. El procedimiento:
+
+1.  Determinar las zonas de **desmonte y terraplén**, es decir, la **línea de paso**: los puntos del borde con cota de terreno igual a la de la plataforma.
+2.  Hacer pasar por cada borde un **plano de talud** de desmonte o de terraplén, según la zona.
+3.  Trazar las **líneas de nivel de cada plano de talud**: paralelas al borde, separadas el **intervalo** del talud (i = e/pendiente).
+4.  En las **esquinas**, el talud es un **cono** de vértice en la esquina: sus líneas de nivel son arcos de circunferencia.
+5.  Calcular la **intersección de cada talud con el terreno** uniendo los cruces de líneas de nivel de igual cota: las **líneas de encuentro**.
+6.  Buscar el **cierre adecuado entre taludes** contiguos, considerando que la intersección de tres planos es un único punto.
+
+::: {#fig-explanacion-planta}
+<div style="max-width:560px; margin:0 auto;">
+{{SVG:exp_planta_static}}
+</div>
+
+Plataforma horizontal a cota 108 en el collado del terreno conductor: línea de paso (azul), líneas de nivel de los taludes y líneas de encuentro de desmonte (rojo) y terraplén (verde).
+:::
+
+::: callout-note
+## Nota
+
+El talud de desmonte y el de terraplén tienen **pendientes distintas** y, por tanto, **intervalos distintos**: con equidistancia de 5 m, el desmonte 1:1 tiene i = 5 m y el terraplén 2:3 tiene i = 7,5 m. Por eso las líneas de nivel del terraplén van más separadas.
+:::
+
+#### Recursos interactivos
+
+[Explicación teórica de la explanada horizontal (Storyteller)](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/00-ejemplo-basico)
+
+[Ejemplo de explanada horizontal con terreno (Storyteller)](https://webserver02.leftcape.com/08_TEST/MJ/)
+
+### Material complementario
+
+<strong>Presentaciones de clase (Reveal.js)</strong>
+
+<a href="presentaciones/acotados-5-explanaciones.html" target="_blank">Modificación del terreno: explanaciones horizontales y en pendiente</a>
+
+<strong>Recursos digitales</strong>
+
+<a href="https://dibujotecni.com/acotado/sistema-de-planos-acotados/" target="_blank">Web de dibujo técnico</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Página web sobre dibujo técnico en sentido amplio. Tiene explicaciones cortas y sencillas; la ventaja es que el contenido está bien estructurado.
+
+</p>

@@ -40,30 +40,7 @@ El talud que se apoya en un borde graduado es la superficie **tangente a los con
 
 ::: {#fig-conos-metodo}
 <div style="max-width:620px; margin:0 auto;">
-<svg viewBox="0 0 640 380" xmlns="http://www.w3.org/2000/svg" style="width:88%; display:block; margin:0 auto;">
-<line x1="92.6" y1="312.3" x2="547.4" y2="107.7" stroke="#1a1a1a" stroke-width="3"/>
-<circle cx="180" cy="273" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
-<text x="188" y="291" font-size="12.5" fill="#2d2d8a" font-weight="700">(10)</text>
-<circle cx="320" cy="210" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
-<text x="328" y="228" font-size="12.5" fill="#2d2d8a" font-weight="700">(10.5)</text>
-<circle cx="460" cy="147" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
-<text x="468" y="165" font-size="12.5" fill="#2d2d8a" font-weight="700">(11)</text>
-<text x="96" y="326" font-size="12" fill="#444" font-style="italic">borde de la plataforma (graduado)</text>
-<circle cx="320" cy="210" r="62.0" fill="none" stroke="#e8862c" stroke-width="2"/>
-<line x1="320" y1="210" x2="363.8" y2="253.8" stroke="#e8862c" stroke-width="1.4" stroke-dasharray="5,3"/>
-<text x="366.5" y="274.5" font-size="11.5" fill="#e8862c" font-weight="700">radio = intervalo del talud</text>
-<text x="248" y="172.8" font-size="11.5" fill="#e8862c" font-weight="700" text-anchor="end">cono de talud</text>
-<text x="248" y="187.8" font-size="11.5" fill="#e8862c" font-weight="700" text-anchor="end">con vértice en (10,5)</text>
-<line x1="180" y1="273" x2="450.4" y2="271.1" stroke="#3f9e3f" stroke-width="2.6"/>
-<text x="330" y="317" font-size="12" fill="#3f9e3f" font-weight="700">línea de nivel 10 del talud:</text>
-<text x="330" y="333" font-size="12" fill="#3f9e3f" font-weight="700">tangente a la base del cono</text>
-<line x1="280" y1="210.3" x2="550" y2="208.4" stroke="#3f9e3f" stroke-width="1.6"/>
-<text x="556" y="212.3" font-size="11.5" fill="#3f9e3f" font-weight="700">10.5</text>
-<line x1="420" y1="147.3" x2="690" y2="145.4" stroke="#3f9e3f" stroke-width="1.6" stroke-dasharray="7,4"/>
-<text x="696" y="149.3" font-size="11.5" fill="#3f9e3f" font-weight="700">11</text>
-<text x="30" y="360" font-size="11.5" fill="#555">El talud del borde en pendiente es la superficie tangente a los conos: sus líneas</text>
-<text x="30" y="375" font-size="11.5" fill="#555">de nivel son las tangentes comunes a las circunferencias de igual cota</text>
-</svg>
+{{SVG:exp_conos_static}}
 </div>
 
 El método de los conos en planta: circunferencia de radio el intervalo con centro en un punto del borde graduado, y línea de nivel del talud tangente a ella desde el punto contiguo.

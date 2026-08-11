@@ -1,0 +1,214 @@
+---
+title: "Introducción al sistema de planos acotados"
+subtitle: "Representación gráfica de la información ambiental"
+author: "Expresión Gráfica · E.T.S.I. Montes, Forestal y del Medio Natural · UPM"
+---
+
+## Representar el mundo en papel
+
+::: {.texto-azul style="font-size:0.7em; margin-bottom:0.3em;"}
+Ya conocemos dos estrategias para llevar el "mundo 3D" al papel:
+:::
+
+:::: columns
+::: {.column width="50%"}
+::: {.fragment fragment-index="1"}
+<div class="texto-azul" style="font-size:0.62em; font-weight:700; text-align:center;">1 vista deformada = PERSPECTIVA</div>
+<svg viewBox="95 50 210 225" xmlns="http://www.w3.org/2000/svg" style="width:56%; display:block; margin:6px auto;">
+<polygon points="175.0,59.8 222.1,87.0 151.4,127.8 104.3,100.6" fill="#c9f2f7" stroke="#075985" stroke-width="2"/>
+<polygon points="222.1,134.6 292.8,175.4 222.1,216.2 151.4,175.4" fill="#c9f2f7" stroke="#075985" stroke-width="2"/>
+<polygon points="222.1,134.6 151.4,175.4 151.4,127.8 222.1,87.0" fill="#55c4d6" stroke="#075985" stroke-width="2"/>
+<polygon points="292.8,223.0 222.1,263.8 222.1,216.2 292.8,175.4" fill="#55c4d6" stroke="#075985" stroke-width="2"/>
+<polygon points="104.3,195.8 222.1,263.8 222.1,216.2 151.4,175.4 151.4,127.8 104.3,100.6" fill="#8fe3ef" stroke="#075985" stroke-width="2"/>
+</svg>
+<div style="font-size:0.52em; color:#666; text-align:center;">Se <b>ve</b> bien, se <b>mide</b> mal</div>
+:::
+:::
+
+::: {.column width="50%"}
+::: {.fragment fragment-index="2"}
+<div class="texto-azul" style="font-size:0.62em; font-weight:700; text-align:center;">Muchas vistas en verdadera magnitud = DIÉDRICO</div>
+<svg viewBox="30 20 290 230" xmlns="http://www.w3.org/2000/svg" style="width:64%; display:block; margin:6px auto;">
+<text x="102" y="34" font-size="13" font-weight="700" fill="#2d2d8a">Alzado</text>
+<text x="222" y="34" font-size="13" font-weight="700" fill="#2d2d8a">Perfil</text>
+<text x="102" y="248" font-size="13" font-weight="700" fill="#2d2d8a">Planta</text>
+<polygon points="70,124 190,124 190,82 118,82 118,40 70,40" fill="none" stroke="#14532d" stroke-width="3"/>
+<rect x="70" y="154" width="120" height="72" fill="none" stroke="#14532d" stroke-width="3"/>
+<line x1="118" y1="154" x2="118" y2="226" stroke="#14532d" stroke-width="3"/>
+<rect x="220" y="40" width="72" height="84" fill="none" stroke="#14532d" stroke-width="3"/>
+<line x1="220" y1="82" x2="292" y2="82" stroke="#14532d" stroke-width="2" stroke-dasharray="7,5"/>
+</svg>
+<div style="font-size:0.52em; color:#666; text-align:center;">Se <b>ve</b> mal, se <b>mide</b> bien</div>
+:::
+:::
+::::
+
+::: {.fragment fragment-index="3" .texto-azul style="font-size:0.68em; text-align:center; margin-top:0.5em;"}
+¿Y para representar un **terreno**? Una montaña no cabe bien en tres vistas: necesitamos un sistema propio — el **sistema de planos acotados**.
+:::
+
+## Un sistema univista
+
+:::: columns
+::: {.column width="55%"}
+::: {.texto-azul style="font-size:0.66em; margin-top:0.6em;"}
+El diédrico es un sistema **multivista**: en cada vista se **quita una dimensión**, y hacen falta varias vistas para reconstruir el objeto.
+
+::: {.fragment fragment-index="1"}
+El sistema acotado es **univista**: solo se dibuja la **planta** (proyección sobre un plano horizontal), y la dimensión que falta — la altura — **se sustituye por un número**: la **cota**.
+:::
+
+::: {.fragment fragment-index="2"}
+La cota es la **distancia vertical** de cada punto al plano horizontal de referencia, llamado **plano de comparación**.
+:::
+:::
+:::
+
+::: {.column width="45%"}
+::: {.fragment fragment-index="1"}
+<svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg" style="width:88%; display:block; margin:14px auto;">
+<polygon points="30,160 100,105 290,105 220,160" fill="#d2b077" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="44" y="152" font-size="11" fill="#6a5335" font-style="italic">Plano de comparación</text>
+<line x1="168" y1="128" x2="168" y2="38" stroke="#909090" stroke-width="1.4" stroke-dasharray="4,3"/>
+<circle cx="168" cy="38" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="176" y="34" font-size="14" font-weight="700">A</text>
+<circle cx="168" cy="128" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="175" y="145" font-size="13" font-weight="700" fill="#2d2d8a">a(4)</text>
+<line x1="150" y1="128" x2="150" y2="38" stroke="#d00000" stroke-width="1.6"/>
+<line x1="146" y1="128" x2="154" y2="128" stroke="#d00000" stroke-width="1.6"/>
+<line x1="146" y1="38" x2="154" y2="38" stroke="#d00000" stroke-width="1.6"/>
+<text x="142" y="86" font-size="12.5" font-weight="700" fill="#d00000" text-anchor="end">cota = 4 m</text>
+</svg>
+:::
+::: {.fragment fragment-index="2"}
+<div style="font-size:0.55em; color:#666; text-align:center;">En el papel solo queda <b>a(4)</b>: la proyección y su cota</div>
+:::
+:::
+::::
+
+## El fundamento: cortar y proyectar
+
+{{SVG:intro_hero}}
+
+## El terreno de trabajo
+
+:::: columns
+::: {.column width="44%"}
+<img src="media/acotados-intro/maqueta-curvas.jpg" style="width:96%; display:block; margin:8px auto; border:1px solid #ccc;"/>
+<div style="font-size:0.5em; color:#666; text-align:center;">Una maqueta hace visible el "pastel de pisos": cada capa es una curva de nivel</div>
+:::
+
+::: {.column width="56%"}
+{{SVG:intro_terreno_plan}}
+::: {.texto-azul style="font-size:0.58em; text-align:center;"}
+Este será **nuestro terreno** durante todo el bloque: dos cerros y un collado. Conviene irlo reconociendo.
+:::
+:::
+::::
+
+## No solo terreno: otros fenómenos
+
+:::: columns
+::: {.column width="52%"}
+{{SVG:intro_quefalta}}
+:::
+
+::: {.column width="48%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.5em;"}
+La misma técnica sirve para **cualquier variable continua** sobre el territorio: temperatura, precipitación, contaminación (NO₂), ruido…
+
+Las curvas se llaman entonces **isolíneas**.
+
+::: {.fragment}
+Por cierto: en este plano, ¿**qué falta**? ¿Nos sirve así la información?
+:::
+
+::: {.fragment}
+Faltan las **cotas** (y con ellas la equidistancia) y la **escala**: sin números, un plano acotado **no se puede leer**.
+:::
+:::
+:::
+::::
+
+## La equidistancia no se ve: se lee
+
+:::: columns
+::: {.column width="62%"}
+{{SVG:intro_leer}}
+:::
+
+::: {.column width="38%"}
+::: {.texto-azul style="font-size:0.62em; margin-top:0.8em;"}
+En el plano hay **una sola distancia vertical**, común a todo el dibujo: la **equidistancia** entre curvas.
+
+::: {.fragment fragment-index="1"}
+¿Dónde está? **No se ve**: se **lee** restando las cotas de dos curvas consecutivas.
+:::
+
+::: {.fragment fragment-index="2"}
+Las **distancias horizontales** sí se miden en el plano, y hay muchas. Entre curva y curva: el **intervalo** — curvas juntas significan mucha pendiente; separadas, poca.
+:::
+:::
+:::
+::::
+
+## Pendiente: el concepto
+
+:::: columns
+::: {.column width="58%"}
+{{SVG:intro_pendiente}}
+:::
+
+::: {.column width="42%"}
+::: {.texto-azul style="font-size:0.64em; margin-top:0.8em;"}
+La **pendiente** es la relación entre la **distancia vertical** y la **distancia horizontal** que separan dos puntos:
+
+$$\text{Pendiente} = \frac{\color{#d00000}{dV}}{\color{#14532d}{dH}}$$
+
+::: {.fragment fragment-index="3"}
+Se expresa en **tanto por uno**, en **tanto por ciento** o como el ángulo cuya **tangente** es ese cociente.
+:::
+:::
+:::
+::::
+
+## Práctica: dos conos en AutoCAD
+
+:::: columns
+::: {.column width="40%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.4em;"}
+Modelar **dos conos** apoyados en el plano XY (cota 0):
+
+-   Cono 1: radio 20 m, altura 10 m
+-   Cono 2: radio 40 m, altura 10 m
+
+Dibujar en cada uno la **altura** y una **generatriz**, dividirlas en 5 partes iguales (orden `divide`) y trazar las **circunferencias** de cotas 0, 2, 4, 6 y 8 apoyadas en la superficie del cono.
+:::
+:::
+
+::: {.column width="60%"}
+{{SVG:intro_conos}}
+::: {.fragment .texto-azul style="font-size:0.62em; text-align:center;"}
+En planta: ¿cuál tiene **más pendiente**? ¿Cuál es la **equidistancia**? ¿Cuánto mide el **intervalo** de cada cono?
+:::
+:::
+::::
+
+## Práctica AC2: Riosequillo
+
+:::: columns
+::: {.column width="55%"}
+<img src="media/acotados-intro/riosequillo-ac2.png" style="max-height:600px; width:96%; display:block; margin:0 auto; border:1px solid #ccc;"/>
+:::
+
+::: {.column width="45%"}
+::: {.texto-azul style="font-size:0.6em; margin-top:1em;"}
+Con el plano de la "vaguada de Riosequillo" (escala 1:10.000):
+
+-   Indicar la **equidistancia** del plano
+-   Identificar el punto de **mayor** y **menor** altitud y dar un rango posible para su **cota**
+-   Sombrear un círculo en la zona de **menor pendiente** y otro en la de **mayor** — ¿cuáles son esas pendientes?
+-   Proponer cambios en las curvas para **disminuir** la pendiente de la zona más tendida
+:::
+:::
+::::

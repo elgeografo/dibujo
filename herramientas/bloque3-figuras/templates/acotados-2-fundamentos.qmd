@@ -1,0 +1,275 @@
+---
+title: "Fundamentos del sistema de planos acotados"
+subtitle: "El punto, la recta y el plano · Graduación de rectas"
+author: "Expresión Gráfica · E.T.S.I. Montes, Forestal y del Medio Natural · UPM"
+---
+
+## Índice
+
+::: {.texto-azul style="font-size:0.78em; margin-top:0.8em;"}
+-   Fundamentos del sistema
+-   El **punto**
+-   La **recta** y sus posiciones particulares
+-   El **plano** y sus rectas singulares
+-   El terreno: reglas de las curvas de nivel
+-   **Graduar** rectas: los tres casos
+:::
+
+## Fundamentos del sistema
+
+:::: columns
+::: {.column width="55%"}
+::: {.texto-azul style="font-size:0.66em; margin-top:0.6em;"}
+El sistema acotado consiste en la **proyección ortogonal** de los objetos del espacio **sobre un plano horizontal**: el **plano de comparación** (PC).
+
+::: {.fragment fragment-index="1"}
+La **cota** — altura sobre el plano de comparación — completa el sistema y lo hace **biunívoco**: cada punto del espacio tiene una única representación, y cada representación corresponde a un único punto.
+:::
+
+::: {.fragment fragment-index="2"}
+En España, las cotas absolutas (altitudes) se refieren al **nivel medio del mar en Alicante**.
+:::
+:::
+:::
+
+::: {.column width="45%"}
+<svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg" style="width:88%; display:block; margin:14px auto;">
+<polygon points="30,160 100,105 290,105 220,160" fill="#d2b077" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="44" y="152" font-size="11" fill="#6a5335" font-style="italic">Plano de comparación</text>
+<line x1="168" y1="128" x2="168" y2="38" stroke="#909090" stroke-width="1.4" stroke-dasharray="4,3"/>
+<circle cx="168" cy="38" r="3.6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="176" y="34" font-size="14" font-weight="700">A</text>
+<circle cx="168" cy="128" r="3.4" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<text x="175" y="145" font-size="13" font-weight="700" fill="#2d2d8a">a(4)</text>
+<line x1="150" y1="128" x2="150" y2="38" stroke="#d00000" stroke-width="1.6"/>
+<line x1="146" y1="128" x2="154" y2="128" stroke="#d00000" stroke-width="1.6"/>
+<line x1="146" y1="38" x2="154" y2="38" stroke="#d00000" stroke-width="1.6"/>
+<text x="142" y="86" font-size="12.5" font-weight="700" fill="#d00000" text-anchor="end">cota = 4 m</text>
+</svg>
+:::
+::::
+
+## El punto
+
+{{SVG:fund_punto}}
+
+::: {.texto-azul style="font-size:0.6em; text-align:center; margin-top:0.3em;"}
+Cota **positiva** (encima del PC), **nula** (en el PC) o **negativa** (debajo). El **desnivel** entre dos puntos es la diferencia de sus cotas.
+:::
+
+## La recta
+
+:::: columns
+::: {.column width="66%"}
+{{SVG:fund_recta}}
+:::
+
+::: {.column width="34%"}
+::: {.texto-azul style="font-size:0.6em; margin-top:0.5em;"}
+::: {.fragment fragment-index="2"}
+Dos puntos determinan una recta: en acotado se **unen sus proyecciones**.
+:::
+
+::: {.fragment fragment-index="3"}
+La **traza** (t) es el punto de **cota 0**: la intersección de la recta con el plano de comparación.
+:::
+
+::: {.fragment fragment-index="4"}
+$$\text{Pte} = \frac{\color{#d00000}{dV}}{\color{#14532d}{dH}} = \frac{3}{300} = 1\,\%$$
+
+También es la **tangente** del ángulo α.
+:::
+:::
+:::
+::::
+
+## Posiciones particulares de la recta
+
+{{SVG:fund_posiciones}}
+
+::: {.fragment .texto-azul style="font-size:0.62em; text-align:center; margin-top:0.5em;"}
+La recta **horizontal** se proyecta en **verdadera magnitud**; la **vertical** se proyecta en **un solo punto** (y su cota no puede escribirse: se rotula la de sus puntos notables).
+:::
+
+## El plano: rectas singulares
+
+{{SVG:fund_plano}}
+
+::: {.texto-azul style="font-size:0.56em; text-align:center; margin-top:0.2em;"}
+::: {.fragment fragment-index="2"}
+Las **líneas de nivel** del plano son sus rectas horizontales: paralelas entre sí y a la **traza** (la de cota 0).
+:::
+::: {.fragment fragment-index="3"}
+La **línea de máxima pendiente** (l.m.p.) es **perpendicular** a las líneas de nivel. En un plano hay **infinitas pendientes**, entre **cero** y la de la l.m.p.: por eso la pendiente **del plano** es la de su l.m.p.
+:::
+:::
+
+## El plano en planta
+
+:::: columns
+::: {.column width="56%"}
+{{SVG:fund_plano_planta}}
+:::
+
+::: {.column width="44%"}
+::: {.texto-azul style="font-size:0.62em; margin-top:0.6em;"}
+En el papel, un plano se representa por la **proyección graduada de su línea de máxima pendiente**: las líneas de nivel son perpendiculares a ella por los puntos de cota entera.
+
+::: {.fragment fragment-index="3"}
+**¿Cuánto mide el intervalo?**
+
+$$\text{Pte} = \frac{e}{i} \;\Rightarrow\; i = \frac{2}{0{,}30} = 6{,}67 \text{ m}$$
+
+En el papel, a escala 1:500: $6{,}67/500 = 13{,}3$ mm.
+:::
+:::
+:::
+::::
+
+## El terreno: reglas de las curvas
+
+:::: columns
+::: {.column width="60%"}
+{{SVG:fund_reglas}}
+:::
+
+::: {.column width="40%"}
+::: {.texto-azul style="font-size:0.62em; margin-top:0.8em;"}
+Entre curva y curva **solo conocemos** la cota de las propias curvas: suponemos que el terreno **varía uniformemente**.
+
+::: {.fragment fragment-index="1"}
+Una curva de nivel siempre **se cierra** (en el dibujo o fuera de él): las cerradas más interiores son **cimas** (u hoyas, si la cota decrece).
+:::
+
+::: {.fragment fragment-index="2"}
+En un **collado**, la misma cota aparece **repetida** a ambos lados.
+:::
+
+::: {.fragment fragment-index="3"}
+Y dos curvas de distinta cota **nunca se cortan**: un punto no puede tener dos alturas.
+:::
+:::
+:::
+::::
+
+## Procedimientos
+
+::: {style="background-color:#2d2d8a; color:#fff; padding:0.9em 1.2em; border-radius:8px; margin-top:2.2em; font-size:0.85em;"}
+**No hay que saber más.**
+
+A partir de aquí, todo consiste en aplicar adecuadamente los conceptos vistos hasta ahora: cota, equidistancia, intervalo y pendiente.
+:::
+
+::: {.fragment style="background-color:#1a6e1a; color:#fff; padding:0.9em 1.2em; border-radius:8px; margin-top:1.2em; font-size:0.85em;"}
+El primer procedimiento — y el más importante del bloque — es **graduar una recta**: señalar sobre su proyección los puntos cuyas cotas pertenecen a la serie de la equidistancia.
+:::
+
+## Graduar una recta: caso 1
+
+:::: columns
+::: {.column width="64%"}
+{{SVG:grad_caso1}}
+:::
+
+::: {.column width="36%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.4em;"}
+**Datos**: la proyección y la cota de dos puntos, ambos **de la serie** (e = 10 m; a 500, b 540).
+
+::: {.fragment fragment-index="2"}
+Cotas a situar: 510, 520, 530. Divido ab en
+
+$$\frac{540-500}{10} = 4 \text{ partes iguales}$$
+:::
+
+::: {.fragment fragment-index="4"}
+El **intervalo** se mide sobre la proyección: i = 35 m. La pendiente:
+
+$$\text{Pte} = \frac{e}{i} = \frac{10}{35} = 28{,}6\,\%$$
+:::
+:::
+:::
+::::
+
+## Graduar una recta: caso 2
+
+:::: columns
+::: {.column width="64%"}
+{{SVG:grad_caso2}}
+:::
+
+::: {.column width="36%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.4em;"}
+**Datos**: la proyección y la cota de dos puntos, pero alguna **no pertenece a la serie** (e = 2 m; a 509, b 516).
+
+::: {.fragment fragment-index="2"}
+Busco el primer punto de cota entera (510) con la fórmula de la pendiente o una regla de tres:
+
+$$\frac{516-509}{2212} = \frac{510-509}{x}$$
+
+$$x = 316 \text{ m}$$
+:::
+
+::: {.fragment fragment-index="3"}
+Sitúo la cota 510… y ya estoy en el **caso 1**.
+:::
+:::
+:::
+::::
+
+## Graduar una recta: caso 3
+
+:::: columns
+::: {.column width="64%"}
+{{SVG:grad_caso3}}
+:::
+
+::: {.column width="36%"}
+::: {.texto-azul style="font-size:0.58em; margin-top:0.4em;"}
+**Datos**: la proyección, la cota de **un** punto y la **pendiente** (e = 2 m; a 610; pendiente 35 % ascendente).
+
+::: {.fragment fragment-index="2"}
+Despejo el intervalo:
+
+$$\frac{35}{100} = \frac{2}{i} \;\Rightarrow\; i = 5{,}71 \text{ m}$$
+
+y lo llevo sucesivamente sobre la proyección desde a: 612, 614, 616…
+:::
+:::
+:::
+::::
+
+## Práctica AC3
+
+:::: columns
+::: {.column width="52%"}
+<img src="media/acotados-fund/riosequillo-ac3.png" style="max-height:600px; width:98%; display:block; margin:0 auto; border:1px solid #ccc;"/>
+:::
+
+::: {.column width="48%"}
+::: {.texto-azul style="font-size:0.56em; margin-top:0.6em;"}
+Sobre el plano de Riosequillo, calcular la **pendiente de la recta AB** en tres supuestos:
+
+-   A y B están **sobre el terreno** (en sus curvas de nivel)
+-   A tiene cota 445 m y B cota 262 m
+-   A tiene cota 438 m y B cota 255 m
+
+Además:
+
+-   Dibujar un **perfil esquemático** con la posición relativa de la recta respecto del terreno
+-   Calcular la cota de **D** (sobre el terreno) y la del **punto medio** de AB (sobre la recta)
+-   **Graduar la recta CB** (B sobre su curva; pendiente 25 % ascendente hacia C): ¿qué cota tiene C? ¿cuánto mide el intervalo?
+:::
+:::
+::::
+
+## Referencias
+
+::: {.texto-azul style="font-size:0.7em; margin-top:1em;"}
+Apuntes del bloque en el libro electrónico y en Moodle.
+
+**Recursos web**
+
+-   [dibujotecni.com — Sistema de planos acotados](https://dibujotecni.com/acotado/sistema-de-planos-acotados/)
+-   [dibujo.ramondelaguila.com — Planos acotados](http://dibujo.ramondelaguila.com/?page_id=1825)
+-   [OCW EHU — Expresión gráfica](https://ocw.ehu.eus/course/view.php?id=346)
+:::
