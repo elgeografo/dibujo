@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "01-AB-INTERVALO-EQUIDISTANCIA",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4274.393982883510034, 1401.7, 0.0 ], [ 4274.393982883510034, 1401.685552290739906, 1.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4274.393982883510034, 1391.685552290739906, 0.0 ], [ 4274.393982883510034, 1401.685552290739906, 0.0 ] ] } }
+]
+}

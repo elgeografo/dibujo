@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN_COTAS",
+"features": [
+{ "type": "Feature", "properties": { "TEXTSTRING": "(0)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4175.022003589867381, 1379.185552290739906, 0.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(1)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4172.522003589867381, 1381.685552290739906, 1.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(2)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4170.022003589867381, 1384.185552290739906, 2.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(3)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4167.522003589867381, 1386.685552290739906, 3.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(4)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4165.022003589867381, 1389.185552290739906, 4.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(5)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4162.522003589867381, 1391.685552290739906, 5.0 ] } }
+]
+}

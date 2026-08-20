@@ -1,7 +1,52 @@
 # 4.6 Planos típicos de cartografía ambiental y forestal {#sec-planos-cartografia .unnumbered}
 
-::: callout-note
-## Capítulo en desarrollo
+Los capítulos anteriores han recorrido los planos que definen la obra. En los proyectos que actúan sobre el medio natural —y en cualquier gran infraestructura— aparece además una familia propia: la **cartografía temática ambiental**, planos cuyo objeto no es definir lo que se construye sino **representar el territorio y sus valores** para analizarlos, protegerlos o gestionarlos.
 
-Este capítulo forma parte de la nueva estructura del libro y su contenido se está elaborando a partir del material del equipo docente.
+## Qué distingue a un plano temático
+
+Un plano de estructuras representa geometría; un plano temático representa **variables del territorio sobre una base cartográfica**. Sus ingredientes son siempre los mismos:
+
+-   Una **base**: mapa topográfico u ortofoto a la escala adecuada, con las curvas de nivel que estudiamos en el Bloque 3 ([el sistema de planos acotados](../04-03-planos-acotados.qmd)).
+-   Una o varias **capas temáticas**: vegetación, hidrología, fauna, usos del suelo... representadas con tramas, colores y símbolos.
+-   Una **leyenda** que hace de diccionario entre símbolo y significado: en un plano temático la leyenda es tan importante como el dibujo.
+
+Las escalas típicas van de 1:100.000 (encuadres de situación) a 1:1.000 o mayores (medidas concretas sobre el terreno), pasando por el 1:2.500 habitual del análisis ambiental de detalle.
+
+## La serie de integración ambiental de un proyecto
+
+La mejor manera de ver qué cartografía ambiental acompaña a un proyecto es mirar el índice de planos de uno real. En el proyecto de plataforma ferroviaria que venimos usando como ejemplo desde [4.1 Normativa](04-01-normativa.qmd), la serie de **integración ambiental** incluye, entre otros, estos planos (con su escala):
+
+**Análisis ambiental** (todo a 1:2.500):
+
+-   Hidrología y vulnerabilidad de acuíferos.
+-   Vegetación y usos del suelo.
+-   Hábitats de interés comunitario.
+-   Zonas de interés para la fauna y áreas de importancia para las aves.
+-   Capacidad agrológica de los suelos.
+-   Suelo urbano y **vías pecuarias**.
+
+**Medidas protectoras y correctoras**:
+
+-   Localización de medidas protectoras y correctoras (1:1.000).
+-   Zonas de préstamo y vertedero: situación, ortofoto, cartografía y estado tras la explotación.
+-   Detalles de medidas concretas: jalonamiento temporal de protección, gestión de la tierra vegetal, barreras de retención de sedimentos, dispositivos de escape y **pasos de fauna**, vallado perimetral (¡hasta escala 1:15!), refugios para quirópteros en viaductos y plantaciones.
+
+Obsérvese el rango completo de escalas: la misma serie ambiental baja desde el encuadre territorial 1:100.000 hasta el detalle constructivo 1:15 de un vallado. La cartografía ambiental no es solo "mapas": termina en planos de detalle exactamente como los del capítulo [4.5 Planos de detalle](04-05-detalle.qmd).
+
+## Cartografía forestal
+
+En el ámbito forestal y del medio natural, el ingeniero maneja además series cartográficas específicas, hoy distribuidas como información geográfica digital:
+
+-   El **Mapa Forestal de España (MFE)**: distribución de las masas forestales, especies y estado.
+-   Los mapas de **hábitats** y espacios protegidos (Red Natura 2000, ENP).
+-   La cartografía de **usos y coberturas del suelo** (SIOSE, Corine Land Cover).
+-   Los **Modelos Digitales del Terreno** y el vuelo **LiDAR-PNOA**, versión digital de los planos acotados del Bloque 3, de los que se derivan pendientes, orientaciones y curvas de nivel ([el trazado de curvas de nivel](../03-planos-acotados/04-03-04-curvado-planos.qmd)).
+-   La cartografía de **gestión**: rodales y cuarteles de una ordenación, redes de defensa contra incendios, vías forestales.
+
+Con estas fuentes, los planos temáticos de un proyecto forestal (un plan de ordenación, una repoblación, un plan de defensa contra incendios) se elaboran hoy con [**sistemas de información geográfica**](../05-representacion-digital/05-02-sig.qmd), que estudiaremos en el Bloque 5: el SIG es al plano temático lo que el CAD es al plano de fabricación.
+
+::: callout-tip
+## Criterio para el proyectista
+
+Ante un plano temático, hazte siempre tres preguntas: ¿qué **base** usa y de qué fecha es?, ¿qué **variable** representa y con qué leyenda?, ¿a qué **escala** es fiable la información? Una capa digitalizada a 1:50.000 dibujada sobre una ortofoto 1:1.000 sigue teniendo la precisión del 1:50.000.
 :::

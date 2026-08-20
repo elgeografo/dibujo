@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "01-AB-INTERVALO-EQUIDISTANCIA-TEXTO",
+"features": [
+{ "type": "Feature", "properties": { "TEXTSTRING": "I(DH) = 10m", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4277.906328442152699, 1393.28608752729042, 0.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "E(DV) = 1m", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4274.906328442152699, 1401.906221569790205, 0 ] } }
+]
+}

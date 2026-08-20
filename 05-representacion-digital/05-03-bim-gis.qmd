@@ -1,7 +1,93 @@
 # 5.3 Modelos integrales de gestión de la información del proyecto: BIM y BIM-GIS {#sec-bim .unnumbered}
 
-::: callout-note
-## Capítulo en desarrollo
+Los capítulos anteriores presentaban herramientas de representación: el CAD dibuja el proyecto ([5.1 Fundamentos del CAD](05-01-cad.qmd)) y el SIG analiza el territorio ([5.2 Fundamentos de los SIG](05-02-sig.qmd)). El paso siguiente en la digitalización de la ingeniería no es una herramienta, sino una **metodología de trabajo**: gestionar toda la información de un proyecto sobre un modelo digital único y compartido durante todo su ciclo de vida.
 
-Este capítulo forma parte de la nueva estructura del libro y su contenido se está elaborando a partir del material del equipo docente.
+## ¿Qué es BIM?
+
+**BIM** (*Building Information Modeling*, modelado de información de la construcción) es una metodología de trabajo colaborativa basada en un **modelo digital tridimensional** del activo que se proyecta, en el que cada elemento —un muro, una tubería, una viga, un dique— no es solo geometría, sino un **objeto con información asociada**: material, dimensiones, coste, fabricante, resistencia, fecha de instalación o instrucciones de mantenimiento.
+
+Tres ideas distinguen al BIM del CAD 3D convencional:
+
+-   **Objetos, no líneas**: el modelo no contiene líneas y sólidos genéricos, sino elementos constructivos que "saben lo que son" y se relacionan entre sí. Los planos, mediciones y presupuestos se **extraen** del modelo y se actualizan con él.
+-   **Fuente única de información**: todos los agentes (proyectista, constructor, instaladores, dirección de obra, propiedad) trabajan sobre un modelo compartido en un entorno común de datos, lo que reduce errores, duplicidades e incoherencias entre documentos.
+-   **Ciclo de vida completo**: el modelo no se agota en la fase de proyecto; acompaña al activo durante la construcción, la explotación y el mantenimiento, hasta su desmantelamiento.
+
+### Las dimensiones del BIM
+
+Es habitual describir el alcance de un modelo BIM mediante sus "dimensiones", que van añadiendo capas de información al modelo geométrico:
+
+| Dimensión | Contenido | Pregunta a la que responde |
+|-----------|-----------|----------------------------|
+| 3D | Modelo geométrico con información de objetos | ¿Qué se construye y cómo es? |
+| 4D | Planificación temporal | ¿Cuándo se ejecuta cada elemento? |
+| 5D | Costes y mediciones | ¿Cuánto cuesta? |
+| 6D | Sostenibilidad y eficiencia energética | ¿Qué comportamiento ambiental tiene? |
+| 7D | Explotación y mantenimiento | ¿Cómo se gestiona durante su vida útil? |
+
+### Niveles de madurez
+
+La implantación del BIM en una organización o un país se describe mediante **niveles de madurez**:
+
+-   **Nivel 0**: CAD 2D sin colaboración; el intercambio se hace en papel o PDF.
+-   **Nivel 1**: CAD 2D/3D con normas comunes de organización de ficheros, pero cada agente mantiene sus propios modelos.
+-   **Nivel 2**: cada disciplina elabora su modelo BIM y los modelos se comparten y federan en un entorno común de datos mediante formatos de intercambio. Es el nivel exigido habitualmente en la contratación pública.
+-   **Nivel 3**: un modelo único integrado en la nube sobre el que trabajan todos los agentes en tiempo real (el horizonte del sector).
+
+### IFC y openBIM
+
+Cada fabricante de software BIM emplea sus formatos propios, lo que amenazaría la colaboración si no existiera un formato de intercambio neutral. Ese formato es **IFC** (*Industry Foundation Classes*), un estándar abierto e internacional (ISO 16739) mantenido por buildingSMART, que describe los objetos del modelo y sus propiedades con independencia del programa que los creó. La filosofía **openBIM** consiste precisamente en garantizar la colaboración mediante estándares abiertos como IFC, de modo que ningún agente quede excluido por la herramienta que utilice y la información siga siendo legible dentro de décadas, cuando el software original haya desaparecido. Las administraciones públicas exigen por ello las entregas en IFC.
+
+## La integración BIM-GIS
+
+El BIM nació en la edificación, donde el entorno del edificio importa poco. Pero en las obras lineales y en los proyectos del medio natural —carreteras, ferrocarriles, líneas eléctricas, encauzamientos, restauraciones hidrológico-forestales— el proyecto no puede separarse del **territorio** que lo acoge: relieve, hidrología, vegetación, propiedad, figuras de protección. Esa información es la que gestiona el SIG.
+
+La integración **BIM-GIS** conecta ambos mundos: el modelo BIM aporta el detalle constructivo del activo y el SIG aporta su contexto territorial georreferenciado.
+
+```{mermaid}
+flowchart LR
+  A["GIS<br/>el territorio: MDT, hidrología,<br/>vegetación, propiedad"] --> C["Modelo integrado<br/>BIM-GIS"]
+  B["BIM<br/>el activo: geometría de detalle,<br/>materiales, costes, plazos"] --> C
+  C --> D["Gemelo digital<br/>modelo + datos en tiempo real"]
+```
+
+Sus aplicaciones son directas en el ámbito de esta titulación:
+
+-   **Diseño sensible al territorio**: encajar un trazado o una explanación sobre el MDT real, calcular movimientos de tierras y evaluar la afección a cauces, hábitats o parcelas.
+-   **Evaluación ambiental**: cruzar el modelo de la infraestructura con las capas de espacios protegidos, riesgo de incendio o erosión.
+-   **Gestión de activos dispersos**: una administración forestal gestiona pistas, puntos de agua, áreas recreativas y diques; el GIS los localiza y el BIM almacena la información de detalle de cada uno.
+
+### Gemelos digitales
+
+La convergencia de BIM, GIS y sensores conectados (IoT) conduce al concepto de **gemelo digital** (*digital twin*): una réplica virtual de un activo o de un territorio que se mantiene sincronizada con la realidad mediante datos captados en continuo. Un gemelo digital de una presa incorpora sus auscultaciones; el de un monte puede incorporar estaciones meteorológicas, aforos de visitantes o índices de vegetación por satélite. Sobre el gemelo se simula ("¿qué pasaría si...?") antes de actuar sobre lo real: es la herramienta emergente para la gestión de infraestructuras y, cada vez más, del propio medio natural.
+
+## BIM en la contratación pública española
+
+El BIM ha dejado de ser opcional en buena parte de la obra pública:
+
+-   La directiva europea de contratación pública (2014/24/UE) abrió la puerta a que los Estados exigieran herramientas de modelado de información en sus licitaciones.
+-   Su transposición española, la **Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público**, recoge esa posibilidad: los órganos de contratación pueden exigir el uso de herramientas de modelado digital de la información de la construcción en obras, servicios y concursos de proyectos.
+-   El **Plan BIM en la contratación pública**, aprobado por el Consejo de Ministros en 2023, ordena la incorporación **progresiva y obligatoria** de requisitos BIM en las licitaciones de la Administración General del Estado a partir de 2024, comenzando por los contratos de mayor importe de edificación y extendiéndose por fases a las infraestructuras y a umbrales cada vez menores.
+
+::: callout-note
+## Nota
+
+Para quien hoy estudia ingeniería el mensaje es claro: los proyectos en cuya redacción y dirección participará se licitarán, en gran medida, en BIM. Manejar modelos de información —y entender sus estándares abiertos— formará parte del ejercicio profesional ordinario, igual que hoy lo es el CAD.
 :::
+
+## Material complementario
+
+<a href="https://www.transportes.gob.es/el-ministerio/buen-gobierno/comision-bim" target="_blank">Comisión Interministerial BIM</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Página oficial de la comisión que impulsa el Plan BIM en la contratación pública española, con el texto del plan y sus hitos de implantación.
+
+</p>
+
+<a href="https://www.buildingsmart.es/" target="_blank">buildingSMART Spain</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Capítulo español de buildingSMART, la organización que mantiene el estándar abierto IFC y difunde la filosofía openBIM; publica guías de iniciación gratuitas.
+
+</p>

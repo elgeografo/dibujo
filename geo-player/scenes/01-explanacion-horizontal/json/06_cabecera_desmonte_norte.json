@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"name": "06_cabecera_desmonte_norte",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8571.214090614434099, 1547.195839745025296, 700.0 ], [ 8610.994632157697197, 1527.195839745025296, 690.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8542.409426641912432, 1567.195839745025296, 710.0 ], [ 8571.214090614434099, 1547.195839745025296, 700.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8506.174220488308492, 1577.02059835277305, 715.0 ], [ 8542.409426641912432, 1567.195839745025296, 710.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8469.574961866213926, 1567.195839745025296, 710.0 ], [ 8506.174220488308492, 1577.02059835277305, 715.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8420.431035511463051, 1547.195839745025296, 700.0 ], [ 8469.574961866213926, 1567.195839745025296, 710.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8344.387093610037482, 1527.195839745025296, 690.0 ], [ 8420.431035511463051, 1547.195839745025296, 700.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8290.380017321185733, 1507.195839745025296, 680.0 ], [ 8344.387093610037482, 1527.195839745025296, 690.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8248.084870435171979, 1487.195839745025296, 670.0 ], [ 8290.380017321185733, 1507.195839745025296, 680.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8229.68282749343598, 1467.195839745025296, 660.0 ], [ 8248.084870435171979, 1487.195839745025296, 670.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8222.486915526180383, 1460.319673681031418, 655.0 ], [ 8229.68282749343598, 1467.195839745025296, 660.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8203.443407013144679, 1467.195839745025296, 660.0 ], [ 8222.486915526180383, 1460.319673681031418, 655.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8198.058468650955547, 1471.813272758609855, 665.0 ], [ 8203.443407013144679, 1467.195839745025296, 660.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8189.143580208151434, 1467.195839745025296, 660.0 ], [ 8198.058468650955547, 1471.813272758609855, 665.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8175.322924617914396, 1447.195839745025296, 650.0 ], [ 8189.143580208151434, 1467.195839745025296, 660.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8139.271598259181701, 1427.458300794289244, 640.0 ], [ 8175.322924617914396, 1447.195839745025296, 650.0 ] ] } }
+]
+}

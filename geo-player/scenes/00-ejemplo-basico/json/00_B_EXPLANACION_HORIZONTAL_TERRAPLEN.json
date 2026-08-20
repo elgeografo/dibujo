@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4157.522003589867381, 1401.685552290739906, 5.0 ], [ 4157.522003589867381, 1391.685552290739906, 5.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4162.522003589867381, 1401.685552290739906, 5.0 ], [ 4157.522003589867381, 1401.685552290739906, 5.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4162.522003589867381, 1391.685552290739906, 5.0 ], [ 4162.522003589867381, 1401.685552290739906, 5.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4157.522003589867381, 1391.685552290739906, 5.0 ], [ 4162.522003589867381, 1391.685552290739906, 5.0 ] ] } }
+]
+}

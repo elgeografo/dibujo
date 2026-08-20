@@ -1,0 +1,82 @@
+{
+  "initialViewState": {
+    "target": [8382, 1445, -9.5],
+    "zoom": -1.5,
+    "rotationOrbit": -1.2,
+    "rotationX": 90
+  },
+  "layers": [
+    {
+      "id": "directoras",
+      "url": "directoras.json",
+      "name": "Directoras",
+      "color": [255, 204, 0],
+      "width": 3,
+      "visible": true
+    },
+    {
+      "id": "simples",
+      "url": "simples.json",
+      "name": "Simples",
+      "color": [160, 82, 45],
+      "width": 1.5,
+      "visible": true
+    },
+    {
+      "id": "plataforma",
+      "url": "plataforma.json",
+      "name": "Plataforma",
+      "color": [200, 200, 200],
+      "width": 3,
+      "visible": true
+    },
+    {
+      "id": "linea_paso",
+      "url": "linea_paso.json",
+      "name": "Línea de paso",
+      "color": [80, 160, 255],
+      "width": 2.5,
+      "visible": false
+    },
+    {
+      "id": "desmonte",
+      "url": "desmonte.json",
+      "name": "Desmonte",
+      "color": [220, 80, 80],
+      "width": 2.5,
+      "visible": false
+    },
+    {
+      "id": "terraplen",
+      "url": "terraplen.json",
+      "name": "Terraplén",
+      "color": [80, 200, 80],
+      "width": 2.5,
+      "visible": false
+    },
+    {
+      "id": "cabecera_talud",
+      "url": "cabecera_talud.json",
+      "name": "Cabecera talud",
+      "color": [255, 105, 180],
+      "width": 2,
+      "visible": false
+    },
+    {
+      "id": "directoras_externas",
+      "url": "directoras_externas.json",
+      "name": "Directoras externas",
+      "color": [255, 230, 120],
+      "width": 2.5,
+      "visible": false
+    },
+    {
+      "id": "curvas_externas",
+      "url": "curvas_externas.json",
+      "name": "Curvas externas",
+      "color": [205, 133, 63],
+      "width": 1.5,
+      "visible": false
+    }
+  ]
+}

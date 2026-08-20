@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "03_puntos_linea_paso",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ 8333.910310475657752, 1303.05592056936257, 620.0 ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ 8193.910310475657752, 1343.981325809454802, 620.0 ] } }
+]
+}

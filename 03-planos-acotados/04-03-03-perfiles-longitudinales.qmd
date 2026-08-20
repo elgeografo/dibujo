@@ -421,7 +421,7 @@ Perfiles transversales: cortes perpendiculares al eje de la obra, numerados a lo
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 
-<a href="presentaciones/acotados-4-perfiles.html" target="_blank">Perfiles: longitudinal, guitarra, desarrollado y transversales</a>
+<a href="../presentaciones/acotados-4-perfiles.html" target="_blank">Perfiles: longitudinal, guitarra, desarrollado y transversales</a>
 
 <strong>Recursos digitales</strong>
 

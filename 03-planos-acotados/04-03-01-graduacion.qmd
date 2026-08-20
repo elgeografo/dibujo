@@ -181,7 +181,7 @@ Mido 5,71 m desde el punto A y marco la cota 612, y así sucesivamente voy subie
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 
-<a href="presentaciones/acotados-2-fundamentos.html" target="_blank">Fundamentos del sistema de planos acotados: punto, recta y plano; graduación de rectas</a>
+<a href="../presentaciones/acotados-2-fundamentos.html" target="_blank">Fundamentos del sistema de planos acotados: punto, recta y plano; graduación de rectas</a>
 
 <strong>Recursos digitales</strong>
 

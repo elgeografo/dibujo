@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "04-desmonte_oeste_A",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8133.910310475657752, 1247.195839745025296, 650.0 ], [ 8133.910310475658662, 1585.055920569362797, 650.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8153.910310475657752, 1247.195839745025296, 640.0 ], [ 8153.910310475658662, 1585.055920569362797, 640.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8173.910310475657752, 1247.195839745025296, 630.0 ], [ 8173.910310475658662, 1585.055920569362797, 630.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8193.910310475657752, 1343.98132580945412, 620.0 ], [ 8193.910310475659571, 1387.195839745025523, 620.0 ] ] } }
+]
+}

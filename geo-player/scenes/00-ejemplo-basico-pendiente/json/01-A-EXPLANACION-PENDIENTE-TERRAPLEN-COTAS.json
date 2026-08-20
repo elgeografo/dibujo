@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "01-A-EXPLANACION-PENDIENTE-TERRAPLEN-COTAS",
+"features": [
+{ "type": "Feature", "properties": { "TEXTSTRING": "(3)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4272.846282588146096, 1422.679785560969549, 3.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(0)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4260.321437287606386, 1392.679785560969549, 0.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(1)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4263.812151548276233, 1402.674663566911477, 1.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(2)", "TEXT_SIZE": 2.5, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 4267.597308401807823, 1412.679785560969549, 2.0 ] } }
+]
+}

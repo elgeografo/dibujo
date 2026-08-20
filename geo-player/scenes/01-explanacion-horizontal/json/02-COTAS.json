@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "02-COTAS",
+"features": [
+{ "type": "Feature", "properties": { "TEXTSTRING": "(620)", "TEXT_SIZE": 15.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8236.38916395940214, 1315.968365654102854, 620.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(700)", "TEXT_SIZE": 15.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7907.094162632612097, 1285.93359334546858, 700.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(600)", "TEXT_SIZE": 15.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8717.054865129859536, 1357.738469095398614, 600.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(650)", "TEXT_SIZE": 15.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8297.630322595225152, 1724.258330012515216, 650.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(630)", "TEXT_SIZE": 15.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8248.054831074969115, 1968.867078876791311, 630.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(630)", "TEXT_SIZE": 15.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7977.35681919491708, 1669.988218324907393, 630.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(650)", "TEXT_SIZE": 15.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8624.986063110063697, 1997.968436951531658, 650.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(700)", "TEXT_SIZE": 15.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8424.118656758349971, 1534.332966157609007, 700.0 ] } }
+]
+}

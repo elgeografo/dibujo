@@ -1,0 +1,224 @@
+{
+  "initialViewState": {
+    "target": [8382, 1445, -9.5],
+    "zoom": -1.5,
+    "rotationOrbit": -1.2,
+    "rotationX": 90
+  },
+  "layers": [
+    {
+      "id": "directoras",
+      "url": "scenes/01-explanacion-horizontal/json/directoras.json",
+      "name": "Directoras",
+      "color": [180, 100, 45],
+      "width": 3,
+      "visible": true
+    },
+    {
+      "id": "simples",
+      "url": "scenes/01-explanacion-horizontal/json/simples.json",
+      "name": "Simples",
+      "color": [160, 82, 45],
+      "width": 1,
+      "visible": true
+    },
+    {
+      "id": "plataforma",
+      "url": "scenes/01-explanacion-horizontal/json/plataforma.json",
+      "name": "Plataforma",
+      "color": [200, 200, 200],
+      "width": 3,
+      "visible": true
+    },
+    {
+      "id": "linea_paso",
+      "url": "scenes/01-explanacion-horizontal/json/linea_paso.json",
+      "name": "Línea de paso",
+      "color": [80, 160, 255],
+      "width": 2.5,
+      "visible": false
+    },
+    {
+      "id": "desmonte",
+      "url": "scenes/01-explanacion-horizontal/json/desmonte.json",
+      "name": "Desmonte",
+      "color": [220, 80, 80],
+      "width": 2.5,
+      "visible": false
+    },
+    {
+      "id": "terraplen",
+      "url": "scenes/01-explanacion-horizontal/json/terraplen.json",
+      "name": "Terraplén",
+      "color": [80, 200, 80],
+      "width": 2.5,
+      "visible": false
+    },
+    {
+      "id": "cabecera_talud",
+      "url": "scenes/01-explanacion-horizontal/json/cabecera_talud.json",
+      "name": "Cabecera talud",
+      "color": [255, 105, 180],
+      "width": 2,
+      "visible": false
+    },
+    {
+      "id": "directoras_externas",
+      "url": "scenes/01-explanacion-horizontal/json/directoras_externas.json",
+      "name": "Directoras externas",
+      "color": [180, 100, 45],
+      "width": 3,
+      "visible": false
+    },
+    {
+      "id": "curvas_externas",
+      "url": "scenes/01-explanacion-horizontal/json/curvas_externas.json",
+      "name": "Curvas externas",
+      "color": [205, 133, 63],
+      "width": 1,
+      "visible": false
+    },
+    {
+      "id": "cotas",
+      "url": "scenes/01-explanacion-horizontal/json/02-COTAS.json",
+      "name": "Cotas",
+      "color": [255, 255, 255],
+      "width": 1.5,
+      "layerType": "text",
+      "textSize": 15,
+      "textAnchor": "start",
+      "alignmentBaseline": "bottom",
+      "visible": false
+    },
+    {
+      "id": "plat_terraplen",
+      "url": "scenes/01-explanacion-horizontal/json/03-plataforma-terraplen.json",
+      "name": "Plat Terraplen",
+       "width": 0,
+      "fillColor": [0, 210, 0],
+      "fillOpacity": 0.5,
+      "color": [0, 210, 0],
+      "visible": false
+    },
+    {
+      "id": "plat_desmonte",
+      "url": "scenes/01-explanacion-horizontal/json/03-plataforma-desmonte.json",
+      "name": "Plat Desmonte",
+       "width": 0,
+      "fillColor": [210, 0, 0],
+      "fillOpacity": 0.5,
+      "color": [210, 0, 0],
+      "visible": false
+    },
+    {
+      "id": "desmonte_oeste_a",
+      "url": "scenes/01-explanacion-horizontal/json/04-desmonte_oeste_A.json",
+      "name": "Desmonte Oeste A",
+      "width": 2,
+      "color": [255, 0, 0],
+      "visible": false
+    },
+    {
+      "id": "desmonte_oeste_cotas_a",
+      "url": "scenes/01-explanacion-horizontal/json/04-desmonte_oeste_cotas_A.json",
+      "name": "Desmonte Oeste Cotas A",
+      "color": [255, 0, 0],
+      "width": 1.5,
+      "layerType": "text",
+      "textSize": 15,
+      "textAnchor": "start",
+      "alignmentBaseline": "bottom",
+      "visible": false
+    },
+    {
+      "id": "cabecera_desmonte_oeste",
+      "url": "scenes/01-explanacion-horizontal/json/05-cabecera_desmonte_oeste.json",
+      "name": "Cebecera Desmonte Oeste",
+      "width": 2,
+      "color": [255, 255, 255],
+      "visible": false
+    },
+    {
+      "id": "nuevas_curvas_desmonte_oeste",
+      "url": "scenes/01-explanacion-horizontal/json/05-nuevas_curvas_desmonte_oeste.json",
+      "name": "Nuevas Curvas Desmonte Oeste",
+      "width": 2,
+      "color": [255, 0, 0],
+      "visible": false
+    },
+    {
+      "id": "desmonte_norte_lineas",
+      "url": "scenes/01-explanacion-horizontal/json/06_desmonte_norte_lineas.json",
+      "name": "Desmonte Norte curvas Nivel",
+      "width": 2,
+      "color": [255, 0, 0],
+      "visible": false
+    },
+    {
+      "id": "desmonte_norte_cotas",
+      "url": "scenes/01-explanacion-horizontal/json/06_desmonte_norte_cotas.json",
+      "name": "Desmonte Norte Cotas",
+      "color": [255, 0, 0],
+      "width": 1.5,
+      "layerType": "text",
+      "textSize": 15,
+      "textAnchor": "start",
+      "alignmentBaseline": "bottom",
+      "visible": false
+    },
+    {
+      "id": "desmonte_norte_cabecera",
+      "url": "scenes/01-explanacion-horizontal/json/06_cabecera_desmonte_norte.json",
+      "name": "Desmonte Norte Cabecera",
+      "width": 2,
+      "color": [255, 250, 250],
+      "visible": false
+    },
+    {
+      "id": "desmonte_norte_nuevas_curvas",
+      "url": "scenes/01-explanacion-horizontal/json/06_nuevas_curvas_desmonte_norte.json",
+      "name": "Desmonte Norte Nuevas Curvas",
+      "width": 2,
+      "color": [255, 0, 0],
+      "visible": false
+    },
+    {
+      "id": "puntos_linea_paso",
+      "url": "scenes/01-explanacion-horizontal/json/03_puntos_linea_paso.json",
+      "name": "Puntos línea paso",
+      "layerType": "point",
+      "color": [255, 255, 0],
+      "radius": 8,
+      "strokeColor": [0, 0, 0],
+      "strokeWidth": 2,
+      "visible": false
+    },
+    {
+      "id": "puntos_cierre",
+      "url": "scenes/01-explanacion-horizontal/json/07_puntos_cierre.json",
+      "name": "Puntos cierre",
+      "layerType": "point",
+      "color": [255, 100, 0],
+      "radius": 8,
+      "strokeColor": [0, 0, 0],
+      "strokeWidth": 2,
+      "visible": false
+    },
+    {
+      "id": "linea_cierre",
+      "url": "scenes/01-explanacion-horizontal/json/07_linea_cierre.json",
+      "name": "Linea cierre",
+      "width": 2,
+      "color": [255, 0, 0],
+      "visible": false
+    },
+    {
+      "id": "cabecera_cierre",
+      "url": "scenes/01-explanacion-horizontal/json/07_cabecera_cierre.json",
+      "name": "Linea cierre",
+      "width": 3,
+      "color": [255, 255, 255],
+      "visible": false
+    }
+  ]
+}

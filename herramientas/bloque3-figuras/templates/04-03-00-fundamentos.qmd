@@ -138,7 +138,7 @@ En el sistema acotado los planos se representan, en general, por la proyección 
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 
-<a href="presentaciones/acotados-2-fundamentos.html" target="_blank">Fundamentos del sistema de planos acotados: punto, recta y plano; graduación de rectas</a>
+<a href="../presentaciones/acotados-2-fundamentos.html" target="_blank">Fundamentos del sistema de planos acotados: punto, recta y plano; graduación de rectas</a>
 
 <strong>Recursos digitales</strong>
 

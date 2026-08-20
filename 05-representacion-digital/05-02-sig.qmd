@@ -1,11 +1,100 @@
 # 5.2 Fundamentos de los sistemas de información geográfica {#sec-sig .unnumbered}
 
-::: callout-note
-## Capítulo en desarrollo
+Un **Sistema de Información Geográfica** (SIG, o GIS en inglés) es un sistema informático que permite capturar, almacenar, analizar y representar información **georreferenciada**, es decir, ligada a una posición sobre la superficie terrestre. Para el ingeniero forestal y del medio natural el SIG es una herramienta de trabajo diaria: con él se delimitan montes y rodales, se calculan superficies y pendientes, se planifican pistas y tratamientos, se modeliza el comportamiento del fuego o se cartografían hábitats.
 
-Este capítulo forma parte de la nueva estructura del libro y su contenido se está elaborando a partir del material del equipo docente.
-:::
+Aunque un SIG y un programa CAD comparten el trazado de geometría sobre un plano, su naturaleza es distinta:
+
+| Aspecto | CAD | SIG |
+|---------|-----|-----|
+| Objeto representado | Objetos diseñados (aún no existen) | Territorio real (ya existe) |
+| Sistema de coordenadas | Local, arbitrario | Geográfico, oficial (georreferenciación) |
+| Unidad de trabajo | El dibujo (entidades gráficas) | La capa de datos (geometría + atributos) |
+| Información asociada | Propiedades gráficas | Tablas de atributos y bases de datos |
+| Operación característica | Dibujar y acotar | Analizar (superponer, medir, consultar) |
+
+En resumen: el CAD **dibuja** lo que se proyecta; el SIG **analiza** lo que existe. En muchos proyectos ambos conviven: la cartografía base se gestiona en SIG y el diseño de detalle (una caseta, un paso de agua, un perfil de pista) se dibuja en CAD.
 
 ## Modelos vectorial y ráster de representación de la información
 
+Toda la información de un SIG se organiza en **capas** superpuestas de un mismo territorio, y cada capa responde a uno de dos modelos de datos.
+
+### El modelo vectorial
+
+En el modelo **vectorial** los elementos del territorio se representan mediante tres tipos de geometría, definidos por las coordenadas de sus vértices:
+
+-   **Puntos**: elementos sin dimensión apreciable a la escala de trabajo (fuentes, pies de árbol de un inventario, vértices geodésicos).
+-   **Líneas**: elementos lineales (ríos, pistas forestales, cortafuegos, curvas de nivel).
+-   **Polígonos**: recintos con superficie (rodales, parcelas catastrales, teselas de vegetación, términos municipales).
+
+Cada elemento geométrico lleva asociado un registro en una **tabla de atributos**: la fila de un rodal puede contener su especie principal, fracción de cabida cubierta, edad o superficie. Esta unión de geometría y atributos es la esencia del SIG, pues permite consultas del tipo "seleccionar los rodales de *Pinus sylvestris* con más de 10 ha y pendiente media superior al 30 %". Los formatos vectoriales más habituales son el veterano *shapefile* (`.shp`) y el más moderno GeoPackage (`.gpkg`).
+
+### El modelo ráster
+
+En el modelo **ráster** el territorio se cubre con una malla regular de celdas (píxeles), y cada celda almacena un valor numérico de la variable representada. Es el modelo natural para variables continuas, que toman un valor en todo punto del territorio:
+
+-   El **modelo digital del terreno** (MDT): cada celda almacena la cota del terreno. De él derivan mapas de pendientes, orientaciones y sombreados.
+-   El **modelo digital de superficies** (MDS): incluye además la vegetación y las construcciones; la diferencia MDS − MDT estima la altura del arbolado.
+-   Las **ortofotos**: fotografías aéreas corregidas geométricamente, en las que cada píxel almacena un valor de color.
+-   Imágenes de satélite, mapas de temperatura, precipitación o riesgo.
+
+El parámetro clave de un ráster es su **resolución espacial**: el tamaño de celda sobre el terreno. Un MDT de 2 m de resolución describe el relieve con mucho más detalle que uno de 25 m, a costa de un fichero mucho mayor.
+
+| Aspecto | Modelo vectorial | Modelo ráster |
+|---------|------------------|---------------|
+| Representa | Objetos discretos con límites definidos | Variables continuas |
+| Estructura | Puntos, líneas y polígonos (coordenadas) | Malla regular de celdas con un valor |
+| Precisión | La de las coordenadas de los vértices | Limitada por el tamaño de celda |
+| Atributos | Tabla asociada, múltiples campos | Un valor por celda (y por banda) |
+| Ejemplos típicos | Rodales, pistas, parcelas, inventarios | MDT, ortofoto, imagen de satélite |
+
+::: callout-note
+## El MDT: el plano acotado hecho digital
+
+[El sistema de planos acotados](../04-03-planos-acotados.qmd) del Bloque 3 representa el terreno mediante puntos con cota y curvas de nivel. Un MDT es exactamente lo mismo en versión digital: una nube de cotas organizada en malla. Las curvas de nivel que allí se trazaban interpolando entre puntos acotados ([el trazado de curvas de nivel](../03-planos-acotados/04-03-04-curvado-planos.qmd)) las genera hoy el SIG de forma automática a partir del MDT, con la equidistancia que se le pida. Los conceptos —cota, equidistancia, pendiente, vaguadas y divisorias— son los mismos; solo cambia la herramienta.
+:::
+
+### Sistemas de referencia
+
+Para que las capas casen entre sí, todas deben estar en el mismo **sistema de referencia de coordenadas** (SRC o CRS). El sistema oficial en la España peninsular y Baleares es **ETRS89** con proyección **UTM**, que divide el globo en husos de 6° de longitud: la Península queda cubierta por los husos 29, 30 y 31, siendo el **huso 30** el que se adopta habitualmente como referencia para trabajos de ámbito nacional (código EPSG:25830). En Canarias el sistema oficial es REGCAN95, con el huso 28. En coordenadas UTM las posiciones se expresan en metros (X este, Y norte), lo que permite medir distancias y superficies directamente. Confundir el SRC de una capa es la fuente de error más común en un SIG: los datos "no caen donde deben".
+
 ## Adquisición y visualización de datos de variables ambientales
+
+### Fuentes de datos españolas
+
+Buena parte de la cartografía necesaria en el ámbito forestal español es pública y gratuita, gracias a las políticas de datos abiertos de la administración:
+
+-   **PNOA** (Plan Nacional de Ortofotografía Aérea): ortofotos de todo el territorio, con resoluciones de 25 y 15 cm, actualizadas periódicamente. Incluye series históricas para estudiar la evolución del paisaje.
+-   **LiDAR-PNOA**: nubes de puntos obtenidas por láser aerotransportado que permiten generar MDT y MDS de alta resolución (2 m o mejor). Es hoy la fuente principal para caracterizar el relieve y la estructura de la vegetación (alturas de arbolado, biomasa, combustible).
+-   **MFE** (Mapa Forestal de España): cartografía vectorial de las formaciones forestales, con sus especies y estado; base del Inventario Forestal Nacional.
+-   **SIOSE** (Sistema de Información sobre Ocupación del Suelo de España): base de datos de ocupación y usos del suelo de todo el territorio.
+-   **Catastro**: parcelario rústico y urbano, consultable y descargable mediante servicios web, imprescindible para conocer la propiedad en cualquier actuación.
+
+La mayor parte de estos productos se descargan del Centro de Descargas del Centro Nacional de Información Geográfica (CNIG) o se consultan directamente como **servicios web de mapas** (WMS/WMTS), que sirven la cartografía por internet sin necesidad de descargarla.
+
+### QGIS
+
+En la asignatura y en la profesión se ha impuesto **QGIS**, un SIG **libre y gratuito**, multiplataforma y mantenido por una amplia comunidad. QGIS lee y escribe los formatos habituales (GeoPackage, shapefile, GeoTIFF), se conecta a servicios WMS/WFS, gestiona los sistemas de referencia y reproyecta al vuelo, y ofrece las herramientas clásicas de análisis: consultas por atributos y por localización, geoprocesos vectoriales (cortar, unir, área de influencia), análisis de MDT (pendientes, orientaciones, cuencas) y composición de mapas para su impresión con leyenda, escala gráfica y cajetín.
+
+::: callout-tip
+## Consejo
+
+El flujo de trabajo básico que conviene dominar es: descargar el MDT y la ortofoto de la zona de trabajo, cargarlos en QGIS comprobando el SRC (EPSG:25830), digitalizar sobre ellos las capas propias (vectorial con su tabla de atributos) y componer el mapa final a una escala normalizada, con los mismos criterios de presentación que un plano tradicional.
+:::
+
+## Material complementario
+
+<a href="https://centrodedescargas.cnig.es/" target="_blank">Centro de Descargas del CNIG</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Punto de descarga oficial y gratuito de PNOA, LiDAR, MDT, cartografía topográfica y demás productos del Instituto Geográfico Nacional.
+
+</p>
+
+<a href="https://qgis.org/" target="_blank">QGIS</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Página oficial del proyecto QGIS: descarga del programa y documentación, incluido un manual de iniciación (*Training Manual*) traducido al español.
+
+</p>

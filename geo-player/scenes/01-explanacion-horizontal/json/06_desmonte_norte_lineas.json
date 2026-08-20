@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "06_desmonte_norte_lineas",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8552.127593127082946, 1567.195839745025296, 710.0 ], [ 7996.182113193048281, 1567.195839745025296, 710.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8604.792325139342211, 1547.195839745025296, 700.0 ], [ 7996.182113193048281, 1547.195839745025296, 700.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8622.554986161117995, 1527.195839745025296, 690.0 ], [ 7996.182113193048281, 1527.195839745025296, 690.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8466.736826520838804, 1507.195839745025296, 680.0 ], [ 7996.182113193048281, 1507.195839745025296, 680.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8504.64486965841752, 1487.195839745025296, 670.0 ], [ 7996.182113193048281, 1487.195839745025296, 670.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8466.736826520838804, 1467.195839745025296, 660.0 ], [ 7996.182113193048281, 1467.195839745025296, 660.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8466.736826520838804, 1447.195839745025296, 650.0 ], [ 7996.182113193048281, 1447.195839745025296, 650.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8465.084156429013092, 1428.05592056936257, 640.0 ], [ 7996.182113193048281, 1427.195839745025296, 640.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8464.86707336163272, 1407.195839745025296, 630.0 ], [ 7996.182113193048281, 1407.195839745025296, 630.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8466.736826520838804, 1387.195839745025296, 620.0 ], [ 7996.182113193048281, 1387.195839745025296, 620.0 ] ] } }
+]
+}

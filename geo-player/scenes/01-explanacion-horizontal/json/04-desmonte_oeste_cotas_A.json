@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "04-desmonte_oeste_cotas_A",
+"features": [
+{ "type": "Feature", "properties": { "TEXTSTRING": "(650)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8136.632081515817845, 1563.040306921660886, 650.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(640)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8153.751454665723941, 1495.342237402116552, 640.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(630)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8176.081071230855741, 1443.26679746521495, 630.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(620)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 8193.910310475659571, 1387.195839745025296, 620.0 ] } }
+]
+}

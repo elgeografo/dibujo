@@ -99,13 +99,13 @@ Los pasos, sobre el ejemplo:
 
 #### Recursos interactivos
 
-[Explicación teórica de la explanada en pendiente (Storyteller)](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/00-ejemplo-basico-pendiente)
+[Explicación teórica de la explanada en pendiente (Storyteller)](../geo-player/index.html?scene=scenes/00-ejemplo-basico-pendiente)
 
 ### Material complementario
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 
-<a href="presentaciones/acotados-5-explanaciones.html" target="_blank">Modificación del terreno: explanaciones horizontales y en pendiente</a>
+<a href="../presentaciones/acotados-5-explanaciones.html" target="_blank">Modificación del terreno: explanaciones horizontales y en pendiente</a>
 
 <strong>Recursos digitales</strong>
 

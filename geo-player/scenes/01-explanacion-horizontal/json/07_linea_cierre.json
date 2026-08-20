@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "07_linea_cierre",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8193.910310475659571, 1387.195839745025296, 620.0 ], [ 8133.910310475658662, 1447.195839745025296, 650.0 ] ] } }
+]
+}

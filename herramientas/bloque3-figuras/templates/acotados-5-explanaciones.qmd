@@ -129,7 +129,7 @@ Plataforma **en pendiente** (rasante A→B) resuelta en AutoCAD sobre un terreno
 ::: {.texto-azul style="font-size:0.75em; margin-top:1.2em;"}
 Dos escenas interactivas (Storyteller) para girar y entender las explanaciones:
 
--   [Explicación teórica de la explanada **horizontal**](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/00-ejemplo-basico)
--   [Explicación teórica de la explanada **en pendiente**](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/00-ejemplo-basico-pendiente)
+-   [Explicación teórica de la explanada **horizontal**](../geo-player/index.html?scene=scenes/00-ejemplo-basico)
+-   [Explicación teórica de la explanada **en pendiente**](../geo-player/index.html?scene=scenes/00-ejemplo-basico-pendiente)
 -   [Ejemplo de explanada horizontal con terreno](https://webserver02.leftcape.com/08_TEST/MJ/)
 :::

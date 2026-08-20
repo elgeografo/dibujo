@@ -1,0 +1,202 @@
+{
+  "animations": [
+    {
+      "id": "mostrar_explanacion",
+      "title": "Explanación en pendiente",
+      "description": "Queremos realizar una explanción en pendiente con un grado de inclinación de l 10 % <p> Establecemos que la equidistancia del plano es de 1 metro.",
+      "duration": 2,
+      "waitTime": 10,
+      "layers": {
+        "01-AA-SUELO": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN-COTAS":false,
+        "01-AB-INTERVALO-EQUIDISTANCIA":false,
+        "01-AB-INTERVALO-EQUIDISTANCIA-TEXTO":false,
+        "01-B-CONOS-TERRAPLEN-POLIGONOS": false,
+        "01-C-TERRAPLEN":false,
+        "01-C-TERRAPLEN-POLY": false
+      },
+       "camera": {
+        "target": [4267.0, 1407.0, 1.5],
+        "zoom": 3.50,
+        "rotationOrbit": -43,
+        "rotationX": 12.5
+      }
+    },
+    {
+      "id": "calculo_intervalo",
+      "title": "Cáclculo del intervalo",
+      "description": "Usando la formula Pendiente = Equidistancia / Intervalo <p> Despejamos Intervalo I = 1/0.1 = 10 m (vamos a trabajar en metros",
+      "duration": 2,
+      "waitTime": 10,
+      "layers": {
+        "01-AA-SUELO": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN-COTAS":true,
+        "01-AB-INTERVALO-EQUIDISTANCIA":false,
+        "01-AB-INTERVALO-EQUIDISTANCIA-TEXTO":false,
+        "01-B-CONOS-TERRAPLEN-POLIGONOS": false,
+        "01-C-TERRAPLEN":false,
+        "01-C-TERRAPLEN-POLY": false
+      },
+       "camera": {
+        "target": [4267.0, 1407.0, 1.5],
+        "zoom": 3.50,
+        "rotationOrbit": -43,
+        "rotationX": 12.5
+      }
+    },
+     {
+      "id": "mostrar_equidistancia_intervalo",
+      "title": "Concepto de equidistancia e intervalo",
+      "description": "Equidistancia. Distancia vertical que hay que recorrer para llegar a la siguiente curva de nivel <P> Intervalo. Distancia horizontal que hay que recorrer para alcanzar la equidistancia",
+      "duration": 2,
+      "waitTime": 10,
+      "layers": {
+        "01-AA-SUELO": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN-COTAS":true,
+        "01-AB-INTERVALO-EQUIDISTANCIA":true,
+        "01-AB-INTERVALO-EQUIDISTANCIA-TEXTO":true,
+        "01-B-CONOS-TERRAPLEN-POLIGONOS": false,
+        "01-C-TERRAPLEN":false,
+        "01-C-TERRAPLEN-POLY": false
+      },
+       "camera": {
+        "target": [4264.1, 1400.3, -2.2],
+        "zoom": 5.14,
+        "rotationOrbit": -71.8,
+        "rotationX": 13.3
+      }
+    },
+    {
+      "id": "mostrar_explanacion_terraplen",
+      "title": "Explanación en pendiente con terraplén",
+      "description": "Suponemos que la explanación tiene pendiente ascendente respecto al plano de comparación",
+      "duration": 2,
+      "waitTime": 10,
+      "layers": {
+        "01-AA-SUELO": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN-COTAS":false,
+        "01-AB-INTERVALO-EQUIDISTANCIA":false,
+        "01-AB-INTERVALO-EQUIDISTANCIA-TEXTO":false,
+        "01-B-CONOS-TERRAPLEN-POLIGONOS": false,
+        "01-C-TERRAPLEN":false,
+        "01-C-TERRAPLEN-POLY": true
+      },
+       "camera": {
+        "target": [4267.0, 1407.0, 1.5],
+        "zoom": 3.50,
+        "rotationOrbit": -43,
+        "rotationX": 12.5
+      }
+    },
+    {
+      "id": "mostrar_explanacion_terraplen_alzado",
+      "title": "Cáculo del terraplen",
+      "description": "Suponemos que la pendiente del terrplán es del 66% Tenemos que calcular el intervalo",
+      "duration": 2,
+      "waitTime": 10,
+      "layers": {
+        "01-AA-SUELO": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN": true,
+        "01-AB-INTERVALO-EQUIDISTANCIA":false,
+        "01-AB-INTERVALO-EQUIDISTANCIA-TEXTO":false,
+        "01-B-CONOS-TERRAPLEN-POLIGONOS": false,
+        "01-C-TERRAPLEN":false,
+        "01-C-TERRAPLEN-POLY": true
+      },
+       "camera": {
+        "target": [4267.0, 1407.0, 1.5],
+        "zoom": 3.50,
+        "rotationOrbit": 0,
+        "rotationX": 90
+      }
+    },
+    {
+      "id": "mostrar_conos",
+      "title": "Cálculo del intervalo del terraplen",
+      "description": "Intervalo = Equidistancia/pendiente = 1/0.66 = 1.5 metros<p> este intervalo será el rádio del cono<p>Conforme aumentemos en cota, multipliaremos la cota por el Intervalo",
+      "duration": 2,
+      "waitTime": 10,
+      "layers": {
+        "01-AA-SUELO": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN": true,
+        "01-B-CONOS-TERRAPLEN-POLIGONOS": true,
+        "01-AB-INTERVALO-EQUIDISTANCIA":false,
+        "01-AB-INTERVALO-EQUIDISTANCIA-TEXTO":false,
+        "01-C-TERRAPLEN":false,
+        "01-C-TERRAPLEN-POLY": false
+      },
+       "camera": {
+        "target": [4267.0, 1407.0, 1.5],
+        "zoom": 3.50,
+        "rotationOrbit": -43,
+        "rotationX": 12.5
+      }
+    },
+    {
+      "id": "mostrar_conos_con_curvas",
+      "title": "Establecimiento de curvas de nivel del terraplén",
+      "description": " cada intervalo marcará la nueva cota de la linea.",
+      "duration": 2,
+      "waitTime": 10,
+      "layers": {
+        "01-AA-SUELO": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN": true,
+        "01-B-CONOS-TERRAPLEN-POLIGONOS": true,
+        "01-C-TERRAPLEN":true,
+        "01-C-TERRAPLEN-POLY": false
+      },
+       "camera": {
+        "target": [4267.0, 1407.0, 1.5],
+        "zoom": 3.50,
+        "rotationOrbit": -43,
+        "rotationX": 12.5
+      }
+    },
+    {
+      "id": "mostrar_conos_con_curvas_planta",
+      "title": "Vista en planta del tearraplen",
+      "description": "En la vista en planta, cada intervalo será visto como un circulo concéntrico que marcará la nueva cota de la linea.",
+      "duration": 2,
+      "waitTime": 10,
+      "layers": {
+        "01-AA-SUELO": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN": true,
+        "01-B-CONOS-TERRAPLEN-POLIGONOS": true,
+        "01-C-TERRAPLEN":true,
+        "01-C-TERRAPLEN-POLY": false
+      },
+       "camera": {
+        "target": [4267.0, 1407.0, 1.5],
+        "zoom": 3.50,
+        "rotationOrbit": 0,
+        "rotationX": 90
+      }
+    }
+    ,
+    {
+      "id": "mostrar_conos_con_curvas_perspectiva",
+      "title": "Vista en perspectiva del terraplén",
+      "description": "El terraplén formará un plano, tal y como se ve en la figura",
+      "duration": 2,
+      "waitTime": 10,
+      "layers": {
+        "01-AA-SUELO": true,
+        "01-A-EXPLANACION-PENDIENTE-TERRAPLEN": true,
+        "01-B-CONOS-TERRAPLEN-POLIGONOS": true,
+        "01-C-TERRAPLEN":true,
+        "01-C-TERRAPLEN-POLY": true
+      },
+       "camera": {
+        "target": [4267.0, 1407.0, 1.5],
+        "zoom": 3.50,
+        "rotationOrbit": -43,
+        "rotationX": 12.5
+      }
+    }
+   
+  ]
+}

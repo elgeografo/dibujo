@@ -1,0 +1,85 @@
+{
+  "initialViewState": {
+    "target": [4267, 1407, 1.5],
+    "zoom": 3.5,
+    "rotationOrbit": -45,
+    "rotationX": 60
+  },
+  "layers": [
+    {
+      "id": "01-AA-SUELO",
+      "url": "scenes/00-ejemplo-basico-pendiente/json/01-AA-SUELO.json",
+      "name": "Suelo",
+      "color": [139, 69, 19],
+      "width": 6,
+      "fillColor": [139, 69, 19],
+      "fillOpacity": 1,
+      "visible": true
+    },
+    {
+      "id": "01-A-EXPLANACION-PENDIENTE-TERRAPLEN",
+      "url": "scenes/00-ejemplo-basico-pendiente/json/01-A-EXPLANACION-PENDIENTE-TERRAPLEN.json",
+      "name": "Explanación en pendiente terraplén",
+      "color": [255, 255, 255],
+      "width": 6,
+      "visible": true
+    },
+    {
+      "id": "01-A-EXPLANACION-PENDIENTE-TERRAPLEN-COTAS",
+      "url": "scenes/00-ejemplo-basico-pendiente/json/01-A-EXPLANACION-PENDIENTE-TERRAPLEN-COTAS.json",
+      "name": "Explanación en pendiente terraplén cotas",
+      "color": [255, 255, 255],
+      "layerType": "text",
+      "textSize": 25,
+      "textAnchor": "start",
+      "alignmentBaseline": "bottom",
+      "visible": false
+    },
+    {
+      "id": "01-AB-INTERVALO-EQUIDISTANCIA",
+      "url": "scenes/00-ejemplo-basico-pendiente/json/01-AB-INTERVALO-EQUIDISTANCIA.json",
+      "name": "Intervalo-Equidistancia",
+      "color": [255, 255, 0],
+      "width": 6,
+      "visible": true
+    },
+    {
+      "id": "01-AB-INTERVALO-EQUIDISTANCIA-TEXTO",
+      "url": "scenes/00-ejemplo-basico-pendiente/json/01-AB-INTERVALO-EQUIDISTANCIA-TEXTO.json",
+      "name": "Intervalo-Equidistancia-Texto",
+      "color": [255, 255, 0],
+      "layerType": "text",
+      "textSize": 25,
+      "textAnchor": "start",
+      "alignmentBaseline": "bottom",
+      "visible": false
+    },
+    {
+      "id": "01-B-CONOS-TERRAPLEN-POLIGONOS",
+      "url": "scenes/00-ejemplo-basico-pendiente/json/01-B-CONOS-TERRAPLEN-POLIGONOS.json",
+      "name": "Conos terraplén (polígonos)",
+      "color": [0, 200, 0],
+      "width": 2,
+      "visible": false
+    },
+    {
+      "id": "01-C-TERRAPLEN",
+      "url": "scenes/00-ejemplo-basico-pendiente/json/01-C-TERRAPLEN.json",
+      "name": "Terraplén",
+      "color": [0, 150, 0],
+      "width": 4,
+      "visible": false
+    },
+    {
+      "id": "01-C-TERRAPLEN-POLY",
+      "url": "scenes/00-ejemplo-basico-pendiente/json/01-C-TERRAPLEN-POLY.json",
+      "name": "Terraplén polígonos",
+      "color": [139, 69, 19],
+      "width": 2,
+      "fillColor": [210, 180, 140],
+      "fillOpacity": 0.5,
+      "visible": false
+    }
+  ]
+}
+

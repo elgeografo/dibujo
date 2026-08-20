@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "05_cabecera_desmonte_oeste",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8153.910310475658662, 1421.96089153230082, 639.999999999999773 ], [ 8133.910310475658662, 1491.429109477518296, 650.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8173.910310475657752, 1387.179137254359375, 630.0 ], [ 8153.910310475657752, 1421.96089153230173, 640.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8193.910310475657752, 1343.981325809454802, 620.0 ], [ 8173.910310475657752, 1387.179137254359375, 630.0 ] ] } }
+]
+}

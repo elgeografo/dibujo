@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "05_nuevas_curvas_desmonte_oeste",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8173.910310475657752, 1387.179137254359375, 630.0 ], [ 8173.910310475658662, 1585.055920569363934, 630.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8153.910310475657752, 1421.96089153230173, 640.0 ], [ 8153.910310475658662, 1585.055920569363934, 640.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 8193.910310475657752, 1343.981325809455257, 620.0 ], [ 8193.910310475659571, 1387.19583974502666, 620.0 ] ] } }
+]
+}

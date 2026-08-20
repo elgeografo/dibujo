@@ -1,0 +1,69 @@
+{
+  "initialViewState": {
+    "target": [4160, 1396, 0],
+    "zoom": 3.5,
+    "rotationOrbit": -45,
+    "rotationX": 60
+  },
+  "layers": [
+    {
+      "id": "00_A_SUELO",
+      "url": "scenes/00-ejemplo-basico/json/00_A_SUELO.json",
+      "name": "Suelo",
+      "color": [139, 69, 19],
+      "width": 10,
+      "visible": true
+    },
+    {
+      "id": "00_AA_EXPLANACION_HORIZONTAL_SUELO",
+      "url": "scenes/00-ejemplo-basico/json/00_AA_EXPLANACION_HORIZONTAL_SUELO.json",
+      "name": "Explanación horizontal del suelo",
+      "color": [139, 69, 19],
+      "width": 6,
+      "visible": false
+    },
+    {
+      "id": "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN",
+      "url": "scenes/00-ejemplo-basico/json/00_B_EXPLANACION_HORIZONTAL_TERRAPLEN.json",
+      "name": "Terraplén",
+      "color": [0, 255, 0],
+      "width": 6,
+      "visible": false
+    },
+    {
+      "id": "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN_COTAS",
+      "url": "scenes/00-ejemplo-basico/json/00_B_EXPLANACION_HORIZONTAL_TERRAPLEN_COTAS.json",
+      "name": "Cotas terraplén",
+      "color": [0, 255, 0],
+      "layerType": "text",
+      "textSize": 12,
+      "textAnchor": "start",
+      "alignmentBaseline": "bottom",
+      "visible": false
+    },
+    {
+      "id": "00_C_EXPLANACION_HORIZONTAL_DESMONTE",
+      "url": "scenes/00-ejemplo-basico/json/00_C_EXPLANACION_HORIZONTAL_DESMONTE.json",
+      "name": "Desmonte",
+      "color": [255, 0, 0],
+      "width": 6,
+      "visible": false
+    },
+    {
+      "id": "01_A_TERRAPLEN_EN_EXP_HORIZ",
+      "url": "scenes/00-ejemplo-basico/json/01_A_TERRAPLEN_EN_EXP_HORIZ.json",
+      "name": "Terraplén en explanación horizontal",
+      "color": [0, 255, 0],
+      "width": 2.5,
+      "visible": false
+    },
+    {
+      "id": "01_B_DESMONTE_EN_EXP_HORIZ",
+      "url": "scenes/00-ejemplo-basico/json/01_B_DESMONTE_EN_EXP_HORIZ.json",
+      "name": "Desmonte en explanación horizontal",
+      "color": [255, 0, 0],
+      "width": 2.5,
+      "visible": false
+    }
+  ]
+}

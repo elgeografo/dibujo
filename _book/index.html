@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.6.39">
@@ -8,7 +8,7 @@
 
 <meta name="author" content="Maria Jesús García García , Jose Luis Perez Benedito, and Luis Izquierdo Mesa">
 
-<title>Apuntes guía Expresión Gráfica V 0.01 </title>
+<title>Libro electrónico Expresión Gráfica Montes </title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./01-normalizacion.html" rel="next">
+<link href="./01-01-lenguaje-tecnica.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2da454083d418277204fe04b12c154c2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cebafde09eb7aa31fa427777a326460a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -55,17 +55,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
 
@@ -78,13 +78,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Presentación</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -96,12 +96,12 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Apuntes guía Expresión Gráfica V 0.01<br></a> 
+      <a href="./">Libro electrónico Expresión Gráfica Montes<br></a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Buscar"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -112,88 +112,270 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Presentación</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Bloque 1. Introducción a la Expresión Gráfica</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-normalizacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1 Representación normalizada</span></a>
+  <a href="./01-01-lenguaje-tecnica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.1 La expresión gráfica como lenguaje de la técnica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-geometria-constructiva.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">2 Herramientas de modelado: Geometría Constructiva</span></a>
+  <a href="./03-geometria-constructiva.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.2 Conceptos básicos de geometría métrica</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-normalizacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3 Normalización: Normas UNE sobre Dibujo Técnico</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-03-01-formatos-papel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3.1 Formatos de papel</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-03-02-rotulacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3.2 Rotulación</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-03-03-tipos-linea.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3.3 Tipos de líneas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-03-04-escalas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3.4 Escalas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-03-05-acotacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3.5 Acotación</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-03-06-cajetin.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.3.6 Carátula, sello o cajetín</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-04-croquizacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1.4 Croquización</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Bloque 2. Fundamentos de los Sistemas de Representación</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-sistemas-representacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3 Sistemas de Representación</span></a>
+ <span class="menu-text">2.1 Introducción a los sistemas de representación</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-01-diedrico.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.1 Diédrico</span></a>
+ <span class="menu-text">2.2 Sistema diédrico</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-02-axonometrico.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.2 Axonométrico</span></a>
+ <span class="menu-text">2.3 Sistema axonométrico</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-04-perspectiva-conica.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2.4 Sistema cónico: la perspectiva cónica</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Bloque 3. Representación Gráfica de la Información Ambiental</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./04-03-planos-acotados.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3 Planos acotados</span></a>
+ <span class="menu-text">El sistema de planos acotados</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-planos-acotados/04-03-00-fundamentos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3.1 Fundamentos</span></a>
+ <span class="menu-text">Fundamentos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-planos-acotados/04-03-01-graduacion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3.2 Graduación de rectas</span></a>
+ <span class="menu-text">Graduación de rectas</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-planos-acotados/04-03-02-DefinicionPlanos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3.3 Definición de planos</span></a>
+ <span class="menu-text">Definición de planos</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-planos-acotados/04-03-04-curvado-planos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3.4 Curvado de planos</span></a>
+ <span class="menu-text">Trazado de curvas de nivel o isolíneas</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-planos-acotados/04-03-02-vaguadas-divisorias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3.3 Vaguadas y divisorias</span></a>
+ <span class="menu-text">Vaguadas y divisorias</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-planos-acotados/04-03-03-perfiles-longitudinales.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3.4 Perfiles longitudinales</span></a>
+ <span class="menu-text">Perfiles longitudinales</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-planos-acotados/04-03-04-explanaciones-horizontales.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3.5 Explanaciones horizontales</span></a>
+ <span class="menu-text">Explanaciones horizontales</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-planos-acotados/04-03-05-explanaciones-pendiente.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3.6 Explanaciones con pendiente</span></a>
+ <span class="menu-text">Explanaciones con pendiente</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Bloque 4. Elaboración de Planos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-elaboracion-planos/04-01-normativa.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.1 Normativa para la elaboración de planos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-elaboracion-planos/04-02-situacion-localizacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.2 Planos de situación y localización. Plantas generales</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-elaboracion-planos/04-03-estructuras-infraestructuras.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.3 Planos de estructuras e infraestructuras</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-elaboracion-planos/04-04-conjunto-despiece.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.4 Planos de conjunto y despiece</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-elaboracion-planos/04-05-detalle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.5 Planos de detalle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-elaboracion-planos/04-06-cartografia-ambiental-forestal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4.6 Planos típicos de cartografía ambiental y forestal</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Bloque 5. Representación Gráfica Digital</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-representacion-digital/05-01-cad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.1 Fundamentos del Diseño Asistido por Ordenador</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-representacion-digital/05-02-sig.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.2 Fundamentos de los sistemas de información geográfica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-representacion-digital/05-03-bim-gis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5.3 Modelos integrales de gestión de la información del proyecto: BIM y BIM-GIS</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Apéndices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anexos/anexo-videos-autocad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Anexo: Vídeos cortos de AutoCAD</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -201,7 +383,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
   <li><a href="#presentación" id="toc-presentación" class="nav-link active" data-scroll-target="#presentación">Presentación</a></li>
@@ -213,7 +395,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Apuntes guía Expresión Gráfica V 0.01<br></h1>
+<h1 class="title">Libro electrónico Expresión Gráfica Montes<br></h1>
 </div>
 
 
@@ -221,7 +403,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
     <div class="quarto-title-meta-contents">
              <p><a href="https://www.geoso2.es" target="_blank"><img src="images/authors2.png" width="500px"></a> </p>
           </div>
@@ -292,12 +474,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiado");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiado");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -670,8 +852,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./01-normalizacion.html" class="pagination-link" aria-label="1 Representación normalizada">
-        <span class="nav-page-text"><span class="chapter-title">1 Representación normalizada</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./01-01-lenguaje-tecnica.html" class="pagination-link" aria-label="1.1 La expresión gráfica como lenguaje de la técnica">
+        <span class="nav-page-text">1.1 La expresión gráfica como lenguaje de la técnica</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

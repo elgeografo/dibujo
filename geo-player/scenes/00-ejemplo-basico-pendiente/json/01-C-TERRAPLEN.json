@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "01-C-TERRAPLEN",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4259.393982883510034, 1421.685552290739906, 3.0 ], [ 4254.944895898521281, 1421.010552290739952, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4259.393982883510034, 1411.685552290739906, 2.0 ], [ 4256.427924893518139, 1411.235552290740088, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4259.393982883510034, 1401.685552290739906, 1.0 ], [ 4257.910953888514086, 1401.460552290739997, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4259.393982883510034, 1411.685552290739906, 2.0 ], [ 4257.910953888514086, 1421.460552290739997, 2.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4259.393982883510034, 1401.685552290739906, 1.0 ], [ 4256.427924893517229, 1421.235552290739861, 1.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4259.393982883510034, 1391.685552290739906, 0.0 ], [ 4254.944895898521281, 1421.010552290739952, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4274.393982883510034, 1421.685552290739906, 3.0 ], [ 4278.843069868498787, 1421.010552290739952, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4274.393982883510034, 1411.685552290739906, 2.0 ], [ 4277.36004087350193, 1411.235552290740088, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4274.393982883510034, 1401.685552290739906, 1.0 ], [ 4275.877011878505982, 1401.460552290739997, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4274.393982883510034, 1411.685552290739906, 2.0 ], [ 4275.877011878505982, 1421.460552290739997, 2.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4274.393982883510034, 1401.685552290739906, 1.0 ], [ 4277.36004087350284, 1421.235552290739861, 1.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4274.393982883510034, 1391.685552290739906, 0.0 ], [ 4278.843069868498787, 1421.010552290739952, 0.0 ] ] } }
+]
+}

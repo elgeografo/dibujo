@@ -1,11 +1,97 @@
 # 5.1 Fundamentos del Diseño Asistido por Ordenador {#sec-cad .unnumbered}
 
-::: callout-note
-## Capítulo en desarrollo
+El **Diseño Asistido por Ordenador** (CAD, del inglés *Computer-Aided Design*) es el conjunto de técnicas y programas informáticos que permiten crear, modificar, analizar y documentar modelos gráficos de objetos reales. En la asignatura utilizamos **AutoCAD**, el programa de referencia en ingeniería, cuyo manejo se apoya en la colección de vídeos cortos recogida en el [anexo de vídeos de AutoCAD](../anexos/anexo-videos-autocad.qmd).
 
-Este capítulo forma parte de la nueva estructura del libro y su contenido se está elaborando a partir del material del equipo docente. Se apoya en la colección de vídeos cortos de AutoCAD recogida en el [anexo de vídeos](../anexos/anexo-videos-autocad.qmd).
+Frente al dibujo manual sobre el tablero, el CAD aporta ventajas decisivas:
+
+-   **Precisión**: las entidades se definen por coordenadas exactas, no por la destreza del delineante. El error de trazado desaparece.
+-   **Dibujo a tamaño real**: se dibuja siempre a escala 1:1 en unidades reales; la escala se decide después, en el momento de imprimir (véase [1.3.4 Escalas](../01-03-04-escalas.qmd)).
+-   **Facilidad de edición**: borrar, desplazar, copiar o modificar no obliga a rehacer el plano.
+-   **Reutilización**: los elementos repetidos (símbolos, cajetines, mobiliario) se dibujan una sola vez y se insertan cuantas veces haga falta.
+-   **Organización de la información**: las capas permiten separar y controlar los distintos tipos de contenido de un mismo dibujo.
+-   **Intercambio**: los ficheros digitales (DWG, DXF, PDF) se comparten, archivan y trazan sin pérdida de calidad.
+
+::: callout-note
+## Nota
+
+El CAD no sustituye a los sistemas de representación estudiados en los bloques anteriores: los presupone. El programa ejecuta las construcciones, pero es el proyectista quien debe saber qué vista, qué corte o qué escala necesita el plano.
 :::
 
 ## Modelización y representación bidimensional
 
+### Entidades básicas de dibujo
+
+Un dibujo CAD 2D se compone de **entidades** geométricas elementales: líneas, polilíneas, polígonos, círculos, arcos, puntos y líneas auxiliares. Cada entidad queda definida por sus datos geométricos (coordenadas de sus puntos característicos) y por sus propiedades (capa, color, tipo y grosor de línea). Los comandos de dibujo se recogen en el apartado 3 del [anexo de vídeos](../anexos/anexo-videos-autocad.qmd), y los de edición (borrar, desplazar, copiar, girar, simetría, recortar, empalme, desfase, matriz...) en el apartado 4.
+
+### Sistemas de coordenadas
+
+La precisión del CAD descansa en la introducción de puntos por coordenadas. En el plano se emplean tres formas principales:
+
+| Tipo | Sintaxis en AutoCAD | Significado |
+|------|---------------------|-------------|
+| Absolutas cartesianas | `100,50` | Punto situado en x = 100, y = 50 respecto del origen del dibujo |
+| Relativas cartesianas | `@30,20` | Punto desplazado 30 unidades en x y 20 en y respecto del último punto introducido |
+| Relativas polares | `@25<45` | Punto a 25 unidades de distancia y 45° de ángulo respecto del último punto |
+
+Las coordenadas relativas son las más utilizadas en la práctica: al dibujar interesa más la longitud y dirección de cada tramo que su posición absoluta. Los vídeos 2.6.1 y 2.6.2 del anexo muestran su uso.
+
+Además de las coordenadas, el dibujo preciso se apoya en dos ayudas permanentes:
+
+-   El modo **ortogonal**, que restringe el cursor a las direcciones horizontal y vertical.
+-   La **referencia a objetos**, que permite enganchar el cursor a puntos notables de las entidades ya dibujadas: extremo, punto medio, centro, intersección, perpendicular o tangente.
+
+### Capas
+
+Las **capas** son el mecanismo fundamental de organización del dibujo. Cada capa agrupa entidades de una misma naturaleza (ejes, contornos, cotas, textos, muros, vegetación...) y les asigna propiedades comunes: color, tipo de línea y grosor. Las capas pueden **activarse o desactivarse** (mostrar u ocultar su contenido) y **bloquearse** (impedir su modificación), lo que permite trabajar sobre un plano complejo sin alterar lo que no corresponde. Un dibujo bien organizado por capas es la diferencia entre un fichero utilizable por terceros y un fichero caótico. Su manejo se detalla en el apartado 5 del [anexo de vídeos](../anexos/anexo-videos-autocad.qmd).
+
+### Bloques y referencias
+
+Un **bloque** es un conjunto de entidades agrupadas bajo un nombre que se inserta como un único objeto, tantas veces como se necesite y con la escala y rotación que convengan. Los bloques evitan repetir trabajo, reducen el tamaño del fichero y, sobre todo, permiten la edición centralizada: al modificar la definición del bloque se actualizan todas sus inserciones. Son bloques típicos el cajetín normalizado, los símbolos de leyenda o los elementos de mobiliario e instalaciones. Cuando el contenido reutilizado es un dibujo completo (por ejemplo, la cartografía base sobre la que se proyecta), se emplean las **referencias externas**, que vinculan un fichero dentro de otro sin copiarlo. El apartado 8 del anexo recoge la creación, guardado y edición de bloques.
+
+### Espacio modelo, espacio papel y trazado a escala
+
+AutoCAD distingue dos entornos de trabajo:
+
+-   El **espacio modelo** es el entorno donde se dibuja la geometría, siempre a tamaño real (escala 1:1) y en las unidades del proyecto (metros, milímetros...).
+-   El **espacio papel** (o *presentación*) representa la hoja física que se va a imprimir, con su formato normalizado y su cajetín. Sobre ella se abren **ventanas gráficas** que muestran el contenido del espacio modelo a la escala elegida.
+
+La escala del plano no se aplica, por tanto, a la geometría, sino a cada ventana del espacio papel, mediante el factor de zoom correspondiente (por ejemplo, una ventana a escala 1:500 sobre un modelo dibujado en metros y una hoja en milímetros usa el factor `2XP`). Una misma geometría puede así presentarse en varias ventanas a escalas distintas: planta general a 1:1000 y detalle a 1:100. Cada ventana puede además controlar qué capas muestra. Todo el flujo de presentación e impresión a PDF se recoge en el apartado 7 del [anexo de vídeos](../anexos/anexo-videos-autocad.qmd).
+
+::: callout-tip
+## Consejo
+
+El error más frecuente del principiante es "escalar el dibujo" en el espacio modelo para que quepa en la hoja. No debe hacerse nunca: la geometría se dibuja a tamaño real y la escala se resuelve en el espacio papel. Así las cotas miden lo que deben medir y el modelo sigue siendo válido para cualquier otra salida.
+:::
+
+Los textos y la acotación completan la documentación del plano: AutoCAD acota de forma asociativa (la cota lee la medida real de la geometría) mediante estilos de cota que fijan su aspecto de forma homogénea (apartados 6 y 12 del anexo).
+
 ## Modelización y representación tridimensional: modelado de sólidos y superficies
+
+El CAD permite también construir el objeto en tres dimensiones y obtener de él, de forma automática, sus proyecciones. Históricamente se distinguen tres niveles de modelado, de menor a mayor riqueza de información:
+
+-   **Modelo alámbrico** (*wireframe*): el objeto se describe solo por sus vértices y aristas. Es el más ligero, pero ambiguo: no distingue el interior del exterior ni permite ocultar aristas no vistas.
+-   **Modelo de superficies**: se describe la "piel" del objeto mediante superficies (planas, regladas, de revolución, esculpidas). Resuelve la visualización y el sombreado, pero el modelo sigue siendo hueco: no conoce el volumen que encierra.
+-   **Modelo de sólidos**: el objeto se describe como un volumen cerrado de materia. Es el modelo más completo: permite calcular volúmenes, centros de gravedad y secciones, y es la base de la fabricación asistida y del BIM ([5.3 BIM y BIM-GIS](05-03-bim-gis.qmd)).
+
+### Creación de sólidos
+
+Los sólidos se generan por dos vías complementarias:
+
+-   A partir de **primitivas**: prisma, cilindro, cono, esfera, pirámide, cuña y toroide (apartado 9 del [anexo de vídeos](../anexos/anexo-videos-autocad.qmd)).
+-   A partir de un perfil 2D, mediante las operaciones de **extrusión** (desplazar el perfil según una dirección), **revolución** (girarlo alrededor de un eje), **barrido** (conducirlo a lo largo de una trayectoria) y **solevación** (interpolar entre varias secciones).
+
+Los sólidos así obtenidos se combinan mediante las **operaciones booleanas**: **unión**, **diferencia** e **intersección**, con las que un objeto complejo se construye sumando y restando volúmenes simples (apartado 10 del anexo). El **sistema de coordenadas personal** (SCP) permite reorientar el plano de trabajo para dibujar sobre cualquier cara del modelo.
+
+### Del modelo a los planos
+
+La gran ventaja del modelado sólido es que las vistas normalizadas del objeto —alzado, planta, perfil, cortes y secciones— se **generan automáticamente** a partir del modelo, con la correspondencia exigida por el sistema diédrico estudiado en el Bloque 4. Si el modelo cambia, las vistas se actualizan. Los apartados 11 (vistas, ordenación, cortes) del anexo muestran este flujo de trabajo, que es el habitual en la ingeniería actual: se modela una sola vez y se documenta tantas veces como haga falta.
+
+## Material complementario
+
+<a href="../anexos/anexo-videos-autocad.qmd">Anexo: vídeos cortos de AutoCAD</a>
+
+<p style="font-size: 0.8em; color: #333; font-style: italic;">
+
+Colección de vídeos del equipo docente, organizados por comandos y conceptos, para consultar de forma independiente mientras se trabaja con el programa.
+
+</p>

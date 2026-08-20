@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Curvas y plataforma 3D (metros) - deck.gl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #000;
+    }
+    #container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 10px 12px;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      font-size: 13px;
+      border-radius: 4px;
+      z-index: 1;
+    }
+    #controls h3 {
+      margin: 0 0 4px 0;
+      font-size: 14px;
+    }
+    #layers-checkboxes {
+      max-height: 250px;
+      overflow-y: auto;
+    }
+    #controls label {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 3px;
+      cursor: pointer;
+    }
+    #controls input[type="checkbox"] {
+      cursor: pointer;
+    }
+
+    /* Barra de ayuda inferior */
+    #help-bar {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8px 20px;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      font-size: 12px;
+      border-radius: 4px;
+      z-index: 1;
+      opacity: 0.85;
+    }
+
+    /* Información de cámara */
+    #camera-info {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      padding: 8px 12px;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      font-size: 11px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      z-index: 1;
+      line-height: 1.4;
+    }
+    #camera-info div {
+      margin-bottom: 2px;
+    }
+
+    /* Panel de pasos */
+    #steps-panel {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      width: 280px;
+      max-height: 50vh;
+      background: rgba(0,0,0,0.85);
+      color: #fff;
+      border-radius: 4px;
+      z-index: 2;
+      overflow: hidden;
+    }
+    #steps-header {
+      padding: 8px 12px;
+      background: rgba(255,255,255,0.1);
+      font-weight: 600;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    #steps-nav {
+      padding: 8px;
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .nav-btn {
+      flex: 1;
+      padding: 6px 12px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .nav-btn:hover:not(:disabled) {
+      background: rgba(255,255,255,0.25);
+    }
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    #steps-list {
+      max-height: 35vh;
+      overflow-y: auto;
+    }
+    .step-item {
+      padding: 8px 12px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      font-size: 12px;
+    }
+    .step-item:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    .step-item.active {
+      background: rgba(80, 160, 255, 0.3);
+      border-left: 3px solid #50a0ff;
+    }
+
+    /* Panel de información del paso */
+    #step-info {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 600px;
+      padding: 12px 20px;
+      background: rgba(0,0,0,0.85);
+      color: #fff;
+      border-radius: 4px;
+      z-index: 2;
+      display: none;
+    }
+    #step-info.visible {
+      display: block;
+    }
+    #step-info h2 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    #step-info p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+
+  <div id="controls">
+    <h3>Capas</h3>
+    <div id="layers-checkboxes">
+      <!-- Los checkboxes se generarán dinámicamente desde config.json -->
+    </div>
+  </div>
+
+  <!-- Barra de ayuda inferior -->
+  <div id="help-bar">
+    Rueda: zoom · Arrastrar: mover · Shift+arrastrar: rotar · ←→: Navegar pasos
+  </div>
+
+  <!-- Información del paso actual -->
+  <div id="step-info">
+    <h2 id="step-title"></h2>
+    <p id="step-description"></p>
+  </div>
+
+  <!-- Panel de pasos -->
+  <div id="steps-panel">
+    <div id="steps-header">Pasos: <span id="step-counter">0/0</span></div>
+    <div id="steps-nav">
+      <button class="nav-btn" id="prev-btn">← Anterior</button>
+      <button class="nav-btn" id="next-btn">Siguiente →</button>
+    </div>
+    <div id="steps-list"></div>
+  </div>
+
+  <!-- Información de cámara -->
+  <div id="camera-info">
+    <div>Target: <span id="cam-target">-</span></div>
+    <div>Zoom: <span id="cam-zoom">-</span></div>
+    <div>Rotation: <span id="cam-rotation">-</span></div>
+    <div>Pitch: <span id="cam-pitch">-</span></div>
+  </div>
+
+  <script>
+    const {DeckGL, GeoJsonLayer, TextLayer, ScatterplotLayer, OrbitView, COORDINATE_SYSTEM} = deck;
+
+    // La configuración de capas se cargará desde config.json
+    let LAYERS_CONFIG = [];
+    let dataByKey = {}; // aquí guardaremos los GeoJSON cargados
+
+    // Vista inicial se cargará desde config.json
+    let initialViewState = {
+      target: [0, 0, 0],
+      zoom: 0,
+      rotationOrbit: 0,
+      rotationX: 60
+    };
+
+    const deckgl = new DeckGL({
+      container: 'container',
+      views: [new OrbitView()],
+      initialViewState,
+      controller: true,
+      layers: []
+    });
+
+    // Helpers para bounds y Z
+    function getBounds(geojson) {
+      let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+
+      function addCoord(coord) {
+        const x = coord[0];
+        const y = coord[1];
+        if (x < minX) minX = x;
+        if (y < minY) minY = y;
+        if (x > maxX) maxX = x;
+        if (y > maxY) maxY = y;
+      }
+
+      function processGeom(geom) {
+        if (!geom) return;
+        const t = geom.type;
+        const c = geom.coordinates;
+        if (t === 'LineString') {
+          c.forEach(addCoord);
+        } else if (t === 'MultiLineString') {
+          c.forEach(line => line.forEach(addCoord));
+        } else if (t === 'Polygon') {
+          c.forEach(ring => ring.forEach(addCoord));
+        } else if (t === 'MultiPolygon') {
+          c.forEach(poly => poly.forEach(ring => ring.forEach(addCoord)));
+        }
+      }
+
+      geojson.features.forEach(f => processGeom(f.geometry));
+      return {minX, minY, maxX, maxY};
+    }
+
+    function extractZ(feature) {
+      try {
+        const geom = feature.geometry;
+        let coord = null;
+        if (geom.type === 'LineString') {
+          coord = geom.coordinates[0];
+        } else if (geom.type === 'MultiLineString') {
+          coord = geom.coordinates[0][0];
+        }
+        if (coord && coord.length > 2) return coord[2];
+      } catch (e) {}
+      return null;
+    }
+
+    function updateViewState() {
+      let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+      let haveData = false;
+
+      Object.values(dataByKey).forEach(geojson => {
+        if (!geojson) return;
+        const b = getBounds(geojson);
+        minX = Math.min(minX, b.minX);
+        minY = Math.min(minY, b.minY);
+        maxX = Math.max(maxX, b.maxX);
+        maxY = Math.max(maxY, b.maxY);
+        haveData = true;
+      });
+
+      if (!haveData) return;
+
+      const cx = (minX + maxX) / 2;
+      const cy = (minY + maxY) / 2;
+
+      // Solo actualizar target si está en [0, 0, 0] (vista por defecto)
+      if (initialViewState.target[0] === 0 &&
+          initialViewState.target[1] === 0 &&
+          initialViewState.target[2] === 0) {
+        initialViewState = {
+          ...initialViewState,
+          target: [cx, cy, 0]
+        };
+      }
+
+      deckgl.setProps({ initialViewState });
+    }
+
+    function createLayers() {
+      const layers = [];
+
+      LAYERS_CONFIG.forEach(cfg => {
+        const data = dataByKey[cfg.id];
+        if (!data) return;
+
+        const checkbox = document.getElementById('chk_' + cfg.id);
+        if (!checkbox) return;
+
+        // Inicializar opacidad si no existe
+        if (layerOpacities[cfg.id] === undefined) {
+          layerOpacities[cfg.id] = checkbox.checked ? 1 : 0;
+        }
+
+        // No renderizar capas completamente invisibles (después de la transición)
+        // Durante la transición (opacity entre 0 y 1), la capa se renderiza normalmente
+        const targetOpacity = layerOpacities[cfg.id];
+        if (targetOpacity === 0 && !isLayerTransitioning(cfg.id)) {
+          return; // Saltar esta capa completamente
+        }
+
+        // Crear TextLayer si layerType === 'text'
+        if (cfg.layerType === 'text') {
+          layers.push(new TextLayer({
+            id: cfg.id,
+            data: data.features,
+            getPosition: d => d.geometry.coordinates,
+            getText: d => d.properties.TEXTSTRING || '',
+            getSize: cfg.textSize || 12,
+            getColor: cfg.color,
+            getAngle: d => -(d.properties.TEXT_ANGLE || 0),
+            getTextAnchor: cfg.textAnchor || 'middle',
+            getAlignmentBaseline: cfg.alignmentBaseline || 'center',
+            coordinateSystem: COORDINATE_SYSTEM.CARTESIAN,
+            opacity: layerOpacities[cfg.id],
+            transitions: {
+              opacity: {
+                duration: currentTransitionDuration,
+                easing: t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2
+              }
+            },
+            pickable: layerOpacities[cfg.id] > 0.5,
+            fontFamily: 'Arial, sans-serif',
+            fontWeight: 'bold',
+            billboard: true,
+            background: true,
+            backgroundColor: [0, 0, 0, 128],
+            backgroundPadding: [2, 1]
+          }));
+        } else if (cfg.layerType === 'point') {
+          // ScatterplotLayer para puntos
+          layers.push(new ScatterplotLayer({
+            id: cfg.id,
+            data: data.features,
+            getPosition: d => d.geometry.coordinates,
+            getRadius: cfg.radius || 5,
+            getFillColor: cfg.color,
+            getLineColor: cfg.strokeColor || cfg.color,
+            getLineWidth: cfg.strokeWidth || 0,
+            radiusUnits: 'pixels',
+            lineWidthUnits: 'pixels',
+            stroked: cfg.strokeWidth > 0,
+            filled: true,
+            coordinateSystem: COORDINATE_SYSTEM.CARTESIAN,
+            opacity: layerOpacities[cfg.id],
+            transitions: {
+              opacity: {
+                duration: currentTransitionDuration,
+                easing: t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2
+              }
+            },
+            pickable: false
+          }));
+        } else {
+          // GeoJsonLayer por defecto
+          layers.push(new GeoJsonLayer({
+            id: cfg.id,
+            data,
+            stroked: true,
+            filled: cfg.fillColor !== undefined,
+            extruded: false,
+            lineWidthUnits: 'pixels',
+            getLineWidth: cfg.width,
+            getLineColor: cfg.color, // Color sin canal alpha
+            getFillColor: cfg.fillColor ? [...cfg.fillColor, Math.round(255 * (cfg.fillOpacity || 1) * layerOpacities[cfg.id])] : [0, 0, 0, 0],
+            coordinateSystem: COORDINATE_SYSTEM.CARTESIAN,
+            opacity: layerOpacities[cfg.id], // Usar propiedad opacity nativa de deck.gl
+            transitions: {
+              opacity: {
+                duration: currentTransitionDuration, // Usa la duración actual (1500ms o del JSON)
+                easing: t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2
+              }
+            },
+            pickable: false
+          }));
+        }
+      });
+
+      deckgl.setProps({ layers });
+    }
+
+    // Variables para control de capas y pasos
+    let currentViewState = null;
+    let layerOpacities = {}; // Opacidades actuales de cada capa (0 a 1)
+    let currentTransitionDuration = 1500; // Duración de transición actual en ms
+    let layerTransitions = {}; // Tracks ongoing transitions: {layerId: endTime}
+    let steps = []; // Lista de pasos cargados desde animations.json
+    let currentStepIndex = -1; // Índice del paso actual
+    let cameraAnimationId = null; // ID de animación de cámara en curso
+
+    // Verifica si una capa está en transición
+    function isLayerTransitioning(layerId) {
+      const endTime = layerTransitions[layerId];
+      if (!endTime) return false;
+
+      const now = performance.now();
+      if (now >= endTime) {
+        // Transición terminada, limpiar
+        delete layerTransitions[layerId];
+        return false;
+      }
+      return true;
+    }
+
+    // Marca una capa como en transición
+    function startLayerTransition(layerId, duration) {
+      layerTransitions[layerId] = performance.now() + duration;
+
+      // Después de que termine la transición, forzar re-render para eliminar capa
+      setTimeout(() => {
+        createLayers();
+      }, duration + 50); // +50ms de margen
+    }
+
+    // Función para generar los checkboxes dinámicamente
+    function createLayerCheckboxes() {
+      const container = document.getElementById('layers-checkboxes');
+      container.innerHTML = '';
+
+      LAYERS_CONFIG.forEach(cfg => {
+        const label = document.createElement('label');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = 'chk_' + cfg.id;
+        checkbox.checked = cfg.visible;
+        checkbox.addEventListener('change', (e) => {
+          // Actualizar la opacidad según el estado del checkbox
+          currentTransitionDuration = 1500; // Checkbox manual: 1500ms
+          const newOpacity = e.target.checked ? 1 : 0;
+          const oldOpacity = layerOpacities[cfg.id];
+
+          layerOpacities[cfg.id] = newOpacity;
+
+          // Registrar transición si cambia la opacidad
+          if (oldOpacity !== newOpacity) {
+            startLayerTransition(cfg.id, 1500);
+          }
+
+          createLayers();
+        });
+
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(' ' + cfg.name));
+        container.appendChild(label);
+      });
+    }
+
+    // Actualizar información de cámara en tiempo real
+    function updateCameraInfo(viewState) {
+      currentViewState = viewState;
+      document.getElementById('cam-target').textContent =
+        `[${viewState.target[0].toFixed(1)}, ${viewState.target[1].toFixed(1)}, ${viewState.target[2].toFixed(1)}]`;
+      document.getElementById('cam-zoom').textContent = viewState.zoom.toFixed(2);
+      document.getElementById('cam-rotation').textContent = viewState.rotationOrbit.toFixed(1) + '°';
+      document.getElementById('cam-pitch').textContent = viewState.rotationX.toFixed(1) + '°';
+    }
+
+    // Escuchar cambios de viewState
+    deckgl.setProps({
+      onViewStateChange: ({viewState}) => {
+        updateCameraInfo(viewState);
+        return viewState;
+      }
+    });
+
+    // Animar cámara con interpolación suave
+    function animateCamera(fromState, toState, duration) {
+      // Cancelar animación anterior si existe
+      if (cameraAnimationId) {
+        cancelAnimationFrame(cameraAnimationId);
+      }
+
+      const startTime = performance.now();
+
+      // Easing: ease-in-out quadratic
+      const easeInOut = t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+      function animate() {
+        const elapsed = performance.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easedProgress = easeInOut(progress);
+
+        // Interpolar valores
+        const interpolated = {
+          target: [
+            fromState.target[0] + (toState.target[0] - fromState.target[0]) * easedProgress,
+            fromState.target[1] + (toState.target[1] - fromState.target[1]) * easedProgress,
+            fromState.target[2] + (toState.target[2] - fromState.target[2]) * easedProgress
+          ],
+          zoom: fromState.zoom + (toState.zoom - fromState.zoom) * easedProgress,
+          rotationOrbit: fromState.rotationOrbit + (toState.rotationOrbit - fromState.rotationOrbit) * easedProgress,
+          rotationX: fromState.rotationX + (toState.rotationX - fromState.rotationX) * easedProgress
+        };
+
+        deckgl.setProps({ initialViewState: interpolated });
+        updateCameraInfo(interpolated);
+
+        if (progress < 1) {
+          cameraAnimationId = requestAnimationFrame(animate);
+        } else {
+          // Animación terminada
+          currentViewState = toState;
+          cameraAnimationId = null;
+        }
+      }
+
+      cameraAnimationId = requestAnimationFrame(animate);
+    }
+
+    // Aplicar un paso (cambiar capas y/o cámara)
+    function applyStep(index) {
+      if (index < 0 || index >= steps.length) return;
+
+      const step = steps[index];
+      currentStepIndex = index;
+
+      // Usar duration del paso o default
+      const duration = step.duration ? step.duration * 1000 : 1500;
+      currentTransitionDuration = duration;
+
+      // Aplicar cambios de capas (si no hay layers, mantener las del paso anterior)
+      if (step.layers) {
+        LAYERS_CONFIG.forEach(cfg => {
+          // Si está en layers: usar su valor, si no: ocultar
+          const visible = step.layers[cfg.id] === true;
+          const newOpacity = visible ? 1 : 0;
+          const oldOpacity = layerOpacities[cfg.id];
+
+          layerOpacities[cfg.id] = newOpacity;
+
+          // Actualizar checkbox
+          const checkbox = document.getElementById('chk_' + cfg.id);
+          if (checkbox) checkbox.checked = visible;
+
+          if (oldOpacity !== newOpacity) {
+            startLayerTransition(cfg.id, duration);
+          }
+        });
+        createLayers();
+      }
+      // Si no hay layers en el paso, mantener las capas actuales (no hacer nada)
+
+      // Aplicar cambios de cámara con animación
+      if (step.camera && currentViewState) {
+        const targetCamera = {
+          target: step.camera.target || currentViewState.target,
+          zoom: step.camera.zoom !== undefined ? step.camera.zoom : currentViewState.zoom,
+          rotationOrbit: step.camera.rotationOrbit !== undefined ? step.camera.rotationOrbit : currentViewState.rotationOrbit,
+          rotationX: step.camera.rotationX !== undefined ? step.camera.rotationX : currentViewState.rotationX
+        };
+        animateCamera(currentViewState, targetCamera, duration);
+      }
+
+      // Mostrar título y descripción
+      const infoPanel = document.getElementById('step-info');
+      const titleEl = document.getElementById('step-title');
+      const descEl = document.getElementById('step-description');
+
+      if (step.title || step.description) {
+        titleEl.textContent = step.title || '';
+        descEl.innerHTML = step.description || '';
+        infoPanel.classList.add('visible');
+      } else {
+        infoPanel.classList.remove('visible');
+      }
+
+      // Actualizar UI
+      updateStepsUI();
+    }
+
+    // Actualizar UI de pasos
+    function updateStepsUI() {
+      // Contador
+      document.getElementById('step-counter').textContent =
+        `${currentStepIndex + 1}/${steps.length}`;
+
+      // Botones
+      document.getElementById('prev-btn').disabled = currentStepIndex <= 0;
+      document.getElementById('next-btn').disabled = currentStepIndex >= steps.length - 1;
+
+      // Lista - resaltar activo
+      document.querySelectorAll('.step-item').forEach((item, idx) => {
+        if (idx === currentStepIndex) {
+          item.classList.add('active');
+          item.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    }
+
+    // Crear lista de pasos
+    function createStepsList() {
+      const list = document.getElementById('steps-list');
+      list.innerHTML = '';
+
+      steps.forEach((step, index) => {
+        const item = document.createElement('div');
+        item.className = 'step-item';
+        item.textContent = `${index + 1}. ${step.title || 'Paso ' + (index + 1)}`;
+        item.addEventListener('click', () => applyStep(index));
+        list.appendChild(item);
+      });
+
+      updateStepsUI();
+    }
+
+    // Configurar navegación
+    function setupNavigation() {
+      document.getElementById('prev-btn').addEventListener('click', () => {
+        if (currentStepIndex > 0) applyStep(currentStepIndex - 1);
+      });
+
+      document.getElementById('next-btn').addEventListener('click', () => {
+        if (currentStepIndex < steps.length - 1) applyStep(currentStepIndex + 1);
+      });
+
+      // Teclado
+      document.addEventListener('keydown', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+        if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
+          e.preventDefault();
+          if (currentStepIndex < steps.length - 1) applyStep(currentStepIndex + 1);
+        } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+          e.preventDefault();
+          if (currentStepIndex > 0) applyStep(currentStepIndex - 1);
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          applyStep(0);
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          applyStep(steps.length - 1);
+        }
+      });
+    }
+
+    // Obtener directorio base desde parámetro URL o usar default
+    const urlParams = new URLSearchParams(window.location.search);
+    const sceneDir = urlParams.get('scene') || 'scenes/01-explanacion-horizontal';
+    const configPath = `${sceneDir}/config.json`;
+
+    // Cargar primero la configuración desde el path especificado
+    fetch(configPath)
+      .then(r => {
+        if (!r.ok) throw new Error(`${configPath} no encontrado`);
+        return r.json();
+      })
+      .then(config => {
+        LAYERS_CONFIG = config.layers;
+
+        // Cargar vista inicial desde config si existe
+        if (config.initialViewState) {
+          initialViewState = config.initialViewState;
+        }
+
+        // Crear los checkboxes dinámicamente
+        createLayerCheckboxes();
+
+        // Cargar todos los ficheros GeoJSON
+        return Promise.all(
+          LAYERS_CONFIG.map(cfg =>
+            fetch(cfg.url)
+              .then(r => {
+                if (!r.ok) throw new Error(cfg.url + ' no encontrado');
+                return r.json();
+              })
+              .then(json => ({ id: cfg.id, data: json }))
+              .catch(err => {
+                console.warn('Error cargando', cfg.url, err);
+                return { id: cfg.id, data: null };
+              })
+          )
+        );
+      })
+      .then(results => {
+        results.forEach(r => {
+          dataByKey[r.id] = r.data;
+        });
+        updateViewState();
+        createLayers();
+
+        // Inicializar currentViewState y mostrar info de cámara
+        currentViewState = { ...initialViewState };
+        updateCameraInfo(currentViewState);
+
+        // Configurar navegación
+        setupNavigation();
+
+        // Cargar pasos desde animations.json
+        return fetch(`${sceneDir}/animations.json`);
+      })
+      .then(r => {
+        if (!r.ok) {
+          console.warn('animations.json no encontrado, navegación deshabilitada');
+          document.getElementById('steps-panel').style.display = 'none';
+          return null;
+        }
+        return r.json();
+      })
+      .then(animConfig => {
+        if (!animConfig) return;
+
+        steps = animConfig.animations || [];
+        createStepsList();
+
+        // Aplicar primer paso automáticamente
+        if (steps.length > 0) {
+          applyStep(0);
+        }
+
+        console.log('Pasos cargados:', steps.length);
+      })
+      .catch(err => {
+        console.error('Error cargando configuración o capas:', err);
+        alert('Error cargando archivos de configuración. Revisa la consola.');
+      });
+  </script>
+</body>
+</html>

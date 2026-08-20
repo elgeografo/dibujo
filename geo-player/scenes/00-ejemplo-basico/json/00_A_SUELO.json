@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "00_A_SUELO",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4140.022003589867381, 1416.685552290739906, 0.0 ], [ 4140.022003589867381, 1376.685552290739679, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4180.022003589867381, 1416.685552290739906, 0.0 ], [ 4140.022003589866472, 1416.685552290739906, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4180.022003589867381, 1376.685552290740134, 0.0 ], [ 4180.022003589867381, 1416.685552290740134, 0.0 ] ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "LineString", "coordinates": [ [ 4140.022003589867381, 1376.685552290739906, 0.0 ], [ 4180.022003589868291, 1376.685552290739906, 0.0 ] ] } }
+]
+}

@@ -125,7 +125,7 @@ Vaguadas y divisorias son **líneas de máxima pendiente** del terreno: por eso 
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 
-<a href="presentaciones/acotados-3-plano-vaguadas-divisorias.html" target="_blank">El plano y el terreno: definición de planos, vaguadas y divisorias</a>
+<a href="../presentaciones/acotados-3-plano-vaguadas-divisorias.html" target="_blank">El plano y el terreno: definición de planos, vaguadas y divisorias</a>
 
 <strong>Recursos digitales</strong>
 

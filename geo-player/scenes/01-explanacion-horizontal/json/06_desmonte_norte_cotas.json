@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "06_desmonte_norte_cotas",
+"features": [
+{ "type": "Feature", "properties": { "TEXTSTRING": "(710)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7972.377135620718036, 1568.277323188162882, 710.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(700)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7972.377135620718036, 1548.277323188162882, 700.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(690)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7972.377135620718036, 1528.277323188162882, 690.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(680)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7972.377135620718036, 1508.277323188162882, 680.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(670)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7972.377135620718036, 1488.277323188162882, 670.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(660)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7972.377135620718036, 1468.277323188162882, 660.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(650)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7972.377135620718036, 1448.277323188162882, 650.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(640)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7972.377135620718036, 1428.277323188162882, 640.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(630)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7972.377135620718036, 1408.277323188162882, 630.0 ] } },
+{ "type": "Feature", "properties": { "TEXTSTRING": "(620)", "TEXT_SIZE": 10.0, "TEXT_ANGLE": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7973.279178856681938, 1385.137404012500156, 620.0 ] } }
+]
+}

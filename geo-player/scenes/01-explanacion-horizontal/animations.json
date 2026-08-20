@@ -1,0 +1,407 @@
+{
+  "animations": [
+    {
+      "_comment": "animacion 1",
+      "id": "Vista en Planta",
+      "title": "Vista en planta del proyecto. Se pide realizar una explanación cuadrada horizontal.",
+      "description": "Los planos de desmonte tendrán una pendiente de 50% y los de terraplén un 40%. La equisistancia es de 10 metros.",
+      "duration": 2,
+      "camera": {
+        "target": [8382, 1445, -9.5],
+        "zoom": -1.5,
+        "rotationOrbit": -1.2,
+        "rotationX": 90
+      }, 
+      "layers": {
+        "directoras": true,
+        "simples": true,
+        "plataforma": true,
+        "cotas": true
+      }
+    },
+    {
+      "_comment": "animacion 2",
+      "id": "proyecto_este",
+      "title": "Vista aérea general desde sureste",
+      "description": "La explanación será un cuadrado de 140 metros de lado a cota de 620m.",
+      "duration": 4,
+      "type": "camera",
+      "camera": {
+        "target": [8146.0, 1809.2, 267.7],
+        "zoom": -0.41,
+        "rotationOrbit": -15.1,
+        "rotationX": 33.6
+      }, 
+      "layers": {
+        "plataforma": true,
+        "linea_paso": true,
+        "cotas": true
+      }
+    },
+    {
+      "_comment": "animacion 3",
+      "id": "proyecto_oeste",
+      "title": "Vista aérea general desde el suroeste",
+      "description": "Explanación: cuadrada de lado 140m. y a cota 620m.",
+      "duration": 2,
+      "waitTime": 3.5,
+      "camera": {
+        "target": [8300, 1786, 270],
+        "zoom": -1,
+        "rotationOrbit": 30,
+        "rotationX": 34.5
+      },
+      "layers": {
+        "directoras": true,
+        "simples": true,
+        "plataforma": true,
+        "cotas": true,
+        "terraplen": false,
+        "cabecera_talud": false,
+        "directoras_externas": false,
+        "curvas_externas": false
+      }
+    },
+    { 
+      "_comment": "animacion 4",
+      "id": "linea_de_paso",
+      "title": "Cálculo de la línea de paso",
+      "description": "Hay que determinar en qué zonas hacer desmonte y en cuales terraplén, separadas por la línea de paso. En este caso es la línea de nivel del terreno de cota 620, por ser la intersección de la plataforma con el terreno.",
+      "duration": 1.5,
+      "camera": {
+        "target": [8490, 1713, 320],
+        "zoom": -1,
+        "rotationOrbit": 30,
+        "rotationX": 34.5
+      },
+      "layers": {
+        "directoras": true,
+        "simples": true,
+        "plataforma": true,
+        "linea_paso": true,
+        "cotas": true
+      }
+    },
+    { 
+      "_comment": "animacion 5. 4-bis",
+      "id": "identificacionlinea_de_paso_a",
+      "title": "Identificación de los puntos de paso",
+      "description": "Hay que determinar que parte del borde de la plataforma está en desmonte (cota plataforma< cota terreno) y cuál en terraplén (cota plataforma>cota terreno). Separadas por los puntos de paso.",
+      "duration": 1.5,
+      "camera": {
+        "target": [8078, 1957, 365],
+        "zoom": -0.45,
+        "rotationOrbit": -17.5,
+        "rotationX": 24.6
+      },
+      "layers": {
+        "directoras": true,
+        "simples": true,
+        "plataforma": true,
+        "linea_paso": true,
+        "cotas": true,
+        "plat_terraplen": false,
+        "plat_desmonte": false,
+        "puntos_linea_paso":true
+
+      }
+    },
+    { 
+      "_comment": "animacion 6. 4-bisB",
+      "id": "identificacionlinea_de_paso_b",
+      "title": "Identificación de los puntos de paso B",
+      "description": "Hay que determinar que parte del borde de la plataforma está en desmonte (cota plataforma< cota terreno) y cuál en terraplén (cota plataforma>cota terreno). Separadas por los puntos de paso.",
+      "duration": 1.5,
+      "camera": {
+        "target": [8078, 1957, 365],
+        "zoom": -0.45,
+        "rotationOrbit": -17.5,
+        "rotationX": 24.6
+      },
+      "layers": {
+        "directoras": true,
+        "simples": true,
+        "plataforma": true,
+        "linea_paso": true,
+        "cotas": true,
+        "plat_terraplen": true,
+        "plat_desmonte": true,
+        "puntos_linea_paso":true
+
+      }
+    },
+    {
+       "_comment": "animacion 7 (5)",
+      "id": "cabecera_oeste_desmonte_a",
+      "title": "Cálculo de cabecera de talud en desmonte zona oeste.",
+      "description":  "Fase1. Trazar plano 1º Identificar la parte del borde en desmonte 2º Trazar líneas nivel plano. En este caso paralelas con una distancia igual al intervalo",
+      "duration": 2,
+      "waitTime": 3.5,
+      "layers": {
+        "plataforma": true,
+        "linea_paso": true,
+        "plat_terraplen": false,
+        "plat_desmonte": true,
+        "desmonte_oeste_a": true,
+        "desmonte_oeste_cotas_a": true
+      },
+      "camera": {
+        "target": [7919.9, 1595.5, 345.9],
+        "zoom": -0.40,
+        "rotationOrbit": -52.6,
+        "rotationX": 33.3
+      }
+    },
+    {
+       "_comment": "animacion 8",
+      "id": "cabecera_oeste_desmonte_b",
+      "title": "Cálculo de cabecera de talud en desmonte zona oeste2.",
+      "description":  "Fase1. Trazar plano 1º Identificar la parte del borde en desmonte 2º Trazar líneas nivel plano. En este caso paralelas con una distancia igual al intervalo",
+      "duration": 2,
+      "waitTime": 3.5,
+      "layers": {
+        "simples": true,
+        "plataforma": true,
+        "linea_paso": true,
+        "plat_terraplen": false,
+        "plat_desmonte": true,
+        "desmonte_oeste_a": false,
+        "desmonte_oeste_cotas_a": true,
+        "cabecera_desmonte_oeste": true,
+        "nuevas_curvas_desmonte_oeste": true
+      },
+      "camera": {
+        "target": [7871.4, 1434.8, 360.2],
+        "zoom": -0.15,
+        "rotationOrbit": -70.1,
+        "rotationX": 43.7
+      }
+    },
+    {
+       "_comment": "animacion 9",
+      "id": "desmonte_norte",
+      "title": "Cálculo de cabecera norte.",
+      "description":  "Fases 1 y 2. 1º Trazar plano desmonte. 2º Encontrar puntos intersección 3º unir puntos formando cabecera de talud",
+      "duration": 2,
+      "waitTime": 3.5,
+      "layers": {
+        "plataforma": true,
+        "linea_paso": true,
+        "plat_desmonte": true,
+        "desmonte_norte_lineas": true,
+        "desmonte_norte_cotas": true
+
+      },
+      "camera": {
+        "target": [8018.8, 1691.1, 484.2],
+        "zoom": -0.15,
+        "rotationOrbit": -22.1,
+        "rotationX": 27.4
+      }
+    },
+    {
+       "_comment": "animacion 10",
+      "id": "desmonte_norte_b",
+      "title": "Cálculo de cabecera norte.",
+      "description":  "Fases 1 y 2. 1º Trazar plano desmonte. 2º Encontrar puntos intersección 3º unir puntos formando cabecera de talud",
+      "duration": 2,
+      "waitTime": 3.5,
+      "layers": {
+        "directoras": true,
+        "simples": true,
+        "plataforma": true,
+        "linea_paso": true,
+        "plat_desmonte": true,
+        "desmonte_norte_cabecera": true,
+        "desmonte_norte_nuevas_curvas": true
+
+      },
+      "camera": {
+        "target": [8018.8, 1691.1, 484.2],
+        "zoom": -0.15,
+        "rotationOrbit": -22.1,
+        "rotationX": 27.4
+      }
+    },
+    {
+       "_comment": "animacion 11",
+      "id": "cierre_planos_a",
+      "title": "Cierre de planos.",
+      "description":  "Meter texto",
+      "duration": 2,
+      "waitTime": 3.5,
+      "layers": {
+        "plataforma": true,
+        "linea_paso": true,
+        "desmonte_norte_lineas": true,
+        "desmonte_oeste_a": true
+      },
+      "camera": {
+        "target": [7940.9, 1680.2, 461.6],
+        "zoom": 0.40,
+        "rotationOrbit": -41.1,
+        "rotationX": 25.1
+      }
+    },
+    {
+       "_comment": "animacion 12",
+      "id": "cierre_planos_puntos",
+      "title": "Cierre de planos puntos.",
+      "description":  "Meter texto",
+      "duration": 2,
+      "waitTime": 3.5,
+      "layers": {
+        "plataforma": true,
+        "linea_paso": true,
+        "desmonte_norte_lineas": true,
+        "desmonte_oeste_a": true,
+        "puntos_cierre":true
+      },
+      "camera": {
+        "target": [7940.9, 1680.2, 461.6],
+        "zoom": 0.40,
+        "rotationOrbit": -41.1,
+        "rotationX": 25.1
+      }
+    },
+    {
+       "_comment": "animacion 13",
+      "id": "cierre_planos_linea",
+      "title": "Cierre de planos linea.",
+      "description":  "Meter texto",
+      "duration": 2,
+      "waitTime": 3.5,
+      "layers": {
+        "plataforma": true,
+        "linea_paso": true,
+        "desmonte_norte_lineas": true,
+        "desmonte_oeste_a": true,
+        "puntos_cierre":true,
+        "linea_cierre":true
+      },
+      "camera": {
+        "target": [7940.9, 1680.2, 461.6],
+        "zoom": 0.40,
+        "rotationOrbit": -41.1,
+        "rotationX": 25.1
+      }
+    },
+    {
+       "_comment": "animacion 14",
+      "id": "cierre_planos_cabeceras",
+      "title": "Cierre de planos cabeceras.",
+      "description":  "Meter texto",
+      "duration": 2,
+      "waitTime": 3.5,
+      "layers": {
+        "plataforma": true,
+        "linea_paso": true,
+        "desmonte_norte_lineas": true,
+        "desmonte_oeste_a": true,
+        "puntos_cierre":true,
+        "linea_cierre":true,
+        "desmonte_norte_cabecera": true,
+        "cabecera_desmonte_oeste": true
+      },
+      "camera": {
+        "target": [7940.9, 1680.2, 461.6],
+        "zoom": 0.40,
+        "rotationOrbit": -41.1,
+        "rotationX": 25.1
+      }
+    },
+        {
+       "_comment": "animacion 15",
+      "id": "cierre_cabecera_cabeceras",
+      "title": "Cierre de planos cabeceras B.",
+      "description":  "Meter texto",
+      "duration": 2,
+      "layers": {
+        "plataforma": true,
+        "linea_paso": true,
+        "desmonte_norte_lineas": true,
+        "desmonte_oeste_a": true,
+        "puntos_cierre":true,
+        "linea_cierre":true,
+        "desmonte_norte_cabecera": false,
+        "cabecera_desmonte_oeste": false,
+        "cabecera_cierre":true
+      },
+      "camera": {
+        "target": [7940.9, 1680.2, 461.6],
+        "zoom": 0.40,
+        "rotationOrbit": -41.1,
+        "rotationX": 25.1
+      }
+    },
+    {
+      "_comment": "animacion 15",
+      "id": "show_taludes",
+      "title": "Visualización de los nuevos taludes",
+      "description": "activamos la capa que hemos calculado para el desmonte y el terraplen.",
+      "duration": 3,
+      "layers": {
+        "directoras": false,
+        "simples": false,
+        "plataforma": true,
+        "linea_paso": false,
+        "desmonte": true,
+        "terraplen": true,
+        "cabecera_talud": true,
+        "directoras_externas": true,
+        "curvas_externas": true
+      }
+    },
+    {
+      "id": "camera_final",
+      "title": "Vista final del proyecto",
+      "description": "Posición de cámara final que ofrece una vista tridimensional equilibrada de todo el conjunto, ideal para apreciar la complejidad del trazado.",
+      "duration": 2,
+      "type": "camera",
+      "camera": {
+        "target": [8475.7, 1693.6, 321.3],
+        "zoom": -0.95,
+        "rotationOrbit": 60,
+        "rotationX": 37.5
+      }
+    },
+     {
+      "id": "camera_final2",
+      "title": "Vista final del proyecto",
+      "description": "Posición de cámara final que ofrece una vista tridimensional equilibrada de todo el conjunto, ideal para apreciar la complejidad del trazado.",
+      "duration": 5,
+      "waitTime": 5,
+      "type": "camera",
+      "camera": {
+        "target": [8203.0, 1791.8, 318.4],
+        "zoom": -0.95,
+        "rotationOrbit": -19.8,
+        "rotationX": 28.5
+      }
+    },
+     {
+      "id": "camera_final2",
+      "title": "Vista final del proyecto",
+      "description": "Posición de cámara final que ofrece una vista cenital similar a un plano acotado",
+      "duration": 5,
+      "layers": {
+        "directoras": false,
+        "simples": false,
+        "plataforma": true,
+        "linea_paso": false,
+        "desmonte": true,
+        "terraplen": true,
+        "cabecera_talud": true,
+        "directoras_externas": true,
+        "curvas_externas": true,
+        "cotas": true
+      },
+      "camera": {
+        "target": [8235.5, 1513.9, 300.3],
+        "zoom": -0.95,
+        "rotationOrbit": 0,
+        "rotationX": 90
+      }
+    }
+  ]
+}

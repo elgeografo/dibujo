@@ -2,6 +2,9 @@ project:
   type: book
   resources:
     - presentaciones/*.html
+    - geo-player/
+
+lang: es
 
 book:
   #title: "Apuntes guía Expresión Gráfica <br>  Grupo investigación <a href='https://www.geoso2.es'>GEOSO2</a> "

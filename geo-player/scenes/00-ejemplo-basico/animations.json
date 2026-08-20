@@ -1,0 +1,176 @@
+{
+  "animations": [
+    {
+      "id": "vista_inicial",
+      "title": "Vista inicial del terreno",
+      "description": "Ejemplo básico de explanación horizontal con terraplén y desmonte.",
+      "duration": 2,
+      "waitTime": 3,
+      "type": "camera",
+      "camera": {
+        "target": [4160, 1396, 0],
+        "zoom": 3,
+        "rotationOrbit": -45,
+        "rotationX": 60
+      }
+    },
+    {
+      "id": "mostrar_explanacion_suelo",
+      "title": "Mostrando explanación horizontal del suelo",
+      "description": "Una explanación a la altura del suelo, estando el suelo totalmente plano no exigiría ninguna actuación",
+      "duration": 2,
+      "waitTime": 4,
+      "type": "layers",
+      "layers": {
+        "00_A_SUELO": true,
+        "00_AA_EXPLANACION_HORIZONTAL_SUELO": true,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN": false,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN_COTAS":false,
+        "00_C_EXPLANACION_HORIZONTAL_DESMONTE": false,
+        "01_A_TERRAPLEN_EN_EXP_HORIZ": false,
+        "01_B_DESMONTE_EN_EXP_HORIZ": false
+      },
+       "camera": {
+        "target": [4153.7, 1399.0, -1.7],
+        "zoom": 3.50,
+        "rotationOrbit": -31.3,
+        "rotationX": 21.8
+      }
+    },
+    {
+      "id": "mostrar_terraplen",
+      "title": "Explanación horizontal a cota superior respecto al terreno.",
+      "description": "En este ejemplo se pretende realizar una explanación horizontal a <span style='font-size: 1.5em; font-weight: bold;'>cinco metros</span> de altua.",
+      "duration": 2,
+      "waitTime": 4,
+      "type": "layers",
+      "layers": {
+        "00_A_SUELO": true,
+        "00_AA_EXPLANACION_HORIZONTAL_SUELO": false,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN": true,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN_COTAS":false,
+        "00_C_EXPLANACION_HORIZONTAL_DESMONTE": false,
+        "01_A_TERRAPLEN_EN_EXP_HORIZ": false,
+        "01_B_DESMONTE_EN_EXP_HORIZ": false
+      },
+      "camera": {
+        "target": [4153.7, 1399.0, -1.7],
+        "zoom": 3.50,
+        "rotationOrbit": -3.8,
+        "rotationX": 11.3
+      }
+    },
+    {
+      "id": "datos_terraplen",
+      "title": "Datos de partida",
+      "description": "<span style='font-size: 1.5em; font-weight: bold;'>Equidistancia </span> = 1 metro  <p> <span style='font-size: 1.5em; font-weight: bold;'>Pendiente del terraplén</span> = 40% <span style='font-size: 1.5em; font-weight: bold;'>.",
+      "duration": 2,
+      "waitTime": 4,
+       "layers": {
+        "00_A_SUELO": true,
+        "00_AA_EXPLANACION_HORIZONTAL_SUELO": false,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN": true,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN_COTAS":false,
+        "00_C_EXPLANACION_HORIZONTAL_DESMONTE": false,
+        "01_A_TERRAPLEN_EN_EXP_HORIZ": false,
+        "01_B_DESMONTE_EN_EXP_HORIZ": false
+      },
+      "camera": {
+        "target": [4153.7, 1403.7, -1.7],
+        "zoom": 3.50,
+        "rotationOrbit": 0,
+        "rotationX": 90
+      }
+    },
+    {
+      "id": "cotas_terraplen",
+      "title": "Valores de cota",
+      "description": "Cada curva de nivel tendrá su nueva cota.",
+      "duration": 2,
+      "waitTime": 4,
+       "layers": {
+        "00_A_SUELO": true,
+        "00_AA_EXPLANACION_HORIZONTAL_SUELO": false,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN": true,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN_COTAS":true,
+        "00_C_EXPLANACION_HORIZONTAL_DESMONTE": false,
+        "01_A_TERRAPLEN_EN_EXP_HORIZ": true,
+        "01_B_DESMONTE_EN_EXP_HORIZ": false
+      },
+      "camera": {
+        "target": [4155.1, 1403.3, -1.7],
+        "zoom": 3.50,
+        "rotationOrbit": -18.7,
+        "rotationX": 30
+      }
+    },
+    {
+      "id": "cálculo_terraplen",
+      "title": "Cálculo del Intervalo ",
+      "description": " El Intervalo esDistancia horizontal que tenemos que recorrer para conseguir la altura de la equidistancia, en este caso 1 metro<p>Pendiente = Equidistancia/Intervalo. despejando Intervalo = Equidistancia/Pendiente <p> <span style='font-size: 1.5em; font-weight: bold;'>I</span> = 1 / 0.4 = <span style='font-size: 1.5em; font-weight: bold;'>2.5 metros</span>",
+      "duration": 2,
+      "waitTime": 4,
+       "type": "layers",
+      "layers": {
+        "00_A_SUELO": true,
+        "00_AA_EXPLANACION_HORIZONTAL_SUELO": false,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN": true,
+        "00_C_EXPLANACION_HORIZONTAL_DESMONTE": false,
+        "01_A_TERRAPLEN_EN_EXP_HORIZ": true,
+        "01_B_DESMONTE_EN_EXP_HORIZ": false
+      },
+       "camera": {
+        "target": [4153.7, 1403.7, -1.7],
+        "zoom": 3.50,
+        "rotationOrbit": 0,
+        "rotationX": 90
+      }
+    },
+    {
+      "id": "mostrar_desmonte",
+      "title": "Mostrando desmonte",
+      "description": "Se muestra la explanada horizontal del desmonte en color rojo.",
+      "duration": 2,
+      "waitTime": 4,
+      "type": "layers",
+      "layers": {
+        "00_A_SUELO": true,
+        "00_AA_EXPLANACION_HORIZONTAL_SUELO": false,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN": false,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN_COTAS":false,
+        "00_C_EXPLANACION_HORIZONTAL_DESMONTE": true,
+        "01_A_TERRAPLEN_EN_EXP_HORIZ": false,
+        "01_B_DESMONTE_EN_EXP_HORIZ": false
+      },
+      "camera": {
+        "target": [4153.8, 1400.2, -1.7],
+        "zoom": 3.50,
+        "rotationOrbit": 28.5,
+        "rotationX": 5.5
+      }
+    },
+    {
+      "id": "mostrar_desmonte_curvas",
+      "title": "Desmonte con curvado",
+      "description": "El desmonte implica quitar tierra. Ocurre cuando la explanación está por debajo de la cota",
+      "duration": 2,
+      "waitTime": 4,
+      "type": "layers",
+      "layers": {
+        "00_A_SUELO": true,
+        "00_AA_EXPLANACION_HORIZONTAL_SUELO": false,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN": false,
+        "00_B_EXPLANACION_HORIZONTAL_TERRAPLEN_COTAS":false,
+        "00_C_EXPLANACION_HORIZONTAL_DESMONTE": true,
+        "01_A_TERRAPLEN_EN_EXP_HORIZ": false,
+        "01_B_DESMONTE_EN_EXP_HORIZ": true
+      },
+      "camera": {
+        "target": [4153.8, 1400.2, -1.7],
+        "zoom": 3.50,
+        "rotationOrbit": -24.2,
+        "rotationX": -8.2
+      }
+    }
+  ]
+}

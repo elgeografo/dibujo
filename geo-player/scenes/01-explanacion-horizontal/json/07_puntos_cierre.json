@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "07_puntos_cierre",
+"features": [
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ 8133.910310475658662, 1447.195839745025296, 650.0 ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ 8153.910310475658662, 1427.48515176636738, 640.0 ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ 8173.910310475657752, 1407.195839745025296, 630.0 ] } },
+{ "type": "Feature", "properties": { }, "geometry": { "type": "Point", "coordinates": [ 8193.910310475657752, 1387.195839745025296, 620.0 ] } }
+]
+}

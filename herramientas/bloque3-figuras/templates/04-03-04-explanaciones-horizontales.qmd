@@ -66,7 +66,7 @@ El talud de desmonte y el de terraplén tienen **pendientes distintas** y, por t
 
 #### Recursos interactivos
 
-[Explicación teórica de la explanada horizontal (Storyteller)](https://datos1.geoso2.es/geo-player/index.html?scene=scenes/00-ejemplo-basico)
+[Explicación teórica de la explanada horizontal (Storyteller)](../geo-player/index.html?scene=scenes/00-ejemplo-basico)
 
 [Ejemplo de explanada horizontal con terreno (Storyteller)](https://webserver02.leftcape.com/08_TEST/MJ/)
 
@@ -74,7 +74,7 @@ El talud de desmonte y el de terraplén tienen **pendientes distintas** y, por t
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 
-<a href="presentaciones/acotados-5-explanaciones.html" target="_blank">Modificación del terreno: explanaciones horizontales y en pendiente</a>
+<a href="../presentaciones/acotados-5-explanaciones.html" target="_blank">Modificación del terreno: explanaciones horizontales y en pendiente</a>
 
 <strong>Recursos digitales</strong>
 
