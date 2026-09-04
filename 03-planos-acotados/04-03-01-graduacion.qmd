@@ -70,6 +70,22 @@ $$
 Caso 1 de graduación de rectas: división de ab en cuatro partes iguales (construcción de Thales en gris).
 :::
 
+::: {.callout-tip collapse="true"}
+## Ver el proceso animado
+
+```{r}
+#| label: image-GraduacionCaso1-anim
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Caso 1 de graduación de rectas.
+#| fig-alt: |
+#|   Caso 1 de graduación de rectas.
+
+knitr::include_graphics("../images/caso1_graduacionRectas.gif", dpi = 270)
+```
+:::
+
 ¿Cuál es el **intervalo** de esta recta? Se mide sobre la proyección de la recta: <span style="color:green;">i</span> = 35 m.
 
 ¿Qué pendiente tiene esta recta?
@@ -117,6 +133,22 @@ $$
 Caso 2 de graduación de rectas: localización del primer punto de cota entera (510) y reducción al caso anterior.
 :::
 
+::: {.callout-tip collapse="true"}
+## Ver el proceso animado
+
+```{r}
+#| label: image-GraduacionCaso2-anim
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Caso 2 de graduación de rectas.
+#| fig-alt: |
+#|   Caso 2 de graduación de rectas.
+
+knitr::include_graphics("../images/caso2_graduacionRectas.gif", dpi = 270)
+```
+:::
+
 Si encuentro el punto de cota **510** estoy en el caso anterior. Para ello aplico la fórmula de la pendiente o una regla de tres simple, teniendo en cuenta que la distancia vertical es la diferencia de cotas entre A y B, y la distancia horizontal la mido sobre la proyección de la recta.
 
 Por lo tanto, si para subir desde la cota 509 a la cota 516 recorro horizontalmente 2.212 metros, ¿cuánto debo recorrer horizontalmente (x en la siguiente ecuación) para subir desde la cota 509 a la 510?
@@ -161,6 +193,22 @@ Mido 316 m en la proyección de la recta desde el punto A y marco la cota 510. A
 </div>
 
 Caso 3 de graduación de rectas: cálculo del intervalo a partir de la pendiente y traslado sucesivo sobre la proyección.
+:::
+
+::: {.callout-tip collapse="true"}
+## Ver el proceso animado
+
+```{r}
+#| label: image-GraduacionCaso3-anim
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Caso 3 de graduación de rectas.
+#| fig-alt: |
+#|   Caso 3 de graduación de rectas.
+
+knitr::include_graphics("../images/caso3_graduacionRectas.gif", dpi = 270)
+```
 :::
 
 $$

@@ -160,6 +160,22 @@ Y si el dato son **tres puntos no alineados**, se unen dos de ellos, se gradúa 
 Plano definido por tres puntos: uniendo a y b se obtiene una recta graduada y se reduce al caso anterior.
 :::
 
+::: {.callout-tip collapse="true"}
+## Ver el proceso animado
+
+```{r}
+#| label: image-DefinicionPlano-anim
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Definición del plano a partir de tres puntos no alineados.
+#| fig-alt: |
+#|   Definición del plano a partir de tres puntos no alineados.
+
+knitr::include_graphics("../images/definicionPlano.gif", dpi = 270)
+```
+:::
+
 ### Intersección de planos
 
 La intersección de dos planos es una recta: la que une los puntos donde se cortan las **líneas de nivel de igual cota** de ambos planos. La recta intersección queda además graduada automáticamente. Esta construcción es la base de las **explanaciones** que se estudian al final del bloque.

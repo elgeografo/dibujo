@@ -68,6 +68,22 @@ Un punto queda caracterizado por su **proyección** sobre el plano horizontal y 
 Representación del punto en planos acotados: cotas positivas, nula y negativa, desnivel entre C y A, y el resultado que queda en el papel.
 :::
 
+::: {.callout-tip collapse="true"}
+## Ver el proceso animado
+
+```{r}
+#| label: image-punto-anim
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Representación del punto en planos acotados.
+#| fig-alt: |
+#|   Representación del punto en planos acotados.
+
+knitr::include_graphics("../images/puntos_planosAcotados.gif", dpi = 270)
+```
+:::
+
 ### Representación de la recta
 
 Si unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la figura se observa la recta R definida por los puntos T y A, con su proyección r.
@@ -98,6 +114,22 @@ Si unimos las proyecciones horizontales de dos puntos tendremos definida la rect
 </div>
 
 La recta en planos acotados: R en el espacio, r su proyección, t la traza (cota 0) y el triángulo dV/dH que define la pendiente.
+:::
+
+::: {.callout-tip collapse="true"}
+## Ver el proceso animado
+
+```{r}
+#| label: image-recta-anim
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   Representación de la recta en planos acotados. R recta en el espacio, r proyección de R en el plano
+#| fig-alt: |
+#|   Representación de la recta en planos acotados.
+
+knitr::include_graphics("../images/recta_planosAcotados.gif", dpi = 270)
+```
 :::
 
 Se denomina **traza de la recta (t)** al punto de cota cero de la misma, esto es, la intersección de la recta con el plano de referencia.
@@ -269,6 +301,22 @@ El plano P en el sistema acotado: traza, líneas de nivel, línea de máxima pen
 </div>
 
 El mismo plano en el papel: la proyección graduada de su línea de máxima pendiente con las líneas de nivel perpendiculares.
+:::
+
+::: {.callout-tip collapse="true"}
+## Ver el proceso animado
+
+```{r}
+#| label: image-plano-anim
+#| echo: false
+#| out.width: NULL
+#| fig-cap: |
+#|   El plano en el sistema de planos acotados.
+#| fig-alt: |
+#|   El plano en el sistema de planos acotados.
+
+knitr::include_graphics("../images/plano_planosAcotados.gif", dpi = 270)
+```
 :::
 
 ::: callout-note
