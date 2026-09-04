@@ -1,8 +1,6 @@
-# Fundamentos {#sec-fundamentos .unnumbered}
+# 4.2 Fundamentos {#sec-fundamentos .unnumbered}
 
-## Fundamentos del sistema de planos acotados
-
-### Contenido
+## Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <p style="font-size: 1em; color: #333;">
@@ -22,9 +20,9 @@
 </p>
 :::
 
-### Apuntes
+## Apuntes
 
-#### Representación del punto
+### Representación del punto
 
 Un punto queda caracterizado por su **proyección** sobre el plano horizontal y por su **cota** con relación a dicho plano. La cota puede ser positiva (punto por encima del plano de comparación), nula (punto en el propio plano) o negativa (por debajo). El **desnivel** entre dos puntos es la diferencia de sus cotas.
 
@@ -70,7 +68,7 @@ Un punto queda caracterizado por su **proyección** sobre el plano horizontal y 
 Representación del punto en planos acotados: cotas positivas, nula y negativa, desnivel entre C y A, y el resultado que queda en el papel.
 :::
 
-#### Representación de la recta
+### Representación de la recta
 
 Si unimos las proyecciones horizontales de dos puntos tendremos definida la recta. En la figura se observa la recta R definida por los puntos T y A, con su proyección r.
 
@@ -154,7 +152,7 @@ Ejemplo de cálculo de la pendiente de una recta graduada.
 
 También podría calcularse como 6/18 o cualquier otra combinación conocida de dos puntos de la recta, puesto que al tener pendiente uniforme la relación es la misma entre cualquiera de sus puntos.
 
-#### Posiciones particulares de la recta
+### Posiciones particulares de la recta
 
 Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipos:
 
@@ -195,7 +193,7 @@ Respecto al plano horizontal de comparación, las rectas pueden ser de tres tipo
 Las tres posiciones de la recta respecto del plano de comparación.
 :::
 
-#### Representación del plano
+### Representación del plano
 
 Rectas singulares del plano:
 
@@ -279,7 +277,7 @@ El mismo plano en el papel: la proyección graduada de su línea de máxima pend
 En el sistema acotado los planos se representan, en general, por la proyección graduada de su recta de máxima pendiente. La pendiente de un plano se mide por la de su línea de máxima pendiente: en un plano existen infinitas pendientes, entre cero (sus horizontales) y la de la l.m.p.
 :::
 
-### Material complementario
+## Material complementario
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 

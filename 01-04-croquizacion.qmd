@@ -48,7 +48,7 @@ Para croquizar una pieza se sigue siempre el mismo proceso:
 
 1.  **Observa y mide el objeto**: antes de dibujar, hay que entender su geometría y tomar sus medidas.
 2.  **Dibújalo a mano alzada manteniendo las proporciones**, indicando su forma y características principales.
-3.  **Utiliza los tipos de línea normalizados**: línea continua para los contornos, de trazos para las partes ocultas, de puntos y trazos para ejes y simetrías (véase [1.3.3 Tipos de líneas](01-03-03-tipos-linea.qmd)).
+3.  **Utiliza los tipos de línea normalizados**: línea continua para los contornos, de trazos para las partes ocultas, de puntos y trazos para ejes y simetrías (véase [1.1.3 Tipos de líneas](01-03-03-tipos-linea.qmd)).
 4.  **Añade las acotaciones necesarias** siguiendo [las normas de acotación](01-03-05-acotacion.qmd).
 
 La clave de la fase de dibujo es la **proporción**, y el método clásico para conservarla es el del **rectángulo envolvente**: se encaja primero el objeto en un rectángulo a mano alzada que respete la relación anchura/altura real, se subdivide con líneas auxiliares para situar los detalles, y solo al final se remata el contorno definitivo.

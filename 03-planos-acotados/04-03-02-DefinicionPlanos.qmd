@@ -1,8 +1,6 @@
-# Definición de planos {#sec-DefinicionPlanos .unnumbered}
+# 4.4 Definición de planos {#sec-DefinicionPlanos .unnumbered}
 
-## Definición de planos
-
-### Contenido
+## Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <p style="font-size: 1em; color: #333;">
@@ -20,9 +18,9 @@
 </p>
 :::
 
-### Apuntes
+## Apuntes
 
-#### Recta contenida en un plano
+### Recta contenida en un plano
 
 Una recta pertenece a un plano cuando al menos dos de sus puntos están contenidos en él. Por lo tanto, en las intersecciones de la recta con las líneas de nivel del plano, la cota de la recta es la de la línea de nivel correspondiente: la recta queda **graduada por pertenencia**.
 
@@ -60,7 +58,7 @@ Una recta pertenece a un plano cuando al menos dos de sus puntos están contenid
 Recta s contenida en un plano graduado: en los cruces con las líneas de nivel toma las cotas del plano.
 :::
 
-#### Formas de definir un plano
+### Formas de definir un plano
 
 Un plano queda determinado por:
 
@@ -162,7 +160,7 @@ Y si el dato son **tres puntos no alineados**, se unen dos de ellos, se gradúa 
 Plano definido por tres puntos: uniendo a y b se obtiene una recta graduada y se reduce al caso anterior.
 :::
 
-#### Intersección de planos
+### Intersección de planos
 
 La intersección de dos planos es una recta: la que une los puntos donde se cortan las **líneas de nivel de igual cota** de ambos planos. La recta intersección queda además graduada automáticamente. Esta construcción es la base de las **explanaciones** que se estudian al final del bloque.
 
@@ -205,7 +203,7 @@ La intersección de dos planos es una recta: la que une los puntos donde se cort
 Intersección de dos planos graduados: la recta que une los cruces de las líneas de nivel de igual cota.
 :::
 
-### Material complementario
+## Material complementario
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 

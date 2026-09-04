@@ -1,8 +1,6 @@
-# Vaguadas y divisorias {#sec-vaguadas-divisorias .unnumbered}
+# 4.6 Vaguadas y divisorias {#sec-vaguadas-divisorias .unnumbered}
 
-## Vaguadas y divisorias
-
-### Contenido
+## Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <p style="font-size: 1em; color: #333;">
@@ -22,9 +20,9 @@
 </p>
 :::
 
-### Apuntes
+## Apuntes
 
-#### De la cubierta al terreno
+### De la cubierta al terreno
 
 Los faldones de una cubierta son planos que se cortan, y sus intersecciones tienen nombre propio: la **limatesa** es la arista saliente por la que el agua se separa (el caballete es el caso más claro) y la **limahoya** es el rincón entrante por el que el agua se junta y corre.
 
@@ -38,15 +36,15 @@ Las cubiertas de la E.T.S.I. de Montes vistas desde el aire: las intersecciones 
 
 En el terreno ocurre exactamente lo mismo, pero las "cubiertas" son las laderas y las líneas se llaman **divisorias** y **vaguadas**.
 
-#### Vaguadas
+### Vaguadas
 
 La **vaguada** (o talweg) es la línea que **recoge las aguas de escorrentía**: une los puntos más bajos de un valle, y por ella acaba corriendo el agua que cae en las laderas que la flanquean. Es el germen de los arroyos y ríos.
 
-#### Divisorias
+### Divisorias
 
 La **divisoria** es la línea que **separa las aguas** de dos cuencas vecinas: sigue las crestas del terreno, uniendo los puntos más altos. Una gota que caiga a un lado de la divisoria acabará en una cuenca; una gota que caiga al otro, en la contraria.
 
-#### Cómo identificarlas en el plano
+### Cómo identificarlas en el plano
 
 Sin cotas es imposible distinguir una vaguada de una divisoria: ambas son líneas aproximadamente perpendiculares a las curvas de nivel. Con las cotas, la lectura es directa:
 
@@ -121,7 +119,7 @@ Sobre el modelo sombreado con cotas, la línea azul recoge el agua (vaguada) y l
 Vaguadas y divisorias son **líneas de máxima pendiente** del terreno: por eso cortan perpendicularmente a las curvas de nivel. Identificarlas es el primer paso de casi cualquier análisis hidrológico de un plano topográfico.
 :::
 
-### Material complementario
+## Material complementario
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 

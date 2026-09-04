@@ -1,4 +1,4 @@
-# 4.5 Planos de detalle {#sec-planos-detalle .unnumbered}
+# 3.5 Planos de detalle {#sec-planos-detalle .unnumbered}
 
 ## Contenido
 

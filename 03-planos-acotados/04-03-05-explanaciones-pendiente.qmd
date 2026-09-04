@@ -1,8 +1,6 @@
-# Explanaciones con pendiente {#sec-explanaciones-pendiente .unnumbered}
+# 4.9 Explanaciones con pendiente {#sec-explanaciones-pendiente .unnumbered}
 
-## Explanaciones con pendiente
-
-### Contenido
+## Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <p style="font-size: 1em; color: #333;">
@@ -22,15 +20,15 @@
 </p>
 :::
 
-### Apuntes
+## Apuntes
 
-#### Diferencias con la explanación horizontal
+### Diferencias con la explanación horizontal
 
 Una plataforma **en pendiente** (una pista forestal, un camino, una rampa) se adapta mejor a los terrenos inclinados y reduce los movimientos de tierra. La diferencia esencial con la plataforma horizontal es que sus bordes longitudinales **ya no son líneas de nivel**: son **rectas graduadas**, con puntos a distinta cota.
 
 El procedimiento general es el mismo — línea de paso, planos de talud por los bordes, intersección con el terreno y cierre de taludes — pero el talud que se apoya en un **borde con pendiente** exige una construcción nueva.
 
-#### El método de los conos
+### El método de los conos
 
 El talud que se apoya en un borde graduado es la superficie **tangente a los conos de talud**: conos con vértice en cada punto del borde y radio de la base igual al **intervalo del talud** (por unidad de equidistancia). En la práctica:
 
@@ -79,7 +77,7 @@ La misma construcción en perspectiva: entre las horizontales 10 y 11 del borde,
 
 Como siempre, el intervalo del desmonte y el del terraplén son **distintos**, porque cada talud tiene su propia pendiente.
 
-#### Ejemplo desarrollado
+### Ejemplo desarrollado
 
 ::: {#fig-plataforma-pendiente-cad}
 <div style="max-width:520px; margin:0 auto;">
@@ -97,11 +95,11 @@ Los pasos, sobre el ejemplo:
 4.  **Intersección** de cada plano con el terreno y de los planos entre sí.
 5.  **Cierre de los taludes**: la intersección de tres planos es un único punto (aunque el terreno sea una superficie).
 
-#### Recursos interactivos
+### Recursos interactivos
 
 [Explicación teórica de la explanada en pendiente (Storyteller)](../geo-player/index.html?scene=scenes/00-ejemplo-basico-pendiente)
 
-### Material complementario
+## Material complementario
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 

@@ -1,8 +1,6 @@
-# Perfiles longitudinales {#sec-perfiles-longitudinales .unnumbered}
+# 4.7 Perfiles longitudinales {#sec-perfiles-longitudinales .unnumbered}
 
-## Perfiles longitudinales
-
-### Contenido
+## Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <p style="font-size: 1em; color: #333;">
@@ -26,9 +24,9 @@
 </p>
 :::
 
-### Apuntes
+## Apuntes
 
-#### Definición y construcción del perfil
+### Definición y construcción del perfil
 
 El **perfil longitudinal** de un terreno a lo largo de una traza es la intersección del terreno con el **plano vertical** que pasa por ella. Permite visualizar la sección del terreno a lo largo de un recorrido: el trazado de una pista, un canal, una carretera…
 
@@ -166,7 +164,7 @@ Para **levantar el perfil**: se llevan los cruces sobre una recta con sus distan
 Construcción del perfil: cruces sobre la línea base, guías horizontales por cota, verticales y perfil resultante.
 :::
 
-#### Perfil natural y perfil realzado
+### Perfil natural y perfil realzado
 
 En el perfil **natural** las escalas vertical y horizontal son **iguales**: refleja las pendientes reales, pero suele quedar demasiado suave. En el perfil **realzado** se exagera la escala vertical para apreciar mejor el relieve; el realce es el cociente de escalas (por ejemplo, con Eh = 1:8.000 y Ev = 1:2.000 el realce es ×4).
 
@@ -187,7 +185,7 @@ En el perfil **natural** las escalas vertical y horizontal son **iguales**: refl
 El mismo perfil en natural (arriba) y realzado ×4 (abajo).
 :::
 
-#### La guitarra
+### La guitarra
 
 La **guitarra** es la información alfanumérica asociada a la representación gráfica del perfil. Sus filas mínimas son el **plano de comparación**, las **ordenadas del terreno**, las **distancias al origen** y las **distancias parciales**; se ajusta a los datos que aparezcan en cada perfil (si hay rasante, se añaden sus ordenadas, las cotas rojas, etc.).
 
@@ -303,7 +301,7 @@ La **guitarra** es la información alfanumérica asociada a la representación g
 El perfil AB con su guitarra: plano de comparación, ordenadas del terreno, distancias al origen y parciales.
 :::
 
-#### Perfil desarrollado
+### Perfil desarrollado
 
 Cuando el eje tiene **varias alineaciones** o **tramos curvos**, el perfil se **desarrolla**: cada tramo se lleva a continuación del anterior con su longitud real, y en el desarrollo se marca cada punto de giro con su ángulo. Un tramo curvo se desarrolla según la longitud de su arco:
 
@@ -353,7 +351,7 @@ $$
 Perfil desarrollado del eje A–V–B: las dos alineaciones se enderezan y el giro se marca en V.
 :::
 
-#### Perfil del terreno con rasante
+### Perfil del terreno con rasante
 
 Sobre el perfil del terreno se representa la **rasante** de la obra. Donde el terreno queda por encima de la rasante hay que excavar (**desmonte**); donde queda por debajo, hay que aportar tierra (**terraplén**). Los puntos donde ambos se cortan son los **puntos de paso**.
 
@@ -386,7 +384,7 @@ En los proyectos de obra lineal es habitual el planteamiento inverso — el **pe
 Perfil longitudinal real de un proyecto: el perfil es el de la obra y el terreno va a trazos; la guitarra incluye rasante, cotas rojas y acuerdos verticales.
 :::
 
-#### Perfiles transversales
+### Perfiles transversales
 
 Los **perfiles transversales** cortan perpendicularmente al eje de la obra; la sección es diferente según el punto del perfil longitudinal donde se corta. Se utilizaban sobre todo para el **cálculo de volúmenes** de desmonte y terraplén, y hoy siguen siendo la base de las **secciones tipo** de los proyectos.
 
@@ -417,7 +415,7 @@ Los **perfiles transversales** cortan perpendicularmente al eje de la obra; la s
 Perfiles transversales: cortes perpendiculares al eje de la obra, numerados a lo largo del trazado.
 :::
 
-### Material complementario
+## Material complementario
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 

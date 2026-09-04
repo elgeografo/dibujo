@@ -16,8 +16,6 @@ book:
     - index.qmd
     - part: "Bloque 1. Introducción a la Expresión Gráfica"
       chapters:
-        - 01-01-lenguaje-tecnica.qmd
-        - 03-geometria-constructiva.qmd
         - 01-normalizacion.qmd
         - 01-03-01-formatos-papel.qmd
         - 01-03-02-rotulacion.qmd
@@ -25,6 +23,8 @@ book:
         - 01-03-04-escalas.qmd
         - 01-03-05-acotacion.qmd
         - 01-03-06-cajetin.qmd
+        - 01-01-lenguaje-tecnica.qmd
+        - 03-geometria-constructiva.qmd
         - 01-04-croquizacion.qmd
     - part: "Bloque 2. Fundamentos de los Sistemas de Representación"
       chapters:
@@ -32,7 +32,15 @@ book:
         - 04-01-diedrico.qmd
         - 04-02-axonometrico.qmd
         - 04-04-perspectiva-conica.qmd
-    - part: "Bloque 3. Representación Gráfica de la Información Ambiental"
+    - part: "Bloque 3. Elaboración de Planos"
+      chapters:
+        - 04-elaboracion-planos/04-01-normativa.qmd
+        - 04-elaboracion-planos/04-02-situacion-localizacion.qmd
+        - 04-elaboracion-planos/04-03-estructuras-infraestructuras.qmd
+        - 04-elaboracion-planos/04-04-conjunto-despiece.qmd
+        - 04-elaboracion-planos/04-05-detalle.qmd
+        - 04-elaboracion-planos/04-06-cartografia-ambiental-forestal.qmd
+    - part: "Bloque 4. Representación Gráfica de la Información Ambiental"
       chapters:
         - 04-03-planos-acotados.qmd
         - 03-planos-acotados/04-03-00-fundamentos.qmd
@@ -43,21 +51,15 @@ book:
         - 03-planos-acotados/04-03-03-perfiles-longitudinales.qmd
         - 03-planos-acotados/04-03-04-explanaciones-horizontales.qmd
         - 03-planos-acotados/04-03-05-explanaciones-pendiente.qmd
-    - part: "Bloque 4. Elaboración de Planos"
-      chapters:
-        - 04-elaboracion-planos/04-01-normativa.qmd
-        - 04-elaboracion-planos/04-02-situacion-localizacion.qmd
-        - 04-elaboracion-planos/04-03-estructuras-infraestructuras.qmd
-        - 04-elaboracion-planos/04-04-conjunto-despiece.qmd
-        - 04-elaboracion-planos/04-05-detalle.qmd
-        - 04-elaboracion-planos/04-06-cartografia-ambiental-forestal.qmd
-    - part: "Bloque 5. Representación Gráfica Digital"
+    - part: "Bloque 5. Bloque instrumental"
       chapters:
         - 05-representacion-digital/05-01-cad.qmd
         - 05-representacion-digital/05-02-sig.qmd
         - 05-representacion-digital/05-03-bim-gis.qmd
   appendices:
     - anexos/anexo-videos-autocad.qmd
+  sidebar:
+    collapse-level: 1
 
 bibliography: references.bib
 

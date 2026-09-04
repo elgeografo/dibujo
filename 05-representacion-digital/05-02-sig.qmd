@@ -50,7 +50,7 @@ El parámetro clave de un ráster es su **resolución espacial**: el tamaño de 
 ::: callout-note
 ## El MDT: el plano acotado hecho digital
 
-[El sistema de planos acotados](../04-03-planos-acotados.qmd) del Bloque 3 representa el terreno mediante puntos con cota y curvas de nivel. Un MDT es exactamente lo mismo en versión digital: una nube de cotas organizada en malla. Las curvas de nivel que allí se trazaban interpolando entre puntos acotados ([el trazado de curvas de nivel](../03-planos-acotados/04-03-04-curvado-planos.qmd)) las genera hoy el SIG de forma automática a partir del MDT, con la equidistancia que se le pida. Los conceptos —cota, equidistancia, pendiente, vaguadas y divisorias— son los mismos; solo cambia la herramienta.
+[El sistema de planos acotados](../04-03-planos-acotados.qmd) del Bloque 4 representa el terreno mediante puntos con cota y curvas de nivel. Un MDT es exactamente lo mismo en versión digital: una nube de cotas organizada en malla. Las curvas de nivel que allí se trazaban interpolando entre puntos acotados ([el trazado de curvas de nivel](../03-planos-acotados/04-03-04-curvado-planos.qmd)) las genera hoy el SIG de forma automática a partir del MDT, con la equidistancia que se le pida. Los conceptos —cota, equidistancia, pendiente, vaguadas y divisorias— son los mismos; solo cambia la herramienta.
 :::
 
 ### Sistemas de referencia

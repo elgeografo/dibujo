@@ -1,8 +1,6 @@
-# Explanaciones horizontales {#sec-explanaciones-horizontales .unnumbered}
+# 4.8 Explanaciones horizontales {#sec-explanaciones-horizontales .unnumbered}
 
-## Explanaciones horizontales
-
-### Contenido
+## Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <p style="font-size: 1em; color: #333;">
@@ -20,9 +18,9 @@
 </p>
 :::
 
-### Apuntes
+## Apuntes
 
-#### El problema
+### El problema
 
 Una **explanación** es la modificación del terreno necesaria para apoyar en él una superficie plana — una explanada, una pista, la base de una construcción. Al encajar una **plataforma horizontal** a una cota dada en un terreno natural aparecen dos situaciones:
 
@@ -51,7 +49,7 @@ Los puntos del borde de la plataforma donde el terreno está exactamente a su co
 La explanación vista en sección: plataforma, talud de desmonte (rojo) y talud de terraplén (verde).
 :::
 
-#### Método para una plataforma horizontal
+### Método para una plataforma horizontal
 
 Sobre el terreno conductor del bloque, encajamos una plataforma rectangular a **cota 108** en el collado. El procedimiento:
 
@@ -145,13 +143,13 @@ Plataforma horizontal a cota 108 en el collado del terreno conductor: línea de 
 El talud de desmonte y el de terraplén tienen **pendientes distintas** y, por tanto, **intervalos distintos**: con equidistancia de 5 m, el desmonte 1:1 tiene i = 5 m y el terraplén 2:3 tiene i = 7,5 m. Por eso las líneas de nivel del terraplén van más separadas.
 :::
 
-#### Recursos interactivos
+### Recursos interactivos
 
 [Explicación teórica de la explanada horizontal (Storyteller)](../geo-player/index.html?scene=scenes/00-ejemplo-basico)
 
 [Ejemplo de explanada horizontal con terreno (Storyteller)](https://webserver02.leftcape.com/08_TEST/MJ/)
 
-### Material complementario
+## Material complementario
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 

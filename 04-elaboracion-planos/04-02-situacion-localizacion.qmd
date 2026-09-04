@@ -1,4 +1,4 @@
-# 4.2 Planos de situación y localización. Plantas generales {#sec-planos-situacion .unnumbered}
+# 3.2 Planos de situación y localización. Plantas generales {#sec-planos-situacion .unnumbered}
 
 Un proyecto de ingeniería se compone de cuatro documentos: la **Memoria**, los **Planos**, el **Pliego de condiciones** y el **Presupuesto**. Los planos constituyen el **Documento nº 2** y son la definición gráfica completa de la obra: lo que no está en los planos, no se construye. Este capítulo presenta los primeros planos de esa colección — los que sitúan la actuación en el territorio y la muestran en su conjunto — y recorre la serie completa en dos casos típicos: el proyecto lineal y el proyecto de edificación.
 

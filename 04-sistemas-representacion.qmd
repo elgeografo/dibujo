@@ -55,7 +55,7 @@ La posición del punto de vista determina el tipo de proyección:
 
 -   **Proyección cónica o central**: el punto de vista está a distancia finita; los rayos proyectantes forman un haz cónico. Da lugar a la [perspectiva cónica](04-04-perspectiva-conica.qmd).
 -   **Proyección cilíndrica**: el punto de vista está en el infinito, por lo que los rayos proyectantes son paralelos entre sí. Puede ser:
-    -   **Ortogonal**: los rayos inciden perpendicularmente al plano del cuadro. Da lugar al [sistema diédrico](04-01-diedrico.qmd), al [sistema axonométrico ortogonal](04-02-axonometrico.qmd) (isométrica, dimétrica, trimétrica) y al sistema de planos acotados (Bloque 3).
+    -   **Ortogonal**: los rayos inciden perpendicularmente al plano del cuadro. Da lugar al [sistema diédrico](04-01-diedrico.qmd), al [sistema axonométrico ortogonal](04-02-axonometrico.qmd) (isométrica, dimétrica, trimétrica) y al sistema de planos acotados (Bloque 4).
     -   **Oblicua**: los rayos inciden con un ángulo distinto de 90°. Da lugar a las perspectivas caballera y militar.
 
 ### El compromiso ver bien / medir bien

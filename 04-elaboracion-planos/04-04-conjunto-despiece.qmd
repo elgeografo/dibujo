@@ -1,4 +1,4 @@
-# 4.4 Planos de conjunto y despiece {#sec-planos-conjunto .unnumbered}
+# 3.4 Planos de conjunto y despiece {#sec-planos-conjunto .unnumbered}
 
 ## Contenido
 

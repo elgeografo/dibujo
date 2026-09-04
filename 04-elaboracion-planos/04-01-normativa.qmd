@@ -1,4 +1,4 @@
-# 4.1 Normativa para la elaboración de planos {#sec-planos-normativa .unnumbered}
+# 3.1 Normativa para la elaboración de planos {#sec-planos-normativa .unnumbered}
 
 En el Bloque 1 estudiamos las normas UNE que regulan los aspectos formales del dibujo técnico ([formatos](../01-03-01-formatos-papel.qmd), [rotulación](../01-03-02-rotulacion.qmd), [líneas](../01-03-03-tipos-linea.qmd), [escalas](../01-03-04-escalas.qmd), [acotación](../01-03-05-acotacion.qmd) y [cajetín](../01-03-06-cajetin.qmd)). En este capítulo damos el paso de la lámina al **plano de proyecto**: cómo se aplica esa normativa cuando el dibujo forma parte de un documento contractual.
 
@@ -21,7 +21,7 @@ La estandarización de la presentación persigue una sola cosa: que cualquier t�
 
 ## Formato, márgenes y plegado
 
-El formato de trabajo se elige de la **serie A** en función del tamaño y la escala de lo representado; en proyectos de ingeniería lo habitual es trabajar entre A3 y A0 (véase [1.3.1 Formatos de papel](../01-03-01-formatos-papel.qmd)). Sobre el formato se traza siempre el **margen**, que limita la zona útil de dibujo:
+El formato de trabajo se elige de la **serie A** en función del tamaño y la escala de lo representado; en proyectos de ingeniería lo habitual es trabajar entre A3 y A0 (véase [1.1.1 Formatos de papel](../01-03-01-formatos-papel.qmd)). Sobre el formato se traza siempre el **margen**, que limita la zona útil de dibujo:
 
 -   En el borde **izquierdo se dejan 20-25 mm** para el archivado: es la banda por la que se perfora o encuaderna el plano.
 -   En los bordes superior, derecho e inferior se dejan **10 mm en los formatos A0 a A2** y **5 mm en A3 a A5**.
@@ -32,7 +32,7 @@ Los planos de un proyecto terminan encuadernados junto al resto de documentos, y
 
 ## Cajetín y márgenes
 
-Cualquier dibujo técnico debe llevar un **rótulo o cajetín**: uno o más rectángulos adyacentes subdivididos para recoger la información que identifica el plano (véase [1.3.6 Carátula, sello o cajetín](../01-03-06-cajetin.qmd)). En los planos de proyecto el cajetín se sitúa **dentro de la zona útil, en la esquina inferior derecha**, tanto en planos apaisados como verticales, y su dirección de lectura debe coincidir en general con la del dibujo.
+Cualquier dibujo técnico debe llevar un **rótulo o cajetín**: uno o más rectángulos adyacentes subdivididos para recoger la información que identifica el plano (véase [1.1.6 Carátula, sello o cajetín](../01-03-06-cajetin.qmd)). En los planos de proyecto el cajetín se sitúa **dentro de la zona útil, en la esquina inferior derecha**, tanto en planos apaisados como verticales, y su dirección de lectura debe coincidir en general con la del dibujo.
 
 El contenido del cajetín varía con el sector, pero en un plano de proyecto encontraremos como mínimo: el organismo o cliente, el título del proyecto, el título del plano, su número y hoja, la escala, la fecha y las firmas de los responsables.
 

@@ -1,8 +1,6 @@
-# Trazado de curvas de nivel o isolíneas {#sec-curvado-planos .unnumbered}
+# 4.5 Trazado de curvas de nivel o isolíneas {#sec-curvado-planos .unnumbered}
 
-## Trazado de curvas de nivel o isolíneas
-
-### Contenido
+## Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <!--<p style="font-size: 1.2em; color: #333;">
@@ -28,9 +26,9 @@ La norma ISO que define las escalas es la <a href="https://plataforma.aenormas.a
 </p>
 :::
 
-### Apuntes
+## Apuntes
 
-#### Introducción
+### Introducción
 *El trazado de curvas de nivel o isolíneas se hace para extender en el territorio información puntual de cotas terreno (en el caso de las curvas de nivel) o de variables ambientales, por ejemplo, la precipitación, temperatura, contaminantes atmosféricos, etc. Para esto, inicialmente se lleva a cabo la triangulación en la que se generan planos (triángulos) a partir de tres puntos cercanos y, posteriormente se generan las isolíneas partir de la interpolación lineal, como se observa en la siguiente figura:*
 
 ```{r}
@@ -47,7 +45,7 @@ knitr::include_graphics("../images/TIN_MD_Curvas.gif", dpi = 270)
 
 *En este ejemplo, los datos de partida son datos puntuales que provienen de estaciones de medición de NO2 y generaremos datos superficiales a partir de ellos, como si estuviéramos trabajando con el terreno. Asumiendo que representamos una superficie continua, como se hace con las variables ambientales a nivel territorial.*
 
-#### Triangulación de Delaunay
+### Triangulación de Delaunay
 
 *El primer paso será construir una red de triángulos irregulares (TIN) a partir de la nube de puntos, en este caso concentración de dióxido de nitrógeno, pero puede ser cualquier otra variable ambiental territorial. Para hacer esto, aplicaremos el método de triangulación de Delaunay, que se denomina así en honor al matemático ruso Boris Nikolaevich Delaunay.*
 
@@ -79,7 +77,7 @@ knitr::include_graphics("../images/triangulacion_trazado_curvas.gif", dpi = 270)
 knitr::include_graphics("../images/superficieTIN.gif", dpi = 270)
 ```
 
-#### Interpolación lineal
+### Interpolación lineal
 *Una vez determinados los triángulos, necesitamos obtener puntos con la misma cota o valor que sean múltiplo de la equidistancia para unirlos y determinar el trayecto de las isolíneas. Para esto, utilizamos la graduación de rectas.*
 
 *En este ejemplo, la equidistancia es igual a 5 microg/m³, el valor mínimo es 18 microg/m³ y el valor máximo: 60 microg/m³. Por lo tanto, la serie de la equidistancia es 0, 5, 10, 15, 20,…, 55 y 60, y los valores (o cotas en el caso de curvas de nivel) a situar son: 20, 25, 30, 35, 40, 45, 50 y 55.*
@@ -140,7 +138,7 @@ Interpolación lineal en un triángulo: se gradúan los lados entre los valores 
 knitr::include_graphics("../images/graduacion_trazado_curvas.gif", dpi = 270)
 ```
 
-#### Resultados
+### Resultados
 *Ampliando el área de estudio, e incorporando como base el callejero de la ciudad de Madrid,  el resultado en un plano normalizado se representa de la siguiente forma:*
 
 ```{r}
@@ -169,7 +167,7 @@ knitr::include_graphics("../images/plano_trazadoIsolineas.png", dpi = 270)
 knitr::include_graphics("../images/MDE.gif", dpi = 270)
 ```
 
-### Material complementario
+## Material complementario
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 

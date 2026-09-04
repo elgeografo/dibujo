@@ -1,4 +1,4 @@
-# 1.3 Normalización: Normas UNE sobre Dibujo Técnico {#sec-normalizacion .unnumbered}
+# 1.1 Normalización: Normas UNE sobre Dibujo Técnico {#sec-normalizacion .unnumbered}
 
 ```{=html}
 <!--
@@ -9,12 +9,12 @@ https://plataforma.aenormas.aenor.com/?searchMode=my&title=3098&onlyNews=false
 
 La normalización garantiza que un plano se interprete de la misma manera con independencia de quién lo dibuje y quién lo lea. En este tema se estudian las normas UNE-ISO que regulan los aspectos formales del dibujo técnico, organizadas en los siguientes apartados:
 
--   [1.3.1 Formatos de papel](01-03-01-formatos-papel.qmd)
--   [1.3.2 Rotulación](01-03-02-rotulacion.qmd)
--   [1.3.3 Tipos de líneas](01-03-03-tipos-linea.qmd)
--   [1.3.4 Escalas](01-03-04-escalas.qmd)
--   [1.3.5 Acotación](01-03-05-acotacion.qmd)
--   [1.3.6 Carátula, sello o cajetín](01-03-06-cajetin.qmd)
+-   [1.1.1 Formatos de papel](01-03-01-formatos-papel.qmd)
+-   [1.1.2 Rotulación](01-03-02-rotulacion.qmd)
+-   [1.1.3 Tipos de líneas](01-03-03-tipos-linea.qmd)
+-   [1.1.4 Escalas](01-03-04-escalas.qmd)
+-   [1.1.5 Acotación](01-03-05-acotacion.qmd)
+-   [1.1.6 Carátula, sello o cajetín](01-03-06-cajetin.qmd)
 
 Cada apartado sigue el mismo esquema de trabajo:
 

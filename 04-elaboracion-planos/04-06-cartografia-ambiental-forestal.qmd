@@ -1,4 +1,4 @@
-# 4.6 Planos típicos de cartografía ambiental y forestal {#sec-planos-cartografia .unnumbered}
+# 3.6 Planos típicos de cartografía ambiental y forestal {#sec-planos-cartografia .unnumbered}
 
 Los capítulos anteriores han recorrido los planos que definen la obra. En los proyectos que actúan sobre el medio natural —y en cualquier gran infraestructura— aparece además una familia propia: la **cartografía temática ambiental**, planos cuyo objeto no es definir lo que se construye sino **representar el territorio y sus valores** para analizarlos, protegerlos o gestionarlos.
 
@@ -6,7 +6,7 @@ Los capítulos anteriores han recorrido los planos que definen la obra. En los p
 
 Un plano de estructuras representa geometría; un plano temático representa **variables del territorio sobre una base cartográfica**. Sus ingredientes son siempre los mismos:
 
--   Una **base**: mapa topográfico u ortofoto a la escala adecuada, con las curvas de nivel que estudiamos en el Bloque 3 ([el sistema de planos acotados](../04-03-planos-acotados.qmd)).
+-   Una **base**: mapa topográfico u ortofoto a la escala adecuada, con las curvas de nivel que estudiamos en el Bloque 4 ([el sistema de planos acotados](../04-03-planos-acotados.qmd)).
 -   Una o varias **capas temáticas**: vegetación, hidrología, fauna, usos del suelo... representadas con tramas, colores y símbolos.
 -   Una **leyenda** que hace de diccionario entre símbolo y significado: en un plano temático la leyenda es tan importante como el dibujo.
 
@@ -40,7 +40,7 @@ En el ámbito forestal y del medio natural, el ingeniero maneja además series c
 -   El **Mapa Forestal de España (MFE)**: distribución de las masas forestales, especies y estado.
 -   Los mapas de **hábitats** y espacios protegidos (Red Natura 2000, ENP).
 -   La cartografía de **usos y coberturas del suelo** (SIOSE, Corine Land Cover).
--   Los **Modelos Digitales del Terreno** y el vuelo **LiDAR-PNOA**, versión digital de los planos acotados del Bloque 3, de los que se derivan pendientes, orientaciones y curvas de nivel ([el trazado de curvas de nivel](../03-planos-acotados/04-03-04-curvado-planos.qmd)).
+-   Los **Modelos Digitales del Terreno** y el vuelo **LiDAR-PNOA**, versión digital de los planos acotados del Bloque 4, de los que se derivan pendientes, orientaciones y curvas de nivel ([el trazado de curvas de nivel](../03-planos-acotados/04-03-04-curvado-planos.qmd)).
 -   La cartografía de **gestión**: rodales y cuarteles de una ordenación, redes de defensa contra incendios, vías forestales.
 
 Con estas fuentes, los planos temáticos de un proyecto forestal (un plan de ordenación, una repoblación, un plan de defensa contra incendios) se elaboran hoy con [**sistemas de información geográfica**](../05-representacion-digital/05-02-sig.qmd), que estudiaremos en el Bloque 5: el SIG es al plano temático lo que el CAD es al plano de fabricación.

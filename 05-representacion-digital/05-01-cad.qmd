@@ -5,7 +5,7 @@ El **Diseño Asistido por Ordenador** (CAD, del inglés *Computer-Aided Design*)
 Frente al dibujo manual sobre el tablero, el CAD aporta ventajas decisivas:
 
 -   **Precisión**: las entidades se definen por coordenadas exactas, no por la destreza del delineante. El error de trazado desaparece.
--   **Dibujo a tamaño real**: se dibuja siempre a escala 1:1 en unidades reales; la escala se decide después, en el momento de imprimir (véase [1.3.4 Escalas](../01-03-04-escalas.qmd)).
+-   **Dibujo a tamaño real**: se dibuja siempre a escala 1:1 en unidades reales; la escala se decide después, en el momento de imprimir (véase [1.1.4 Escalas](../01-03-04-escalas.qmd)).
 -   **Facilidad de edición**: borrar, desplazar, copiar o modificar no obliga a rehacer el plano.
 -   **Reutilización**: los elementos repetidos (símbolos, cajetines, mobiliario) se dibujan una sola vez y se insertan cuantas veces haga falta.
 -   **Organización de la información**: las capas permiten separar y controlar los distintos tipos de contenido de un mismo dibujo.
@@ -84,7 +84,7 @@ Los sólidos así obtenidos se combinan mediante las **operaciones booleanas**: 
 
 ### Del modelo a los planos
 
-La gran ventaja del modelado sólido es que las vistas normalizadas del objeto —alzado, planta, perfil, cortes y secciones— se **generan automáticamente** a partir del modelo, con la correspondencia exigida por el sistema diédrico estudiado en el Bloque 4. Si el modelo cambia, las vistas se actualizan. Los apartados 11 (vistas, ordenación, cortes) del anexo muestran este flujo de trabajo, que es el habitual en la ingeniería actual: se modela una sola vez y se documenta tantas veces como haga falta.
+La gran ventaja del modelado sólido es que las vistas normalizadas del objeto —alzado, planta, perfil, cortes y secciones— se **generan automáticamente** a partir del modelo, con la correspondencia exigida por el sistema diédrico estudiado en el Bloque 2. Si el modelo cambia, las vistas se actualizan. Los apartados 11 (vistas, ordenación, cortes) del anexo muestran este flujo de trabajo, que es el habitual en la ingeniería actual: se modela una sola vez y se documenta tantas veces como haga falta.
 
 ## Material complementario
 

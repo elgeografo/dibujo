@@ -1,8 +1,6 @@
-# Graduación de rectas {#sec-graduacion .unnumbered}
+# 4.3 Graduación de rectas {#sec-graduacion .unnumbered}
 
-## Graduación de rectas
-
-### Contenido
+## Contenido
 
 ::: {style="border: 2px solid black; padding: 1em; background-color: #f0f8ff; margin-top: 2em;"}
 <p style="font-size: 1em; color: #333;">
@@ -18,13 +16,13 @@
 </p>
 :::
 
-### Apuntes
+## Apuntes
 
-#### Definición
+### Definición
 
 La graduación de rectas consiste en señalar sobre su proyección los puntos cuyas cotas pertenezcan a la serie definida por la equidistancia o cota entera. Para ello será suficiente con determinar dos puntos de cota entera (o que sean de la serie de la equidistancia), lo que permitirá deducir el intervalo; una vez conocido éste, será posible situar con toda exactitud cualquier punto de cota entera de la recta.
 
-#### Casos
+### Casos
 
 -   **Caso 1:** me dan la proyección de la recta y la cota de dos de los puntos, y los dos corresponden a la serie.
 
@@ -177,7 +175,7 @@ $$
 
 Mido 5,71 m desde el punto A y marco la cota 612, y así sucesivamente voy subiendo un valor de la equidistancia.
 
-### Material complementario
+## Material complementario
 
 <strong>Presentaciones de clase (Reveal.js)</strong>
 

@@ -1,4 +1,4 @@
-# 4.3 Planos de estructuras e infraestructuras {#sec-planos-estructuras .unnumbered}
+# 3.3 Planos de estructuras e infraestructuras {#sec-planos-estructuras .unnumbered}
 
 Todo proyecto recorre una serie de **fases**: ingeniería **conceptual**, ingeniería **básica**, ingeniería **de detalle**, **ejecución**, **pruebas** y **cierre**. Los planos acompañan al proyecto de principio a fin y son su **eje**: en las fases iniciales fijan las decisiones de diseño; en la ingeniería de detalle definen la obra por completo; durante la ejecución son el documento de trabajo diario a pie de obra. Este capítulo examina los planos que definen una infraestructura lineal y, dentro de ella, sus estructuras.
 
@@ -8,7 +8,7 @@ Tras los planos de situación y las plantas generales vistos en el capítulo ant
 
 ### El perfil longitudinal
 
-El **perfil longitudinal** representa la sección del terreno y de la obra a lo largo del eje. Su construcción se estudió en [los perfiles longitudinales del Bloque 3](../03-planos-acotados/04-03-03-perfiles-longitudinales.qmd); en el plano de proyecto el perfil incorpora, además del terreno, la **rasante** proyectada, y su **guitarra** recoge las **alineaciones** en planta y en alzado, las ordenadas del terreno y de la rasante y las **cotas rojas**, que indican en cada punto si la obra va en **desmonte** (la rasante bajo el terreno) o en **terraplén** (sobre él).
+El **perfil longitudinal** representa la sección del terreno y de la obra a lo largo del eje. Su construcción se estudió en [los perfiles longitudinales del Bloque 4](../03-planos-acotados/04-03-03-perfiles-longitudinales.qmd); en el plano de proyecto el perfil incorpora, además del terreno, la **rasante** proyectada, y su **guitarra** recoge las **alineaciones** en planta y en alzado, las ordenadas del terreno y de la rasante y las **cotas rojas**, que indican en cada punto si la obra va en **desmonte** (la rasante bajo el terreno) o en **terraplén** (sobre él).
 
 ![Perfil longitudinal de un proyecto lineal: terreno, rasante y guitarra con alineaciones y cotas.](../images/bloque4/perfil-longitudinal-ejemplo.png){#fig-perfil-longitudinal width="90%"}
 

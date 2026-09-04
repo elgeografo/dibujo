@@ -1,4 +1,4 @@
-# El sistema de planos acotados {#sec-acotados .unnumbered}
+# 4.1 Introducción a los sistemas de planos acotados {#sec-acotados .unnumbered}
 
 ## Contenido
 
