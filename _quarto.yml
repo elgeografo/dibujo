@@ -3,6 +3,7 @@ project:
   resources:
     - presentaciones/*.html
     - geo-player/
+    - documentos/
 
 lang: es
 
@@ -75,7 +76,7 @@ format:
     toc-depth: 3
     toc-expand: true
 
-    author-meta: "Maria Jesús García García , Jose Luis Perez Benedito, and Luis Izquierdo Mesa"
+    author-meta: "María Jesús García García, José Luis Pérez Benedito, Carolina Echavarría Caballero, Luis Izquierdo Mesa, María Velázquez Redondo"
     #include-in-header: "plausible.html"
     callout-appearance: simple
 
