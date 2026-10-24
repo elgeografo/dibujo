@@ -104,7 +104,7 @@ Comprender estos tipos de cotas y cómo se aplican ayuda a definir adecuadamente
 <a href="documentos/acotacion-resumen-mvr.pdf" target="_blank">Acotación: resumen de la norma UNE-EN ISO 129-1:2019</a>
 
 <p style="font-size: 0.8em; color: #333; font-style: italic;">
-Resumen de las reglas básicas de acotación: cotas mínimas, suficientes y adecuadas, colocación del texto de cota, cotas auxiliares y perdidas, criterio de diámetro frente a radio y simplificación de dimensiones repetidas. Útil como chuleta de repaso antes de acotar un croquis. Elaborado por María Velázquez Redondo (mvelazquezredondo@upm.es).
+Resumen de las reglas básicas de acotación: cotas mínimas, suficientes y adecuadas, colocación del texto de cota, cotas auxiliares y perdidas, criterio de diámetro frente a radio y simplificación de dimensiones repetidas. Útil como chuleta de repaso antes de acotar un croquis. Elaborado por María Velázquez Redondo.
 </p>
 
 <strong> Vídeo “Arturo Geometría” Acotación (20’17’’) ★★★ </strong>
